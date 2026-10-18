@@ -1,8 +1,8 @@
 {
-  "gcc_zip_upload_pending": false,
-  "gcc_zip_sha256": "d48aa41913407a2c3963e48403fb04bbbc4b04d65413e8e48e1fa4156bbec1a7",
-  "gcc_zip_bytes": 486922,
-  "older_event_capture_zip_still_pending": true,
+  "gcc_zip_published": true,
+  "older_event_capture_complete_as_verified_parts": true,
+  "old_single_zip_api_upload_available": false,
+  "event_parts_url": "https://github.com/jixuan1989/tsfile-apache/tree/7a8abd77296d4296b274f39f95b01b0b2c4c6a16/issue-evidence/ts2diff-writer-precision/validation/query-event-address/complete-evidence-parts",
   "query_gate_cleared": false,
-  "source_branch_changed": false
+  "source_changed": false
 }

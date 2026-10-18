@@ -1,5 +1,10 @@
 # PR #1024: calibrated event-address diagnostic
 
+**Publication update:** Complete original evidence is now public as9 fixed parts, downloaded and reassembled to the original SHA-256. Single-file API upload remains unavailable; browser extension file access is no longer required. [Parts and SHA-checking reassembly script](https://github.com/jixuan1989/tsfile-apache/tree/7a8abd77296d4296b274f39f95b01b0b2c4c6a16/issue-evidence/ts2diff-writer-precision/validation/query-event-address/complete-evidence-parts). Analysis/gates are unchanged.
+
+**公开状态更新：** 原完整证据已按9片公开，下载重组后与原ZIP的SHA-256一致；单文件API上传仍失败，但无需浏览器文件权限。分析结果及未通过的查询门槛不变。
+
+
 **Query-performance gate: UNCLEARED. Necessity of the query slowdown: NOT PROVEN.** This is a completed new event-address capture, distinct from the earlier completed switch-counter recording. It identifies a narrower observational hotspot, not a repair or proof of a necessary performance trade-off. Production head remains `75592b89d1523a96090e8bca1dcb4cd2180162e5`.
 
 ## Completed collection and integrity

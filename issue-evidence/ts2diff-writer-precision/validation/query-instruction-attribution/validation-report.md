@@ -32,7 +32,7 @@ The prior private direct-call probe selected the same 299-byte COFF body but cha
 
 The separate offline verifier replays all 160,111 samples, checks child QPC windows, independently reconstructs query-frame membership, recomputes per-CPU/per-instruction/per-round counts and checks caller-count conservation. Exact caller classification remains a MAP heuristic. All original observations and negative controls are retained. The machine-readable attribution-summary.json accompanies this report. Local analyzer, verifier, original disassembly and complete arrays remain in work/query-backfill/instruction-attribution.
 
-The full normalized event ZIP is still **unpublished**, with SHA-256 `80b7373e253d0a0572d3cc5293d3a6c7938c7849a70a72b61abade68d36b9421`; earlier network uploads failed and the optional browser file-access permission remains pending. System ETL and absolute runtime addresses stay local. This small report/summary does not constitute publication of all raw samples. No new production correctness/Java/coverage/write/full-query acceptance is claimed; earlier results retain their original scope.
+The original normalized event evidence is now **public as9 fixed parts**, downloaded and reassembled to SHA-256 `80b7373e253d0a0572d3cc5293d3a6c7938c7849a70a72b61abade68d36b9421`. Single-file API upload remains unavailable; browser file-access permission is no longer required. [Parts and reassembly script](https://github.com/jixuan1989/tsfile-apache/tree/7a8abd77296d4296b274f39f95b01b0b2c4c6a16/issue-evidence/ts2diff-writer-precision/validation/query-event-address/complete-evidence-parts). System ETL and absolute runtime addresses stay local. The report/summary and the separate complete normalized sample archive are distinct artifacts. No new production correctness/Java/coverage/write/full-query acceptance is claimed; earlier results retain their original scope.
 
 ## 中文说明
 
@@ -44,4 +44,4 @@ CPU2/CPU3各自的read_buf源9/源25描述性比值均上升，fixed/baseline分
 
 此前私有探针虽然选中了相同299字节函数，但整体上下文改变。固定32轮/384次正式查询与768次预热后，区块中位数+0.5347%、bootstrap95%[-0.1736%,+1.8029%]，且同二进制对照也偏移；按事先规则停止，未运行直接调用计时、未追加轮数或换布局。不能凭探针区间跨1清除原退化，也不能证明相同位置解决问题。
 
-离线复核重新检查全部样本时间窗、查询帧、CPU/指令/轮次计数及调用者计数守恒。完整标准化ZIP仍未公开（SHA见上），小报告及summary不是完整原始样本包；系统ETL和运行时绝对地址仅保留本地。本轮没有生产修改，没有新增Java互通、覆盖率、写入或完整查询验收的通过声明。原验收信号、全部异常/相反样本和未测范围均保留。
+离线复核重新检查全部样本时间窗、查询帧、CPU/指令/轮次计数及调用者计数守恒。完整标准化证据已按9片公开并下载重组核对原SHA（见上）；小报告及summary与完整样本包分别提供，单文件API上传仍失败但已无需浏览器文件权限；系统ETL和运行时绝对地址仅保留本地。本轮没有生产修改，没有新增Java互通、覆盖率、写入或完整查询验收的通过声明。原验收信号、全部异常/相反样本和未测范围均保留。
