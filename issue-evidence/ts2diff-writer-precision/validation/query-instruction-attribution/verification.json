@@ -1,0 +1,11 @@
+{
+  "all160111_samples_replayed": true,
+  "qpc_child_windows_verified": true,
+  "query_frame_membership_recomputed": true,
+  "cpu_and_instruction_counts_recomputed": true,
+  "caller_count_totals_conserved": true,
+  "caller_classification_is_heuristic_not_causal": true,
+  "sampled_cpu_changes_recomputed": true,
+  "new_timing_children": 0,
+  "query_gate_cleared": false
+}

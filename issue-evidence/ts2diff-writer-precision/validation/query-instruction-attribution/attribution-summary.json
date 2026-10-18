@@ -1,0 +1,294 @@
+{
+  "source_head": "75592b89d1523a96090e8bca1dcb4cd2180162e5",
+  "all_normalized_samples_consumed": 160111,
+  "measured_children": 32,
+  "query_gate_cleared": false,
+  "new_timing_children": 0,
+  "production_source_changed": false,
+  "instruction_decode_covers_all299_bytes_both_images": true,
+  "all_readbuf_sample_ips_are_instruction_starts": true,
+  "readbuf_caller_group_counts": {
+    "baseline": {
+      "9": {
+        "ts2diff_value_or_time_decode": 102,
+        "metadata_or_other_caller": 66,
+        "chunk_header": 35,
+        "floating_precision_page_header": 22,
+        "page_header_or_statistics": 121
+      },
+      "25": {
+        "ts2diff_value_or_time_decode": 613,
+        "page_header_or_statistics": 632,
+        "metadata_or_other_caller": 72,
+        "floating_precision_page_header": 168,
+        "chunk_header": 14
+      }
+    },
+    "fixed": {
+      "9": {
+        "ts2diff_value_or_time_decode": 220,
+        "metadata_or_other_caller": 47,
+        "page_header_or_statistics": 205,
+        "chunk_header": 43,
+        "floating_precision_page_header": 25
+      },
+      "25": {
+        "ts2diff_value_or_time_decode": 625,
+        "page_header_or_statistics": 739,
+        "metadata_or_other_caller": 79,
+        "floating_precision_page_header": 166,
+        "chunk_header": 19
+      }
+    }
+  },
+  "query_samples_by_cpu": {
+    "baseline": {
+      "9": {
+        "3": 3686,
+        "2": 7500
+      },
+      "25": {
+        "3": 21378,
+        "2": 44087
+      }
+    },
+    "fixed": {
+      "9": {
+        "3": 3946,
+        "2": 8045
+      },
+      "25": {
+        "3": 21770,
+        "2": 43703
+      }
+    }
+  },
+  "readbuf_samples_by_cpu": {
+    "baseline": {
+      "9": {
+        "3": 118,
+        "2": 228
+      },
+      "25": {
+        "3": 485,
+        "2": 1014
+      }
+    },
+    "fixed": {
+      "9": {
+        "3": 180,
+        "2": 360
+      },
+      "25": {
+        "3": 516,
+        "2": 1112
+      }
+    }
+  },
+  "per_round_readbuf": [
+    {
+      "round": 0,
+      "versions": {
+        "baseline": {
+          "9": 45,
+          "25": 186
+        },
+        "fixed": {
+          "9": 77,
+          "25": 208
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.5301282051282052
+    },
+    {
+      "round": 1,
+      "versions": {
+        "baseline": {
+          "9": 46,
+          "25": 172
+        },
+        "fixed": {
+          "9": 82,
+          "25": 181
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.6939706942109058
+    },
+    {
+      "round": 2,
+      "versions": {
+        "baseline": {
+          "9": 37,
+          "25": 169
+        },
+        "fixed": {
+          "9": 59,
+          "25": 192
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.4035754504504505
+    },
+    {
+      "round": 3,
+      "versions": {
+        "baseline": {
+          "9": 52,
+          "25": 210
+        },
+        "fixed": {
+          "9": 65,
+          "25": 207
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.2681159420289856
+    },
+    {
+      "round": 4,
+      "versions": {
+        "baseline": {
+          "9": 42,
+          "25": 180
+        },
+        "fixed": {
+          "9": 54,
+          "25": 217
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.066491112574062
+    },
+    {
+      "round": 5,
+      "versions": {
+        "baseline": {
+          "9": 44,
+          "25": 198
+        },
+        "fixed": {
+          "9": 75,
+          "25": 202
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.670792079207921
+    },
+    {
+      "round": 6,
+      "versions": {
+        "baseline": {
+          "9": 40,
+          "25": 182
+        },
+        "fixed": {
+          "9": 65,
+          "25": 218
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.3566513761467889
+    },
+    {
+      "round": 7,
+      "versions": {
+        "baseline": {
+          "9": 40,
+          "25": 202
+        },
+        "fixed": {
+          "9": 63,
+          "25": 203
+        }
+      },
+      "readbuf_source9_per_source25_fixed_over_baseline": 1.5672413793103448
+    }
+  ],
+  "conditional_cpu_counts_and_ratios": {
+    "2": {
+      "query_frame": {
+        "baseline": {
+          "9": 7500,
+          "25": 44087
+        },
+        "fixed": {
+          "9": 8045,
+          "25": 43703
+        },
+        "conditional_source9_per_source25_fixed_over_baseline": 1.0820917404602277
+      },
+      "readbuf_leaf": {
+        "baseline": {
+          "9": 228,
+          "25": 1014
+        },
+        "fixed": {
+          "9": 360,
+          "25": 1112
+        },
+        "conditional_source9_per_source25_fixed_over_baseline": 1.439795531995456
+      }
+    },
+    "3": {
+      "query_frame": {
+        "baseline": {
+          "9": 3686,
+          "25": 21378
+        },
+        "fixed": {
+          "9": 3946,
+          "25": 21770
+        },
+        "conditional_source9_per_source25_fixed_over_baseline": 1.0512606141601226
+      },
+      "readbuf_leaf": {
+        "baseline": {
+          "9": 118,
+          "25": 485
+        },
+        "fixed": {
+          "9": 180,
+          "25": 516
+        },
+        "conditional_source9_per_source25_fixed_over_baseline": 1.4337800551832873
+      }
+    }
+  },
+  "limits": [
+    "Offline retrospective observational partitions; no new acceptance timing or causal experiment.",
+    "PMU addresses can skid; an instruction at a sample IP is not proven to have caused a cache miss.",
+    "Source25 events are sampled retired instructions, not exact caller invocation counts; source9/source25 is descriptive, not CPI or time.",
+    "Per-CPU conditioning changes the sample population and does not isolate SMT contention or migration cost.",
+    "Observed CPU changes between samples are a lower bound on transitions visible in this sparse stream, not context-switch counts.",
+    "Caller groups use nearest MAP public frames and may omit inline frames; they are not exact source-phase/time boundaries.",
+    "No additional precision arithmetic or encoder execution is proven by these query stacks. Necessary cost remains unproven."
+  ],
+  "input_sample_sha256": "983d74c6bacdf1e215c85445be4fa766db840334785a8a33062c946e9dc2b14e",
+  "readbuf_offset234": {
+    "offset": 234,
+    "instruction_baseline": "add dword ptr [r14],edi",
+    "instruction_fixed": "add dword ptr [r14],edi",
+    "counts": {
+      "baseline": {
+        "9": 104,
+        "25": 495
+      },
+      "fixed": {
+        "9": 155,
+        "25": 524
+      }
+    },
+    "source9_fixed_minus_baseline": 51
+  },
+  "observed_sample_to_sample_cpu_changes": 105,
+  "complete_normalized_capture_zip_public": false,
+  "private_probe_guard": {
+    "measured_queries": 384,
+    "excluded_warmup_queries": 768,
+    "quartets": 32,
+    "block_median_fixed_over_baseline": 1.0053473535547122,
+    "bootstrap95": [
+      0.9982642027754773,
+      1.01802932556322
+    ],
+    "direct_call_timing_executed": false,
+    "production_changed": false,
+    "reason_stopped": "Changed image did not retain upward signal under predeclared guard; material same-binary shifts remain.",
+    "query_gate_cleared": false
+  }
+}
