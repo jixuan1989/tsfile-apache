@@ -1,0 +1,446 @@
+{
+  "analyzed_at": "2026-10-18T22:28:30.546866+00:00",
+  "head": "75592b89d1523a96090e8bca1dcb4cd2180162e5",
+  "new_query_timing_children": 0,
+  "original_inputs_unchanged": true,
+  "source_changed": false,
+  "query_gate_cleared": false,
+  "necessary_cost_proven": false,
+  "files": {
+    "windows_baseline_sparse0": {
+      "file_bytes": 169559,
+      "sha256": "307730e6275322f1d218897cbcb775a257287c75831a70f9d6fdbec2130df65f",
+      "property_count": 3,
+      "property_order": [
+        "encryptLevel",
+        "encryptType",
+        "encryptKey"
+      ],
+      "property_start": 169471,
+      "property_end": 169549,
+      "property_block_bytes": 78,
+      "metadata_start": 169277,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptLevel",
+          "start": 169472,
+          "end": 169487,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptType",
+          "start": 169487,
+          "end": 169537,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptKey",
+          "start": 169537,
+          "end": 169549,
+          "value_is_null": true
+        }
+      ],
+      "logical_properties": {
+        "encryptLevel": "0",
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptKey": null
+      },
+      "canonical_sha256": "07d6da2e89617722ef159db305552887d17a5d930baa59e7867ed54e88292009",
+      "all_six_entry_permutations_keep_total_size": true
+    },
+    "windows_fixed_sparse0": {
+      "file_bytes": 169559,
+      "sha256": "307730e6275322f1d218897cbcb775a257287c75831a70f9d6fdbec2130df65f",
+      "property_count": 3,
+      "property_order": [
+        "encryptLevel",
+        "encryptType",
+        "encryptKey"
+      ],
+      "property_start": 169471,
+      "property_end": 169549,
+      "property_block_bytes": 78,
+      "metadata_start": 169277,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptLevel",
+          "start": 169472,
+          "end": 169487,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptType",
+          "start": 169487,
+          "end": 169537,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptKey",
+          "start": 169537,
+          "end": 169549,
+          "value_is_null": true
+        }
+      ],
+      "logical_properties": {
+        "encryptLevel": "0",
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptKey": null
+      },
+      "canonical_sha256": "07d6da2e89617722ef159db305552887d17a5d930baa59e7867ed54e88292009",
+      "all_six_entry_permutations_keep_total_size": true
+    },
+    "linux_baseline_sparse0": {
+      "file_bytes": 169559,
+      "sha256": "7d7473f77af8e5f82db061979adff726322728fa7f84ba06f870fa9faec9a2bf",
+      "property_count": 3,
+      "property_order": [
+        "encryptKey",
+        "encryptType",
+        "encryptLevel"
+      ],
+      "property_start": 169471,
+      "property_end": 169549,
+      "property_block_bytes": 78,
+      "metadata_start": 169277,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptKey",
+          "start": 169472,
+          "end": 169484,
+          "value_is_null": true
+        },
+        {
+          "key": "encryptType",
+          "start": 169484,
+          "end": 169534,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptLevel",
+          "start": 169534,
+          "end": 169549,
+          "value_is_null": false
+        }
+      ],
+      "logical_properties": {
+        "encryptKey": null,
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptLevel": "0"
+      },
+      "canonical_sha256": "07d6da2e89617722ef159db305552887d17a5d930baa59e7867ed54e88292009",
+      "all_six_entry_permutations_keep_total_size": true
+    },
+    "linux_fixed_sparse0": {
+      "file_bytes": 169559,
+      "sha256": "7d7473f77af8e5f82db061979adff726322728fa7f84ba06f870fa9faec9a2bf",
+      "property_count": 3,
+      "property_order": [
+        "encryptKey",
+        "encryptType",
+        "encryptLevel"
+      ],
+      "property_start": 169471,
+      "property_end": 169549,
+      "property_block_bytes": 78,
+      "metadata_start": 169277,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptKey",
+          "start": 169472,
+          "end": 169484,
+          "value_is_null": true
+        },
+        {
+          "key": "encryptType",
+          "start": 169484,
+          "end": 169534,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptLevel",
+          "start": 169534,
+          "end": 169549,
+          "value_is_null": false
+        }
+      ],
+      "logical_properties": {
+        "encryptKey": null,
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptLevel": "0"
+      },
+      "canonical_sha256": "07d6da2e89617722ef159db305552887d17a5d930baa59e7867ed54e88292009",
+      "all_six_entry_permutations_keep_total_size": true
+    },
+    "windows_baseline_sparse1": {
+      "file_bytes": 392839,
+      "sha256": "60d157011d1c8d5a6683aa9f92f27cd066442c67ef0b0eaa9c44789d6e005810",
+      "property_count": 3,
+      "property_order": [
+        "encryptLevel",
+        "encryptType",
+        "encryptKey"
+      ],
+      "property_start": 392751,
+      "property_end": 392829,
+      "property_block_bytes": 78,
+      "metadata_start": 392557,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptLevel",
+          "start": 392752,
+          "end": 392767,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptType",
+          "start": 392767,
+          "end": 392817,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptKey",
+          "start": 392817,
+          "end": 392829,
+          "value_is_null": true
+        }
+      ],
+      "logical_properties": {
+        "encryptLevel": "0",
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptKey": null
+      },
+      "canonical_sha256": "030f7f6136c80415465d94759681686f95411277e2ea923a63b248ffd85a0aac",
+      "all_six_entry_permutations_keep_total_size": true
+    },
+    "windows_fixed_sparse1": {
+      "file_bytes": 392839,
+      "sha256": "60d157011d1c8d5a6683aa9f92f27cd066442c67ef0b0eaa9c44789d6e005810",
+      "property_count": 3,
+      "property_order": [
+        "encryptLevel",
+        "encryptType",
+        "encryptKey"
+      ],
+      "property_start": 392751,
+      "property_end": 392829,
+      "property_block_bytes": 78,
+      "metadata_start": 392557,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptLevel",
+          "start": 392752,
+          "end": 392767,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptType",
+          "start": 392767,
+          "end": 392817,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptKey",
+          "start": 392817,
+          "end": 392829,
+          "value_is_null": true
+        }
+      ],
+      "logical_properties": {
+        "encryptLevel": "0",
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptKey": null
+      },
+      "canonical_sha256": "030f7f6136c80415465d94759681686f95411277e2ea923a63b248ffd85a0aac",
+      "all_six_entry_permutations_keep_total_size": true
+    },
+    "linux_baseline_sparse1": {
+      "file_bytes": 392839,
+      "sha256": "53d61687f07066030b40238f16ee611a85fd24aeda3d6c637cecd519b6b8cb43",
+      "property_count": 3,
+      "property_order": [
+        "encryptKey",
+        "encryptType",
+        "encryptLevel"
+      ],
+      "property_start": 392751,
+      "property_end": 392829,
+      "property_block_bytes": 78,
+      "metadata_start": 392557,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptKey",
+          "start": 392752,
+          "end": 392764,
+          "value_is_null": true
+        },
+        {
+          "key": "encryptType",
+          "start": 392764,
+          "end": 392814,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptLevel",
+          "start": 392814,
+          "end": 392829,
+          "value_is_null": false
+        }
+      ],
+      "logical_properties": {
+        "encryptKey": null,
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptLevel": "0"
+      },
+      "canonical_sha256": "030f7f6136c80415465d94759681686f95411277e2ea923a63b248ffd85a0aac",
+      "all_six_entry_permutations_keep_total_size": true
+    },
+    "linux_fixed_sparse1": {
+      "file_bytes": 392839,
+      "sha256": "53d61687f07066030b40238f16ee611a85fd24aeda3d6c637cecd519b6b8cb43",
+      "property_count": 3,
+      "property_order": [
+        "encryptKey",
+        "encryptType",
+        "encryptLevel"
+      ],
+      "property_start": 392751,
+      "property_end": 392829,
+      "property_block_bytes": 78,
+      "metadata_start": 392557,
+      "metadata_bytes": 272,
+      "entry_bounds": [
+        {
+          "key": "encryptKey",
+          "start": 392752,
+          "end": 392764,
+          "value_is_null": true
+        },
+        {
+          "key": "encryptType",
+          "start": 392764,
+          "end": 392814,
+          "value_is_null": false
+        },
+        {
+          "key": "encryptLevel",
+          "start": 392814,
+          "end": 392829,
+          "value_is_null": false
+        }
+      ],
+      "logical_properties": {
+        "encryptKey": null,
+        "encryptType": "org.apache.tsfile.encrypt.UNENCRYPTED",
+        "encryptLevel": "0"
+      },
+      "canonical_sha256": "030f7f6136c80415465d94759681686f95411277e2ea923a63b248ffd85a0aac",
+      "all_six_entry_permutations_keep_total_size": true
+    }
+  },
+  "pairs": [
+    {
+      "sparse": 0,
+      "differing_bytes": 69,
+      "first_diff": 169472,
+      "last_diff": 169548,
+      "identical_prefix_bytes": 169471,
+      "identical_suffix_bytes": 10,
+      "only_property_entry_order_differs": true,
+      "reordering_each_side_in_memory_exactly_reconstructs_the_other": true,
+      "canonical_sha256": "07d6da2e89617722ef159db305552887d17a5d930baa59e7867ed54e88292009"
+    },
+    {
+      "sparse": 1,
+      "differing_bytes": 69,
+      "first_diff": 392752,
+      "last_diff": 392828,
+      "identical_prefix_bytes": 392751,
+      "identical_suffix_bytes": 10,
+      "only_property_entry_order_differs": true,
+      "reordering_each_side_in_memory_exactly_reconstructs_the_other": true,
+      "canonical_sha256": "030f7f6136c80415465d94759681686f95411277e2ea923a63b248ffd85a0aac"
+    }
+  ],
+  "java_metadata_checks": 8,
+  "java_results": [
+    {
+      "label": "windows_baseline_sparse0",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"windows_baseline_sparse0\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "windows_fixed_sparse0",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"windows_fixed_sparse0\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "linux_baseline_sparse0",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"linux_baseline_sparse0\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "linux_fixed_sparse0",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"linux_fixed_sparse0\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "windows_baseline_sparse1",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"windows_baseline_sparse1\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "windows_fixed_sparse1",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"windows_fixed_sparse1\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "linux_baseline_sparse1",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"linux_baseline_sparse1\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    },
+    {
+      "label": "linux_fixed_sparse1",
+      "exit_code": 0,
+      "stdout": "{\"label\":\"linux_fixed_sparse1\",\"raw_properties\":{\"encryptKey\":null,\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"java_api_properties\":{\"encryptKey\":\"\",\"encryptLevel\":\"0\",\"encryptType\":\"org.apache.tsfile.encrypt.UNENCRYPTED\"},\"PASS\":true}\n",
+      "stderr": ""
+    }
+  ],
+  "unchanged_source_files": [
+    "cpp/src/common/tsfile_common.h",
+    "cpp/src/common/tsfile_common.cc",
+    "cpp/src/file/tsfile_io_writer.cc",
+    "cpp/src/reader/tsfile_reader.cc"
+  ],
+  "source_sha256": {
+    "cpp/src/common/tsfile_common.h": "bd3e95d65cf681f5eb9830d32aef8cd3f0227c3827b91251c47451e5f656a701",
+    "cpp/src/common/tsfile_common.cc": "052646345622ad88f4807d1123fce2460b5d24639f5cc8afd35fcdea54a3b811",
+    "cpp/src/file/tsfile_io_writer.cc": "fee24b137a765afe184039b00f74d3402a55959c458143f10368af291baeff22",
+    "cpp/src/reader/tsfile_reader.cc": "fc00299c66365d6263fb9a9243af655f3ac2a2c19e03ac13203d15f94ef87f37"
+  },
+  "interpretation": "The 69 tail-byte differences are exactly a permutation of 3 default nullable property entries. All other file bytes are identical. C++ serializer traverses unordered_map; its deserializer emplaces named keys. Java raw decoding reports the same 3 logical values for all 8 files, including a NULL encryptKey; the Java metadata API normalizes this key to empty bytes for encryption level 0. This is not a data/encoding/Bloom-filter difference or a demonstrated new compatibility defect. The original Windows baseline/fixed files are byte-identical, so this cross-platform permutation cannot explain their within-Windows contrast.",
+  "audit_correction": {
+    "initial_expectation": "Java metadata API preserves raw NULL encryptKey",
+    "initial_result": "Assertion failed on first Windows baseline file; original source/log/result retained in initial-null-expectation/",
+    "cause": "TsFileMetadata.deserializeFrom normalizes encryptKey to empty bytes when encryptLevel is 0",
+    "correction": "Check raw NULL and API empty bytes separately, print both actual maps; no input or timing replacement"
+  },
+  "limits": [
+    "A different map insertion order may affect metadata allocation/cache behavior; no zero timing effect is asserted.",
+    "Cross-platform compiler/OS/virtualization/LTO/filesystem factors remain; no necessary cost or original Windows gate clearance.",
+    "No new full-value Java cross-read matrix, reverse Java-to-C++ run, coverage, sanitizer or write/query performance result."
+  ]
+}
