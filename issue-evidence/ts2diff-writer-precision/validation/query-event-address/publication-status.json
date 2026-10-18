@@ -1,9 +1,10 @@
 {
-  "status": "complete_zip_upload_pending_network",
-  "report_published": true,
-  "zip_bytes": 4084418,
-  "zip_sha256": "80b7373e253d0a0572d3cc5293d3a6c7938c7849a70a72b61abade68d36b9421",
-  "explanation": "Full Git HTTPS/API uploads and bounded-part retries reset or return HTTP400. The verified ZIP and normalized raw samples are retained locally; no complete public evidence ZIP is claimed.",
-  "local_artifact_name": "TsFile_PR_02_事件地址诊断证据.zip",
-  "query_gate_cleared": false
+  "status": "complete_original_evidence_published_as_verified_parts",
+  "parts": 9,
+  "single_file_zip_upload_available": false,
+  "original_zip_sha256": "80b7373e253d0a0572d3cc5293d3a6c7938c7849a70a72b61abade68d36b9421",
+  "original_zip_bytes": 4084418,
+  "system_etl_and_absolute_runtime_addresses_included": false,
+  "query_gate_cleared": false,
+  "source_changed": false
 }

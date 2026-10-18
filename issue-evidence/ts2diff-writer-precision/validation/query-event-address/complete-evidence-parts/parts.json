@@ -1,0 +1,61 @@
+{
+  "original_zip_bytes": 4084418,
+  "original_zip_sha256": "80b7373e253d0a0572d3cc5293d3a6c7938c7849a70a72b61abade68d36b9421",
+  "parts": [
+    {
+      "name": "validation-evidence.zip.part001",
+      "sha": "f649680247a4d27636d4ea692d4b9ab907673274",
+      "sha256": "69680e80385f60ede45d31c2d3802b673b7fde18d433b207d4df017f598ad4bd",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part002",
+      "sha": "199a5d3b0e10a399ab7530da97c8e4089c3977c1",
+      "sha256": "6c22bc31909eb6fc82085a672cf09fb5e63a7aacb7e40d0ed315d7d2e770b101",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part003",
+      "sha": "45f9b2cd43d9cf855ed876c325744ac73f2fe355",
+      "sha256": "801b3528f2f5eca5d247f53e5d8fc9583646d6abe75c56166af32f6af9368e02",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part004",
+      "sha": "effa01dfa55834dfa233f862664fd2e36ae8c936",
+      "sha256": "8e9617b921ee071fb430d0c4649ab94a17eed0caa5b2996ba2037bb1495e34fa",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part005",
+      "sha": "406616f7a6c78eb7233c56e72a09bcbacb099a9a",
+      "sha256": "c3763d6bebdf6c441a34ad4c078d960886fbabfc8a10662b8a6fe29b4a735414",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part006",
+      "sha": "453743096cb5e96e6a6748ac9ea603bd38abe68f",
+      "sha256": "4403a20c9b8beceb0c19d17942a1fc33f568624d9bda5718561a691e3ac3ff20",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part007",
+      "sha": "e8c386d981e076a13a63f06ea1fafeaf9e076c95",
+      "sha256": "e5d60ab4a9d90581ffdec28bb45e9e45de829d359671a7475b8f128166784593",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part008",
+      "sha": "8205d43d88fed48800b621ca27d9cb0e7f378ef0",
+      "sha256": "d3cddd5e670cf3b423b4a311cc0f9a51871486b855710274beba5db25f0818b0",
+      "bytes": 458752
+    },
+    {
+      "name": "validation-evidence.zip.part009",
+      "sha": "0ae2f02fdb73356308fce7296232cab345223db6",
+      "sha256": "5926fc14a789a1f5a7d38ab888871ff9f40475df04e85ba74ea4b7dd6ce0f486",
+      "bytes": 414402
+    }
+  ],
+  "raw_base": "https://raw.githubusercontent.com/jixuan1989/tsfile-apache/issue-evidence/ts2diff-writer-precision/issue-evidence/ts2diff-writer-precision/validation/query-event-address/complete-evidence-parts"
+}
