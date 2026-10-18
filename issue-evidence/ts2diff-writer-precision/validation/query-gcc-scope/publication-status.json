@@ -1,0 +1,8 @@
+{
+  "gcc_zip_upload_pending": false,
+  "gcc_zip_sha256": "d48aa41913407a2c3963e48403fb04bbbc4b04d65413e8e48e1fa4156bbec1a7",
+  "gcc_zip_bytes": 486922,
+  "older_event_capture_zip_still_pending": true,
+  "query_gate_cleared": false,
+  "source_branch_changed": false
+}
