@@ -1,0 +1,90 @@
+{
+  "root_vtables": 10,
+  "actual_method_slots_byte_identical": 57,
+  "data_nodes": 72,
+  "normalized_relocations_each": 171,
+  "literal_pools_each": 40,
+  "shared_constant_symbols_payload_equal": 100,
+  "external_CRT_boundary": "??_7type_info@@6B@",
+  "CRT_XCU_slots_equal": 482,
+  "GNU_verification": {
+    "tool": "GNU objdump (GNU Binutils for Ubuntu) 2.38",
+    "records": [
+      {
+        "version": "baseline",
+        "image_sha256": "c9758682691ee486dfe4878f95cabe0fdb6794b8419f51d1d96ba9847e24151d",
+        "data_nodes": 72,
+        "sum_section_bytes": 2656,
+        "unique_PE_data_bytes": 2656,
+        "relocations_checked": 171,
+        "root_method_slots": 57,
+        "literal_pools": 40,
+        "CRT_pointer_entries": 497,
+        "objdump_sha256": "283d51bf3d013059af9471dca625290df073b4d43f77be7a60810b12b60fa91a",
+        "all_actual_data_bytes_match": true
+      },
+      {
+        "version": "fixed",
+        "image_sha256": "c18d8173109a259dc1039ea2451c733d6e0fbdfd99993dbcda9294a947496c13",
+        "data_nodes": 72,
+        "sum_section_bytes": 2656,
+        "unique_PE_data_bytes": 2656,
+        "relocations_checked": 171,
+        "root_method_slots": 57,
+        "literal_pools": 40,
+        "CRT_pointer_entries": 497,
+        "objdump_sha256": "00ab0f596a041fa1008359ebec9d6a390e1ac244cdd67222c9c5409e44427394",
+        "all_actual_data_bytes_match": true
+      }
+    ],
+    "independent_byte_decoder": "GNU objdump on original PE files; all72nodes and57method slots per image match.",
+    "new_query_timings": 0,
+    "query_gate_cleared": false,
+    "passed": true
+  },
+  "section_differences": {
+    ".text": {
+      "different_bytes": 60,
+      "classifications": {},
+      "unclassified_rvas": []
+    },
+    ".rdata": {
+      "different_bytes": 719,
+      "classifications": {
+        "same_import_binding_IAT": 11,
+        "COFF_verified_literal_pool": 480,
+        "COFF_verified_literal_pool|audited_vtable_RTTI": 4,
+        "audited_vtable_RTTI": 179,
+        "same_import_binding_ILT": 11,
+        "same_import_function_name_storage": 34
+      },
+      "unclassified_rvas": []
+    },
+    ".data": {
+      "different_bytes": 0,
+      "classifications": {},
+      "unclassified_rvas": []
+    },
+    ".pdata": {
+      "different_bytes": 0,
+      "classifications": {},
+      "unclassified_rvas": []
+    },
+    ".rsrc": {
+      "different_bytes": 0,
+      "classifications": {},
+      "unclassified_rvas": []
+    },
+    ".reloc": {
+      "different_bytes": 69,
+      "classifications": {},
+      "unclassified_rvas": []
+    }
+  },
+  "all_rdata_differences_accounted": true,
+  "source_changed": false,
+  "new_query_timings": 0,
+  "query_gate_cleared": false,
+  "necessary_cost_proven": false,
+  "snapshot_not_full_original_binary_archive": true
+}
