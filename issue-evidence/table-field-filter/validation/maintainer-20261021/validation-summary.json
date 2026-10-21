@@ -1,0 +1,476 @@
+{
+  "recorded_at": "2026-10-21T06:52:46.595697+00:00",
+  "baseline_commit": "249b0d51a6bfe202185aa21b794ff21ccdfafcf3",
+  "final_commit": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+  "maintainer_authored_commits": [
+    "f2e157ed3a5e16d2ea1e3d3d6b8735bae7c44e77",
+    "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6"
+  ],
+  "production_changes_or_pushes_by_agent": false,
+  "functional_findings_confirmed": true,
+  "tests": {
+    "before-new-regression.xml": {
+      "passed": 0,
+      "failed": 6,
+      "skipped": 0,
+      "disabled": 0,
+      "total": 6
+    },
+    "after-field-filter.xml": {
+      "passed": 80,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": 0,
+      "total": 80
+    },
+    "extended-windows.xml": {
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": 0,
+      "total": 24
+    },
+    "windows-full.xml": {
+      "passed": 985,
+      "failed": 0,
+      "skipped": 3,
+      "disabled": 10,
+      "total": 988
+    },
+    "linux-field-filter.xml": {
+      "passed": 80,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": 0,
+      "total": 80
+    },
+    "extended-linux.xml": {
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": 0,
+      "total": 24
+    },
+    "linux-reader-scope.xml": {
+      "passed": 343,
+      "failed": 0,
+      "skipped": 2,
+      "disabled": 9,
+      "total": 345
+    },
+    "nonaligned-linux.xml": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": 0,
+      "total": 3
+    }
+  },
+  "compatibility": {
+    "baseline_commit": "249b0d51a6bfe202185aa21b794ff21ccdfafcf3",
+    "final_commit": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "fixed_cpp_and_java_checked_reads": 48,
+    "before_reads": 24,
+    "old_failure_cases": 6,
+    "results": [
+      {
+        "writer": "java",
+        "case": "tail",
+        "before_rows": 4,
+        "fixed_rows": 4,
+        "java_rows": 4,
+        "result": "PASS"
+      },
+      {
+        "writer": "java",
+        "case": "bool",
+        "before_rows": 4,
+        "fixed_rows": 4,
+        "java_rows": 4,
+        "result": "PASS"
+      },
+      {
+        "writer": "java",
+        "case": "empty",
+        "before_rows": 28,
+        "fixed_rows": 28,
+        "java_rows": 28,
+        "result": "PASS"
+      },
+      {
+        "writer": "java",
+        "case": "empty-slice",
+        "before_rows": 2,
+        "fixed_rows": 2,
+        "java_rows": 2,
+        "result": "PASS"
+      },
+      {
+        "writer": "java",
+        "case": "empty-outside",
+        "before_rows": 0,
+        "fixed_rows": 0,
+        "java_rows": 0,
+        "result": "PASS"
+      },
+      {
+        "writer": "java",
+        "case": "chunk",
+        "before_rows": 0,
+        "fixed_rows": 14,
+        "java_rows": 14,
+        "result": "PASS"
+      },
+      {
+        "writer": "java",
+        "case": "chunk-slice",
+        "before_rows": 0,
+        "fixed_rows": 3,
+        "java_rows": 3,
+        "result": "PASS"
+      },
+      {
+        "writer": "java",
+        "case": "chunk-outside",
+        "before_rows": 0,
+        "fixed_rows": 0,
+        "java_rows": 0,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "tail",
+        "before_rows": 4,
+        "fixed_rows": 4,
+        "java_rows": 4,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "bool",
+        "before_rows": 4,
+        "fixed_rows": 4,
+        "java_rows": 4,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "empty",
+        "before_rows": 28,
+        "fixed_rows": 28,
+        "java_rows": 28,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "empty-slice",
+        "before_rows": 2,
+        "fixed_rows": 2,
+        "java_rows": 2,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "empty-outside",
+        "before_rows": 0,
+        "fixed_rows": 0,
+        "java_rows": 0,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "chunk",
+        "before_rows": 0,
+        "fixed_rows": 14,
+        "java_rows": 14,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "chunk-slice",
+        "before_rows": 0,
+        "fixed_rows": 3,
+        "java_rows": 3,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-before",
+        "case": "chunk-outside",
+        "before_rows": 0,
+        "fixed_rows": 0,
+        "java_rows": 0,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "tail",
+        "before_rows": 4,
+        "fixed_rows": 4,
+        "java_rows": 4,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "bool",
+        "before_rows": 4,
+        "fixed_rows": 4,
+        "java_rows": 4,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "empty",
+        "before_rows": 28,
+        "fixed_rows": 28,
+        "java_rows": 28,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "empty-slice",
+        "before_rows": 2,
+        "fixed_rows": 2,
+        "java_rows": 2,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "empty-outside",
+        "before_rows": 0,
+        "fixed_rows": 0,
+        "java_rows": 0,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "chunk",
+        "before_rows": 0,
+        "fixed_rows": 14,
+        "java_rows": 14,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "chunk-slice",
+        "before_rows": 0,
+        "fixed_rows": 3,
+        "java_rows": 3,
+        "result": "PASS"
+      },
+      {
+        "writer": "cpp-after",
+        "case": "chunk-outside",
+        "before_rows": 0,
+        "fixed_rows": 0,
+        "java_rows": 0,
+        "result": "PASS"
+      }
+    ],
+    "files": {
+      "java": {
+        "sha256": "404be6c685eaffa6715a0a6d97d0334036a471a6f67be4c32bb6fb676567ca45",
+        "bytes": 5733
+      },
+      "cpp-before": {
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1",
+        "bytes": 5768
+      },
+      "cpp-after": {
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1",
+        "bytes": 5768
+      }
+    },
+    "oracle": "Native Java time-filtered projected query; Java application applies IS NULL and OFFSET/LIMIT. Fixed C++ uses native FIELD callback. Row order, timestamps, null cells and BOOLEAN output compared exactly. Java sources unchanged between frozen old/final heads.",
+    "wire_scope": "Old/final C++ writer fixture bytes identical. Java/C++ files have different headers/layout; full-file byte equality is not claimed."
+  },
+  "coverage": {
+    "method": "GCC11 native gcov JSON, all recorded objects plus extended test. Identical physical source/copied headers merged by line; branches distinguished by mangled function name and per-line branch ordinal. No ignored gcov errors, branch exclusions, or coverage suppression.",
+    "scope_limit": "Focused FIELD and external boundary runs completed. Full combined ASan+UBSan and later explicitly filtered remainder runs both aborted on unchanged-code UB; these are not clean full-suite results. Coverage counts describe available profiling counters, not complete correctness.",
+    "changed_production": {
+      "covered_lines": 4,
+      "executable_lines": 4,
+      "line_percent": 100.0,
+      "covered_branches": 5,
+      "branches": 6,
+      "branch_percent": 83.33333333333333
+    },
+    "affected_reader_module": {
+      "covered_lines": 2016,
+      "executable_lines": 2526,
+      "line_percent": 79.80997624703087,
+      "covered_branches": 1791,
+      "branches": 3203,
+      "branch_percent": 55.91632844208554
+    },
+    "per_file": {
+      "cpp/src/reader/aligned_chunk_reader.cc": {
+        "whole_file": {
+          "covered_lines": 1260,
+          "executable_lines": 1636,
+          "line_percent": 77.01711491442543,
+          "covered_branches": 1102,
+          "branches": 2088,
+          "branch_percent": 52.77777777777778
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/aligned_chunk_reader.h": {
+        "whole_file": {
+          "covered_lines": 50,
+          "executable_lines": 52,
+          "line_percent": 96.15384615384616,
+          "covered_branches": 33,
+          "branches": 52,
+          "branch_percent": 63.46153846153846
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/block/single_device_tsblock_reader.h": {
+        "whole_file": {
+          "covered_lines": 29,
+          "executable_lines": 29,
+          "line_percent": 100.0,
+          "covered_branches": 10,
+          "branches": 14,
+          "branch_percent": 71.42857142857143
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/block/single_device_tsblock_reader.cc": {
+        "whole_file": {
+          "covered_lines": 637,
+          "executable_lines": 769,
+          "line_percent": 82.83485045513655,
+          "covered_branches": 581,
+          "branches": 968,
+          "branch_percent": 60.02066115702479
+        },
+        "changed": {
+          "covered_lines": 4,
+          "executable_lines": 4,
+          "line_percent": 100.0,
+          "covered_branches": 5,
+          "branches": 6,
+          "branch_percent": 83.33333333333333
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/filter/table_field_filter.cc": {
+        "whole_file": {
+          "covered_lines": 24,
+          "executable_lines": 24,
+          "line_percent": 100.0,
+          "covered_branches": 23,
+          "branches": 29,
+          "branch_percent": 79.3103448275862
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/filter/table_field_filter.h": {
+        "whole_file": {
+          "covered_lines": 16,
+          "executable_lines": 16,
+          "line_percent": 100.0,
+          "covered_branches": 42,
+          "branches": 52,
+          "branch_percent": 80.76923076923077
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      }
+    }
+  },
+  "query": {
+    "initial_cases": 68,
+    "confirmation_cases": 7,
+    "formal_queries": 20928,
+    "warmup_queries": 1456,
+    "confirmed_signals": [
+      {
+        "case": "null_w4_p1_b1024_tag0_parallel0",
+        "percent": 0.8257928114259849,
+        "ci_percent": [
+          0.12504710678680198,
+          1.4538416137207966
+        ]
+      },
+      {
+        "case": "dense_w4_p10_b1024",
+        "percent": 0.9021514763202676,
+        "ci_percent": [
+          0.5278297427232292,
+          1.32111725272952
+        ]
+      },
+      {
+        "case": "dense_w4_p100_b1024",
+        "percent": 1.432881672807973,
+        "ci_percent": [
+          0.3804209080481735,
+          1.9983965375945711
+        ]
+      }
+    ],
+    "native_reference_min_ratio": [
+      0.647949130941862,
+      "null_w1_p0_b0_tag0_parallel0"
+    ],
+    "native_reference_max_ratio": [
+      1.7273031961303216,
+      "null_w4_p100_b1024_tag1_parallel0"
+    ],
+    "query_gate_cleared": false,
+    "necessity_of_regression_proven": false
+  },
+  "sanitizer": {
+    "focused_and_reader_scope_passed": true,
+    "full_combined_ASan_UBSan_clean": false,
+    "failures": [
+      "Unchanged TS2DIFF int32 signed overflow in external Java fixture read; same exact old/new header and valid raw page reproduce it.",
+      "Unchanged pinned LZOkay dependency misaligned uint16_t load during the separately filtered remainder run."
+    ],
+    "excluded_test_in_remainder": "TableModelEncodingCompressionCompatibilityTest.ValidateFixtures",
+    "no_new_suppression": true
+  },
+  "write_performance": "Not remeasured: reader-only delta. Old/new small NULL and large NULL benchmark writer products byte-identical. Historical write evidence retained at original scope.",
+  "independent_review": "Read-only independent-agent source and validation review found no unresolved actionable source issue; its two protocol findings were fixed before timing. Actual serving model identity was not verified and a different-model final evidence review was not run. Complete pre-submission independent-review gate is NOT passed. No agent production push is attempted."
+}

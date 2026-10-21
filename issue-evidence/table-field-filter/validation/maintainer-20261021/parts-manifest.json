@@ -1,0 +1,22 @@
+{
+  "archive": "validation-evidence.zip",
+  "bytes": 1086004,
+  "sha256": "eafb4b26d9440f0c08cbd00b5516b5a46cb4d05e254b5bfdf24d7a933358d67e",
+  "parts": [
+    {
+      "name": "validation-evidence.zip.part01",
+      "bytes": 458752,
+      "sha256": "8511caccc2aec50d8bf905316157f874e06174877baa87ba12b9c498f939e21a"
+    },
+    {
+      "name": "validation-evidence.zip.part02",
+      "bytes": 458752,
+      "sha256": "6c6791ce821f8ba8611bff631cedf1a0ac7c754b42efb08921f39de1dcaba750"
+    },
+    {
+      "name": "validation-evidence.zip.part03",
+      "bytes": 168500,
+      "sha256": "14fd01cab4eb56d3a0f7b98ebefb5425e7aa97cd85ca077a3544cc99de8b8ad3"
+    }
+  ]
+}
