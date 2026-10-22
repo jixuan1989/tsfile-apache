@@ -1,0 +1,1373 @@
+{
+  "recorded_at": "2026-10-22T09:40:37.746224+00:00",
+  "public_head": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+  "local_candidate": "55db175d6c999ceab731955b3697a467a3a9a587",
+  "baseline": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+  "source_pushed": false,
+  "windows_focused": {
+    "passed": 207,
+    "failures": 0,
+    "skipped": 0,
+    "disabled": 0
+  },
+  "windows_full": {
+    "passed": 1112,
+    "failures": 0,
+    "skipped": 3,
+    "disabled": 10
+  },
+  "linux_focused": {
+    "passed": 207,
+    "failures": 0,
+    "skipped": 0,
+    "disabled": 0
+  },
+  "linux_reader": {
+    "passed": 369,
+    "failures": 0,
+    "skipped": 0,
+    "disabled": 7
+  },
+  "sanitizer": {
+    "focused_and_reader_ASan_UBSan_LSan_exit": 0,
+    "full_exit": 1,
+    "full_clean": false,
+    "reason": "Unchanged pinned LZOkay misaligned uint16 load,byteidentical source to prior6f test dependency. No suppressions. ExternalJavafixture validate/generate env not set in these broad runs;not a full externalcodec interoperability claim."
+  },
+  "compatibility": {
+    "candidate": "55db175d6c999ceab731955b3697a467a3a9a587",
+    "base": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "results": [
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      }
+    ],
+    "files": {
+      "java-nulls.tsfile": {
+        "bytes": 5733,
+        "sha256": "404be6c685eaffa6715a0a6d97d0334036a471a6f67be4c32bb6fb676567ca45"
+      },
+      "java-floats.tsfile": {
+        "bytes": 3451,
+        "sha256": "354ed670dbef9a588e35d73ee4540615f090d4fb36f26849ea6064fca6d16cd0"
+      },
+      "base-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "base-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      },
+      "fixed-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "fixed-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      }
+    },
+    "standalone_reproductions": [
+      {
+        "mode": "nan-eq",
+        "rows": 4,
+        "expected_rows": 4,
+        "nan_rows": 0,
+        "timestamp_sum": 10
+      },
+      {
+        "mode": "nan-ne",
+        "rows": 2,
+        "expected_rows": 2,
+        "nan_rows": 2,
+        "timestamp_sum": 5
+      },
+      {
+        "mode": "nan-notlt",
+        "rows": 6,
+        "expected_rows": 6,
+        "nan_rows": 2,
+        "timestamp_sum": 15
+      },
+      {
+        "mode": "large",
+        "rows": 300,
+        "expected_rows": 300,
+        "nan_rows": 0,
+        "timestamp_sum": 44850
+      }
+    ],
+    "null_queries_checked": 96,
+    "floating_queries_checked": 1800,
+    "floating_cpp_queries": 1440,
+    "floating_java_queries": 360,
+    "scope": "PLAIN/UNCOMPRESSED,2 devices,2 chunks,page3,NULL tails/allNULL/boolean/offset/limit and FLOAT/DOUBLE NaN,+/-Inf,+/-0,+/-1,2,NULL; all6 comparisons against0,1,NaN,+/-Inf and nonNULL NOT; native structured row/batch vs legacy C++ and Java public projected scan plus app predicate. No Java native structured-predicate performance claim. Output includes exact ordered timestamps and bit-sensitive value classes.",
+    "writer_bytes": "Old/fixed C++ products identical for both fixtures; Java full-file byte equality not claimed."
+  },
+  "coverage": {
+    "changed_production": {
+      "covered_lines": 68,
+      "executable_lines": 76,
+      "line_percent": 89.47368421052632,
+      "covered_branches": 130,
+      "branches": 189,
+      "branch_percent": 68.78306878306879
+    },
+    "affected_reader_module": {
+      "covered_lines": 3923,
+      "executable_lines": 4938,
+      "line_percent": 79.44511948157148,
+      "covered_branches": 3461,
+      "branches": 6298,
+      "branch_percent": 54.95395363607494
+    },
+    "per_file": {
+      "cpp/src/file/tsfile_io_reader.cc": {
+        "whole_file": {
+          "covered_lines": 577,
+          "executable_lines": 791,
+          "line_percent": 72.94563843236409,
+          "covered_branches": 466,
+          "branches": 1012,
+          "branch_percent": 46.047430830039524
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/file/tsfile_io_reader.h": {
+        "whole_file": {
+          "covered_lines": 27,
+          "executable_lines": 30,
+          "line_percent": 90.0,
+          "covered_branches": 9,
+          "branches": 16,
+          "branch_percent": 56.25
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/tsfile_series_scan_iterator.h": {
+        "whole_file": {
+          "covered_lines": 76,
+          "executable_lines": 78,
+          "line_percent": 97.43589743589743,
+          "covered_branches": 63,
+          "branches": 122,
+          "branch_percent": 51.63934426229508
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/aligned_chunk_reader.cc": {
+        "whole_file": {
+          "covered_lines": 1366,
+          "executable_lines": 1757,
+          "line_percent": 77.74615822424587,
+          "covered_branches": 1194,
+          "branches": 2258,
+          "branch_percent": 52.87865367581931
+        },
+        "changed": {
+          "covered_lines": 11,
+          "executable_lines": 11,
+          "line_percent": 100.0,
+          "covered_branches": 17,
+          "branches": 24,
+          "branch_percent": 70.83333333333333
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/aligned_chunk_reader.h": {
+        "whole_file": {
+          "covered_lines": 55,
+          "executable_lines": 57,
+          "line_percent": 96.49122807017544,
+          "covered_branches": 34,
+          "branches": 60,
+          "branch_percent": 56.666666666666664
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/filter/aligned_field_filter.h": {
+        "whole_file": {
+          "covered_lines": 1,
+          "executable_lines": 1,
+          "line_percent": 100.0,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/filter/selection_mask.h": {
+        "whole_file": {
+          "covered_lines": 4,
+          "executable_lines": 4,
+          "line_percent": 100.0,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/block/single_device_tsblock_reader.h": {
+        "whole_file": {
+          "covered_lines": 29,
+          "executable_lines": 29,
+          "line_percent": 100.0,
+          "covered_branches": 10,
+          "branches": 14,
+          "branch_percent": 71.42857142857143
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/block/single_device_tsblock_reader.cc": {
+        "whole_file": {
+          "covered_lines": 771,
+          "executable_lines": 908,
+          "line_percent": 84.91189427312776,
+          "covered_branches": 748,
+          "branches": 1166,
+          "branch_percent": 64.15094339622641
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/filter/table_field_filter.h": {
+        "whole_file": {
+          "covered_lines": 16,
+          "executable_lines": 16,
+          "line_percent": 100.0,
+          "covered_branches": 42,
+          "branches": 52,
+          "branch_percent": 80.76923076923077
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/column_mapping.h": {
+        "whole_file": {
+          "covered_lines": 31,
+          "executable_lines": 33,
+          "line_percent": 93.93939393939394,
+          "covered_branches": 24,
+          "branches": 34,
+          "branch_percent": 70.58823529411765
+        },
+        "changed": {
+          "covered_lines": 2,
+          "executable_lines": 2,
+          "line_percent": 100.0,
+          "covered_branches": 2,
+          "branches": 2,
+          "branch_percent": 100.0
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/filter/aligned_field_filter.cc": {
+        "whole_file": {
+          "covered_lines": 412,
+          "executable_lines": 606,
+          "line_percent": 67.98679867986799,
+          "covered_branches": 415,
+          "branches": 831,
+          "branch_percent": 49.93983152827918
+        },
+        "changed": {
+          "covered_lines": 55,
+          "executable_lines": 63,
+          "line_percent": 87.3015873015873,
+          "covered_branches": 111,
+          "branches": 163,
+          "branch_percent": 68.09815950920246
+        },
+        "uncovered_changed_lines": [
+          91,
+          92,
+          93,
+          94,
+          104,
+          291,
+          292,
+          843
+        ]
+      },
+      "cpp/src/reader/filter/selection_mask.cc": {
+        "whole_file": {
+          "covered_lines": 84,
+          "executable_lines": 85,
+          "line_percent": 98.82352941176471,
+          "covered_branches": 44,
+          "branches": 66,
+          "branch_percent": 66.66666666666667
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/filter/table_field_filter.cc": {
+        "whole_file": {
+          "covered_lines": 24,
+          "executable_lines": 24,
+          "line_percent": 100.0,
+          "covered_branches": 23,
+          "branches": 29,
+          "branch_percent": 79.3103448275862
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/table_query_executor.cc": {
+        "whole_file": {
+          "covered_lines": 154,
+          "executable_lines": 194,
+          "line_percent": 79.38144329896907,
+          "covered_branches": 139,
+          "branches": 274,
+          "branch_percent": 50.72992700729927
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      },
+      "cpp/src/reader/tsfile_series_scan_iterator.cc": {
+        "whole_file": {
+          "covered_lines": 296,
+          "executable_lines": 325,
+          "line_percent": 91.07692307692308,
+          "covered_branches": 250,
+          "branches": 364,
+          "branch_percent": 68.68131868131869
+        },
+        "changed": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "line_percent": null,
+          "covered_branches": 0,
+          "branches": 0,
+          "branch_percent": null
+        },
+        "uncovered_changed_lines": []
+      }
+    }
+  },
+  "query": {
+    "cases": 60,
+    "processes": 3378,
+    "queries_by_phase": {
+      "warmup": 1320,
+      "initial": 7920,
+      "confirmation_warmup": 258,
+      "confirmation": 3096
+    },
+    "confirmed_regressions": {
+      "dense-w4-p100-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.0256258938151075,
+          "bootstrap95": [
+            1.0172407260387755,
+            1.0301571167694585
+          ]
+        }
+      },
+      "callback-w1-p1-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.0220730883250502,
+          "bootstrap95": [
+            1.0162591155685055,
+            1.0314350556387064
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.047096834260714,
+          "bootstrap95": [
+            1.0385262850101296,
+            1.0561014947914256
+          ]
+        }
+      },
+      "callback-w1-p1-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0240191714199018,
+          "bootstrap95": [
+            1.0117378761728564,
+            1.0356853071786754
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0504977577905374,
+          "bootstrap95": [
+            1.0366652882723706,
+            1.0554231557944909
+          ]
+        }
+      },
+      "callback-w1-p100-b0": {
+        "fixed/base": {
+          "median_ratio": 1.007504971564726,
+          "bootstrap95": [
+            1.0009681722174426,
+            1.0150712038456247
+          ]
+        }
+      },
+      "callback-w1-p100-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0128447181547293,
+          "bootstrap95": [
+            1.0085032724331675,
+            1.019406254914654
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0323667088998882,
+          "bootstrap95": [
+            1.0129598738174932,
+            1.044719807518976
+          ]
+        }
+      },
+      "callback-w8-p1-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.0098591772319232,
+          "bootstrap95": [
+            1.0018247951698038,
+            1.0282561685261733
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0110414783584414,
+          "bootstrap95": [
+            1.003451560739163,
+            1.02281379558471
+          ]
+        }
+      },
+      "callback-w8-p100-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0092758294939705,
+          "bootstrap95": [
+            1.0011714966360374,
+            1.0148596346322956
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0064175520358731,
+          "bootstrap95": [
+            1.0006531089395108,
+            1.0195199953514211
+          ]
+        }
+      },
+      "callback-null-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.018125211496757,
+          "bootstrap95": [
+            1.0111430397751813,
+            1.0229433707140865
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0136516091981518,
+          "bootstrap95": [
+            1.0052661501415494,
+            1.0239280263537132
+          ]
+        }
+      },
+      "callback-null-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0173266419894968,
+          "bootstrap95": [
+            1.0095280770719188,
+            1.0288902704104954
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0101824503036378,
+          "bootstrap95": [
+            1.002059698697831,
+            1.0238692723445177
+          ]
+        }
+      },
+      "unfiltered-offset-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.011071666896789,
+          "bootstrap95": [
+            1.0001994621709211,
+            1.0214209384260016
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0156942845666204,
+          "bootstrap95": [
+            1.0074803569135957,
+            1.0254176635410532
+          ]
+        }
+      }
+    },
+    "query_gate_cleared": false,
+    "necessity_proven": false,
+    "protocol_sha256": "11430025819900d61f371160804ce7be807a524826b8db69b037f001fed0d648"
+  },
+  "independent_review": {
+    "source": "two reviewers,no new source findings;realruntime different model identities verified",
+    "validation_driver_findings": "two valid oracle gaps corrected and rerun;actual1800+96 positive queries independently checked",
+    "complete_submission_gate": "NOT PASSED:performance regressions and coverage gap;final evidence review pending"
+  },
+  "next": "Keep failed55db results frozen. Scope-reviewed real-code optimization:skip useless filter_column_mask allocation when structuredfilter null;only affects plannedmulti nofilter path,not a demonstrated explanation for legacy5%/structured2.6%. Add directTsBlock floatingNOT regression. Any new candidate separately frozen/revalidated;no blind layout tuning or extra rounds on old candidate."
+}
