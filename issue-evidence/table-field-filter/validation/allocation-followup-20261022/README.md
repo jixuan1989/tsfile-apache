@@ -1,0 +1,1 @@
+Failed-gate local45d diagnostics. All timing/compatibility results and filtered native coverage counts included. Full gcov archives and production source/binaries remain local. No source submission. See bilingual validation-report.md and archive SCOPE.txt.

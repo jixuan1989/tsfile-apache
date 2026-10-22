@@ -1,0 +1,1079 @@
+{
+  "recorded_at": "2026-10-22T10:07:35.883171+00:00",
+  "public_head": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+  "local_candidate": "45d4d7d5c7182ad7c5208510f6ee33c57670310b",
+  "previous_failed_candidate": "55db175d6c999ceab731955b3697a467a3a9a587",
+  "source_pushed": false,
+  "source_submission_gate_passed": false,
+  "changes_since_previous_candidate": "Avoid allocating filter_column_mask when no structured FIELD filter; extend independent native floating truth checks to both ColumnView and real TsBlock evaluators.",
+  "windows_full": {
+    "passed": 1112,
+    "failed": 0,
+    "skipped": 3,
+    "disabled": 10
+  },
+  "windows_focused": {
+    "passed": 207,
+    "failed": 0,
+    "skipped": 0,
+    "disabled": 0
+  },
+  "linux_focused": {
+    "passed": 207,
+    "failed": 0,
+    "skipped": 0,
+    "disabled": 0
+  },
+  "linux_reader": {
+    "passed": 369,
+    "failed": 0,
+    "skipped": 0,
+    "disabled": 7
+  },
+  "sanitizer": {
+    "focused_and_reader_ASan_UBSan_LSan_exit": 0,
+    "fresh_full_suite_rerun": false,
+    "full_clean": false,
+    "limit": "The prior55db full/remainder runs stopped on byteidentical pinned LZOkay UB. This narrow follow-up reran207 focused plus369 affected readers with leak detection, without suppressions. No new full-suite sanitizer pass claimed."
+  },
+  "compatibility": {
+    "candidate": "45d4d7d5c7182ad7c5208510f6ee33c57670310b",
+    "base": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "results": [
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      }
+    ],
+    "files": {
+      "java-nulls.tsfile": {
+        "bytes": 5733,
+        "sha256": "404be6c685eaffa6715a0a6d97d0334036a471a6f67be4c32bb6fb676567ca45"
+      },
+      "java-floats.tsfile": {
+        "bytes": 3451,
+        "sha256": "354ed670dbef9a588e35d73ee4540615f090d4fb36f26849ea6064fca6d16cd0"
+      },
+      "base-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "base-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      },
+      "fixed-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "fixed-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      }
+    },
+    "standalone_reproductions": [
+      {
+        "mode": "nan-eq",
+        "rows": 4,
+        "expected_rows": 4,
+        "nan_rows": 0,
+        "timestamp_sum": 10
+      },
+      {
+        "mode": "nan-ne",
+        "rows": 2,
+        "expected_rows": 2,
+        "nan_rows": 2,
+        "timestamp_sum": 5
+      },
+      {
+        "mode": "nan-notlt",
+        "rows": 6,
+        "expected_rows": 6,
+        "nan_rows": 2,
+        "timestamp_sum": 15
+      },
+      {
+        "mode": "large",
+        "rows": 300,
+        "expected_rows": 300,
+        "nan_rows": 0,
+        "timestamp_sum": 44850
+      }
+    ],
+    "null_queries_checked": 96,
+    "floating_queries_checked": 1800,
+    "floating_cpp_queries": 1440,
+    "floating_java_queries": 360,
+    "scope": "PLAIN/UNCOMPRESSED,2 devices,2 chunks,page3,NULL tails/allNULL/boolean/offset/limit and FLOAT/DOUBLE NaN,+/-Inf,+/-0,+/-1,2,NULL; all6 comparisons against0,1,NaN,+/-Inf and nonNULL NOT; native structured row/batch vs legacy C++ and Java public projected scan plus app predicate. No Java native structured-predicate performance claim. Output includes exact ordered timestamps and bit-sensitive value classes.",
+    "writer_bytes": "Old/fixed C++ products identical for both fixtures; Java full-file byte equality not claimed."
+  },
+  "coverage_by_diff": {
+    "candidate": {
+      "covered_lines": 72,
+      "executable_lines": 79,
+      "line_percent": 91.13924050632912,
+      "covered_branches": 138,
+      "branches": 191,
+      "branch_percent": 72.25130890052355
+    },
+    "maintainer": {
+      "covered_lines": 887,
+      "executable_lines": 1058,
+      "line_percent": 83.8374291115312,
+      "covered_branches": 885,
+      "branches": 1441,
+      "branch_percent": 61.41568355308814
+    },
+    "whole-pr": {
+      "covered_lines": 966,
+      "executable_lines": 1139,
+      "line_percent": 84.81123792800702,
+      "covered_branches": 1002,
+      "branches": 1596,
+      "branch_percent": 62.78195488721804
+    }
+  },
+  "selected_affected_file_module_coverage": {
+    "covered_lines": 3984,
+    "executable_lines": 4940,
+    "line_percent": 80.64777327935222,
+    "covered_branches": 3509,
+    "branches": 6298,
+    "branch_percent": 55.716100349317244
+  },
+  "query": {
+    "cases": 60,
+    "initial_blocks": 12,
+    "one_shot_confirmation_cases": 12,
+    "confirmation_blocks": 24,
+    "processes": 3456,
+    "queries_by_phase": {
+      "warmup": 1320,
+      "initial": 7920,
+      "confirmation_warmup": 306,
+      "confirmation": 3672
+    },
+    "confirmed_regressions": {
+      "callback-w1-p1-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.020664221407936,
+          "bootstrap95": [
+            1.0146826682192602,
+            1.0296281872780493
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.041527577662003,
+          "bootstrap95": [
+            1.0284579721333622,
+            1.053190632957516
+          ]
+        }
+      },
+      "callback-w1-p1-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0179007294636584,
+          "bootstrap95": [
+            1.0119135130695467,
+            1.0245398773006134
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0444195277112511,
+          "bootstrap95": [
+            1.03710524434802,
+            1.0472411566935802
+          ]
+        }
+      },
+      "callback-w1-p100-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0156600260702464,
+          "bootstrap95": [
+            1.0101674220701138,
+            1.0255193406422285
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0267128772663636,
+          "bootstrap95": [
+            1.0224253648212096,
+            1.038751600103608
+          ]
+        }
+      },
+      "callback-w8-p1-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.021305926690996,
+          "bootstrap95": [
+            1.0103398243130242,
+            1.0321427031257064
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.028347582559614,
+          "bootstrap95": [
+            1.0230501638412846,
+            1.0394656132947453
+          ]
+        }
+      },
+      "callback-w8-p1-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0128181410961057,
+          "bootstrap95": [
+            1.003886134555115,
+            1.0275717183406088
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.015279129097197,
+          "bootstrap95": [
+            1.0101597293593696,
+            1.0261699106418911
+          ]
+        }
+      },
+      "callback-w8-p100-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.006266680798272,
+          "bootstrap95": [
+            1.002042865728471,
+            1.0088327167293465
+          ]
+        }
+      },
+      "callback-w8-p100-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0221036741665652,
+          "bootstrap95": [
+            1.0130234385128454,
+            1.0301528250336822
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0189356972513155,
+          "bootstrap95": [
+            1.0108366269209148,
+            1.0267153904132285
+          ]
+        }
+      },
+      "callback-null-b0": {
+        "fixed/prior": {
+          "median_ratio": 1.0273587156929458,
+          "bootstrap95": [
+            1.0216359899666037,
+            1.034722520921615
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0262788034852683,
+          "bootstrap95": [
+            1.0170916892812008,
+            1.0356367798758848
+          ]
+        }
+      },
+      "callback-null-b1024": {
+        "fixed/prior": {
+          "median_ratio": 1.0211131478131907,
+          "bootstrap95": [
+            1.0109996534917838,
+            1.03496514828942
+          ]
+        },
+        "fixed/base": {
+          "median_ratio": 1.0258326877888777,
+          "bootstrap95": [
+            1.0125404629697576,
+            1.0301838602532138
+          ]
+        }
+      },
+      "unfiltered-time-b0": {
+        "fixed/base": {
+          "median_ratio": 1.009953245323039,
+          "bootstrap95": [
+            1.0029483668895764,
+            1.0167576912866605
+          ]
+        }
+      }
+    },
+    "query_gate_cleared": false,
+    "necessity_proven": false,
+    "limit": "No causal claim from comparing ratios across candidate sessions. The guard only removes an allocation on planned no-structured-filter paths;legacy callbacks usually use separate measurement readers. Warm cache;PLAIN/UNCOMPRESSED;no cold/P99/compressed/nonalignedFIELD or general parallel-scaling claim. Writer throughput not retimed."
+  },
+  "independent_review": {
+    "source": "Both actual45d source reviews found no actionable new issue;different-model identity previously verified in runtime records.",
+    "final_evidence": "pending at this freeze;overallNOT_READY_TO_PUSH regardless, because performance regressions remain unexplained."
+  },
+  "prior_public_findings_report": "https://github.com/jixuan1989/tsfile-apache/blob/058e80e4349a5307e9e6870bc5563ec8e631b886/issue-evidence/table-field-filter/validation/aligned-batch-20261022/validation-report.md",
+  "prior_public_review_reply": "https://github.com/apache/tsfile/pull/1026#issuecomment-6338123623"
+}

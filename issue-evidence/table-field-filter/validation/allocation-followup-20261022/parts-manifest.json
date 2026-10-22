@@ -1,0 +1,21 @@
+{
+  "bytes": 559922,
+  "sha256": "96c335932d7e62dde39860334751aea657a39a23b08d71243714aaca009581be",
+  "parts": [
+    {
+      "name": "scoped-diagnostics.zip.part01",
+      "bytes": 229376,
+      "sha256": "70b9c69b56d27e904c8f0c1d4fd0ebcb0aba34a476d95ef24ace1b4efffff00c"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part02",
+      "bytes": 229376,
+      "sha256": "8965ececd022e25453ff53917f8b663fa174eeab6d496502c401c9e4c26b6bac"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part03",
+      "bytes": 101170,
+      "sha256": "5de239dc301a426af142997cc330da22cc1964307b480331e12d863e7ce603fd"
+    }
+  ]
+}
