@@ -1,0 +1,543 @@
+{
+  "status": "NOT_READY_TO_PUSH",
+  "reviewed_at_utc": "2026-10-23T14:06:26.658366+00:00",
+  "purpose": "Final independent source-and-evidence review of local2525; assess whether the diagnostic report faithfully records success, failure and limits. This does not approve production submission.",
+  "reviewer": {
+    "agent": "/root/review_pr1026_maintainer",
+    "nickname": "Singer",
+    "session_id": "01a15cc5-7771-7131-8b29-3a98ac6923d1",
+    "actual_recorded_model": "gpt-6.1-sol",
+    "independent_of_implementation_session": true,
+    "is_different_model_from_implementor": false,
+    "runtime_session_meta": {
+      "id": "01a15cc5-7771-7131-8b29-3a98ac6923d1",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a146d7-a196-7d20-bcb2-28bd83157e4d",
+            "depth": 1,
+            "agent_path": "/root/review_pr1026_maintainer",
+            "agent_nickname": "Singer",
+            "agent_role": null
+          }
+        }
+      },
+      "originator": "Codex Desktop"
+    },
+    "latest_turn_context": {
+      "timestamp": "2026-10-23T14:02:05.905Z",
+      "model": "gpt-6.1-sol"
+    },
+    "runtime_record": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T12-43-27-01a15cc5-7771-7131-8b29-3a98ac6923d1.jsonl",
+    "shared_runtime_identity_evidence_sha256": "674e874faac767e77fece3e8cac160bc6fb35d9cb6b32b2635a6393693b69ae4",
+    "identity_limit": "Verified selected session_meta and turn_context fields from the actual local runtime; not a claim of offline inference or backend cryptographic attestation. The separate gpt-6-astra review is not substituted by this same-model independent-agent review."
+  },
+  "frozen_commits": {
+    "candidate": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+    "initial_identical_production_candidate": "3ce764b46bb44b22b915cb94934e43496598c992",
+    "public_fcab": "fcab7437130421bed2604311461a7a7aa6e9a255",
+    "prior11b": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "base6f": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "whole_pr_base": "1180b13675e11a0230708af2cc70d037e0e12623",
+    "historical_local45d_preserved_not_merged": "45d4d7d5c7182ad7c5208510f6ee33c57670310b"
+  },
+  "final_manifest": {
+    "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\final-evidence-manifest.json",
+    "sha256": "2fbca09291dd95bd9a28bfd9d8b0a4a1ab1b819196f6b59cdacdac98b5504e0d",
+    "files": 134,
+    "bytes": 32170148,
+    "all_listed_hashes_and_sizes_independently_verified": true
+  },
+  "frozen_input_bindings": {
+    "validation-report.md": {
+      "bytes": 18104,
+      "sha256": "d0f79270d962487f7bd1e9dd8ced85a6ef7f97d5cad995c8d474731f0feab75d"
+    },
+    "validation-summary.json": {
+      "bytes": 33677,
+      "sha256": "dac7afced5f587b19158818d93531f5bae68bd9ac4a17bac0d6bbbbcbfe23527"
+    },
+    "source-freeze.json": {
+      "bytes": 29752,
+      "sha256": "ef37cca2ba7cc39a0c7190f90bf196a5e5d42ea55623d55d5653848fed0da1e8"
+    },
+    "coverage-scope-provenance.json": {
+      "bytes": 1054,
+      "sha256": "2d331bc3962a93e3f9ac64c1b9e34ee06df565b532bf2812736d5b70e8a09b09"
+    },
+    "candidate-coverage-summary.json": {
+      "bytes": 108999,
+      "sha256": "7b8b9dfb747adb0d248e3723995d061d457c94df21a9a7eca80d4177eedbd05a"
+    },
+    "candidate-query-performance/protocol.json": {
+      "bytes": 115194,
+      "sha256": "2d08e7a480da564b1b8e4191917cca876171c979b2999aa6c1c07ecd7cb99fa4"
+    },
+    "candidate-query-performance/results.json": {
+      "bytes": 8648174,
+      "sha256": "ad04997ea4cf8bf0637e44618b79ef5b3c88d26860769fb91a203a32e6098e42"
+    },
+    "candidate-query-performance/processes.jsonl": {
+      "bytes": 12050654,
+      "sha256": "72817ac8da4b6376433e1acbc5cb1be7d3c59bd39a5b142f1f043767b58c0cfd"
+    },
+    "java-runtime-and-classpath.json": {
+      "bytes": 307430,
+      "sha256": "f133282f2698c5b5bc4f2b1267781702299264f3237b2951e173e7b48435e497"
+    },
+    "pre-submission-review/final-validation-input-audit-integration.json": {
+      "bytes": 8638,
+      "sha256": "3635dd3eb292d4d588300001baa7c468841e76e559ffbc478ab0e9091bb02a4e"
+    },
+    "pre-submission-review/final-coverage-oracle-audit-integration.json": {
+      "bytes": 9433,
+      "sha256": "c2adbff6507a00a361dd3e11af0b0c24ee0da3cdb25f0ade837c6211234f47cd"
+    },
+    "pre-submission-review/final-performance-audit-integration.json": {
+      "bytes": 4821,
+      "sha256": "4621d4f65e1929558fbdb9cda1781467af967c67ee130d5ff8c92384868b7eb6"
+    },
+    "pre-submission-review/final-provenance-audit-integration.json": {
+      "bytes": 5212,
+      "sha256": "c0021dba7ca235a82a4407f1eccc7630df644c1742f90bd9ba405fc636662491"
+    },
+    "pre-submission-review/source-review-integration.json": {
+      "bytes": 13375,
+      "sha256": "d8b0a9edcf28492af5eee4a8c835ec4222c705d5f3eaae45d32fa3b1b030c09b"
+    },
+    "pre-submission-review/protocol-review-integration.json": {
+      "bytes": 11526,
+      "sha256": "dacbcf51560a1c1054f05a7254ea29b642562f07d0f88cdc980fc524b201aca9"
+    },
+    "pre-submission-review/runtime-model-identity-evidence.json": {
+      "bytes": 2436,
+      "sha256": "674e874faac767e77fece3e8cac160bc6fb35d9cb6b32b2635a6393693b69ae4"
+    }
+  },
+  "independent_audits": [
+    {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\final-validation-input-audit-integration.json",
+      "sha256": "3635dd3eb292d4d588300001baa7c468841e76e559ffbc478ab0e9091bb02a4e"
+    },
+    {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\final-coverage-oracle-audit-integration.json",
+      "sha256": "c2adbff6507a00a361dd3e11af0b0c24ee0da3cdb25f0ade837c6211234f47cd"
+    },
+    {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\final-performance-audit-integration.json",
+      "sha256": "4621d4f65e1929558fbdb9cda1781467af967c67ee130d5ff8c92384868b7eb6"
+    },
+    {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\final-provenance-audit-integration.json",
+      "sha256": "c0021dba7ca235a82a4407f1eccc7630df644c1742f90bd9ba405fc636662491"
+    },
+    {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\final-freeze-audit-integration.json",
+      "sha256": "2a5515d93c07460db8e154a603556f54727a6a5597429c342c30a26d68260970"
+    }
+  ],
+  "source_review": {
+    "prior_raw_source_review": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\source-review-integration.json",
+    "prior_source_review_sha256": "d8b0a9edcf28492af5eee4a8c835ec4222c705d5f3eaae45d32fa3b1b030c09b",
+    "all260_production_and2_test_hashes_match_frozen2525": true,
+    "exact_four_Git_source_trees_rechecked": {
+      "base": 256,
+      "prior": 260,
+      "public": 260,
+      "fixed": 260
+    },
+    "new_actionable_production_correctness_findings": [],
+    "reasoning": [
+      "Inverse ordered comparisons are used only after conservative NaN-safe statistics/literal checks. Both native row evaluators retain original-predicate complement for nonNULL values; signed zero, NaN and double NOT semantics were not replaced by ordinary ordered inverses.",
+      "ColumnMapping validates the whole tree before schema-only/LIMIT0 paths. Independent portable harness final results contain 12 malformed controls and 12 valid controls per platform; the previously observed fcab partial fix is not retained as an unresolved local2525 defect.",
+      "No-FIELD mask construction now avoids needless assignment. Lazy decoding clears previous validity before computing and preserves the current owned selection; empty masks advance before undecoded outputs. Reviewed field-mask accesses remain protected by the structured-filter paths and storage release remains explicit.",
+      "Current source reasoning does not establish causal attribution of callback/unfiltered timing differences. The old45d hidden-NaN hypothesis and fcab outside-time-window malformed hypothesis were rejected by the recorded actual controls; they are not new defects."
+    ],
+    "source_only_review_does_not_clear_runtime_performance_or_submission_gates": true
+  },
+  "raw_findings_and_disposition": [
+    {
+      "id": "finite-stats-integration-R1",
+      "classification": "Test false-positive blindspot",
+      "original": "3ce scan() could return empty Rows after E_OK plus nullptr ResultSet, allowing valid schema-only/LIMIT0 expected-empty controls to pass without a ResultSet. The empty-boundary test name also implied a decoder-count assertion it did not contain.",
+      "disposition": "CLOSED",
+      "resolution": "2525 asserts EXPECT_NE(result,nullptr) before its defensive return and uses EmptyBoundaryPagesStayEmptyWithOffsetLimit. Production bytes are unchanged from3ce. Final independent Windows/Linux valid controls and fresh final XML pass; no claim of direct decoder instrumentation."
+    },
+    {
+      "id": "protocol-integration-R1",
+      "classification": "Potential false gate pass in the premeasurement runner",
+      "original": "The initial runner used only repeated-regression emptiness for query_gate_cleared while confirmation-only signals were explicitly unresolved.",
+      "disposition": "CLOSED_ON_FROZEN_PROTOCOL",
+      "resolution": "Final protocol2d08e7a4 binds the corrected runner requiring no confirmed and no confirmation-only signals. Actual final data has 15 confirmed and zero confirmation-only, so gatefalse is correct. No additional confirmation round was added."
+    },
+    {
+      "id": "final-coverage-provenance",
+      "classification": "Coverage scope clarification",
+      "original": "Production gcda was retained between initial3ce and final2525, so counts cannot be described as an isolated final-test-commit profile.",
+      "disposition": "CLOSED_WITH_EXPLICIT_LIMIT",
+      "resolution": "Report EN/ZH, summary, collector and provenance now disclose cumulative coverage of byte-identical production. Independently compared all260 hashes and empty production Git diff; final XML/log test counts are separate. No old45d/publicfcab counters are transferred and no profiling/checksum diagnostic occurs in the three final Linux logs. Archived initial wording is retained."
+    },
+    {
+      "id": "final-java-oracle-class-inventory",
+      "classification": "Post-run provenance completeness",
+      "original": "Dependency cp inventory omitted the validation-directory prefix containing four Java oracle class files; only FloatBenchmarkOracle.class was already bound by the measurement protocol.",
+      "disposition": "CLOSED_WITH_EXPLICIT_LIMIT",
+      "resolution": "Final manifest2fbca092 binds current sizes/SHA of all four classes, verified against files. Metadata explicitly says post-run inventory, not retrospective pre-run freeze or historical executed-byte proof. No javac/query was rerun. Reused dependency directory inventory and implicit-cwd limits remain. Archived initial inventory is preserved."
+    }
+  ],
+  "functional_and_compatibility_evidence": {
+    "xml_independently_parsed": {
+      "windows_focused": {
+        "tests": 214,
+        "failures": 0,
+        "disabled": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 214,
+        "sha256": "39a56488ad47824524c754c82da60d3a32663ad8d7f2c6835efd35375c68f1b5"
+      },
+      "windows_full": {
+        "tests": 1132,
+        "failures": 0,
+        "disabled": 10,
+        "errors": 0,
+        "skipped": 3,
+        "passed": 1119,
+        "sha256": "9b8bdba4c86ac4a52683b7f25eb9834091d1a7891f07a5a28484b58fbe22e389"
+      },
+      "linux_focused": {
+        "tests": 214,
+        "failures": 0,
+        "disabled": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 214,
+        "sha256": "ede110d479e0bf3dbcc8878c4953654640a46b6682130a0f753defcc23cbd0d0"
+      },
+      "linux_reader": {
+        "tests": 383,
+        "failures": 0,
+        "disabled": 7,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 376,
+        "sha256": "22ce269cd689bc4288c278d2f3faff339aa000c97e7287a8c06545f89392c008"
+      },
+      "baseline_negative": {
+        "tests": 15,
+        "failures": 7,
+        "disabled": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 8,
+        "sha256": "6cc05aa7aeebff313646f79f974f8eacdc48f6701d668e6c61611ad15178f45e"
+      }
+    },
+    "fresh_windows_full": "1119 passed,3 skipped,10 disabled out of1132; focused214 passed.",
+    "linux_focused_and_reader": "214 focused passed;376 reader passed with7 disabled out of383. Focused/reader ASan+UBSan+LSan logs exit0 and no retained leak diagnostic.",
+    "public_fcab_negative_control": "15 new targeted instances run against fcab:7 fail and8 pass; failures are one finite-statistics fast-path test plus six malformed-tree configurations, not a claim that every new behavioral test fails on baseline.",
+    "portable_independent_harness": {
+      "both_platforms": {
+        "review-harness-windows.jsonl": {
+          "kind": "summary",
+          "completed": true,
+          "harness_errors": 0,
+          "query_cases": 24,
+          "evaluator_cases": 180,
+          "valid_control_failures": 0,
+          "query_semantic_mismatches": 0,
+          "evaluator_semantic_mismatches": 0,
+          "semantic_mismatches": 0
+        },
+        "review-harness-linux/stdout.jsonl": {
+          "kind": "summary",
+          "completed": true,
+          "harness_errors": 0,
+          "query_cases": 24,
+          "evaluator_cases": 180,
+          "valid_control_failures": 0,
+          "query_semantic_mismatches": 0,
+          "evaluator_semantic_mismatches": 0,
+          "semantic_mismatches": 0
+        }
+      },
+      "evaluators": "180 native truth cases evaluated by both APIs,360 evaluator calls per platform; independent expected logic includes NaN/signedzero/NULL/double NOT.24 query controls per platform."
+    },
+    "java_cpp_compatibility": {
+      "raw_processes": 125,
+      "all_exit_zero": true,
+      "positive_null_queries": 96,
+      "positive_float_processes": 15,
+      "positive_float_queries": 1800,
+      "total_positive_queries": 1896,
+      "prior_negative_attribution": [
+        {
+          "writer_file": "java-floats.tsfile",
+          "exit": 0,
+          "mismatches": 40,
+          "finite_or_infinite_literal": 32,
+          "NaN_literal": 8
+        },
+        {
+          "writer_file": "base-floats.tsfile",
+          "exit": 0,
+          "mismatches": 40,
+          "finite_or_infinite_literal": 32,
+          "NaN_literal": 8
+        },
+        {
+          "writer_file": "fixed-floats.tsfile",
+          "exit": 0,
+          "mismatches": 40,
+          "finite_or_infinite_literal": 32,
+          "NaN_literal": 8
+        }
+      ],
+      "writer_products_rehashed_and_cpp_base_fixed_equal": true,
+      "all_expected_sequences_independently_recomputed": true,
+      "standalone_controls": [
+        {
+          "mode": "nan-eq",
+          "rows": 4,
+          "expected_rows": 4,
+          "nan_rows": 0,
+          "timestamp_sum": 10
+        },
+        {
+          "mode": "nan-ne",
+          "rows": 2,
+          "expected_rows": 2,
+          "nan_rows": 2,
+          "timestamp_sum": 5
+        },
+        {
+          "mode": "nan-notlt",
+          "rows": 6,
+          "expected_rows": 6,
+          "nan_rows": 2,
+          "timestamp_sum": 15
+        },
+        {
+          "mode": "large",
+          "rows": 300,
+          "expected_rows": 300,
+          "nan_rows": 0,
+          "timestamp_sum": 44850
+        }
+      ]
+    },
+    "timed_preflight": {
+      "raw_processes": 1625,
+      "all_exit_codes_expected": true,
+      "exact_read_command_multiset_matches_Cartesian_grid": true,
+      "new_integer_processes": 832,
+      "old_integer_processes": 32,
+      "integer_queries": 2752,
+      "float_processes": 720,
+      "float_queries": 2160,
+      "Java_full_scans": 10,
+      "excluded_wrong_prior_native_controls": 12,
+      "all_counts_and_checksums_recomputed_independently": true,
+      "all_four_identity_copies_per_image_byteidentical": true,
+      "all18fixtures_rehashed_cpp_writer_groups_equal": true
+    },
+    "negative_control_boundary": "Prior-native mixedNaN ordered NOT paths are demonstrably incorrect and excluded from performance. Three standard prior readers each have40 mismatches:32 omit NaN for finite/infinite literals and8 omit all32nonnull rows for NaN literals. Those processes exit0; they are not I/O failures. Supplemental12 expected exit2 native controls are separately excluded. Correct prior_legacy is used for mixedNaN timing.",
+    "writer_scope": "All four C++ writer products were actually read and checked; their comparable fixture groups are byte-identical. Java writer bytes are not claimed equal. New write throughput was not timed."
+  },
+  "coverage_evidence": {
+    "independent_recomputation": {
+      "native_gcov_objects": 231,
+      "filtered_entries": 56,
+      "exact_Git_diff_denominators": true,
+      "source_alias_hashes_match2525_Git_blobs": true
+    },
+    "scopes": {
+      "candidate": {
+        "covered_lines": 47,
+        "executable_lines": 48,
+        "line_percent": 97.91666666666667,
+        "covered_branches": 110,
+        "branches": 153,
+        "branch_percent": 71.89542483660131
+      },
+      "maintainer": {
+        "covered_lines": 875,
+        "executable_lines": 1033,
+        "line_percent": 84.70474346563408,
+        "covered_branches": 876,
+        "branches": 1432,
+        "branch_percent": 61.1731843575419
+      },
+      "whole-pr": {
+        "covered_lines": 954,
+        "executable_lines": 1114,
+        "line_percent": 85.63734290843806,
+        "covered_branches": 993,
+        "branches": 1587,
+        "branch_percent": 62.57088846880907
+      }
+    },
+    "selected16files": {
+      "covered_lines": 3972,
+      "executable_lines": 4915,
+      "line_percent": 80.81383519837233,
+      "covered_branches": 3500,
+      "branches": 6289,
+      "branch_percent": 55.652726983622195
+    },
+    "candidate_uncovered_changed_line": "cpp/src/reader/filter/aligned_field_filter.cc:99;47/48 executable changed lines covered.",
+    "scope": "Cumulative production gcda from initial3ce,final2525 and final harness on identical production bytes; not an isolated2525-test-commit profile.260-production-byte equality is independently verified. Fresh final test pass counts are from final XML/logs.",
+    "limits": "Whole-PR changed-line coverage85.64% and selected16-file module80.81% are below90%; candidate repair97.92% must not be presented as whole-PR coverage. Branch scopes are reported separately; branch coverage is not90%. No statement that coverage implies full sanitizer clean."
+  },
+  "sanitizer_evidence": {
+    "focused_and_reader_pass_within_recorded_scope": true,
+    "full_suite_passed": false,
+    "full_exit_code": 1,
+    "actual_failure": "Pinned unchanged LZOkay lzokay.cpp:34 misaligned uint16_t load.",
+    "unchanged_dependency_and_no_suppression_checked": true,
+    "limit": "This records an unresolved full-suite sanitizer failure; a narrowed clean reader run does not clear the full sanitizer gate or prove all other tests would pass after the abort."
+  },
+  "query_performance_evidence": {
+    "protocol_sha256": "2d08e7a480da564b1b8e4191917cca876171c979b2999aa6c1c07ecd7cb99fa4",
+    "all154_pre_and_post_frozen_inputs_rehashed": true,
+    "versions": 4,
+    "cases": 96,
+    "actual_processes": 13584,
+    "formal_queries": 43776,
+    "warmup_queries": 3136,
+    "phase_processes": {
+      "warmup": 768,
+      "initial": 9216,
+      "confirmation_warmup": 144,
+      "confirmation": 3456
+    },
+    "phase_queries": {
+      "warmup": 2624,
+      "initial": 31488,
+      "confirmation_warmup": 512,
+      "confirmation": 12288
+    },
+    "all_sequences_and_commands_match_frozen_schedule": true,
+    "all_counts_checksums_raw_and_results_match": true,
+    "schedule": "Initial24 blocks use each execution-order permutation once; each version-position/version-image/position-image marginal6 and joint1or2. Confirmation48 blocks use each permutation twice, complementary joint3 and marginals12. Two warmup blocks are not claimed balanced.",
+    "statistics": "Independently recomputed all114 stage summaries and456 version metric records from raw, shared5000 process-block bootstrap indices per summary with seed102623, plus114ratio/456metric/15flag table rounding. Processblock is the sampling unit; innerqueries are not independent bootstrap samples.",
+    "confirmation_selection_recomputed_exactly": {
+      "tag-parallel-s1-b0": [
+        "fixed/prior"
+      ],
+      "callback-w1-p1-b0": [
+        "fixed/base"
+      ],
+      "callback-w1-p1-b1024": [
+        "fixed/base"
+      ],
+      "callback-w1-p100-b1024": [
+        "fixed/base"
+      ],
+      "callback-w8-p1-b0": [
+        "fixed/prior"
+      ],
+      "unfiltered-all-b0": [
+        "fixed/public"
+      ],
+      "unfiltered-sparse-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut0-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut0-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut50-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut50-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut100-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut100-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t1-cut0-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t1-cut0-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t1-cut50-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t1-cut50-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t1-cut100-b0": [
+        "fixed/base"
+      ]
+    },
+    "confirmation_cases": 18,
+    "no_extra_rounds_or_outlier_removals": true,
+    "confirmed_cases": 15,
+    "confirmed_comparisons": 15,
+    "confirmed_comparators": [
+      "fixed/base"
+    ],
+    "max_confirmed": {
+      "case": "float-callback-t0-cut50-b1024",
+      "comparison": "fixed/base",
+      "median_ratio": 1.0293968794279666,
+      "bootstrap95": [
+        1.0214876393707317,
+        1.0365184534503384
+      ]
+    },
+    "confirmation_only_signals": [],
+    "finite_zero_initial_ranges": {
+      "fixed/public": [
+        0.3362852677381757,
+        0.3484607820636074
+      ],
+      "fixed/prior": [
+        0.9880677653040019,
+        1.008883650422736
+      ]
+    },
+    "query_gate_cleared": false,
+    "necessity_of_remaining_cost_proven": false,
+    "comparison_limits": [
+      "All four versions are from this same frozen round; no cross-candidate/old-round ratio or causal guard attribution is used. Older failed evidence remains intact.",
+      "6f integer-structured application-layer reference has an extra materialization bucket and is excluded from that native gate comparison. Callback controls use correct legacy paths with matching projection. Wrong mixedNaN native prior paths are not treated as fast equivalent baselines.",
+      "No repeated increase against fcab/prior in this bounded round is not equivalence and does not negate15 repeated increases versus6f. Finite-zero gains versusfcab do not offset callback/unfiltered regressions.",
+      "Pointwise bootstrap intervals do not provide familywise confidence or formal equivalence. Warm-cache Windows MSVC Release UNCOMPRESSED scope, selected parallel flags and fixed CPU affinity do not provide cold-cache,compressed,parallel-scaling or broad nonaligned conclusions.",
+      "Whole-process peak memory is not query-only memory; reported aggregate query timing/old8totalonly limits are retained. No P99 or unmeasured metrics are replaced with zero."
+    ]
+  },
+  "report_review": {
+    "english_and_complete_chinese_warning_match_raw": true,
+    "all_reported_counts_ratios_coverage_denominators_and_limits_verified": true,
+    "report_ready_as_honest_diagnostic": true,
+    "unresolved_report_integrity_findings": [],
+    "evidence_limit_disclosures": [
+      "Initial spotless PATH failure remains only in tool history after its intended raw log was overwritten by a wrong-directory copy. The report does not falsely claim that raw log survived; fresh final spotless success is separately recorded.",
+      "Two Java dependency inventory attempts failed without producing output and remain in tool history only. Corrected explicit dependency inventory is post-run. Its trailing implicit cwd entry is not recursively inventoried. Four local helper-class hashes are a post-run current-byte record except the protocol-bound FloatBenchmarkOracle.",
+      "Coverage counts aggregate byte-identical initial/final production runs; no new coverage or timing was rerun to improve the result.",
+      "summary.independent_final_evidence_review remains pending at the original freeze. This is a historical freeze-time status, not the final disposition. Separate final-review-outcome must bind this review,the different-model review and frozen summary/manifest hashes without rewriting historical results."
+    ],
+    "AI_disclosure_and_source_authorship": "Report retains English/Chinese OpenAI Codex disclosure and distinguishes maintainer publicfcab from local Codex candidate2525. Production source remains unpushed."
+  },
+  "final_disposition": {
+    "source_findings_closed_within_reviewed_scope": true,
+    "protocol_findings_closed": true,
+    "metadata_findings_closed_with_limits": true,
+    "complete_pre_submission_gate_passed": false,
+    "performance_gate_passed": false,
+    "full_sanitizer_passed": false,
+    "source_submission_gate_passed": false,
+    "production_push_approved_by_this_review": false,
+    "reason": "15 repeated fixed/base latency increases remain and their necessity is unproven; full sanitizer still aborts in unchanged dependency; whole-PR coverage and unmeasured scope are explicitly limited. Source correctness progress and finiteNOT speedup cannot convert these into a passing submission gate.",
+    "diagnostic_publication_conclusion": "The final frozen report can be used as a truthful diagnostic with these limits and NOT_READY_TO_PUSH conclusion. This review performs no publication or remote authorization operation."
+  },
+  "activity": "Read-only source/artifact inspection plus local hashes,XML/JSON parsing,oracle arithmetic and bootstrap recomputation. No project build,test,query,additional timing,source edit,production push,Copilot request or remote write during this final evidence review."
+}

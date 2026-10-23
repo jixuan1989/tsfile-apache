@@ -1,0 +1,56 @@
+{
+  "bytes": 2169755,
+  "sha256": "ea73d24e3c51a63f4ed6944a21a7ed23b142bd51c20a53e7fcc7d58df3936186",
+  "parts": [
+    {
+      "name": "scoped-diagnostics.zip.part01",
+      "bytes": 229376,
+      "sha256": "65607dcbba24c8dd008f5bfa5d96a2f62bbeec69658a53ae63e0dcaf2d1a973b"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part02",
+      "bytes": 229376,
+      "sha256": "3d8a3791e2632db8706b2a31177201119963fc709092c4722093fceb2d8e1be6"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part03",
+      "bytes": 229376,
+      "sha256": "c7d7b7bc87f87c2a85e1688e56c9af31b7f7ef7da29969e7113785814922c831"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part04",
+      "bytes": 229376,
+      "sha256": "2525fae7d6fa5c30fb2c4a273ac4cb490ab510db55606c35ecad0f21cb8cfa0f"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part05",
+      "bytes": 229376,
+      "sha256": "a7e1c3b9a1c17d2a7caaefc4507e618b2a41abc6b9e057622ffc95d15a515706"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part06",
+      "bytes": 229376,
+      "sha256": "ef85e6d6f28fc61a9c26c5fa4414cd7a8e46bb3587d6a2aab03b6925e648a469"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part07",
+      "bytes": 229376,
+      "sha256": "052017f1effdfb0b208868a0ab920329458c174dccaaabed86286f87afa9b2b9"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part08",
+      "bytes": 229376,
+      "sha256": "0ddd5fba6db19b8abbb5bd81091cce6bf94987c821e31e2b974eb9322eb80232"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part09",
+      "bytes": 229376,
+      "sha256": "e2124998e60c32c1fc2386e59ad6f6aa2bc9a27b477516ac2157b6967eb31cab"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part10",
+      "bytes": 105371,
+      "sha256": "9c23f3ccf79fba34da22e2585c15b80d9e5fa3bc667dafa465426a4e80423d86"
+    }
+  ]
+}

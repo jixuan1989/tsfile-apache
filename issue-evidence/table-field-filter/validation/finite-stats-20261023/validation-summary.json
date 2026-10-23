@@ -1,0 +1,1260 @@
+{
+  "windows_focused": {
+    "tests": 214,
+    "failures": 0,
+    "disabled": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 214,
+    "sha256": "39a56488ad47824524c754c82da60d3a32663ad8d7f2c6835efd35375c68f1b5"
+  },
+  "windows_full": {
+    "tests": 1132,
+    "failures": 0,
+    "disabled": 10,
+    "errors": 0,
+    "skipped": 3,
+    "passed": 1119,
+    "sha256": "9b8bdba4c86ac4a52683b7f25eb9834091d1a7891f07a5a28484b58fbe22e389"
+  },
+  "linux_focused": {
+    "tests": 214,
+    "failures": 0,
+    "disabled": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 214,
+    "sha256": "ede110d479e0bf3dbcc8878c4953654640a46b6682130a0f753defcc23cbd0d0"
+  },
+  "linux_reader": {
+    "tests": 383,
+    "failures": 0,
+    "disabled": 7,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 376,
+    "sha256": "22ce269cd689bc4288c278d2f3faff339aa000c97e7287a8c06545f89392c008"
+  },
+  "baseline_negative": {
+    "tests": 15,
+    "failures": 7,
+    "disabled": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 8,
+    "sha256": "6cc05aa7aeebff313646f79f974f8eacdc48f6701d668e6c61611ad15178f45e"
+  },
+  "linux_full": {
+    "exit_code": 1,
+    "passed": false,
+    "diagnostic": "Pinned unchanged LZOkay lzokay.cpp:34 misaligned uint16_t load",
+    "log": "candidate-linux-full.log",
+    "suppression_added": false
+  },
+  "java_compatibility": {
+    "candidate": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+    "base": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "results": [
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      }
+    ],
+    "files": {
+      "java-nulls.tsfile": {
+        "bytes": 5733,
+        "sha256": "404be6c685eaffa6715a0a6d97d0334036a471a6f67be4c32bb6fb676567ca45"
+      },
+      "java-floats.tsfile": {
+        "bytes": 3451,
+        "sha256": "354ed670dbef9a588e35d73ee4540615f090d4fb36f26849ea6064fca6d16cd0"
+      },
+      "base-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "base-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      },
+      "fixed-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "fixed-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      }
+    },
+    "standalone_reproductions": [
+      {
+        "mode": "nan-eq",
+        "rows": 4,
+        "expected_rows": 4,
+        "nan_rows": 0,
+        "timestamp_sum": 10
+      },
+      {
+        "mode": "nan-ne",
+        "rows": 2,
+        "expected_rows": 2,
+        "nan_rows": 2,
+        "timestamp_sum": 5
+      },
+      {
+        "mode": "nan-notlt",
+        "rows": 6,
+        "expected_rows": 6,
+        "nan_rows": 2,
+        "timestamp_sum": 15
+      },
+      {
+        "mode": "large",
+        "rows": 300,
+        "expected_rows": 300,
+        "nan_rows": 0,
+        "timestamp_sum": 44850
+      }
+    ],
+    "null_queries_checked": 96,
+    "floating_queries_checked": 1800,
+    "floating_cpp_queries": 1440,
+    "floating_java_queries": 360,
+    "scope": "PLAIN/UNCOMPRESSED,2 devices,2 chunks,page3,NULL tails/allNULL/boolean/offset/limit and FLOAT/DOUBLE NaN,+/-Inf,+/-0,+/-1,2,NULL; all6 comparisons against0,1,NaN,+/-Inf and nonNULL NOT; native structured row/batch vs legacy C++ and Java public projected scan plus app predicate. No Java native structured-predicate performance claim. Output includes exact ordered timestamps and bit-sensitive value classes.",
+    "writer_bytes": "Old/fixed C++ products identical for both fixtures; Java full-file byte equality not claimed."
+  },
+  "independent_harness_linux": {
+    "compile_command": [
+      "g++",
+      "-DCOV_ENABLED=1",
+      "-DENABLE_GZIP",
+      "-DENABLE_LZ4",
+      "-DENABLE_LZMA2",
+      "-DENABLE_LZOKAY",
+      "-DENABLE_MEM_STAT",
+      "-DENABLE_SNAPPY",
+      "-DENABLE_TEST",
+      "-DENABLE_THREADS",
+      "-DENABLE_ZLIB",
+      "-DENABLE_ZSTD",
+      "-DTSFILE_STATIC",
+      "-I/mnt/c/Users/hxd/Documents/Codex/2026-10-17/new-chat-2/work/pr03-opt-src/cpp/src",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/include",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/third_party/snappy",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/_deps/snappy-1.2.2",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/_deps/lz4-1.9.4/lib",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/_deps/lzokay-5cb18da508cc4d3ec41bc04dccdeef9c5ffedfb2",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/third_party/zlib",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/_deps/zlib-1.3.1",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/_deps/zstd-1.5.7/build/cmake/../../lib",
+      "-I/tmp/tsfile-pr03-opt-20261023-asan-cov/_deps/xz-5.8.3/src/liblzma/api",
+      "-Wall",
+      "-std=c++11",
+      "-O0",
+      "-g",
+      "--coverage",
+      "-fprofile-update=atomic",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=undefined",
+      "-O0",
+      "-g",
+      "-std=gnu++11",
+      "-fprofile-arcs",
+      "-ftest-coverage",
+      "-DREVIEW_VARIANT=\"candidate-linux\"",
+      "-DREVIEW_COMMIT=\"2525a557fc1fa67e2c813cc0f42959d499dc2ff6\"",
+      "-fsanitize=address,undefined",
+      "-static-libasan",
+      "-static-libubsan",
+      "/mnt/c/Users/hxd/Documents/Codex/2026-10-17/new-chat-2/work/issue-03/validation/finite-stats-followup-20261023/pre-submission-review/harness/review_harness.cc",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/lib/libtsfile.a",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/lib/libsnappy.a",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/lib/libtsfile_lz4_bundled.a",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/lib/libtsfile_lzokay_bundled.a",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/lib/libz.a",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/lib/libzstd.a",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/lib/liblzma.a",
+      "-pthread",
+      "--coverage",
+      "-o",
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/independent-review-harness"
+    ],
+    "run_command": [
+      "/tmp/tsfile-pr03-opt-20261023-asan-cov/independent-review-harness",
+      "/mnt/c/Users/hxd/Documents/Codex/2026-10-17/new-chat-2/work/issue-03/validation/finite-stats-followup-20261023/review-harness-linux/run"
+    ],
+    "exit_code": 0,
+    "summary": {
+      "kind": "summary",
+      "completed": true,
+      "harness_errors": 0,
+      "query_cases": 24,
+      "evaluator_cases": 180,
+      "valid_control_failures": 0,
+      "query_semantic_mismatches": 0,
+      "evaluator_semantic_mismatches": 0,
+      "semantic_mismatches": 0
+    },
+    "sanitizer_diagnostics": false,
+    "semantic_gate_passed": true,
+    "scope": "180 direct dual-evaluator cases and24 full-file query controls pass,including12 malformed controls;no sanitizer diagnostics.",
+    "source_sha256": "2c89028b05e64c416233b5759f5af7fec816f7a9a0768bac473a1c558bb1056e",
+    "executable_sha256": "1e30acd8bc12776af2834d84e4d84e399d8f5780e1a6ce564a432a8203ac9982",
+    "flags_sha256": "5be1da7c791075821f341a26e167bf7ad76ed88fb986ead10558149cdf1e0a23"
+  },
+  "independent_harness_windows": {
+    "kind": "summary",
+    "completed": true,
+    "harness_errors": 0,
+    "query_cases": 24,
+    "evaluator_cases": 180,
+    "valid_control_failures": 0,
+    "query_semantic_mismatches": 0,
+    "evaluator_semantic_mismatches": 0,
+    "semantic_mismatches": 0
+  },
+  "coverage_by_diff": {
+    "candidate": {
+      "covered_lines": 47,
+      "executable_lines": 48,
+      "line_percent": 97.91666666666667,
+      "covered_branches": 110,
+      "branches": 153,
+      "branch_percent": 71.89542483660131
+    },
+    "maintainer": {
+      "covered_lines": 875,
+      "executable_lines": 1033,
+      "line_percent": 84.70474346563408,
+      "covered_branches": 876,
+      "branches": 1432,
+      "branch_percent": 61.1731843575419
+    },
+    "whole-pr": {
+      "covered_lines": 954,
+      "executable_lines": 1114,
+      "line_percent": 85.63734290843806,
+      "covered_branches": 993,
+      "branches": 1587,
+      "branch_percent": 62.57088846880907
+    }
+  },
+  "affected_files_coverage": {
+    "covered_lines": 3972,
+    "executable_lines": 4915,
+    "line_percent": 80.81383519837233,
+    "covered_branches": 3500,
+    "branches": 6289,
+    "branch_percent": 55.652726983622195
+  },
+  "spotless_passed": true,
+  "preflight_failures": [
+    {
+      "action": "Windows independent harness initial invocation",
+      "exit_code": 2,
+      "reason": "Output directory absent; rerun with created directory passes24queries/180logical evaluator cases",
+      "raw_retained": [
+        "review-harness-windows-missing-directory.jsonl",
+        "review-harness-windows-missing-directory.stderr.log"
+      ]
+    },
+    {
+      "action": "Initial spotless invocation",
+      "exit_code": 1,
+      "reason": "clang-format absent from PATH; verified existing17binary prepended thencheckpassed",
+      "raw_log_retained": false,
+      "limitation": "Initial raw spotless.log inadvertently overwritten after failed copy command used source-worktree cwd;observed diagnostic retained in tool transcript.This record is a summary,not recreated raw output."
+    }
+  ],
+  "source_submission_gate_passed": false,
+  "head": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+  "frozen_at": "2026-10-23T13:55:26.788580+00:00",
+  "public_head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "candidate_head": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+  "commits": {
+    "base": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "prior": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "public": "fcab7437130421bed2604311461a7a7aa6e9a255",
+    "fixed": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6"
+  },
+  "source_author": "OpenAI Codex authored this local candidate;publicfcab authored by maintainerColinLee",
+  "production_source_modified_by_agent": true,
+  "source_pushed": false,
+  "old45d_and_prior96case_rounds_preserved": true,
+  "query": {
+    "complete": true,
+    "cases": 96,
+    "processes": 13584,
+    "phase_processes": {
+      "warmup": 768,
+      "initial": 9216,
+      "confirmation_warmup": 144,
+      "confirmation": 3456
+    },
+    "phase_verified_queries": {
+      "warmup": 2624,
+      "initial": 31488,
+      "confirmation_warmup": 512,
+      "confirmation": 12288
+    },
+    "formal_verified_queries": 43776,
+    "warmup_verified_queries": 3136,
+    "confirmation_cases": 18,
+    "confirmed_case_count": 15,
+    "confirmed_comparison_count": 15,
+    "confirmed_comparisons": [
+      {
+        "case": "float-callback-t0-cut50-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0293968794279666,
+        "bootstrap95": [
+          1.0214876393707317,
+          1.0365184534503384
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut100-b0",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0263073625391685,
+        "bootstrap95": [
+          1.0107238517160833,
+          1.0346092177585144
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut100-b0",
+        "comparison": "fixed/base",
+        "median_ratio": 1.024258457996109,
+        "bootstrap95": [
+          1.01662606237563,
+          1.031731469450578
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut100-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0232089694330224,
+        "bootstrap95": [
+          1.0205679393261955,
+          1.0276168027606214
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut0-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0231156895688844,
+        "bootstrap95": [
+          1.0190098296363956,
+          1.0304245419939126
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut50-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0188702472845708,
+        "bootstrap95": [
+          1.012084910548827,
+          1.0253025874201578
+        ]
+      },
+      {
+        "case": "callback-w1-p1-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0185555456125632,
+        "bootstrap95": [
+          1.0114544863404833,
+          1.0250055904475115
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut50-b0",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0177119027352481,
+        "bootstrap95": [
+          1.0091962706434847,
+          1.0242761453232556
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut0-b0",
+        "comparison": "fixed/base",
+        "median_ratio": 1.017553513283888,
+        "bootstrap95": [
+          1.0127715156499442,
+          1.022160251420679
+        ]
+      },
+      {
+        "case": "callback-w1-p1-b0",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0163979288230498,
+        "bootstrap95": [
+          1.0098509461983585,
+          1.0206957964996968
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut50-b0",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0162490207597545,
+        "bootstrap95": [
+          1.00768462589726,
+          1.0247012653118368
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut0-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0161714007714984,
+        "bootstrap95": [
+          1.0107268938655134,
+          1.0274848595037178
+        ]
+      },
+      {
+        "case": "callback-w1-p100-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0139105185757957,
+        "bootstrap95": [
+          1.0106580999895147,
+          1.0206939379825588
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut0-b0",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0108580073481406,
+        "bootstrap95": [
+          1.0038961072908914,
+          1.016278593757753
+        ]
+      },
+      {
+        "case": "unfiltered-sparse-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0062270917127591,
+        "bootstrap95": [
+          1.0024495481458142,
+          1.0106740589292893
+        ]
+      }
+    ],
+    "confirmation_only_signals": [],
+    "query_gate_cleared": false,
+    "necessity_proven": false,
+    "protocol_sha256": "2d08e7a480da564b1b8e4191917cca876171c979b2999aa6c1c07ecd7cb99fa4",
+    "results_sha256": "ad04997ea4cf8bf0637e44618b79ef5b3c88d26860769fb91a203a32e6098e42",
+    "raw_sha256": "72817ac8da4b6376433e1acbc5cb1be7d3c59bd39a5b142f1f043767b58c0cfd",
+    "post_timing_input_hashes_verified": 154,
+    "post_timing_production_hashes_verified": 260,
+    "finite_zero_hit_initial_ratio_ranges": {
+      "fixed/public": [
+        0.3362852677381757,
+        0.3484607820636074
+      ],
+      "fixed/prior": [
+        0.9880677653040019,
+        1.008883650422736
+      ]
+    },
+    "confirmed_comparators": [
+      "fixed/base"
+    ]
+  },
+  "write": {
+    "retimed": false,
+    "reason": "Reader-only revision;historicalwriteevidenceretainsoriginalhead",
+    "all4_cpp_writer_products_queried": true,
+    "cpp_bytes_equal": true,
+    "java_bytes_equal_claimed": false
+  },
+  "independent_final_evidence_review": "pending at this evidence freeze;final reviews and outcome follow separately",
+  "unmeasured": [
+    "controlledcoldcache",
+    "P99",
+    "compressedqueries",
+    "generalnonalignedFIELD",
+    "parallelscaling",
+    "query-onlymemory",
+    "old8open/metadata/firstrow/perqueryquantiles/memory",
+    "currentwrite throughput"
+  ],
+  "no_additional_measurement_rounds": true,
+  "coverage_provenance": {
+    "recorded_at": "2026-10-23T13:55:25.922852+00:00",
+    "initial_test_commit": "3ce764b46bb44b22b915cb94934e43496598c992",
+    "final_test_commit": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+    "initial_source_freeze_sha256": "340341a82421eca4702437946ea01df22cb4d69aa9b23ed3d6569484029f726a",
+    "final_source_freeze_sha256": "ef37cca2ba7cc39a0c7190f90bf196a5e5d42ea55623d55d5653848fed0da1e8",
+    "all260_production_bytes_identical": true,
+    "gcda_reset_between_initial_and_final": false,
+    "coverage_scope": "Production gcda accumulated initial3ce and final2525 runs in samebuild plus final independentharness.All260production sources identical;only testassertion/name changed.No45d/publicfcabproduction counts transferred.",
+    "final_test_results_scope": "Final2525XML/logs are fresh reruns;initial3ce results kept separately,not used as final test pass counts.",
+    "profiling_error_in_final_logs": false,
+    "limit": "Coverage is cumulative on identical production bytes across two test commits;not an isolated final-test-commit profile."
+  }
+}

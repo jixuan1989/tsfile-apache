@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-10-23T14:08:54.528649+00:00",
+  "head": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+  "public_head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "frozen_manifest_sha256": "2fbca09291dd95bd9a28bfd9d8b0a4a1ab1b819196f6b59cdacdac98b5504e0d",
+  "earlier_frozen_summary_sha256": "dac7afced5f587b19158818d93531f5bae68bd9ac4a17bac0d6bbbbcbfe23527",
+  "earlier_summary_review_status": "pending at the earlier evidence freeze, before the two final review records existed",
+  "independent_final_source_and_evidence_reviews": "complete; both NOT_READY_TO_PUSH",
+  "actual_model_identities": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "identity_evidence_sha256": "674e874faac767e77fece3e8cac160bc6fb35d9cb6b32b2635a6393693b69ae4",
+  "reviews_sha256": {
+    "final-evidence-review-integration.json": "ee70978e136b46788b1946ea5e52d0aedceaf73ef70cf949018432568046f335",
+    "final-evidence-review-different-model.json": "fc020337d64294ec5ae5a154feee9c32ed98e853c0f711820a26681984df8c2c"
+  },
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "additional_post_freeze_review_assets_sha256": {
+    "pre-submission-review/final-freeze-audit-integration.json": "2a5515d93c07460db8e154a603556f54727a6a5597429c342c30a26d68260970",
+    "pre-submission-review/evidence-before-coverage-scope-clarification/final-evidence-manifest.json": "5d1b7701af2c854471ea14e4fc7cde94239e67e668ed984f6b9b3387be102729",
+    "pre-submission-review/evidence-before-java-oracle-class-inventory/final-evidence-manifest.json": "3f4cbd5764428779a1dac61bb0af0587b936ee34b7752eb6401ca4fb4e1031d0",
+    "pre-submission-review/evidence-before-java-oracle-class-inventory/final-evidence-review-different-model.json": "565bfad4dccd605794795e52e3e0588f8a983c7c8a7455d60eac49b545244864"
+  },
+  "source_pushed": false,
+  "unresolved": "15confirmed cases/comparisons against6f;necessity unproven;full sanitizer fails in unchanged dependency;candidate unpushed"
+}

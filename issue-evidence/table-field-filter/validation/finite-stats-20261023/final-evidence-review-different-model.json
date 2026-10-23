@@ -1,0 +1,330 @@
+{
+  "reviewed_at_utc": "2026-10-23T14:01:43.814769+00:00",
+  "overall": "NOT_READY_TO_PUSH",
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "report_accuracy_verdict": "Frozen numerical results and corrected English/Chinese diagnostic boundaries agree with independent local read-only audit. Suitable to publish as diagnostic evidence; no production submission approval. Coverage provenance correction is explicitly retained below.",
+  "identity": {
+    "requested_model": "gpt-6-astra",
+    "direct_runtime_recorded_model": "gpt-6-astra",
+    "session": {
+      "id": "01a16181-6b51-75c0-91f5-0e4effcd27fa",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a146d7-a196-7d20-bcb2-28bd83157e4d",
+            "depth": 1,
+            "agent_path": "/root/review_aligned_filter_model",
+            "agent_nickname": "Ampere",
+            "agent_role": null
+          }
+        }
+      },
+      "originator": "Codex Desktop"
+    },
+    "latest_turn_context": {
+      "timestamp": "2026-10-23T13:51:39.708Z",
+      "model": "gpt-6-astra"
+    },
+    "runtime_record": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\22\\rollout-2026-10-22T10-47-14-01a16181-6b51-75c0-91f5-0e4effcd27fa.jsonl",
+    "parent_side_identity_evidence": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\runtime-model-identity-evidence.json",
+    "identity_evidence_sha256": "bb386194f8cbec1271d5b06dc86fff19f41608d7447a616eea8f31248340659e",
+    "distinct_from_implementor_and_integration_reviewer": "Parent-side records verify gpt-6.1-sol for root and integration reviewer versus this gpt-6-astra session.",
+    "limit": "Verified local runtime model/session assignment; not cryptographic backend identity attestation or a claim of offline inference.",
+    "current_review_identity_check": "Read current latest turn_context directly from the same local runtime rollout during this review; model is gpt-6-astra. Prior parent-side identity evidence retained as historical provenance."
+  },
+  "commits": {
+    "base": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "prior": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "public": "fcab7437130421bed2604311461a7a7aa6e9a255",
+    "fixed": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6"
+  },
+  "source_state": {
+    "candidate": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+    "baseline_public": "fcab7437130421bed2604311461a7a7aa6e9a255",
+    "production_hashes_verified": 260,
+    "test_source_hashes_verified": 2,
+    "worktree_clean_verified": true,
+    "source_review_verdict": "No blocking source defect found in reviewed delta; this does not clear measurement or full validation gates.",
+    "ownership": "Local candidate authored by OpenAI Codex; publicfcab attributed to maintainer ColinLee. No source publication performed by this reviewer."
+  },
+  "evidence_binding": {
+    "manifest_sha256": "2fbca09291dd95bd9a28bfd9d8b0a4a1ab1b819196f6b59cdacdac98b5504e0d",
+    "manifest_files_verified": 134,
+    "manifest_bytes_verified": 32170148,
+    "manifest_mismatches": 0,
+    "original_manifest_before_provenance_clarification_sha256": "5d1b7701af2c854471ea14e4fc7cde94239e67e668ed984f6b9b3387be102729",
+    "explicit_key_hashes": {
+      "validation-report.md": "d0f79270d962487f7bd1e9dd8ced85a6ef7f97d5cad995c8d474731f0feab75d",
+      "validation-summary.json": "dac7afced5f587b19158818d93531f5bae68bd9ac4a17bac0d6bbbbcbfe23527",
+      "all-query-ratios.md": "cdeb9b66cdc73296b3fbd1df7a4b1c8bc497fd7748251cd1008a5f93724fff31",
+      "all-query-metrics.md": "368144129dc1fab5c154db31dd790d83889f1536ec9b266fe1f12ac6e47eb0de",
+      "source-freeze.json": "ef37cca2ba7cc39a0c7190f90bf196a5e5d42ea55623d55d5653848fed0da1e8",
+      "candidate-query-performance/protocol.json": "2d08e7a480da564b1b8e4191917cca876171c979b2999aa6c1c07ecd7cb99fa4",
+      "candidate-query-performance/results.json": "ad04997ea4cf8bf0637e44618b79ef5b3c88d26860769fb91a203a32e6098e42",
+      "candidate-query-performance/processes.jsonl": "72817ac8da4b6376433e1acbc5cb1be7d3c59bd39a5b142f1f043767b58c0cfd",
+      "candidate-query-performance/preflight.json": "b7ddc9d618431258408bbe84e642d8f7ede6eeeaf70e220c70794d7a26a9540c",
+      "candidate-query-performance/confirmation-selection.json": "5ba9c68559b671d1a6350c180de604b6af205eadfc11684df345ddb90253eace",
+      "query-performance.py": "984e3857eada2fd0bd1a5b683a5bcfabf932aaa207ec83bbdaba2b35bb8753f3",
+      "balanced-schedule.json": "9c0356f070f42d9383176e9ab47d9c8d6d3dd0c3ee29a2e460393a505a1abbee",
+      "candidate-compatibility/raw.json": "0fcefc636840327c6b787086218a2d22453fc37fbef6b1da8ca25c3be576866a",
+      "candidate-compatibility/summary.json": "a9b2db9041493f62a799867c2c0708b6f3580c26cc8829ce00b9f9d34dd55a04",
+      "candidate-compatibility/independent-float-expected.txt": "abd5bbc05ca67c502e557423726b1e2c6a4271f50e930623be8ea7433ca3eb84",
+      "candidate-coverage-summary.json": "7b8b9dfb747adb0d248e3723995d061d457c94df21a9a7eca80d4177eedbd05a",
+      "candidate-coverage-filtered-inputs.json": "68cb740066d2cb9197173e9364ece55ca457d498365d64f73d1bbc948df702b9",
+      "coverage-diff-scopes.json": "8d1f16ddc4bac06470803b57b7013052d076fabbe7bb9b1410d4d93a4866c095",
+      "changed-line-ranges.json": "f7b3fe1f62b57981fd0b0645ab4df98c2213756ec497b82d0f2410a81708f75f",
+      "coverage-scope-provenance.json": "2d331bc3962a93e3f9ac64c1b9e34ee06df565b532bf2812736d5b70e8a09b09",
+      "java-runtime-and-classpath.json": "f133282f2698c5b5bc4f2b1267781702299264f3237b2951e173e7b48435e497",
+      "candidate-linux-full.log": "4769a0a714862b66c5c47d037b7bc0529bdb6dc341f7f2bbfb530ef6751ca3bf",
+      "candidate-linux-focused.xml": "ede110d479e0bf3dbcc8878c4953654640a46b6682130a0f753defcc23cbd0d0",
+      "candidate-linux-reader.xml": "22ce269cd689bc4288c278d2f3faff339aa000c97e7287a8c06545f89392c008",
+      "candidate-windows-full.xml": "9b8bdba4c86ac4a52683b7f25eb9834091d1a7891f07a5a28484b58fbe22e389",
+      "candidate-windows-focused.xml": "39a56488ad47824524c754c82da60d3a32663ad8d7f2c6835efd35375c68f1b5",
+      "baseline-negative.xml": "6cc05aa7aeebff313646f79f974f8eacdc48f6701d668e6c61611ad15178f45e",
+      "review-harness-linux/stdout.jsonl": "fba60658df0c2ced25fff2e18de8e682973a355fcdcce4a56abf9e9bbf8102bb",
+      "review-harness-windows.jsonl": "148e7d7ddf7d9dfbfb5dd83faf06a2c76ce9e02a93083d1c873defa32ce5d8e6",
+      "pre-submission-review/source-review-different-model.json": "e3853eab022abc01bb5655ef5e788873ea9e04a5fdce7158583a0fa14e3ece14",
+      "pre-submission-review/protocol-review-different-model.json": "55bfb107ec87cb78e94e4dc84dafe780926ebff31d8f5fe65c2452570943fdb4",
+      "pre-submission-review/runtime-model-identity-evidence.json": "674e874faac767e77fece3e8cac160bc6fb35d9cb6b32b2635a6393693b69ae4"
+    },
+    "preserved_previous_review": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\evidence-before-java-oracle-class-inventory\\final-evidence-review-different-model.json",
+      "sha256": "565bfad4dccd605794795e52e3e0588f8a983c7c8a7455d60eac49b545244864",
+      "bound_manifest_sha256": "3f4cbd5764428779a1dac61bb0af0587b936ee34b7752eb6401ca4fb4e1031d0"
+    }
+  },
+  "raw_performance_audit": {
+    "raw_processes": 13584,
+    "successful_exit_zero": 13584,
+    "nonempty_stderr": 0,
+    "failure_records": 0,
+    "phase_processes": {
+      "warmup": 768,
+      "initial": 9216,
+      "confirmation_warmup": 144,
+      "confirmation": 3456
+    },
+    "phase_verified_queries": {
+      "warmup": 2624,
+      "initial": 31488,
+      "confirmation_warmup": 512,
+      "confirmation": 12288
+    },
+    "formal_queries": 43776,
+    "warmup_queries": 3136,
+    "initial_cases": 96,
+    "initial_blocks_per_case": 24,
+    "confirmation_cases": 18,
+    "confirmation_blocks_per_case": 48,
+    "all_sequence_command_version_slot_phase_block_order_checked": true,
+    "stored_blocks_exactly_equal_raw_stdout_json": true,
+    "independent_formula_checks": "Every process count/checksum/repeat count recomputed from fixture formulas, including NULL/NaN filtering, integer widths/tag/sparse cases and original8 scenarios. Drivers enforce complete projected row/order/value/NULL expectations during execution; timings do not separately store every returned row.",
+    "summary_groups_recomputed": 114,
+    "statistics": "Independently recomputed all 5000-resample shared-index percentile bootstrap intervals and medians from raw blocks; every stored comparison exact. Recomputed all phase quantiles, throughput and peak-memory summaries.",
+    "table_rows_verified": {
+      "ratios": 114,
+      "metrics": 456
+    },
+    "selection": "Initial eligible lower>1 selection exactly equals18cases and stored selection; exactly one confirmation per selected case. No extra/dropped/reused old round samples.",
+    "confirmed_cases": 15,
+    "confirmed_comparisons": 15,
+    "confirmed_comparators": [
+      "fixed/base"
+    ],
+    "confirmation_only_signals": 0,
+    "largest_confirmed": {
+      "case": "float-callback-t0-cut50-b1024",
+      "comparison": "fixed/base",
+      "median_ratio": 1.0293968794279666,
+      "bootstrap95": [
+        1.0214876393707317,
+        1.0365184534503384
+      ]
+    },
+    "finite_zero_hit_initial_ratio_ranges": {
+      "fixed/public": [
+        0.3362852677381757,
+        0.3484607820636074
+      ],
+      "fixed/prior": [
+        0.9880677653040019,
+        1.008883650422736
+      ]
+    },
+    "interpretation": "No repeated increase against public/prior in this bounded round is not equivalence; finite zero improvement vs public is same-round whole-query observation, not isolated engine causality. Residual base regressions and overhead necessity remain unresolved. Pointwise intervals do not control familywise error."
+  },
+  "protocol_and_preflight_audit": {
+    "protocol_sha256": "2d08e7a480da564b1b8e4191917cca876171c979b2999aa6c1c07ecd7cb99fa4",
+    "prior_ready_review_binding_verified": true,
+    "frozen_input_hashes": 154,
+    "neutral_copies": 72,
+    "schedule": "24 initial orders once, joint1/2;48 confirmation orders twice, joint3. Actual raw execution matches frozen schedule. Warmups not balanced.",
+    "preflight_records": 1625,
+    "positive_exit_zero": 1613,
+    "expected_negative_exit_two": 12,
+    "integer_and_original_queries": 2752,
+    "floating_processes": 720,
+    "floating_queries": 2160,
+    "java_full_40000row_scans": 10,
+    "preflight_oracle_review": "All positive raw values independently recomputed in protocol audit; same preflight bytes are manifest-bound at final freeze. Exactly12 incorrect prior native mixedNaN controls excluded from timing; correct prior_legacy used.",
+    "projection_api_boundaries": "42 integer structured/base comparisons include extra bucket materialization and are excluded from gate; equal physical projections for floating and same-callback controls. Native-vs-opaque comparisons include materialization/predicate/verification costs.",
+    "failure_gate": "Updated protocol refuses gate clearance for either repeated or confirmation-only signals; no additional rounds authorized."
+  },
+  "correctness_audit": {
+    "standard_compatibility_raw_records": 125,
+    "all_exit_zero": true,
+    "null_queries_checked_against_exact_independent_text": 96,
+    "floating_queries_checked_against_exact_independent_text": 1800,
+    "prior_negative_writers": 3,
+    "prior_negative_attribution_per_writer": {
+      "nonNaN_literal_ordered_NOT_omits_NaN_rows": 32,
+      "NaN_literal_ordered_NOT_omits_all32nonnull_rows": 8
+    },
+    "harness_per_platform": {
+      "logical_evaluator_cases": 180,
+      "actual_evaluator_outputs_checked": 360,
+      "query_cases": 24,
+      "malformed_controls": 12,
+      "valid_controls": 12,
+      "independent_expected_bits_and_row_outputs_match": true
+    },
+    "windows_focused_passed": 214,
+    "windows_full": {
+      "passed": 1119,
+      "skipped": 3,
+      "disabled": 10,
+      "total": 1132
+    },
+    "linux_focused_passed": 214,
+    "linux_reader": {
+      "passed": 376,
+      "disabled": 7,
+      "total": 383
+    },
+    "baseline_negative_failures": 7,
+    "baseline_negative_description": "Finite negated-statistics fastpath and six parameterized malformed empty/LIMIT0 cases fail against frozen publicfcab as intended.",
+    "xml_hashes_and_counts_verified": true,
+    "spotless": "Final log BUILD SUCCESS; initial missing-PATH raw log was overwritten and is explicitly not reconstructed.",
+    "linux_sanitizers": "Focused/reader retained logs and harness stderr show no ASan/UBSan/LSan diagnostics; final exit0. Fresh full suite exits1 at unchanged pinned LZOkay line34 misaligned uint16 load. No suppression or full-suite pass.",
+    "lzokay_source_sha256": "2f4ab24a24a65766f05e2aa60361c624d1a1b80e73164d2248300e0701d91e91",
+    "java_runtime_inventory": {
+      "explicit_files_and_jars_hash_verified": 1328,
+      "inventory_time_scope": "Post-timing snapshot; not retroactive proof of every runtime dependency before execution. Explicit directory/jar entries and implicit cwd limit retained.",
+      "inventory_failures": "Two initial collection errors are reported in inventory JSON/tool transcript. No assertion that complete raw failure logs exist for them.",
+      "local_oracle_classes_current_hash_verified": 4,
+      "local_oracle_classes_limit": "Post-run inventory only. FloatBenchmarkOracle.class was already bound by the premeasurement protocol; the other three entries are not retrospective historical execution-byte proofs."
+    }
+  },
+  "coverage_audit": {
+    "native_gzip_reports_hash_verified": 231,
+    "native_gcda_hash_verified": 231,
+    "filtered_entries_matched_to_native_report": 56,
+    "source_alias_hashes_verified": 24,
+    "selected_files": 16,
+    "candidate": {
+      "lines": [
+        47,
+        48
+      ],
+      "branches": [
+        110,
+        153
+      ]
+    },
+    "maintainer": {
+      "lines": [
+        875,
+        1033
+      ],
+      "branches": [
+        876,
+        1432
+      ]
+    },
+    "whole_pr": {
+      "lines": [
+        954,
+        1114
+      ],
+      "branches": [
+        993,
+        1587
+      ]
+    },
+    "selected_module": {
+      "lines": [
+        3972,
+        4915
+      ],
+      "branches": [
+        3500,
+        6289
+      ]
+    },
+    "uncovered_candidate_line": "cpp/src/reader/filter/aligned_field_filter.cc:99",
+    "diffs": "All ranges independently extracted from Git fcab/6f/1180→2525 and matched frozen changed-line-ranges. Merged counts by canonical source line; branches by mangled function+ordinal; no denominator exclusions.",
+    "provenance": "gcda was not reset between initial3ce and final2525 test runs. All260 production hashes are independently verified identical. Coverage is cumulative identical-production-byte coverage plus final harness, not isolated final2525 profile. Final test pass counts are fresh final XML, not initial3ce counts. No45d/publicfcab different-production counts transferred.",
+    "gate": "Actual whole-PR line85.6373% and branch62.5709% remain below the90% changed-line target. Coverage does not erase failed full sanitizer."
+  },
+  "raw_opinions_and_dispositions": [
+    {
+      "id": "FINAL-COVERAGE-PROVENANCE",
+      "origin": "Parent/integration clarification during final audit",
+      "status": "CLOSED_VERIFIED",
+      "note": "Earlier fresh-candidate wording was insufficient because gcda accumulated3ce and2525. New report/summary/native-summary provenance explicitly says cumulative identical production bytes; old118-file manifest/text preserved. No source, counts, raw timing or query evidence changed."
+    },
+    {
+      "id": "METHOD-GATE",
+      "status": "CLOSED_AT_PROTOCOL_FREEZE",
+      "note": "Confirmation-only gate loophole fixed before timing, original protocol/script retained."
+    },
+    {
+      "id": "SOURCE-EMPTY-CONTROL",
+      "status": "CLOSED_IN2525",
+      "note": "Non-null ResultSet assertion and accurate empty-boundary test name retained; source was already independently reviewed."
+    },
+    {
+      "id": "OLD45D-HIDDENNAN-HYPOTHESIS",
+      "status": "WITHDRAWN_NOT_RESURRECTED",
+      "note": "Historical old45d sum/extrema guard was safe for hiddenNaN; none of its historical test/performance results are reclassified as2525 evidence."
+    },
+    {
+      "id": "FINAL-JAVA-ORACLE-INVENTORY",
+      "origin": "Integration reviewer final provenance suggestion",
+      "status": "CLOSED_WITH_HONEST_POSTRUN_LIMIT",
+      "note": "Added four class files from local validation-directory classpath prefix; hashes/sizes directly checked. Only FloatBenchmarkOracle.class had a premeasurement binding. Previous inventory/manifest and original independent final review preserved."
+    }
+  ],
+  "report_boundaries_checked": [
+    "Complete English/Chinese performance warning agrees with15/15 and falsegate; largest interval and finitezero ranges match raw.",
+    "Local candidate vs public source ownership is explicit; old45d and old timing rounds remain separate.",
+    "No no-signal equivalence, necessary-cost proof, isolated engine speedup, full sanitizer pass, cold-cache/P99/parallel-scaling/general nonaligned/compressed-query/query-only-memory or new write-throughput claim.",
+    "Partial missing failure-log provenance is explicit, not disguised as complete raw retention.",
+    "Frozen summary pending-final-review is a snapshot; a separate final-review outcome may bind reviews without mutating its time-of-freeze state."
+  ],
+  "blocking_reasons": [
+    "15 repeated fixed/base latency increases keep query gate false.",
+    "Full Linux sanitizer run still fails in unchanged LZOkay.",
+    "Whole-PR changed-line coverage remains below90% target."
+  ],
+  "actions_and_limits": [
+    "Read-only source/evidence inspection and pure local recomputation of retained data; no builds, tests, timing reruns, production edits or remote actions.",
+    "This reviewer wrote only the requested final review artifact.",
+    "Final state NOT_READY_TO_PUSH; diagnostic report accuracy does not authorize source submission."
+  ],
+  "post_review_java_provenance_closure": {
+    "status": "CLOSED_VERIFIED",
+    "changed_original_manifest_entries": [
+      "java-runtime-and-classpath.json"
+    ],
+    "four_local_oracle_class_sizes_and_hashes_verified": true,
+    "local_directory_prefix_matches_actual_commands": true,
+    "postrun_limit_explicit": true,
+    "original_implicit_cwd_and_two_inventory_failures_disclosures_retained": true,
+    "source_report_raw_results_statistics_unchanged": true,
+    "manifest_all134_entries_verified": true,
+    "preserved_original_review_sha256": "565bfad4dccd605794795e52e3e0588f8a983c7c8a7455d60eac49b545244864",
+    "judgment": "Additional inventory improves current-byte provenance without upgrading historical execution proof. Original NOT_READY_TO_PUSH judgment remains applicable. No measurement/tests/compiler invocation occurred in this closure."
+  }
+}
