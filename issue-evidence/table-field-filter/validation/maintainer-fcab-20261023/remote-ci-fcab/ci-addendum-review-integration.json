@@ -1,0 +1,195 @@
+{
+  "reviewed_at_utc": "2026-10-23T11:57:23.876477+00:00",
+  "reviewer": {
+    "agent": "/root/review_pr1026_maintainer",
+    "session": "01a15cc5-7771-7131-8b29-3a98ac6923d1",
+    "model": "gpt-6.1-sol",
+    "identity_evidence_sha256": "bb386194f8cbec1271d5b06dc86fff19f41608d7447a616eea8f31248340659e",
+    "verified_selected_runtime_fields": true,
+    "inherited_parent_session_meta_also_present": true,
+    "limits": "First session_meta identifies this agent; inherited parent session_meta is also present. Runtime model assignment only; not offline inference or backend cryptographic attestation."
+  },
+  "scope": "Independent read-only supplemental review of7remote failed-job logs,steps,annotations andCI narrative. Original138local evidence inputs/96measurements and prior final review were not rewritten or re-reviewed.",
+  "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "ci_manifest": {
+    "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\remote-ci-fcab\\evidence-manifest.json",
+    "sha256": "83c0a297ec7c19388afc6d6ae42565a5e8850b9e72d27d795f11d89ac4e731a0",
+    "files": 25,
+    "total_bytes": 230699,
+    "all_manifest_bytes_and_hashes_match": true
+  },
+  "inputs": {
+    "summary.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\remote-ci-fcab\\summary.json",
+      "sha256": "90a61378c0fa0498eb9a434e1e0c3e689d2d6927163d8e6e016696f8a14f3bef"
+    },
+    "ci-setup-addendum.md": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\remote-ci-fcab\\ci-setup-addendum.md",
+      "sha256": "f1fa07fced6d98fa51c3a1fa44570f65224da37edb5ea759c96c9143b1dd40c4"
+    },
+    "retrieval-note.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\remote-ci-fcab\\retrieval-note.json",
+      "sha256": "11797a556d74c08fac8c0b42947f57187a6ce921522db7ff19c95b54dbe328ed"
+    },
+    "collect-current-ci.py": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\remote-ci-fcab\\collect-current-ci.py",
+      "sha256": "06e306c323fc8e1179582ae1a6a6ca0edab7adcec21c038151003a4d4b18a7ac"
+    }
+  },
+  "audit": {
+    "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\ci-addendum-audit-integration.json",
+    "sha256": "aa545f44d71398e5672e455d84668bac24a56cbffad7db3c8ce9bdf17a86b9b0"
+  },
+  "raw_job_evidence": [
+    {
+      "id": 120339717916,
+      "name": "unit-test (ubuntu-latest, 3.14)",
+      "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+      "run_id": 39931228111,
+      "run_attempt": 1,
+      "started_at": "2026-10-23T11:27:35Z",
+      "completed_at": "2026-10-23T11:27:50Z",
+      "failed_stage": "Install dependencies",
+      "actual_message": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "failure_annotation": "Process completed with exit code 2.",
+      "all_later_noncleanup_steps_skipped": true
+    },
+    {
+      "id": 120339717863,
+      "name": "unit-test (ubuntu-latest, 3.11)",
+      "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+      "run_id": 39931228111,
+      "run_attempt": 1,
+      "started_at": "2026-10-23T11:27:44Z",
+      "completed_at": "2026-10-23T11:28:00Z",
+      "failed_stage": "Install dependencies",
+      "actual_message": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "failure_annotation": "Process completed with exit code 2.",
+      "all_later_noncleanup_steps_skipped": true
+    },
+    {
+      "id": 120339717640,
+      "name": "unit-test (ubuntu-latest, 3.9)",
+      "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+      "run_id": 39931228111,
+      "run_attempt": 1,
+      "started_at": "2026-10-23T11:27:35Z",
+      "completed_at": "2026-10-23T11:27:44Z",
+      "failed_stage": "Set up Python",
+      "actual_message": "The version '3.9' with architecture 'x64' was not found for Ubuntu 26.04.",
+      "failure_annotation": "The version '3.9' with architecture 'x64' was not found for Ubuntu 26.04.\nThe list of all available versions can be found here: https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json",
+      "all_later_noncleanup_steps_skipped": true
+    },
+    {
+      "id": 120339717530,
+      "name": "unit-test (ubuntu-latest, Release, NoAsan)",
+      "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+      "run_id": 39931228083,
+      "run_attempt": 1,
+      "started_at": "2026-10-23T11:27:48Z",
+      "completed_at": "2026-10-23T11:28:10Z",
+      "failed_stage": "Install dependencies",
+      "actual_message": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "failure_annotation": "Process completed with exit code 2.",
+      "all_later_noncleanup_steps_skipped": true
+    },
+    {
+      "id": 120339717511,
+      "name": "unit-test (ubuntu-latest, Release, Asan)",
+      "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+      "run_id": 39931228083,
+      "run_attempt": 1,
+      "started_at": "2026-10-23T11:27:48Z",
+      "completed_at": "2026-10-23T11:28:05Z",
+      "failed_stage": "Install dependencies",
+      "actual_message": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "failure_annotation": "Process completed with exit code 2.",
+      "all_later_noncleanup_steps_skipped": true
+    },
+    {
+      "id": 120339717478,
+      "name": "unit-test (ubuntu-latest, Debug, NoAsan)",
+      "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+      "run_id": 39931228083,
+      "run_attempt": 1,
+      "started_at": "2026-10-23T11:27:48Z",
+      "completed_at": "2026-10-23T11:28:21Z",
+      "failed_stage": "Install dependencies",
+      "actual_message": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "failure_annotation": "Process completed with exit code 2.",
+      "all_later_noncleanup_steps_skipped": true
+    },
+    {
+      "id": 120339717188,
+      "name": "unit-test (ubuntu-latest, Debug, Asan)",
+      "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+      "run_id": 39931228083,
+      "run_attempt": 1,
+      "started_at": "2026-10-23T11:27:38Z",
+      "completed_at": "2026-10-23T11:28:07Z",
+      "failed_stage": "Install dependencies",
+      "actual_message": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "failure_annotation": "Process completed with exit code 2.",
+      "all_later_noncleanup_steps_skipped": true
+    }
+  ],
+  "checks": {
+    "all7_actual_head_sha_match_fcab": true,
+    "all7_completed_failure_run_attempt1": true,
+    "one_failure_step_each": true,
+    "clang_format17_missing_install_dependencies": 6,
+    "Python39_x64_unavailable_Ubuntu2604_setup_python": 1,
+    "all_later_noncleanup_steps_skipped": true,
+    "project_compilation_tests_reached": false,
+    "failure_annotations_checked": true,
+    "clang_annotations_are_generic_exit2_and_specific_cause_is_from_log": true,
+    "python_annotation_contains_specific_unavailable_version_message": true,
+    "exact_workflow_diff_11b_to_fcab_empty": true,
+    "workflow_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "raw_finding_and_closure": {
+    "id": "ci-addendum-integration-R1",
+    "initial_claim": "Both local evidence and two final independent reviews frozen before remote jobs completed.",
+    "judgment": "Incorrect chronology:actual job.completed_at11:27:44–11:28:21UTC is earlier than final138manifest11:38:35and reviews11:41:19/11:42:36. Observed/downloaded time differs from completion time.",
+    "status": "CLOSED_ON_FINAL_CI_MANIFEST_HASH",
+    "resolution": "English/Chinese now explicitly state records obtained/assessed after published local report, while jobs completed before final review freeze. Actual timestamps retained.",
+    "only_changed_manifest_input": "ci-setup-addendum.md",
+    "raw_job_metadata_logs_annotations_changed": false,
+    "initial_manifest_preserved": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\ci-evidence-before-time-correction\\evidence-manifest.json",
+      "sha256": "b4d2069526584fa34c6a354dc686edf422a23c9df688651eb6c9bc3ce290c266"
+    },
+    "initial_addendum_preserved": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\ci-evidence-before-time-correction\\ci-setup-addendum.md",
+      "sha256": "f09fd0795394f94b38af552af91e50474c713f87f9b670829daf661f9578c3fb"
+    }
+  },
+  "retrieval_guard_classification": {
+    "note_sha256": "11797a556d74c08fac8c0b42947f57187a6ce921522db7ff19c95b54dbe328ed",
+    "classification": "LocalGHCLI refused initial ANSI-containing log download; not project CI/test failure. Archived note recordshelp-confirmed allow-escape-sequences flag and capture-only handling.",
+    "reviewer_did_not_download_logs_or_rerun_help": true
+  },
+  "relation_to_local_evidence": {
+    "original_final_review_sha256_unchanged": "747f2b16f06a9705b3d3d8668b2b1f688ead61c694a750ae8d9bf0877c92bf72",
+    "prior_local_submission_status": "NOT_READY_TO_PUSH",
+    "status_after_CI_appendix": "NOT_READY_TO_PUSH",
+    "query_gate_still_false": true,
+    "confirmed_query_cases_still22_comparisons28": true,
+    "malformed6_still_open": true,
+    "full_local_LZOkay_sanitizer_failure_still_open": true,
+    "setup_failures_do_not_prove_new_CXX_test_regression": true,
+    "skipped_remote_tests_do_not_count_as_pass": true
+  },
+  "limitations": [
+    "This audit verifies supplied actual logs/metadata/annotations and Git workflow diff; no freshremoteAPIquery or CI rerun was performed.",
+    "A correct setup-failure classification does not cleartheCIgate or unresolvedlocalcorrectness/performance/sanitizer gates.",
+    "ZIP delivery itself is parent-owned subsequent packaging; thisreview binds25individualrecords plus archivedoriginaltimewording,not an uninspectedfutureZIP."
+  ],
+  "conclusion": {
+    "ci_fact_appendix": "ACCEPTED_FOR_PUBLICATION_WITH_EXPLICIT_SETUP_FAILURES",
+    "new_unresolved_appendix_findings": [],
+    "production_source_submission": "NOT_READY_TO_PUSH",
+    "full_pre_submission_gate_passed": false
+  },
+  "reviewer_activity": "Read local artifact bytes,parsedmetadata/logs and executed read-only git diff. Wrote only own review/auditJSON. No tests,builds,extra timings,source/workflow edits,remote writes,CIrerun orCopilot request."
+}

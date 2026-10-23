@@ -1,0 +1,175 @@
+{
+  "checked_at": "2026-10-23T11:51:47.840343+00:00",
+  "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "failed_jobs": [
+    {
+      "job": 120339717916,
+      "name": "unit-test (ubuntu-latest, 3.14)",
+      "url": "https://github.com/apache/tsfile/actions/runs/39931228111/job/120339717916",
+      "stage": "Install dependencies",
+      "error": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "formatter_missing": true,
+      "all_following_noncleanup_steps_skipped": true,
+      "artifacts": {
+        "job-120339717916.annotations.json": {
+          "bytes": 710,
+          "sha256": "9f4b09953edddab798a1bdaaf34227a0b87e639913a97a756d35e323ee73d1bc"
+        },
+        "job-120339717916.json": {
+          "bytes": 3146,
+          "sha256": "283a994a43bc831f9bca3e83ac8037fad4cc42308afd1e184643dc21842c45cb"
+        },
+        "job-120339717916.log": {
+          "bytes": 27021,
+          "sha256": "d6e889590f1e98ba024ecdad0002cd7b0de22f66c62f768c7758896854d3b159"
+        }
+      }
+    },
+    {
+      "job": 120339717863,
+      "name": "unit-test (ubuntu-latest, 3.11)",
+      "url": "https://github.com/apache/tsfile/actions/runs/39931228111/job/120339717863",
+      "stage": "Install dependencies",
+      "error": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "formatter_missing": true,
+      "all_following_noncleanup_steps_skipped": true,
+      "artifacts": {
+        "job-120339717863.annotations.json": {
+          "bytes": 710,
+          "sha256": "9f4b09953edddab798a1bdaaf34227a0b87e639913a97a756d35e323ee73d1bc"
+        },
+        "job-120339717863.json": {
+          "bytes": 3146,
+          "sha256": "cb312d70a4e1f0db7cb3287177ee26f92690e014bb0815d5029d65a81913cca9"
+        },
+        "job-120339717863.log": {
+          "bytes": 27208,
+          "sha256": "4281a45f8ee1cb9ce168d0260c6cfb37b17e5dff9b3b0a32de05c0dd70881ad9"
+        }
+      }
+    },
+    {
+      "job": 120339717640,
+      "name": "unit-test (ubuntu-latest, 3.9)",
+      "url": "https://github.com/apache/tsfile/actions/runs/39931228111/job/120339717640",
+      "stage": "Set up Python",
+      "error": "The version '3.9' with architecture 'x64' was not found for Ubuntu 26.04.",
+      "formatter_missing": false,
+      "all_following_noncleanup_steps_skipped": true,
+      "artifacts": {
+        "job-120339717640.annotations.json": {
+          "bytes": 889,
+          "sha256": "e2024deaa7b29e18fb325ac00f2d1f1ea68dddd89d23caa6396e5884881f82b0"
+        },
+        "job-120339717640.json": {
+          "bytes": 2818,
+          "sha256": "3a443103d22c8593d7907b46908bee21064c3211db64c224a0c9732261b9e6ca"
+        },
+        "job-120339717640.log": {
+          "bytes": 17014,
+          "sha256": "78fa763f12d9dae4bb206233eed5e4420e3904770816486aad727ce81e684a2b"
+        }
+      }
+    },
+    {
+      "job": 120339717530,
+      "name": "unit-test (ubuntu-latest, Release, NoAsan)",
+      "url": "https://github.com/apache/tsfile/actions/runs/39931228083/job/120339717530",
+      "stage": "Install dependencies",
+      "error": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "formatter_missing": true,
+      "all_following_noncleanup_steps_skipped": true,
+      "artifacts": {
+        "job-120339717530.annotations.json": {
+          "bytes": 712,
+          "sha256": "7c3c9b2aa41810538636b21be72189dec1d3a026c19f858c3b3b213e0668b17a"
+        },
+        "job-120339717530.json": {
+          "bytes": 2684,
+          "sha256": "dba3f5b2bf8fb23ad61aefcaab9e2e61c1ca5425af302caef42876cdecda8e26"
+        },
+        "job-120339717530.log": {
+          "bytes": 29644,
+          "sha256": "8ad90e6f3e2ee0460029adaa7ea8784db35ce446a6afb868c755b80c537a4e13"
+        }
+      }
+    },
+    {
+      "job": 120339717511,
+      "name": "unit-test (ubuntu-latest, Release, Asan)",
+      "url": "https://github.com/apache/tsfile/actions/runs/39931228083/job/120339717511",
+      "stage": "Install dependencies",
+      "error": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "formatter_missing": true,
+      "all_following_noncleanup_steps_skipped": true,
+      "artifacts": {
+        "job-120339717511.annotations.json": {
+          "bytes": 712,
+          "sha256": "7c3c9b2aa41810538636b21be72189dec1d3a026c19f858c3b3b213e0668b17a"
+        },
+        "job-120339717511.json": {
+          "bytes": 2682,
+          "sha256": "9857a5d297107f3bbcce3eb021f48b1c2939069505b1eb0c219b21cbca0d5656"
+        },
+        "job-120339717511.log": {
+          "bytes": 29307,
+          "sha256": "b64d5c6567557d24a3013fc26f23cd7953f0f6458ef6863e6eab5a89de41e029"
+        }
+      }
+    },
+    {
+      "job": 120339717478,
+      "name": "unit-test (ubuntu-latest, Debug, NoAsan)",
+      "url": "https://github.com/apache/tsfile/actions/runs/39931228083/job/120339717478",
+      "stage": "Install dependencies",
+      "error": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "formatter_missing": true,
+      "all_following_noncleanup_steps_skipped": true,
+      "artifacts": {
+        "job-120339717478.annotations.json": {
+          "bytes": 712,
+          "sha256": "7c3c9b2aa41810538636b21be72189dec1d3a026c19f858c3b3b213e0668b17a"
+        },
+        "job-120339717478.json": {
+          "bytes": 2682,
+          "sha256": "893e019e8626dbb3496e2f9522aeb2ab552bf214fc8797e7931709c41a6463d9"
+        },
+        "job-120339717478.log": {
+          "bytes": 29636,
+          "sha256": "a733ea39f810a9fd12eed1fb502694f15a81e795fff28c90eb88e13eba7c04d8"
+        }
+      }
+    },
+    {
+      "job": 120339717188,
+      "name": "unit-test (ubuntu-latest, Debug, Asan)",
+      "url": "https://github.com/apache/tsfile/actions/runs/39931228083/job/120339717188",
+      "stage": "Install dependencies",
+      "error": "update-alternatives: error: alternative path /usr/bin/clang-format-17 does not exist",
+      "formatter_missing": true,
+      "all_following_noncleanup_steps_skipped": true,
+      "artifacts": {
+        "job-120339717188.annotations.json": {
+          "bytes": 712,
+          "sha256": "7c3c9b2aa41810538636b21be72189dec1d3a026c19f858c3b3b213e0668b17a"
+        },
+        "job-120339717188.json": {
+          "bytes": 2680,
+          "sha256": "ca28e2210a3d3d1d4acba7c4d47f037a20ef04b42067d36aafa928957e1a7387"
+        },
+        "job-120339717188.log": {
+          "bytes": 29636,
+          "sha256": "74e658c662c1405a3af0873838b23619c6b62cb165a7ffc4e88b854ab85b56e5"
+        }
+      }
+    }
+  ],
+  "formatter_missing": 6,
+  "python39_unavailable": 1,
+  "project_build_or_tests_reached": false,
+  "workflow_diff_11b_to_fcab": "empty",
+  "classification": "runner/toolchain setup; independent from scoped correctness/performance/source gates",
+  "ci_rerun_requested": false,
+  "workflow_modified": false,
+  "source_pushed": false
+}
