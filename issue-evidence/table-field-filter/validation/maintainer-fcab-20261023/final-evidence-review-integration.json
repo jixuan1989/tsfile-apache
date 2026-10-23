@@ -1,0 +1,467 @@
+{
+  "reviewed_at_utc": "2026-10-23T11:41:19.400921+00:00",
+  "reviewer": {
+    "agent": "/root/review_pr1026_maintainer",
+    "session": "01a15cc5-7771-7131-8b29-3a98ac6923d1",
+    "model": "gpt-6.1-sol",
+    "identity_evidence_sha256": "bb386194f8cbec1271d5b06dc86fff19f41608d7447a616eea8f31248340659e",
+    "verified_selected_runtime_fields": true,
+    "inherited_parent_session_meta_also_present": true,
+    "limits": "First session_meta identifies this agent; inherited parent session_meta is also present. Runtime model assignment only; not offline inference or backend cryptographic attestation."
+  },
+  "review_scope": "Independent read-only integration/source-and-frozen-evidence review of public maintainer fcab head. This final turn used artifact reads and pure JSON/XML/gcov/bootstrap recomputation only; no build, test, query, additional timing, production edit, remote write, Copilot request or source push.",
+  "commits": {
+    "frozen_head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+    "prior_public": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "earlier_baseline": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "whole_pr_base": "1180b13675e11a0230708af2cc70d037e0e12623",
+    "preserved_unmerged_local_reference": "45d4d7d5c7182ad7c5208510f6ee33c57670310b"
+  },
+  "frozen_inputs": {
+    "final-evidence-manifest.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\final-evidence-manifest.json",
+      "sha256": "e3c5154485a993e345f22c20e0d7b9d899c60d73fa829bde13c60306e14b48c2",
+      "bytes": 23698
+    },
+    "validation-report.md": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\validation-report.md",
+      "sha256": "81ee7e74b7d718f60dc13f5a3fe5e2c3fca3437f0f0684d1208534d4cbff41f3",
+      "bytes": 17258
+    },
+    "validation-summary.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\validation-summary.json",
+      "sha256": "96ce0e4277963ca570f1e5a66419db2e322578326a5d7afd0aad4a9d9f04ba1c",
+      "bytes": 14347
+    },
+    "source-freeze.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\source-freeze.json",
+      "sha256": "6d0185bb6b808fc83886577632fb7e50b8a97f526e8160f60e0c5b3309652956",
+      "bytes": 29472
+    },
+    "candidate-query-performance/protocol.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\candidate-query-performance\\protocol.json",
+      "sha256": "688e7fb4571a9754c7a75a75d4026cbdb07df68cdf0cd557ed50dde80e7eefdc",
+      "bytes": 67955
+    },
+    "candidate-query-performance/results.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\candidate-query-performance\\results.json",
+      "sha256": "e27eaa05137cefa008b9634c2b785b36f1415b0374f677003ccdca1b596e6014",
+      "bytes": 3691920
+    },
+    "candidate-query-performance/processes.jsonl": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\candidate-query-performance\\processes.jsonl",
+      "sha256": "ce4858b760271eea020b082f82be029f7263bc77db5e98027654c63cba6728e0",
+      "bytes": 5155541
+    },
+    "all-query-ratios.md": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\all-query-ratios.md",
+      "sha256": "f01b873cb718d33a84eed3721b47becd6051be47ff919896b71eedc1cd6a06e3",
+      "bytes": 12754
+    },
+    "all-query-metrics.md": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\all-query-metrics.md",
+      "sha256": "8b3d7e515ba2fb52d5032fa7508fbb5124127dc11ac4e26172282ffb62a3af13",
+      "bytes": 47031
+    },
+    "candidate-coverage-summary.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\candidate-coverage-summary.json",
+      "sha256": "33150f4984b2ee9c2d16f17b13e196ed7ab64963812c639eb18e57548a75f781",
+      "bytes": 107340
+    },
+    "candidate-coverage-filtered-inputs.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\candidate-coverage-filtered-inputs.json",
+      "sha256": "e5ce7dd474b8fbd9c781e6484dc767d345a18b6a8062ddc45f0e50632865a90c",
+      "bytes": 2447279
+    },
+    "coverage-diff-scopes.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\coverage-diff-scopes.json",
+      "sha256": "9ee07f763112e206d564005867943b7d593b416bc16e62bbd30695be4599362c",
+      "bytes": 621
+    },
+    "changed-line-ranges.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\changed-line-ranges.json",
+      "sha256": "4cfbe2d7cef9e40730395e2053f5b9af86e12cd2bd17818b2174814ee6173e58",
+      "bytes": 15772
+    },
+    "pre-submission-review/runtime-model-identity-evidence.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\runtime-model-identity-evidence.json",
+      "sha256": "bb386194f8cbec1271d5b06dc86fff19f41608d7447a616eea8f31248340659e",
+      "bytes": 2592
+    },
+    "pre-submission-review/source-review-integration.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\source-review-integration.json",
+      "sha256": "67e28a545cecde40614cfeeb4654ee805429d6fd2b5e962588bf145565dd4dad",
+      "bytes": 24021
+    },
+    "pre-submission-review/protocol-review-integration.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\protocol-review-integration.json",
+      "sha256": "6b3d0db5742ac4f01a62fdd04691543f628dc47169bf79177bd7bb4a838f2871",
+      "bytes": 12193
+    },
+    "pre-submission-review/final-evidence-audit-integration-refinalized.py": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\final-evidence-audit-integration-refinalized.py",
+      "sha256": "116e0a1d9fd2170dfccb7214a195b9077e3b00bece135b0ab8e18cad6ba5e6e0",
+      "bytes": 25943
+    },
+    "pre-submission-review/final-evidence-integration-audit-refinalized.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\final-evidence-integration-audit-refinalized.json",
+      "sha256": "3a5998ee5b3ddc569565776d297d1f20c5d5410fc1442bf9440a4d39dce8f5db",
+      "bytes": 42916
+    },
+    "pre-submission-review/final-evidence-secondary-audit-integration.json": {
+      "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\final-evidence-secondary-audit-integration.json",
+      "sha256": "b7dbfd98e3b742227cd890bdd7f613c355d1fc5cfc9a10830e44383b3b2491d3",
+      "bytes": 3206
+    }
+  },
+  "manifest_audit": {
+    "final_manifest_sha256": "e3c5154485a993e345f22c20e0d7b9d899c60d73fa829bde13c60306e14b48c2",
+    "entries": 138,
+    "total_bytes": 18923413,
+    "all_file_bytes_and_hashes_match": true,
+    "original_manifest_sha256": "07361e8f5c36ed9c99b4c08fa02acc3def932d31b65280f6ca3211ac5538aebe",
+    "original129_file_freeze_preserved": true,
+    "new_entries_are_original_metadata_and_audit_provenance": true,
+    "only_changed_original_items": [
+      "finalize-evidence.py",
+      "freeze-evidence.py",
+      "validation-report.md",
+      "validation-summary.json"
+    ],
+    "source_and_measurement_inputs_not_changed": true,
+    "final_reviews_are_added_separately_not_self_hashed_in_manifest": true
+  },
+  "source_observation_closure": {
+    "production_worktree_clean": true,
+    "production_hashes_verified": 260,
+    "no_new_valid_query_counterexample_identified_in_review_scope": true,
+    "ordered_floating_NOT": "Both real TsBlock and ColumnView evaluators match independent IEEE native truth including finite/NaN/infinities/signed-zero, NULL exclusion, single and double NOT; direct180 pair grid independently regenerated. Positive Java/C++ full-file and 40k supplements also pass.",
+    "placement_ownership": "SelectionMask::release_storage and vector storage release follow manual destroy ownership. Focused199 and reader361 LSan/ASan/UBSan logs are clean. No full-library sanitizer-clean claim follows because fresh full run aborts in pinned dependency.",
+    "fcab-integration-R1": {
+      "status": "OPEN_PREEXISTING_PARTIAL_FIX_GAP_REPRODUCED_ON_WINDOWS_AND_LINUX",
+      "primary_location": {
+        "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\pr03-fcab-src\\cpp\\src\\reader\\aligned_chunk_reader.cc",
+        "line": 1500,
+        "end_line": 1501
+      },
+      "related_locations": [
+        {
+          "path": "cpp/src/reader/column_mapping.h",
+          "lines": "55-57"
+        },
+        {
+          "path": "cpp/src/reader/table_query_executor.cc",
+          "lines": "73-82,156-165"
+        },
+        {
+          "path": "cpp/src/reader/block/device_ordered_tsblock_reader.cc",
+          "lines": "24-29,54-58"
+        }
+      ],
+      "actual": "Schema-only and LIMIT0 each row/batch1/batch4 accept OR(v>=0,nullptr),query0,next0,empty; strict reviewer consistency expectation E_INVALID_ARG4 fails6cases. Both nonempty normal and outside-time plans report E_INVALID_ARG4 on iteration.",
+      "classification": "Invalid-tree consistency issue existed on11b; not a new valid-query regression. Strict precedence is reviewer-recommended consistency, not separately claimed documented SQL-parser guarantee.",
+      "valid_controls": "All12 valid controls pass with exact ordered output.",
+      "suggested_followup": "Validate structural predicate in common planning before no-task/LIMIT0 shortcuts; no source fix was made in this stage."
+    },
+    "conservative_statistics": "Correctness-preserving negated_ statistics disables even finite data shortcuts. Finite0/full-hit same-native comparisons are valid and measurably slower. No profiler/causal isolation proves the full slowdown, necessity, or minimization.",
+    "old_lazy_duplicate_mask": "Still source-confirmed preexisting avoidable repeated mask evaluation; no whole-query timing attribution proven.",
+    "unused_mask_allocation": "Unchanged assign-before-null-filter allocation remains; not newly introduced byfcab, not identified as cause of callback regressions."
+  },
+  "functional_and_sanitizer_evidence": {
+    "xml_exact_counts": {
+      "windows_focused": {
+        "total": 199,
+        "passed": 199,
+        "disabled": 0,
+        "skipped": 0,
+        "failed": 0
+      },
+      "windows_full": {
+        "total": 1117,
+        "passed": 1104,
+        "disabled": 10,
+        "skipped": 3,
+        "failed": 0
+      },
+      "linux_focused": {
+        "total": 199,
+        "passed": 199,
+        "disabled": 0,
+        "skipped": 0,
+        "failed": 0
+      },
+      "linux_reader": {
+        "total": 368,
+        "passed": 361,
+        "disabled": 7,
+        "skipped": 0,
+        "failed": 0
+      }
+    },
+    "linux_focused_exit0_no_sanitizer_diagnostics": true,
+    "linux_reader_exit0_no_sanitizer_diagnostics": true,
+    "linux_harness_exit3_is_semantic_failure_not_sanitizer_pass": true,
+    "linux_harness_no_sanitizer_diagnostics": true,
+    "fresh_full_sanitizer": {
+      "exit_code": 1,
+      "full_pass": false,
+      "diagnostic": "LZOTest.TestBytes1; pinned lzokay5cb18da508cc4d3ec41bc04dccdeef9c5ffedfb2/lzokay.cpp:34 get_le16 misaligned uint16 load",
+      "classification": "Unchanged dependency diagnostic; not hidden or suppressed, does not prove current full suite clean."
+    },
+    "spotless_BUILD_SUCCESS_observed": true,
+    "windows_skips": "Opt-in dataset-index/fixture-generation/validation env vars unset. GenerateFixtures needs output directory, not existing input fixture."
+  },
+  "oracle_evidence": {
+    "standard_positive_queries": 1896,
+    "standard_raw_processes": 125,
+    "exact_full_expected_sequences_independently_regenerated": true,
+    "standard_positive_breakdown": {
+      "null_boolean_time_offset_limit": 96,
+      "floating_operator_literal_negation": 1800
+    },
+    "standard_prior_negative_controls": {
+      "processes": 3,
+      "logical_mismatches_each": 40,
+      "ordered_NOT_finite_or_infinite_literal_omits_NaN": 32,
+      "ordered_NOT_NaN_literal_missing_all_nonNULL": 8,
+      "normal_exit0_not_IO_error": true
+    },
+    "floating_supplement": {
+      "raw_processes": 313,
+      "positive_processes": 288,
+      "queries": 864,
+      "negative_controls": 12,
+      "java_full_scans": 6
+    },
+    "floating_Java_full_scan_totals_independently_recomputed": true,
+    "all6_writer_products_queried": true,
+    "CXX_base_fcab_writer_products_byteidentical": true,
+    "Java_byteidentity_not_claimed": true,
+    "values_PLAIN_time_default_TS2DIFF_all_UNCOMPRESSED": true,
+    "NaN_payload_bits_outside_scope": true
+  },
+  "coverage_evidence": {
+    "native_gcov_objects_rehashed": 231,
+    "filtered_native_entries_verified": 56,
+    "source_alias_hashes_equal_exact_fcab_git_objects": true,
+    "zero_context_scopes_and_ranges_equal_exact_git_diffs": true,
+    "current11b_to_fcab": {
+      "covered_lines": 33,
+      "executable_lines": 36,
+      "line_percent": 91.66666666666667,
+      "covered_branches": 52,
+      "branches": 74,
+      "branch_percent": 70.27027027027027
+    },
+    "maintainer6f_to_fcab": {
+      "covered_lines": 858,
+      "executable_lines": 1031,
+      "line_percent": 83.22017458777886,
+      "covered_branches": 839,
+      "branches": 1398,
+      "branch_percent": 60.01430615164521
+    },
+    "wholePR1180_to_fcab": {
+      "covered_lines": 937,
+      "executable_lines": 1112,
+      "line_percent": 84.26258992805755,
+      "covered_branches": 956,
+      "branches": 1553,
+      "branch_percent": 61.55827430779137
+    },
+    "selected16_file_module": {
+      "covered_lines": 3957,
+      "executable_lines": 4913,
+      "line_percent": 80.54142072053735,
+      "covered_branches": 3466,
+      "branches": 6255,
+      "branch_percent": 55.41167066346922
+    },
+    "uncovered_current_delta_lines": {
+      "cpp/src/reader/filter/aligned_field_filter.cc": [
+        275,
+        276,
+        282
+      ]
+    },
+    "no_denominator_exclusions_or_whole_library90_claim": true
+  },
+  "performance_evidence": {
+    "raw_processes": 5826,
+    "phase_processes": {
+      "warmup": 576,
+      "initial": 3456,
+      "confirmation_warmup": 138,
+      "confirmation": 1656
+    },
+    "phase_queries": {
+      "warmup": 1968,
+      "initial": 11808,
+      "confirmation_warmup": 444,
+      "confirmation": 5328
+    },
+    "initial_cases": 96,
+    "one_shot_confirmations": 23,
+    "cases_with_confirmed_increases": 22,
+    "confirmed_comparisons": 28,
+    "confirmed_regressions": {
+      "dense-w8-p0-b0": [],
+      "callback-w8-p1-b1024": [
+        "fixed/base"
+      ],
+      "unfiltered-sparse-b1024": [
+        "fixed/prior"
+      ],
+      "float-not-t0-mixed0-cut0-b0": [
+        "fixed/prior"
+      ],
+      "float-not-t0-mixed0-cut0-b1024": [
+        "fixed/prior"
+      ],
+      "float-not-t0-mixed0-cut100-b0": [
+        "fixed/prior"
+      ],
+      "float-not-t0-mixed0-cut100-b1024": [
+        "fixed/prior"
+      ],
+      "float-not-t1-mixed0-cut0-b0": [
+        "fixed/prior"
+      ],
+      "float-not-t1-mixed0-cut0-b1024": [
+        "fixed/prior"
+      ],
+      "float-not-t1-mixed0-cut100-b0": [
+        "fixed/prior"
+      ],
+      "float-not-t1-mixed0-cut100-b1024": [
+        "fixed/prior"
+      ],
+      "float-callback-t0-cut0-b0": [
+        "fixed/prior",
+        "fixed/base"
+      ],
+      "float-callback-t0-cut0-b1024": [
+        "fixed/prior",
+        "fixed/base"
+      ],
+      "float-callback-t0-cut50-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut50-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut100-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t0-cut100-b1024": [
+        "fixed/base"
+      ],
+      "float-callback-t1-cut0-b0": [
+        "fixed/prior",
+        "fixed/base"
+      ],
+      "float-callback-t1-cut0-b1024": [
+        "fixed/prior",
+        "fixed/base"
+      ],
+      "float-callback-t1-cut50-b0": [
+        "fixed/prior",
+        "fixed/base"
+      ],
+      "float-callback-t1-cut50-b1024": [
+        "fixed/prior",
+        "fixed/base"
+      ],
+      "float-callback-t1-cut100-b0": [
+        "fixed/base"
+      ],
+      "float-callback-t1-cut100-b1024": [
+        "fixed/base"
+      ]
+    },
+    "confirmations_without_confirmed_increase": [
+      "dense-w8-p0-b0"
+    ],
+    "all_raw_matched_results": true,
+    "all_metrics_and_bootstrap_values_recomputed": true,
+    "all_order_slot_command_sequences_verified": true,
+    "frozen_artifacts_verified": 83,
+    "query_gate_cleared": false,
+    "formal_verified_queries": 17136,
+    "warmup_verified_queries": 2412,
+    "raw_stderr_nonempty": 0,
+    "every_full_process_result_count_and_checksum_verified": true,
+    "new_integer_and_floating_counts_and_checksums_independently_recomputed": true,
+    "all_ratio119_rows_and_metric357_rows_match_recomputed_values": true,
+    "max_confirmed_comparison": {
+      "case": "float-not-t0-mixed0-cut100-b1024",
+      "kind": "floating_not",
+      "comparison": "fixed/prior",
+      "median_ratio": 2.8513292320972288,
+      "bootstrap95": [
+        2.7586827020343936,
+        2.894736842105263
+      ]
+    },
+    "result": "FAILED_QUERY_GATE",
+    "no_extra_rounds_in_frozen_protocol_run": true,
+    "necessity_proven": false
+  },
+  "comparison_and_inference_boundaries": [
+    "Finite floating prior/fcab uses correct native APIs, same two physical projected fields and exact results; 2.6430–2.8513x zero-hit regression is retained.",
+    "MixedNaN prior-native is wrong and excluded. Prior reference uses correct opaque predicate; native-vs-opaque costs include materialization/evaluation/checking and are not isolated engine speedups.",
+    "Floating same-callback controls use same physical projection and predicate across all versions. Integer structured/base additionally materializes bucket; distinct boundary retained.",
+    "Pointwise process-block bootstrap95,5000resamples,seed102622; correlated inner queries are not independent samples.96case intervals not multiplicity-controlled familywise guarantees; no significance is not equivalence.",
+    "2warmups/12initial;23exact triggered cases receive one24block confirmation plus2warmups; one dense-w8-p0-b0 signal does not confirm. No outliers removed or appended pass-seeking rounds in frozen raw sequence.",
+    "All6version orders/3identity slots verified in raw commands;83frozen inputs rehashed. Frozen runner enforces childmask4 before resume and parentmask16; host background load not fully controlled.",
+    "Full timing includes checking and teardown; expected-vector setup, process startup and lib initialization outside timer. First row means accepted row/batch readiness, absent for zero-hit.",
+    "Original8 driver exposes8query block totals only; per-queryP50/P95/phases/memory unavailable. New-driverP50/P95 descriptive, process peak not query-only memory.",
+    "Warm-cache MSVC Release uncompressed workload only. Cold cache,P99,compressed-query performance,wide nonaligned FIELD workload,parallel scaling,query-only memory and current write throughput remain unmeasured.",
+    "Better native results in other cases cannot cancel slower callback/noFIELD/finite cases. No transfer of historical local45d performance or coverage tofcab; priorPR1018/1024 gaps remain."
+  ],
+  "withdrawn_hypotheses_retained": [
+    {
+      "hypothesis": "Malformed OR bypasses error in outside-time-window scan",
+      "disposition": "WITHDRAWN; fcab actual Windows and Linux iteration returns E_INVALID_ARG in all3modes. Only schema-only/LIMIT0 remain."
+    },
+    {
+      "hypothesis": "Local45d finite extrema shortcut loses hidden [0,NaN,1] row",
+      "disposition": "REJECTED; actual statistic min0/max1/sumNaN; local45d existing sum/extrema guard plus native evaluation passes8/8,fcab8/8,prior11b6/8. No local45d correctness defect demonstrated."
+    }
+  ],
+  "raw_report_review_findings": [
+    {
+      "id": "final-report-integration-R1",
+      "status": "CLOSED_ON_FINAL_HASH",
+      "initial_text": "Skipped Windows cases require external fixtures.",
+      "judgment": "Too broad: GenerateFixtures only skips without configured output directory.",
+      "change_verified": "English and Chinese report now identify3opt-in tests and unset corresponding env vars; generation requires output directory.",
+      "test_or_timing_change": false
+    },
+    {
+      "id": "final-report-integration-R2",
+      "status": "CLOSED_ON_FINAL_HASH",
+      "initial_text": "Hidden-NaN sum guard is required for any finite fast-path alternative.",
+      "judgment": "Evidence establishes finite extrema insufficient and local45d sum/extrema guard sufficient in probe, not universal necessity of that one algorithm.",
+      "change_verified": "Summary now requires NaN-safe proof and names preserved local45d implementation as example.",
+      "test_or_timing_change": false
+    }
+  ],
+  "freeze_pending_field_resolution": {
+    "field": "validation-summary.json.independent_final_evidence_review",
+    "value": "pending",
+    "meaning": "Frozen-time state, before final review artifacts existed. It is not an unperformed-review claim after this signed-off record.",
+    "agreed_resolution": "Parent will add separate final-review-outcome.json/README binding both actual final review hashes and frozen summary/manifest hashes; source/query gates remainfalse. Original138freeze should not be rewritten to create self-reference."
+  },
+  "conclusion": {
+    "diagnostic_report_status": "ACCEPTED_WITH_EXPLICIT_FAILURES_AND_LIMITATIONS",
+    "new_actionable_unresolved_report_defects": [],
+    "source_submission_status": "NOT_READY_TO_PUSH",
+    "complete_pre_submission_gate_passed": false,
+    "query_gate_passed": false,
+    "malformed_input_consistency_fixed": false,
+    "full_sanitizer_clean": false,
+    "performance_necessity_demonstrated": false,
+    "allowed_conclusion": "This is a candid validation diagnosis of maintainer code, suitable as evidence for review discussion after separate final-review outcome binding. It does not approve production submission or merging."
+  }
+}

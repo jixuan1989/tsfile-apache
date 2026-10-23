@@ -1,0 +1,3 @@
+Public maintainer fcab7437 validation; query/source gates FAILED. Read bilingual validation-report.md, all-query-ratios.md and all-query-metrics.md. The original validation-summary was frozen before final review (pending at that time); final-review-outcome.json and both final-evidence-review files record the completed reviews and their hashes. Join parts in listed order and verify SHA256 from parts-manifest.json; the archive also verifies each entry. No production source push.
+
+维护者公开fcab7437验证；查询及源码门槛未通过。完整中英文报告及全部比率/指标如上。validation-summary在最终审阅之前冻结，其中pending仅指当时状态；final-review-outcome.json及两份final-evidence-review记录已经完成的审阅及哈希。按parts-manifest顺序拼接并核对SHA256，归档也核对各条目。没有生产源码推送。

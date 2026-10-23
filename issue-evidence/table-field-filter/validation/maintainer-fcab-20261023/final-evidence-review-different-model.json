@@ -1,0 +1,330 @@
+{
+  "reviewed_at_utc": "2026-10-23T11:42:36.110089+00:00",
+  "overall": "NOT_READY_TO_PUSH",
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "report_accuracy_verdict": "Two wording issues raised by the integration reviewer have been corrected and independently verified. No remaining report discrepancy found. Original numeric, source, test and measurement audits remain unchanged. Suitable as honest diagnostic evidence; not approval of production source submission.",
+  "frozen_commits": {
+    "public_maintainer_head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+    "parent_public_head": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "performance_base": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "whole_pr_coverage_base": "1180b13675e11a0230708af2cc70d037e0e12623",
+    "unmerged_unpushed_local_reference": "45d4d7d5c7182ad7c5208510f6ee33c57670310b"
+  },
+  "source_state": {
+    "public_worktree": "C:/Users/hxd/Documents/Codex/2026-10-17/new-chat-2/work/pr03-fcab-src",
+    "head_verified": "fcab7437130421bed2604311461a7a7aa6e9a255",
+    "parent_verified": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "git_author_verified": "ColinLee",
+    "worktree_clean": true,
+    "production_freeze_hashes_verified": 260,
+    "reviewer_source_changes": false,
+    "reviewer_remote_calls": false,
+    "limits": "Local source/object state verified. No remote lookup or push performed; parent reports this round diagnoses maintainer public source and has no production candidate push."
+  },
+  "identity": {
+    "requested_model": "gpt-6-astra",
+    "direct_runtime_recorded_model": "gpt-6-astra",
+    "session": {
+      "id": "01a16181-6b51-75c0-91f5-0e4effcd27fa",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a146d7-a196-7d20-bcb2-28bd83157e4d",
+            "depth": 1,
+            "agent_path": "/root/review_aligned_filter_model",
+            "agent_nickname": "Ampere",
+            "agent_role": null
+          }
+        }
+      },
+      "originator": "Codex Desktop"
+    },
+    "latest_turn_context": {
+      "timestamp": "2026-10-23T11:28:38.685Z",
+      "model": "gpt-6-astra"
+    },
+    "runtime_record": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\22\\rollout-2026-10-22T10-47-14-01a16181-6b51-75c0-91f5-0e4effcd27fa.jsonl",
+    "parent_side_identity_evidence": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\runtime-model-identity-evidence.json",
+    "identity_evidence_sha256": "bb386194f8cbec1271d5b06dc86fff19f41608d7447a616eea8f31248340659e",
+    "distinct_from_implementor_and_integration_reviewer": "Parent-side records verify gpt-6.1-sol for root and integration reviewer versus this gpt-6-astra session.",
+    "limit": "Verified local runtime model/session assignment; not cryptographic backend identity attestation or a claim of offline inference."
+  },
+  "evidence_binding": {
+    "manifest_path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\final-evidence-manifest.json",
+    "manifest_sha256": "e3c5154485a993e345f22c20e0d7b9d899c60d73fa829bde13c60306e14b48c2",
+    "manifest_files_checked": 138,
+    "manifest_bytes_checked": 18923413,
+    "manifest_mismatches": 0,
+    "protocol_sha256": "688e7fb4571a9754c7a75a75d4026cbdb07df68cdf0cd557ed50dde80e7eefdc",
+    "protocol_inputs_verified": 83,
+    "explicit_key_file_hashes": {
+      "validation-summary.json": "96ce0e4277963ca570f1e5a66419db2e322578326a5d7afd0aad4a9d9f04ba1c",
+      "validation-report.md": "81ee7e74b7d718f60dc13f5a3fe5e2c3fca3437f0f0684d1208534d4cbff41f3",
+      "all-query-ratios.md": "f01b873cb718d33a84eed3721b47becd6051be47ff919896b71eedc1cd6a06e3",
+      "all-query-metrics.md": "8b3d7e515ba2fb52d5032fa7508fbb5124127dc11ac4e26172282ffb62a3af13",
+      "source-freeze.json": "6d0185bb6b808fc83886577632fb7e50b8a97f526e8160f60e0c5b3309652956",
+      "candidate-query-performance/protocol.json": "688e7fb4571a9754c7a75a75d4026cbdb07df68cdf0cd557ed50dde80e7eefdc",
+      "candidate-query-performance/results.json": "e27eaa05137cefa008b9634c2b785b36f1415b0374f677003ccdca1b596e6014",
+      "candidate-query-performance/processes.jsonl": "ce4858b760271eea020b082f82be029f7263bc77db5e98027654c63cba6728e0",
+      "batch-performance.py": "e0586dfd231d28a1ce8b684acd1f6d473f3f4fa3a01b7652e41ebf40550b32b4",
+      "candidate-compatibility-final-oracle/raw.json": "d39ef21c203d9cc176d8443d0d8ba2cc7f45f9272219833a0b0b1ad338149872",
+      "candidate-compatibility-final-oracle/summary.json": "1c1222065ebfea1bac9996830bd2a960e7abcfc82cf17c173f227e3c85c4149b",
+      "floating-supplement/raw.json": "d73e64337a418350cccf2b30b91f9d458a6db0b3927d0390b5789a47cb8d4564",
+      "floating-supplement/summary.json": "f476f5d9a71742968e25b91879138eaac143be28c6f6cfafcad19ea1a0857ce5",
+      "coverage-diff-scopes.json": "9ee07f763112e206d564005867943b7d593b416bc16e62bbd30695be4599362c",
+      "candidate-coverage-filtered-inputs.json": "e5ce7dd474b8fbd9c781e6484dc767d345a18b6a8062ddc45f0e50632865a90c",
+      "candidate-coverage-summary.json": "33150f4984b2ee9c2d16f17b13e196ed7ab64963812c639eb18e57548a75f781",
+      "candidate-zero-context-production.diff": "beed479f92aeb05c8a32f4914bd8895b4ac2f4a90768497ef5a8a681a979c510",
+      "maintainer-zero-context-production.diff": "249d17db43dd5ea13aeb0f0d186faaec68137afbe4a9efe60b26c6f22fe7bf76",
+      "whole-pr-zero-context-production.diff": "df4dcfcdbff23af5b876556cf9214c239e322cfb844aafce14b272f9250a5a2e",
+      "candidate-linux-full.log": "b2713b04458ea460ec04fb876cf9c1e72f80d8b15ebc37ec46a3b285255bc72c",
+      "candidate-linux-focused.xml": "3e737c6b688a3b9becb650de664ad7b0de703c9ca149133caafad22a3b7a93cf",
+      "candidate-linux-reader.xml": "2ae48cdcae6079c09b983d2039191616e752bc8f02d88aae49bd082ff7ad59c6",
+      "candidate-windows-focused.xml": "7841e3c8d5b4c7c7bfd969b94eeaa0b31e29cf0a3ae22eb569595d0781d4f437",
+      "candidate-windows-full.xml": "def40ee96b44d93ce14fb1dad17d5bc75fb89b4a91d8ee12d7bb1042dfcdd9d3",
+      "review-harness-linux/result.json": "3adca17a26eff256bc1e30b44d3cf158d289700c18b2e3b79df8fb99ffb7bc30",
+      "review-harness-linux/stdout.jsonl": "dacf9e498c230d7244584a578d704acad58c5627da8977cd84a729c28cefbaf7",
+      "pre-submission-review/harness/review_harness.cc": "2c89028b05e64c416233b5759f5af7fec816f7a9a0768bac473a1c558bb1056e",
+      "pre-submission-review/harness/windows-fcab.stdout": "1b94a62f18732b524e0d2ce5a32cb38d56b49053e6d0510a12af3adf87106fa6",
+      "pre-submission-review/harness/windows-prior.stdout": "dc93c50e0757797e8a69515225dcb6e62e903250fa0f6684307ee93e31767a9a",
+      "pre-submission-review/harness/windows-local45.stdout": "b9a10e84e33e014c483ff9505fd84979de93b7b08c43e4b977782540c6e57615",
+      "pre-submission-review/hidden-nan-probe/audit.json": "7f20ef5d73eb714eccab32508788a6a8e49fca921ea2c383dba937a332717e0b",
+      "pre-submission-review/hidden-nan-probe/raw.json": "a0716e79e92f9905a09742180cc4aa5256b205da6eb89fa4111d379029311c08",
+      "pre-submission-review/source-review-different-model.json": "b27ca887c8cd6b3e4d68bc3315ad00e088b508fe970aead9d9b2be43dcf2ca62",
+      "pre-submission-review/protocol-review-different-model.json": "7d6e9a38e39d1e0d1e5f08a7cb465f7f4bb4e321d539816a57ab23cb949ccdc4",
+      "pre-submission-review/runtime-model-identity-evidence.json": "bb386194f8cbec1271d5b06dc86fff19f41608d7447a616eea8f31248340659e"
+    },
+    "preserved_original_manifest_sha256": "07361e8f5c36ed9c99b4c08fa02acc3def932d31b65280f6ca3211ac5538aebe",
+    "preserved_original_review_sha256": "136596a28687312db43276096b48b11c7f29d5157246dd980a92665df1a22fa3",
+    "preserved_original_review_path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-fcab7437-20261023\\pre-submission-review\\evidence-before-review-fixes\\different-model-original-review.json"
+  },
+  "raw_performance_audit": {
+    "successful_processes": 5826,
+    "all_exit0_no_failure_records": true,
+    "continuous_sequence_1_to_5826": true,
+    "initial_cases": 96,
+    "confirmation_cases": 23,
+    "confirmed_cases": 22,
+    "confirmed_comparisons": 28,
+    "phase_processes": {
+      "warmup": 576,
+      "initial": 3456,
+      "confirmation_warmup": 138,
+      "confirmation": 1656
+    },
+    "phase_queries": {
+      "warmup": 1968,
+      "initial": 11808,
+      "confirmation_warmup": 444,
+      "confirmation": 5328
+    },
+    "formal_queries": 17136,
+    "warmup_queries": 2412,
+    "recomputed_summary_groups": 119,
+    "ratio_table_rows_verified": 119,
+    "metric_table_rows_verified": 357,
+    "method": "Parsed every raw stdout, independently regenerated selected-row counts and complete checksums from deterministic integer/floating/noFIELD fixture definitions, verified repeats, version commands, selected variants, neutral slots and all6order rotations. Matched every stored block to raw. Recomputed all initial/confirmation summary metrics and5000-resample pointwise bootstrap intervals using the reviewed frozen formulas; exact equality. Reconstructed confirmation triggers and final gate from protocol; no extra or missing rounds.",
+    "maximum_confirmed": {
+      "case": "float-not-t0-mixed0-cut100-b1024",
+      "comparison": "fixed/prior",
+      "median_ratio": 2.8513292320972288,
+      "bootstrap95": [
+        2.7586827020343936,
+        2.894736842105263
+      ]
+    },
+    "correctness_and_protocol_limits": "All processes produced correct scoped results. Correctness does not erase confirmed latency increases. Confirmations are one-shot separate blocks, not fully controlled independent host replications. Warm filesystem cache, fixed case order, deterministic order balancing and pointwise intervals retain documented inference limits."
+  },
+  "test_and_sanitizer_audit": {
+    "windows_focused": {
+      "total": 199,
+      "passed": 199,
+      "disabled": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "windows_full": {
+      "total": 1117,
+      "passed": 1104,
+      "disabled": 10,
+      "skipped": 3,
+      "failed": 0
+    },
+    "linux_focused": {
+      "total": 199,
+      "passed": 199,
+      "disabled": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "linux_reader": {
+      "total": 368,
+      "passed": 361,
+      "disabled": 7,
+      "skipped": 0,
+      "failed": 0
+    },
+    "spotless_BUILD_SUCCESS": true,
+    "focused_and_reader_linux_exit_codes": [
+      0,
+      0
+    ],
+    "focused_and_reader_sanitizer_diagnostics_found": false,
+    "linux_full": {
+      "exit_code": 1,
+      "full_pass": false,
+      "actual_diagnostic": "lzokay.cpp:34:46 load of misaligned address for const uint16_t",
+      "actual_source_line": "return *reinterpret_cast<const uint16_t*>(p);",
+      "pinned_commit": "5cb18da508cc4d3ec41bc04dccdeef9c5ffedfb2",
+      "archive_sha256": "eb518bf793da0b4420a3ffdf1511851575bc62ef350b303f14ff7355f370da6a",
+      "actual_and_archive_lzokay_cpp_sha256": "2f4ab24a24a65766f05e2aa60361c624d1a1b80e73164d2248300e0701d91e91",
+      "verification": "Read actual extracted Linux file and pinned local archive; hashes match. Failure retained, no suppression or full-suite pass inferred."
+    },
+    "build_configuration": "Read actual fresh Linux CMake cache: fcab source path, Debug-O0, atomic coverage, UBSan no-recover, ASanON and all6 optional codecsON. Run scripts set detect_leaks=1; XML/log and exit files verified. No tests or builds rerun by this reviewer."
+  },
+  "interop_audit": {
+    "standard_positive_queries": 1896,
+    "float_positive_queries": 1800,
+    "null_positive_queries": 96,
+    "standard_raw_records": 125,
+    "method": "Rebuilt120-line ordered floating truth output independently using Python operators, NULL exclusion and signed-zero/value-class indices. Verified15 successful outputs (Java3 plus C++12)=1800query results; independently rebuilt8NULL-mode outputs for96queries; checked fixture bytes/hashes.",
+    "prior_negative_controls": "All3writer products produce exactly40 ordered single-NOT mismatches:32nonNaN-literal combinations omit only NaN rows;8NaN-literal combinations incorrectly omit all32nonNULL rows. Prior process exits0 and complete120outputs retained; semantic mismatch not confused with a dependency failure.",
+    "floating_supplement": {
+      "positive_processes": 288,
+      "positive_cpp_queries": 864,
+      "java_scans": 6,
+      "expected_negative_controls": 12,
+      "wrong_native_prior_excluded_from_timing": true,
+      "verification": "Final supplement raw/input hashes unchanged since independently checked pre-timing review. Formal timing rows/checksums independently recomputed again. Equal C++writer file hashes confirmed; Java byte equality and NaNpayload equality not claimed."
+    }
+  },
+  "independent_harness_audit": {
+    "fcab_windows_and_linux": "Each has180logical combinations evaluated through both ColumnView and actual TsBlock (360evaluations), all match independently recomputed native truth bits.24file-query observations include12valid controls and6malformed-tree consistency failures. Linux exit3 is semantic mismatch with empty sanitizer stderr, not a full correctness pass.",
+    "prior11b": "Exactly40single-NOT evaluator combinations fail;12malformed query mismatches. All12valid controls pass.",
+    "local45d": "180dual-evaluator combinations and24query observations pass; prior failed submission/performance evidence is not superseded.",
+    "source_observation_closure": "Nonempty malformed OR page bypass fixed in fcab. Remaining schema-only/LIMIT0 malformed OR succeeds/empty in row,batch1,batch4; expected E_INVALID_ARG is explicitly the strict consistency criterion. No incorrect valid-query counterexample shown.",
+    "withdrawn_outside_time_hypothesis": "Actual fcab outside-time malformed query yields E_INVALID_ARG on iteration; passing control and not a remaining defect.",
+    "withdrawn_hidden_nan_old45d_hypothesis": "Separate actual [0,NaN,1] stats+ColumnView probe yields finite min0/max1 but NaNsum; old45d guard prevents wrong prune.45d/fcab8of8pass,11b6of8. No old45d hidden-NaN bug established and old1896fixture coverage is not retroactively broadened."
+  },
+  "coverage_audit": {
+    "native_report_hashes_verified": 231,
+    "filtered_native_entries_verified_exact": 56,
+    "selected_production_files": 16,
+    "method": "Verified each native gzip SHA and every retained filtered entry against its originating native report. Canonicalized identical source/copied-header aliases with source hashes, merged line counts and branches by mangled function plus ordinal. Independently regenerated three exact git zero-context diffs and recomputed all denominator totals; no changed production file omitted.",
+    "three_diff_scopes": {
+      "candidate": {
+        "covered_lines": 33,
+        "executable_lines": 36,
+        "line_percent": 91.66666666666667,
+        "covered_branches": 52,
+        "branches": 74,
+        "branch_percent": 70.27027027027027
+      },
+      "maintainer": {
+        "covered_lines": 858,
+        "executable_lines": 1031,
+        "line_percent": 83.22017458777886,
+        "covered_branches": 839,
+        "branches": 1398,
+        "branch_percent": 60.01430615164521
+      },
+      "whole-pr": {
+        "covered_lines": 937,
+        "executable_lines": 1112,
+        "line_percent": 84.26258992805755,
+        "covered_branches": 956,
+        "branches": 1553,
+        "branch_percent": 61.55827430779137
+      }
+    },
+    "selected_affected_files": {
+      "covered_lines": 3957,
+      "executable_lines": 4913,
+      "line_percent": 80.54142072053735,
+      "covered_branches": 3466,
+      "branches": 6255,
+      "branch_percent": 55.41167066346922
+    },
+    "current_delta_uncovered_lines": {
+      "cpp/src/reader/filter/aligned_field_filter.cc": [
+        275,
+        276,
+        282
+      ]
+    },
+    "limits": "Current36-line repair denominator is not wholePR1112-line denominator;16selected-file coverage is not whole-library coverage. Native archives stay local and are not falsely represented as included in129-file diagnostic manifest."
+  },
+  "remaining_source_and_inference_dispositions": [
+    {
+      "id": "FCAB-S001",
+      "status": "OPEN_REPRODUCED",
+      "note": "Strict malformed-filter early-empty consistency gap remains; actual6cases and source agree. Not a valid-query regression."
+    },
+    {
+      "id": "FCAB-S002",
+      "status": "OPEN_SOURCE_CONFIRMED_PREEXISTING",
+      "note": "Lazy boundary mask is evaluated then invalidated and reevaluated. No whole-query causality or minimized-cost experiment established."
+    },
+    {
+      "id": "floating-negated-stats",
+      "status": "CORRECT_CONSERVATIVE_STRATEGY_WITH_MEASURED_LIMITATION",
+      "note": "Conservative policy also removes finite-page shortcuts. Confirmed finite zero/full-hit slowdowns are real in scope, but observation plus source does not prove complete causality or unavoidable overhead. Same-callback regressions cannot be attributed to an inactive structured predicate path."
+    },
+    {
+      "id": "report-accuracy",
+      "status": "TWO_WORDING_ISSUES_CLOSED_NO_REMAINING_DISCREPANCY",
+      "note": "The three Windows skips are due to unset opt-in environment variables; GenerateFixtures creates files in the requested output directory and does not require existing fixtures. Any finite-statistics optimization needs a NaN-safe proof; the preserved local45d uses sum/extrema guards, which are not asserted to be the only possible proof. All numeric, API/projection and failure boundaries remain as audited."
+    }
+  ],
+  "blocking_reasons": [
+    "Confirmed unexplained query regressions:22cases/28comparisons; query_gate_cleared=false.",
+    "Malformed early-empty error consistency remains and full sanitizer run exits1.",
+    "Source correctness fixes and partial coverage/test passes do not constitute a complete submission gate pass."
+  ],
+  "frozen_snapshot_and_final_review_layer": {
+    "summary_independent_final_evidence_review_at_freeze": "pending",
+    "interpretation": "pending records the honest status at summary freeze time; this independent final audit and wording closure are complete. The original 129-file snapshot and original review remain preserved. The corrected 138-file snapshot is bound here. A separately appended final-review-outcome.json and README may bind both final review hashes plus corrected manifest/summary hashes without self-referential mutation. No change to the frozen pending field is required.",
+    "approved_layering_only": true,
+    "overall_remains": "NOT_READY_TO_PUSH",
+    "does_not_require_refreezing_summary": true
+  },
+  "actions_and_limits": "Read-only source/data audit plus this review JSON. No builds, new tests, new timing, production modifications, repository mutations or remote calls. No source push approval; report publication authorization is outside this artifact.",
+  "post_review_wording_closure": {
+    "scope": "Read-only verification of the two reported wording corrections and manifest closure; no new tests, builds, timing, queries, source edits or remote actions.",
+    "windows_skip_verification": {
+      "evidence": "Actual Windows XML skip messages and GenerateFixtures source lines 840-852; ValidateFixtures lines 854-861.",
+      "unset_opt_in_variables": [
+        "TSFILE_DATASET_INDEX_TEST_PATH",
+        "TSFILE_COMPAT_GENERATE_DIR",
+        "TSFILE_COMPAT_VALIDATE_DIR"
+      ],
+      "GenerateFixtures": "Requires output directory configuration; EnsureDirectory, WriteFixture, AssertOnWireCodec and WriteManifest generate and verify output. Existing fixture files are not a prerequisite."
+    },
+    "nan_proof_wording": "Finite extrema alone are insufficient. A replacement shortcut requires a NaN-safe proof, not necessarily the exact historical sum guard. Old45d has sum/extrema NaN guards; the withdrawn hidden-NaN hypothesis remains withdrawn.",
+    "changed_original_manifest_entries": [
+      "finalize-evidence.py",
+      "freeze-evidence.py",
+      "validation-report.md",
+      "validation-summary.json"
+    ],
+    "added_manifest_entries": [
+      "pre-submission-review/evidence-before-review-fixes/different-model-original-review.json",
+      "pre-submission-review/evidence-before-review-fixes/final-evidence-manifest.json",
+      "pre-submission-review/evidence-before-review-fixes/finalize-evidence.py",
+      "pre-submission-review/evidence-before-review-fixes/freeze-evidence.py",
+      "pre-submission-review/evidence-before-review-fixes/validation-report.md",
+      "pre-submission-review/evidence-before-review-fixes/validation-summary.json",
+      "pre-submission-review/final-evidence-audit-integration.py",
+      "pre-submission-review/final-evidence-integration-audit.json",
+      "pre-submission-review/final-evidence-secondary-audit-integration.json"
+    ],
+    "report_changes": "Only the English and Chinese Windows-skip descriptions.",
+    "summary_changes": "Only freeze timestamp and finite-statistics proof wording; pending final-review snapshot status retained.",
+    "generator_changes": "finalize-evidence.py updates the same proof wording. freeze-evidence.py adds later publication/outcome artifact exclusions; no benchmark or statistics computation changes.",
+    "original_preservation": "Original manifest, report, summary, both generator scripts and this reviewer original review are preserved with exact historical hashes.",
+    "raw_evidence_changed": false,
+    "all_current_manifest_entries_verified": true,
+    "overall_unchanged": "NOT_READY_TO_PUSH"
+  }
+}

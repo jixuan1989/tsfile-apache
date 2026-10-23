@@ -1,0 +1,463 @@
+{
+  "frozen_at": "2026-10-23T11:37:55.047275+00:00",
+  "public_head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "prior_public_head": "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+  "baseline_head": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+  "whole_pr_base": "1180b13675e11a0230708af2cc70d037e0e12623",
+  "source_author": "ColinLee (Git commit author)",
+  "production_source_modified_or_pushed_by_agent": false,
+  "local45d_reference_preserved_unmerged": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\repro-repo",
+  "windows_focused": {
+    "total": 199,
+    "passed": 199,
+    "disabled": 0,
+    "skipped": 0,
+    "failed": 0
+  },
+  "windows_full": {
+    "total": 1117,
+    "passed": 1104,
+    "disabled": 10,
+    "skipped": 3,
+    "failed": 0
+  },
+  "linux_focused": {
+    "total": 199,
+    "passed": 199,
+    "disabled": 0,
+    "skipped": 0,
+    "failed": 0
+  },
+  "linux_reader": {
+    "total": 368,
+    "passed": 361,
+    "disabled": 7,
+    "skipped": 0,
+    "failed": 0
+  },
+  "linux_full": {
+    "exit_code": 1,
+    "diagnostic": "unchanged pinned LZOkay misaligned uint16 load",
+    "full_pass": false
+  },
+  "java_compatibility": {
+    "standard_queries": 1896,
+    "floating_supplement_cpp_queries": 864,
+    "floating_supplement_java_full_scans": 6,
+    "all_exact_ordered_oracle_checks_pass": true,
+    "scope": "PLAIN/UNCOMPRESSED;both reader directions,Java/baseline/fcab writer products;NaN payload not compared"
+  },
+  "codec_scope": {
+    "generated_value": "PLAIN",
+    "generated_time": "TS_2DIFF",
+    "compression": "UNCOMPRESSED",
+    "original8": "Original frozen driver/files/config retained; no new codec audit",
+    "independent_small_harness": "Explicit time PLAIN; outside timed matrix"
+  },
+  "independent_harness": {
+    "kind": "summary",
+    "completed": true,
+    "harness_errors": 0,
+    "query_cases": 24,
+    "evaluator_cases": 180,
+    "valid_control_failures": 0,
+    "query_semantic_mismatches": 6,
+    "evaluator_semantic_mismatches": 0,
+    "semantic_mismatches": 6
+  },
+  "coverage_by_diff": {
+    "candidate": {
+      "covered_lines": 33,
+      "executable_lines": 36,
+      "line_percent": 91.66666666666667,
+      "covered_branches": 52,
+      "branches": 74,
+      "branch_percent": 70.27027027027027
+    },
+    "maintainer": {
+      "covered_lines": 858,
+      "executable_lines": 1031,
+      "line_percent": 83.22017458777886,
+      "covered_branches": 839,
+      "branches": 1398,
+      "branch_percent": 60.01430615164521
+    },
+    "whole-pr": {
+      "covered_lines": 937,
+      "executable_lines": 1112,
+      "line_percent": 84.26258992805755,
+      "covered_branches": 956,
+      "branches": 1553,
+      "branch_percent": 61.55827430779137
+    }
+  },
+  "affected_files_coverage": {
+    "covered_lines": 3957,
+    "executable_lines": 4913,
+    "line_percent": 80.54142072053735,
+    "covered_branches": 3466,
+    "branches": 6255,
+    "branch_percent": 55.41167066346922
+  },
+  "spotless_passed": true,
+  "query": {
+    "complete": true,
+    "protocol_sha256": "688e7fb4571a9754c7a75a75d4026cbdb07df68cdf0cd557ed50dde80e7eefdc",
+    "results_sha256": "e27eaa05137cefa008b9634c2b785b36f1415b0374f677003ccdca1b596e6014",
+    "raw_sha256": "ce4858b760271eea020b082f82be029f7263bc77db5e98027654c63cba6728e0",
+    "cases": 96,
+    "processes": 5826,
+    "phase_processes": {
+      "warmup": 576,
+      "initial": 3456,
+      "confirmation_warmup": 138,
+      "confirmation": 1656
+    },
+    "phase_verified_queries": {
+      "warmup": 1968,
+      "initial": 11808,
+      "confirmation_warmup": 444,
+      "confirmation": 5328
+    },
+    "formal_verified_queries": 17136,
+    "warmup_verified_queries": 2412,
+    "one_shot_confirmation_cases": 23,
+    "confirmed_case_count": 22,
+    "confirmed_comparison_count": 28,
+    "confirmed_comparisons": [
+      {
+        "case": "float-not-t0-mixed0-cut100-b1024",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 2.8513292320972288,
+        "bootstrap95": [
+          2.7586827020343936,
+          2.894736842105263
+        ]
+      },
+      {
+        "case": "float-not-t0-mixed0-cut100-b0",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 2.8338829633080085,
+        "bootstrap95": [
+          2.7810087348548884,
+          2.8721183621974995
+        ]
+      },
+      {
+        "case": "float-not-t1-mixed0-cut100-b1024",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 2.6861697447638715,
+        "bootstrap95": [
+          2.6738940204180843,
+          2.7484898674980514
+        ]
+      },
+      {
+        "case": "float-not-t1-mixed0-cut100-b0",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 2.643035915197859,
+        "bootstrap95": [
+          2.6105837683910775,
+          2.7596587809353768
+        ]
+      },
+      {
+        "case": "float-not-t0-mixed0-cut0-b1024",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.3057391355220864,
+        "bootstrap95": [
+          1.2796292803836515,
+          1.3179391386139927
+        ]
+      },
+      {
+        "case": "float-not-t1-mixed0-cut0-b1024",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.277075620969467,
+        "bootstrap95": [
+          1.258519208916921,
+          1.3026115271898404
+        ]
+      },
+      {
+        "case": "float-not-t0-mixed0-cut0-b0",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.1355185214217756,
+        "bootstrap95": [
+          1.1271237881957745,
+          1.1463700234192038
+        ]
+      },
+      {
+        "case": "float-not-t1-mixed0-cut0-b0",
+        "kind": "floating_not",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.127007179039163,
+        "bootstrap95": [
+          1.1146152394059152,
+          1.1399262847387694
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut0-b1024",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0821724611561945,
+        "bootstrap95": [
+          1.0774130427722386,
+          1.0918682503755388
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut0-b1024",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0700144643730278,
+        "bootstrap95": [
+          1.0620708286459655,
+          1.080131607135399
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut0-b0",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0630893258422645,
+        "bootstrap95": [
+          1.052931485092185,
+          1.07197661673365
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut50-b1024",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0604102416857617,
+        "bootstrap95": [
+          1.0486744037706608,
+          1.0708029485496526
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut50-b1024",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0558130860848605,
+        "bootstrap95": [
+          1.0499934759771032,
+          1.0682671575299552
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut50-b0",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0543694542437578,
+        "bootstrap95": [
+          1.0496743423118555,
+          1.0661700639824694
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut50-b0",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0532221228505865,
+        "bootstrap95": [
+          1.037671860361404,
+          1.0604537934637488
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut0-b0",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0472773222655816,
+        "bootstrap95": [
+          1.0443643699603207,
+          1.0540144698979328
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut100-b1024",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0442886125580872,
+        "bootstrap95": [
+          1.0401153961591356,
+          1.0533976803923095
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut100-b0",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0428567767472838,
+        "bootstrap95": [
+          1.0293877262505908,
+          1.052096786096454
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut100-b1024",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0417972819215628,
+        "bootstrap95": [
+          1.0359903514061728,
+          1.0474997932194356
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut100-b0",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0411234734212398,
+        "bootstrap95": [
+          1.0309083263246426,
+          1.051323903624401
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut0-b1024",
+        "kind": "callback",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.033211606707283,
+        "bootstrap95": [
+          1.0231361866794488,
+          1.0382793631439493
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut0-b0",
+        "kind": "callback",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.023033749269667,
+        "bootstrap95": [
+          1.0204930470019102,
+          1.0310185059415438
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut50-b1024",
+        "kind": "callback",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.0228757733105183,
+        "bootstrap95": [
+          1.0184507297960286,
+          1.0304836198670841
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut0-b1024",
+        "kind": "callback",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.0165944424721904,
+        "bootstrap95": [
+          1.0097430774393372,
+          1.0308692753634487
+        ]
+      },
+      {
+        "case": "float-callback-t0-cut0-b0",
+        "kind": "callback",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.016478955089522,
+        "bootstrap95": [
+          1.0125853948317562,
+          1.0255680122767383
+        ]
+      },
+      {
+        "case": "float-callback-t1-cut50-b0",
+        "kind": "callback",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.0145528636113077,
+        "bootstrap95": [
+          1.0078245690752097,
+          1.0196098120786115
+        ]
+      },
+      {
+        "case": "unfiltered-sparse-b1024",
+        "kind": "unfiltered",
+        "comparison": "fixed/prior",
+        "median_ratio": 1.0132079043048616,
+        "bootstrap95": [
+          1.0006404746024036,
+          1.0246807133158757
+        ]
+      },
+      {
+        "case": "callback-w8-p1-b1024",
+        "kind": "callback",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0099948968035357,
+        "bootstrap95": [
+          1.00239482600354,
+          1.017933486643059
+        ]
+      }
+    ],
+    "query_gate_cleared": false,
+    "necessity_proven": false,
+    "post_timing_input_hashes_verified": 83,
+    "post_timing_production_hashes_verified": 260,
+    "all_processes_completed_and_results_verified": true
+  },
+  "write": {
+    "retimed": false,
+    "reason": "Reader-only maintainer revision; historical write evidence stays at its original head",
+    "both_writer_products_queried": true,
+    "generated_cpp_base_fixed_bytes_equal": true,
+    "java_writer_bytes_equal_claimed": false
+  },
+  "remaining_source_observations": [
+    {
+      "id": "malformed-early-empty",
+      "status": "reproduced",
+      "failures": 6,
+      "scope": "schema-only and LIMIT0, row/batch1/batch4; OR(v>=0,nullptr) returns E_OK/empty instead of strict expected E_INVALID_ARG",
+      "boundary": "No new valid-query counterexample; all12 valid controls pass. Outside-time hypothesis disproved and withdrawn."
+    },
+    {
+      "id": "duplicate-lazy-mask",
+      "status": "source_confirmed_preexisting",
+      "scope": "Computed boundary mask invalidated then evaluated again",
+      "boundary": "No whole-query causal attribution or measured minimization experiment in this scope."
+    },
+    {
+      "id": "finite-negated-stats",
+      "status": "source_confirmed_conservative_strategy",
+      "scope": "All nonempty ordered-floating negated leaves disable may/all stats pruning, including safe finite inputs",
+      "boundary": "Correct but finite zero/full-hit timing worsens; profiler/causal isolation not performed; not proven unavoidable. Finite extrema alone are insufficient; any alternative must retain a NaN-safe proof (the preserved local45d uses sum/extrema NaN guards)."
+    }
+  ],
+  "source_submission_gate_passed": false,
+  "independent_final_evidence_review": "pending",
+  "no_additional_measurement_rounds": true,
+  "unmeasured": [
+    "controlled cold cache",
+    "P99",
+    "compressed query timing",
+    "general nonaligned FIELD performance",
+    "parallel scaling",
+    "query-only memory",
+    "retained8 open/metadata/first-row and memory",
+    "write throughput for current revision"
+  ],
+  "inference_limits": [
+    "Pointwise intervals across96cases are not multiplicity-controlled familywise guarantees",
+    "Nonsignificance is not equivalence/noninferiority",
+    "Host background load not fully controlled; no dedicated-machine claim",
+    "Three new-driver or eight legacy-driver queries within each child are correlated; processblock is independent unit",
+    "Median block ratio differs from ratio of pooled query P50s"
+  ]
+}

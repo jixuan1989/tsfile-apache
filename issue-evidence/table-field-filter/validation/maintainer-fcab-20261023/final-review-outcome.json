@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-23T11:43:25.351710+00:00",
+  "head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "frozen_manifest_sha256": "e3c5154485a993e345f22c20e0d7b9d899c60d73fa829bde13c60306e14b48c2",
+  "earlier_frozen_summary_sha256": "96ce0e4277963ca570f1e5a66419db2e322578326a5d7afd0aad4a9d9f04ba1c",
+  "earlier_summary_review_status": "pending at the earlier evidence freeze, before the two final review records existed",
+  "independent_final_source_and_evidence_reviews": "complete; both NOT_READY_TO_PUSH",
+  "actual_model_identities": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "identity_evidence_sha256": "bb386194f8cbec1271d5b06dc86fff19f41608d7447a616eea8f31248340659e",
+  "reviews_sha256": {
+    "final-evidence-review-integration.json": "747f2b16f06a9705b3d3d8668b2b1f688ead61c694a750ae8d9bf0877c92bf72",
+    "final-evidence-review-different-model.json": "a8139c22bffcb8b6b3d42b3de28a66aacb95af02e37b31a56c812328e68378a6"
+  },
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "additional_post_freeze_review_assets_sha256": {
+    "pre-submission-review/final-evidence-integration-audit-refinalized.json": "3a5998ee5b3ddc569565776d297d1f20c5d5410fc1442bf9440a4d39dce8f5db"
+  },
+  "source_pushed": false,
+  "unresolved": "22confirmed regression cases/28comparisons; necessity unproven; malformed6; full sanitizer failure disclosed"
+}
