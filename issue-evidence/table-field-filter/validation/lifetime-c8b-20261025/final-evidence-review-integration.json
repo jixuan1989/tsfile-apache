@@ -1,0 +1,528 @@
+{
+  "status": "NOT_READY_TO_PUSH",
+  "actual_model": "gpt-6.1-sol",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "complete_pre_submission_gate_passed": false,
+  "production_push_approved_by_this_review": false,
+  "reviewed_at_utc": "2026-10-25T17:58:45.429279+00:00",
+  "reviewer": {
+    "session_id": "01a15cc5-7771-7131-8b29-3a98ac6923d1",
+    "agent_path": "/root/review_pr1026_maintainer",
+    "latest_turn_model": "gpt-6.1-sol",
+    "latest_turn_context_timestamp": "2026-10-25T17:53:59.265Z",
+    "runtime_record": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T12-43-27-01a15cc5-7771-7131-8b29-3a98ac6923d1.jsonl",
+    "selected_session_meta_sha256": "8f8a7e30b56594c6427b8072ab44086c922e76797225fe4ab082f7f6680cc239",
+    "selected_turn_context_sha256": "f9d31469cea24b509a74dfabcc09c474faa1f03c1029cf63ecca08837a8c11ab",
+    "limitation": "Selected local runtime assignment, not cryptographic backend attestation or an offline model claim."
+  },
+  "review_scope": "Final independent review of frozen c8b→5db source and completed fresh validation evidence, including both finite predeclared timing rounds. This is not a build, query, extra measurement or remote action.",
+  "baseline": "c8b27546f61d5880e714612379556cf860f18467",
+  "head": "5db66cd74e3332625535c3ef3704bf2cda1dc6b7",
+  "source_worktree": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\pr03-c8b-src",
+  "branch": "cpp/fix-aligned-context-lifetime",
+  "clean_frozen_head_reverified": true,
+  "source_bindings": {
+    "cpp/src/reader/aligned_chunk_reader.cc": {
+      "git_blob": "eba73c5bbc5730c7cb95bab8b801da3abbf9430c",
+      "sha256": "569a130001f90ad30ea1ef12469e68fdda618eb1ee8c912c9c30b6a38d3c8bc9",
+      "bytes": 124039
+    },
+    "cpp/test/reader/aligned_field_filter_regression_test.cc": {
+      "git_blob": "e29b005e616bcfa73cad0529ce02652c55351e36",
+      "sha256": "a00b063a44d313bf9aed3af364a7a58f862462925868fa57d0d07495d4c763ad",
+      "bytes": 27415
+    },
+    "cpp/src/reader/aligned_chunk_reader.h": {
+      "git_blob": "bd19c82630835db53318ec51a4109e2f0330fc4f",
+      "sha256": "50714bffb19d2c7e75692abea6ab75e009e54bc72db9ebb17cbf43d86f12e43c",
+      "bytes": 15117
+    },
+    "cpp/src/reader/ichunk_reader.h": {
+      "git_blob": "1e6fe39976f91a3e4c7345b52c58e1397c38976d",
+      "sha256": "7e10d26296cd44ac1084a277d608f7c91d5430d0a90e0cce8493f2df5bac1ee9",
+      "bytes": 2358
+    },
+    "cpp/src/reader/tsfile_series_scan_iterator.cc": {
+      "git_blob": "948d1a5538a619d7ed93d7cf6eeddaaf4c1d5df1",
+      "sha256": "27468ac2f59594cb0848c0c1ccce6e551fd8764e796fe4a7386e3e2cd62f1287",
+      "bytes": 24416
+    },
+    "cpp/src/common/tsfile_common.h": {
+      "git_blob": "bfe597d8a7522d96e2a199b8936b43a8bbcbb747",
+      "sha256": "bd3e95d65cf681f5eb9830d32aef8cd3f0227c3827b91251c47451e5f656a701",
+      "bytes": 45596
+    },
+    "cpp/test/reader/chunk_reader_resource_test.cc": {
+      "git_blob": "e9d4193c02aa36802944051129509e44e29f205c",
+      "sha256": "d63b8b257ca9f62767c709c0b5658ca24f40aee4323e3410c3807055ce7fcde5",
+      "bytes": 3951
+    }
+  },
+  "manifest_sha256": "2763bfab61ec65ae474f0d9f96f726be1bd7b9f1624c2c6e960ddd2d769aaa8c",
+  "manifest_files": 155,
+  "manifest_bytes": 41529653,
+  "input_bindings": {
+    "final-evidence-manifest.json": {
+      "path": "final-evidence-manifest.json",
+      "bytes": 24735,
+      "sha256": "2763bfab61ec65ae474f0d9f96f726be1bd7b9f1624c2c6e960ddd2d769aaa8c"
+    },
+    "validation-report.md": {
+      "path": "validation-report.md",
+      "bytes": 14188,
+      "sha256": "8c97904812957324074920858abddb81fed36ad021ca06bc4cab76460d83edc5"
+    },
+    "validation-summary.json": {
+      "path": "validation-summary.json",
+      "bytes": 41859,
+      "sha256": "0f844815ef14641628d2661b61023d1488ec0160f63fd8a7af817a30ff7e1c9d"
+    },
+    "performance-warning-bilingual.md": {
+      "path": "performance-warning-bilingual.md",
+      "bytes": 1158,
+      "sha256": "aff21eed08ce018b64237cc18df7d4a9135c962fa990f8e6542aa04ae1af9976"
+    },
+    "local-source-freeze.json": {
+      "path": "local-source-freeze.json",
+      "bytes": 29169,
+      "sha256": "1f42895aedd002ed17e1b1043982801a4b56d6d4291ec487c4689d1b138b9718"
+    },
+    "baseline-source-freeze.json": {
+      "path": "baseline-source-freeze.json",
+      "bytes": 26413,
+      "sha256": "8d9e1f1e3ab9787eb8c6aa408a1df77276cc0c3279d24a00bb34d1d68b825139"
+    },
+    "source-freeze.json": {
+      "path": "source-freeze.json",
+      "bytes": 29169,
+      "sha256": "1f42895aedd002ed17e1b1043982801a4b56d6d4291ec487c4689d1b138b9718"
+    },
+    "candidate-coverage-summary.json": {
+      "path": "candidate-coverage-summary.json",
+      "bytes": 107975,
+      "sha256": "b12fecce8ed44157cba355514286481950584c14927e9085bd5e2163da7d7d32"
+    },
+    "candidate-coverage-filtered-inputs.json": {
+      "path": "candidate-coverage-filtered-inputs.json",
+      "bytes": 2456460,
+      "sha256": "31c2b8422a02dbb1dea0f19babb1f42e8cfa37f9794aa7e41aa7ea416d3c296f"
+    },
+    "coverage-diff-scopes.json": {
+      "path": "coverage-diff-scopes.json",
+      "bytes": 618,
+      "sha256": "fe190f720fc263db6d7a96e404f07a8d5326595b797ca14dd22dd5c027a32823"
+    },
+    "java-input-freeze.json": {
+      "path": "java-input-freeze.json",
+      "bytes": 434430,
+      "sha256": "98a66a27ca7a4c5a169dc5737abac086d1b14d8b42d899cb4372e6adb5ecbab2"
+    },
+    "candidate-compatibility/raw.json": {
+      "path": "candidate-compatibility/raw.json",
+      "bytes": 291234,
+      "sha256": "b7b085dcbb5b635a22d88d624cb0b348ee9af001fdb1785e8d72ac2abf3093dc"
+    },
+    "candidate-compatibility/summary.json": {
+      "path": "candidate-compatibility/summary.json",
+      "bytes": 17380,
+      "sha256": "514d3a2349552cb5ae8e58a17ba5ccd7a2925c09a84085f72a5a34d892f13bb0"
+    },
+    "candidate-query-performance/protocol.json": {
+      "path": "candidate-query-performance/protocol.json",
+      "bytes": 462333,
+      "sha256": "58ee4b2508275e9b81a39c7f4cc768933ea82ebb8ad7fd5d57657d5c1e560908"
+    },
+    "candidate-query-performance/results.json": {
+      "path": "candidate-query-performance/results.json",
+      "bytes": 8989939,
+      "sha256": "79f624ad1453ed3aa740d65fe9862c4ed19b166fea6ea55aabc150004d18be56"
+    },
+    "candidate-query-performance/processes.jsonl": {
+      "path": "candidate-query-performance/processes.jsonl",
+      "bytes": 12435002,
+      "sha256": "30021b116fee0efb0e3ac37c5ac7c518464429a6760b2b29826700c16aaf4fe2"
+    },
+    "candidate-query-performance/preflight.json": {
+      "path": "candidate-query-performance/preflight.json",
+      "bytes": 1301308,
+      "sha256": "ffb8e667b7d453d5847fe4dc84d996885ce8bcb75d6e8d7bff29db53de1d38e8"
+    },
+    "candidate-query-performance/confirmation-selection.json": {
+      "path": "candidate-query-performance/confirmation-selection.json",
+      "bytes": 1413,
+      "sha256": "2d9201148c28b6eb83ee6acc8eca742de06b59da2bc9ae41f994796268898363"
+    },
+    "context-query-performance/protocol.json": {
+      "path": "context-query-performance/protocol.json",
+      "bytes": 367906,
+      "sha256": "49fb009403377bfff332ec702473ad5e355781c0e469d97bbc8b1dad876ee454"
+    },
+    "context-query-performance/results.json": {
+      "path": "context-query-performance/results.json",
+      "bytes": 500876,
+      "sha256": "a9df14b2fbaf36dda3b0cdc89e3e9b958af36c10129313f9b8afae23dd7f8590"
+    },
+    "context-query-performance/processes.jsonl": {
+      "path": "context-query-performance/processes.jsonl",
+      "bytes": 573745,
+      "sha256": "e627daaa5721e6b21cd2da032e34d71159b7cd9d2bbedcbaf59af1e8b65986cd"
+    },
+    "context-query-performance/preflight.json": {
+      "path": "context-query-performance/preflight.json",
+      "bytes": 71162,
+      "sha256": "f1c65431e2cc41207ffa37e346458ab8ef69bd363729c56b44dc3c51179d7403"
+    },
+    "context-query-performance/java-input-freeze.json": {
+      "path": "context-query-performance/java-input-freeze.json",
+      "bytes": 1104,
+      "sha256": "addad9d2e9b13a8d75a19cbc92440e7b9fa23f02bf8949d27bf99e9944b8073f"
+    },
+    "all-query-ratios.md": {
+      "path": "all-query-ratios.md",
+      "bytes": 34920,
+      "sha256": "13a43816e6602bc237866f8db239a213ed6e9d73955838545a3d267ca6f86dd1"
+    },
+    "all-query-metrics.md": {
+      "path": "all-query-metrics.md",
+      "bytes": 72832,
+      "sha256": "2ede6806365c4ba3d81b466c069a110cf8adf574ba3f4e14c2d3f0474e85450a"
+    },
+    "candidate-linux-full.log": {
+      "path": "candidate-linux-full.log",
+      "bytes": 114253,
+      "sha256": "402c918991a1033161a402c5fb3f1f01991be9dbf0abbc2a90259413c90886dd"
+    },
+    "baseline-linux-focused.log": {
+      "path": "baseline-linux-focused.log",
+      "bytes": 74561,
+      "sha256": "20df5707d73bc6dda895526fd92c1c64ed18ecbf7d2be37130b4f723516b5d33"
+    },
+    "spotless.log": {
+      "path": "spotless.log",
+      "bytes": 7514,
+      "sha256": "0177f0e7e4d94ebaa7fb4bf8777b7bfcf69de0279f6f546b56a5b10f48e0194e"
+    },
+    "pre-submission-review/source-review-integration.json": {
+      "path": "pre-submission-review/source-review-integration.json",
+      "bytes": 17288,
+      "sha256": "e8fc728805f5485f0002a18fb211d6d736e84872289e5995bc9b2a3f175c2aaf"
+    },
+    "pre-submission-review/local-source-review-integration.json": {
+      "path": "pre-submission-review/local-source-review-integration.json",
+      "bytes": 8574,
+      "sha256": "ac31ad539312c60020af5b8135deaf89779ec2aa77b761ec01d3128776e747bd"
+    },
+    "pre-submission-review/protocol-review-integration.json": {
+      "path": "pre-submission-review/protocol-review-integration.json",
+      "bytes": 17548,
+      "sha256": "f3e4e0d6df062b19aff6b7e95f6aa65bf743998b62d7b435a911b55a42b617e3"
+    },
+    "pre-submission-review/context-protocol-audit-integration.json": {
+      "path": "pre-submission-review/context-protocol-audit-integration.json",
+      "bytes": 2727,
+      "sha256": "9133d24c12ae14ba4ebe79e70aaaac80485817dc1ee8dd33717fb5fb50c4e506"
+    },
+    "pre-submission-review/standard-protocol-audit-integration.json": {
+      "path": "pre-submission-review/standard-protocol-audit-integration.json",
+      "bytes": 6954,
+      "sha256": "51bc79959856d353904a740a5180235887e325c0d3ef50a08c50c7b22989993f"
+    },
+    "pre-submission-review/validation-prerequisites-audit-integration.json": {
+      "path": "pre-submission-review/validation-prerequisites-audit-integration.json",
+      "bytes": 4505,
+      "sha256": "0198edcc1e83c34395ee25396d24db16c2471feba7a493b4ef720218f7727cd9"
+    },
+    "pre-submission-review/final-performance-audit-integration.py": {
+      "path": "pre-submission-review/final-performance-audit-integration.py",
+      "bytes": 14501,
+      "sha256": "ebef95aaa12497f5b1d5f38c888b8011de62204c35228af8af4c45b29bfb2ae2"
+    },
+    "pre-submission-review/final-performance-audit-integration.json": {
+      "path": "pre-submission-review/final-performance-audit-integration.json",
+      "bytes": 8664,
+      "sha256": "d84d9ed39910d5fffaa56f2194542e242b8de106210a971d512fd76700439b4c"
+    },
+    "pre-submission-review/final-coverage-oracle-audit-integration.py": {
+      "path": "pre-submission-review/final-coverage-oracle-audit-integration.py",
+      "bytes": 9733,
+      "sha256": "7c2c09127fddc512b16850f4426bec0afdf2e5f2b6600f936b860c86da6af332"
+    },
+    "pre-submission-review/final-coverage-oracle-audit-integration.json": {
+      "path": "pre-submission-review/final-coverage-oracle-audit-integration.json",
+      "bytes": 9199,
+      "sha256": "de92cbe54ab8d267974664a9b6cbcb287632208d54474594295860195d63a63c"
+    },
+    "pre-submission-review/final-input-audit-integration.py": {
+      "path": "pre-submission-review/final-input-audit-integration.py",
+      "bytes": 13021,
+      "sha256": "b70ded14f0a1a2d008f31dd711f0cb9dcc8674a2b25ed3711a715af0e72f4d0e"
+    },
+    "pre-submission-review/final-input-audit-integration.json": {
+      "path": "pre-submission-review/final-input-audit-integration.json",
+      "bytes": 6969,
+      "sha256": "3590b63ca961a3a2d7591a4bb04435b5a688ef7831a17113a86e18570db937fd"
+    },
+    "pre-submission-review/final-freeze-provenance-audit-integration.py": {
+      "path": "pre-submission-review/final-freeze-provenance-audit-integration.py",
+      "bytes": 7108,
+      "sha256": "ad8cb3c2ec42cd02a7b320afa2b219ad87ccea5d81b7363832562cdb6d74ab9b"
+    },
+    "pre-submission-review/final-freeze-provenance-audit-integration.json": {
+      "path": "pre-submission-review/final-freeze-provenance-audit-integration.json",
+      "bytes": 5369,
+      "sha256": "f5ef7a1f939a5c0cce94deeb386ba44ee5ee5af10c71f6430cb86b0f72ccd167"
+    }
+  },
+  "raw_findings_and_final_dispositions": [
+    {
+      "id": "c8b-integration-R1",
+      "original_finding": "Owned time_chunk_header_/value_chunk_header_ measurement strings are never destructed by the terminal placement-reader destroy()+mem_free path; new real29-character FIELD exposes the preexisting leak.",
+      "source_disposition": "CLOSED_ON_EXACT_5db_TERMINAL_CONTRACT",
+      "runtime_disposition": "CLOSED_WITHIN_FRESH_FOCUSED_READER_SCOPE",
+      "reasoning": [
+        "5db adds default ChunkHeader destructors for both actual owned headers next to existing inherited-header terminal cleanup. Both header members are constructed before init; no later access follows. Cross-chunk reset is unchanged. ValueColumnState remains normal delete, with independent members.",
+        "Reviewed production SSI and resource-test callers use placement-new then one terminal destroy()+mem_free, rather than an ordinary outer destructor, stack lifetime or reset after destroy. No supported caller requiring idempotent destroy/reuse-after-destroy was found. Explicit member destructors are valid in that existing contract; future broader RAII/idempotent contracts would need a larger redesign.",
+        "Public CI runs are synthetic merge90db, not standalone c8b. Their two actual Debug/Release jobs each retain six62-byte/2-allocation LSan reports. Fresh standalone public c8b is224 functional passes but process exit1 with360bytes/12allocations. Fresh final5db strict Linux focused224 and reader291 pass exit0 without ASan/UBSan/LSan diagnostics. These local instrumented results do not claim a second separate optimized Release sanitizer run or an all-suite clean pass.",
+        "The29-character real FIELD regression remains unchanged in all six row/batch/parallel-requested modes; no name shortening or suppression conceals the allocation. Long-name public/fixed/Java files cross-read216 C++ complete queries plus3 Java scans before the separate12-case timing round."
+      ],
+      "earlier_swap_hypothesis": "String-swap release could support a broader future member-lifetime contract, but is not a correctness blocker under the actual terminal-placement callers. Earlier preference is not retained as an actionable defect."
+    },
+    {
+      "id": "c8b-integration-R2",
+      "original_finding": "E_OK with nullptr could falsely pass valid empty-result tests and scan() by returning no rows.",
+      "source_disposition": "CLOSED_ON_EXACT_5db",
+      "runtime_disposition": "CLOSED_WITHIN_RECORDED_TEST_SCOPE",
+      "reasoning": [
+        "EXPECT_NE(result,nullptr) now precedes scan() defensive return. Valid empty-table/LIMIT0 controls assert non-null, malformed controls assert null. A successful null result now fails rather than silently returning an expected empty vector.",
+        "Fresh final focused matrices and full Windows XML pass with these exact test-source hashes. Independent portable harness on each platform checks24 file queries,12valid/12malformed, and180 native-truth logical cases across both evaluators (360 evaluator calls)."
+      ]
+    },
+    {
+      "id": "final-report-Spotless-clarification",
+      "original_finding": "Other independent reviewer correctly noted that spotless17 is ambiguous as a count of checks.",
+      "disposition": "CLOSED_BY_FINAL_TEXT_ONLY_CORRECTION",
+      "reasoning": "Current English says Spotless using clang-format-17 passed; complete Chinese says 使用clang-format-17的Spotless检查通过. Original log records349C++ files clean and BUILD SUCCESS. Old report/summary/manifest/generator are retained. Summary only changes frozen_at; all prior source/raw/statistic records remain identical."
+    }
+  ],
+  "new_actionable_source_findings": [],
+  "independent_performance_audit": {
+    "method": "Independently parsed every raw process record, checked exact frozen commands/order/identity/slot/sequence, exit/stderr and complete result counts/checksums; matched raw stdout to every results block; independently recomputed all predeclared5000 block-bootstrap summaries and version metrics, selection sets and one-shot confirmation sets. Reparsed all357 printed ratio rows and484 metric rows at exact displayed rounding. No project executable or measurement was run.",
+    "standard96": {
+      "raw_processes": 13784,
+      "formal_queries": 42432,
+      "warmup_queries": 3080,
+      "one_shot_confirmation_cases": 19,
+      "confirmed_cases": 18,
+      "confirmed_comparisons": 21,
+      "confirmation_only_signals": 6,
+      "confirmed_vs_public": 4,
+      "max_confirmed": {
+        "case": "callback-w8-p100-b1024",
+        "comparison": "fixed/base",
+        "median_ratio": 1.0396423436702862,
+        "bootstrap95": [
+          1.022542002704057,
+          1.049726087552496
+        ]
+      },
+      "max_confirmed_vs_public": {
+        "case": "float-callback-t0-cut100-b1024",
+        "comparison": "fixed/public",
+        "median_ratio": 1.0287035830808442,
+        "bootstrap95": [
+          1.00214561321265,
+          1.0557758632410457
+        ]
+      },
+      "query_gate_cleared": false
+    },
+    "longname12": {
+      "raw_processes": 624,
+      "formal_queries": 1728,
+      "warmup_queries": 144,
+      "one_shot_confirmation_cases": 0,
+      "confirmed_comparisons": 0,
+      "confirmation_only_signals": 0,
+      "within_scope_query_gate_cleared": true,
+      "interpretation": "No initial interval lower bound exceeded1 under this exact finite procedure; this is not equivalence, a memory-safe public baseline, an entire-PR pass or permission to offset other confirmed/unresolved signals."
+    },
+    "schedule_and_testing_policy": "Standard24initial/48once-confirmation balanced all24 version orders and neutral image marginals/joints; supplement24pair/48once rules verified. Initial all-case stage precedes selection. No extended historical round, extra search-for-pass round, outlier removal, cross-candidate pooling or faster-case compensation found. Confirmation-only signals remain unresolved and block the gate.",
+    "comparability_boundaries": [
+      "Integer structured/base materializes an extra bucket field; excluded from gate, not isolated engine speedup. Same opaque callback projections remain comparable complete-query controls.",
+      "Prior-native mixedNaN wrong answers are classified from raw semantic mismatch exit2 and excluded; correct prior_legacy application references are labelled. Application filtering includes input materialization cost.",
+      "close_seconds is destroy_query_data_set only; header cleanup can occur earlier during device exhaustion and remains in full latency. Public c8b leaks ownership and is not a memory-safe quality-equivalent cost baseline. Smaller/faster measurements do not prove necessary or minimal cost.",
+      "Warm-cache Windows static Release conditions, requested parallel flags, affinity-before-resume, and image/order balance do not eliminate background drift, prove actual fallback parallel scaling or establish source-level causality. Within-process queries are correlated; pointwise bootstrap does not control familywise error."
+    ]
+  },
+  "functional_sanitizer_compatibility_coverage_audit": {
+    "windows": {
+      "baseline_focused_passes": 224,
+      "baseline_full_passes": 1129,
+      "candidate_focused_passes": 224,
+      "candidate_full_passes": 1129,
+      "full_registered": 1142,
+      "skipped": 3,
+      "disabled": 10,
+      "scope": "Functional XML and actual logged completion; Windows baseline functional pass does not detect the heap leak."
+    },
+    "linux": {
+      "baseline_focused": 1,
+      "candidate_focused": 0,
+      "candidate_reader": 0,
+      "candidate_full": 1,
+      "candidate_full_failure": "Unchanged LZOkay lzokay.cpp:34 at LZOTest.TestBytes1; not complete sanitizer pass"
+    },
+    "strict_full_failure": "LZOTest.TestBytes1 aborts at the unchanged pinned LZOkay lzokay.cpp:34 misaligned uint16_t load; full process exit1 remains, no sanitizer suppression or full-clean claim. XML/functionally passed counts do not override process failure.",
+    "CI_scope": {
+      "actual_checkout": "90db22940d13ec09d850c9e251433401c44835bb",
+      "merge_parents": [
+        "eb733133b9eee0b1eb74f7671d809ecd730cedc3",
+        "c8b27546f61d5880e714612379556cf860f18467"
+      ],
+      "changed_files_vs_standalone_public": 71,
+      "actual_logs_verified": {
+        "121209455872": {
+          "actual_merge": "90db22940d13ec09d850c9e251433401c44835bb",
+          "LSan_62bytes_2allocations_reports": 6,
+          "raw_log_sha256": "ab11b5af6ebaa3b4efbea854b41d3b8254aaa382bd26fb446be4c0eee2f31118"
+        },
+        "121209455620": {
+          "actual_merge": "90db22940d13ec09d850c9e251433401c44835bb",
+          "LSan_62bytes_2allocations_reports": 6,
+          "raw_log_sha256": "10cc3690869c163a1f799a374f3976f67d7e6d8ae40fe14d31bf0cc8a41b2d5e"
+        }
+      },
+      "limit": "CI merge C++/Java trees differ. CI test counts and any sanitizer behavior cannot be transferred to standalone public or local repair."
+    },
+    "standard_Java_CPP_oracle": {
+      "raw_processes": 124,
+      "all_exit_zero": true,
+      "positive_null_queries": 96,
+      "positive_float_processes": 15,
+      "positive_float_queries": 1800,
+      "total_positive_queries": 1896,
+      "prior_negative_attribution": [
+        {
+          "writer_file": "java-floats.tsfile",
+          "exit": 0,
+          "mismatches": 40,
+          "finite_or_infinite_literal": 32,
+          "NaN_literal": 8
+        },
+        {
+          "writer_file": "base-floats.tsfile",
+          "exit": 0,
+          "mismatches": 40,
+          "finite_or_infinite_literal": 32,
+          "NaN_literal": 8
+        },
+        {
+          "writer_file": "fixed-floats.tsfile",
+          "exit": 0,
+          "mismatches": 40,
+          "finite_or_infinite_literal": 32,
+          "NaN_literal": 8
+        }
+      ],
+      "writer_products_rehashed_and_cpp_base_fixed_equal": true,
+      "all_expected_sequences_independently_recomputed": true,
+      "standalone_controls": [
+        {
+          "mode": "nan-eq",
+          "rows": 4,
+          "expected_rows": 4,
+          "nan_rows": 0,
+          "timestamp_sum": 10
+        },
+        {
+          "mode": "nan-ne",
+          "rows": 2,
+          "expected_rows": 2,
+          "nan_rows": 2,
+          "timestamp_sum": 5
+        },
+        {
+          "mode": "nan-notlt",
+          "rows": 6,
+          "expected_rows": 6,
+          "nan_rows": 2,
+          "timestamp_sum": 15
+        },
+        {
+          "mode": "large",
+          "rows": 300,
+          "expected_rows": 300,
+          "nan_rows": 0,
+          "timestamp_sum": 44850
+        }
+      ]
+    },
+    "preflight": "Fresh standard1624 processes:832 integer new-reader processes +32 old8 reader processes=2752 integer queries;720 floating reader processes=2160 queries;10 Java40000-row full scans;12 deliberate wrong prior-native semantic controls. Supplement79 preflight processes include72 C++ readers×3=216 complete queries and3 Java40000-row scans; public/fixed/Java writers,12cases,2readers. Exact Cartesian read commands/results checked in independent premeasurement records and unchanged hashes reverified at final review.",
+    "Java_input_provenance": "Main1323 class/jar/source/java.exe/javac.exe entries rehashed, exact class membership/explicit classpath checked, no empty entry;4 local oracle classes compiled and frozen before their corresponding initial Java execution. Supplement class/source prefix has its own pre-oracle freeze and unchanged dependency hashes. This is not a frozen complete JDK/OS:14 nonclass classpath resources and other JVM components are not claimed as fully attested. Java predicates are independent full projected-scan application oracles, not native Java structured-filter timing.",
+    "coverage_native_objects_verified": 231,
+    "coverage_filtered_entries_verified": 56,
+    "coverage_scopes_independently_recomputed": {
+      "candidate": {
+        "covered_lines": 2,
+        "executable_lines": 2,
+        "line_percent": 100.0,
+        "covered_branches": 0,
+        "branches": 0,
+        "branch_percent": null
+      },
+      "maintainer": {
+        "covered_lines": 885,
+        "executable_lines": 1040,
+        "line_percent": 85.09615384615384,
+        "covered_branches": 901,
+        "branches": 1452,
+        "branch_percent": 62.05234159779614
+      },
+      "whole-pr": {
+        "covered_lines": 963,
+        "executable_lines": 1120,
+        "line_percent": 85.98214285714286,
+        "covered_branches": 1015,
+        "branches": 1605,
+        "branch_percent": 63.2398753894081
+      }
+    },
+    "selected16_file_module": {
+      "covered_lines": 3730,
+      "executable_lines": 4921,
+      "line_percent": 75.79760211339159,
+      "covered_branches": 3317,
+      "branches": 6307,
+      "branch_percent": 52.592357697796096
+    },
+    "coverage_scope": "Fresh separate final5db build/profile and retained native gcov snapshot, from recorded focused/reader/full-attempt/harness runs; no old or baseline counters imported. Candidate repair2/2lines=100%, changedbranches0/0=N/A (not100% branch coverage). WholePR85.98%/63.24% and selected16files75.80%/52.59% remain explicitly below90%; test-source assertions are not production coverage denominator inflation.",
+    "publication_packaging_limit": "155 frozen evidence files include filtered native gcov entries, aliases and exact Git diff denominator inputs, raw runs and source hashes; full source checkout, binaries, tsfile products and native gzip gcov reports are locally retained/hash-checked but not all embedded in this publication manifest."
+  },
+  "report_review": {
+    "English_and_complete_Chinese_warning_present": true,
+    "performance_and_sanitizer_failures_prominent": true,
+    "counts_and_comparison_attribution_match_independent_audit": true,
+    "necessary_minimized_cost_not_proven": true,
+    "AI_disclosure_English_Chinese_present": true,
+    "original_source_maintainer_authorship_distinguished": true,
+    "no_unreported_numeric_waiver_or_failure_offset_found": true,
+    "setup_failures_preserved": "Git identity/missing-script launches, pre-freeze supplement compiler errors, reader-tail audit assertions and initial self-log-invalid draft are described at their actual scope. No extra test execution inferred from corrected enumeration. Original invalid draft remains historical, not a current verified freeze.",
+    "freeze_time_review_status": "summary independent_final_evidence_review=pending is intentionally historical freeze-time state. Final-review-outcome must separately bind both completed independent final review files and this final manifest/summary; do not interpret pending as current gate pass or rewrite historical raw results."
+  },
+  "remaining_limits_and_submission_blocks": [
+    "21 repeated latency increases across18cases and6 confirmation-only signals remain. Four confirmed comparisons are against current public c8b, max+2.870358%; overall max+3.964234% against base6f. No proven necessity/minimization or approved waiver exists. Source-level cause is not established by these ratios.",
+    "Fresh strict full Linux sanitizer still fails in unchanged third-party LZOkay. Clean focused/reader scopes remain useful but do not make the full suite clean.",
+    "Whole-PR/module coverage below90%, codec/nonaligned/parallel/coldcache/P99/query-only memory and old8 phase/individual-quantile/memory limits are explicit. Writes were not retimed for this reader-only revision; earlier PR query gaps and old write measurements retain original scope."
+  ],
+  "conclusion": "R1 ownership and R2 test-blindspot changes are correct within reviewed terminal reader/test contracts and exercised fresh scopes. Complete evidence review does not pass submission: standard query gate remains false and full sanitizer failure remains. Current bilingual report is accurate for diagnostic publication with these limits. No production push, upstream merge, Copilot request or remote write is authorized by this review.",
+  "activity": {
+    "source_edits": false,
+    "builds": false,
+    "tests_or_queries": false,
+    "additional_timing": false,
+    "remote_operations": false,
+    "writes": "Only independent review/audit scripts and JSON in pre-submission-review, excluded from the frozen input manifest and to be bound by final outcome.",
+    "audit_script_corrections": "Own read-only audit initially assumed summary did not change frozen_at and XML root exposed skipped count; corrected parser to accept only refreeze timestamp and count actual skipped elements. No project test or frozen evidence changed."
+  }
+}

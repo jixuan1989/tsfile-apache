@@ -1,0 +1,1508 @@
+{
+  "at": "2026-10-25T17:15:36.582508+00:00",
+  "head": "5db66cd74e3332625535c3ef3704bf2cda1dc6b7",
+  "baseline": "c8b27546f61d5880e714612379556cf860f18467",
+  "baseline-windows-focused": {
+    "tests": 224,
+    "failures": 0,
+    "disabled": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 224,
+    "sha256": "d1ea91b8c41ab2cdccc518035f4a71a4d5ec36a026ef93b968d074700c13d189"
+  },
+  "baseline-windows-full": {
+    "tests": 1142,
+    "failures": 0,
+    "disabled": 10,
+    "errors": 0,
+    "skipped": 3,
+    "passed": 1129,
+    "sha256": "96c8ce5ec49491e244b5e1fb4ddbe1f4f67f4bbc60db1a00708d8c2cfeb61b95"
+  },
+  "baseline-linux-focused": {
+    "tests": 224,
+    "failures": 0,
+    "disabled": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 224,
+    "sha256": "977619e1f3eac86b99552612d7da2ad8d184c5fff72f9c9ceb3f4bf09e6520c7"
+  },
+  "candidate-windows-focused": {
+    "tests": 224,
+    "failures": 0,
+    "disabled": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 224,
+    "sha256": "2597459b8fce9fded0166c374df4952058b7d1ba07f4f88e1bfe82fb2a63fb52"
+  },
+  "candidate-windows-full": {
+    "tests": 1142,
+    "failures": 0,
+    "disabled": 10,
+    "errors": 0,
+    "skipped": 3,
+    "passed": 1129,
+    "sha256": "c6eb927408d5452016c9be6dd61fd6a05b8788e589f1a4fc421e7a0568b7db7e"
+  },
+  "candidate-linux-focused": {
+    "tests": 224,
+    "failures": 0,
+    "disabled": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 224,
+    "sha256": "f8ab9e81cde4ddcadc6e244813ed43b810ad6156994db0d29e7a275d878f79a3"
+  },
+  "candidate-linux-reader": {
+    "tests": 292,
+    "failures": 0,
+    "disabled": 1,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 291,
+    "sha256": "b56ed0a700ac331d396388af85c482c9735b5b672c26895ad7d1fff1733c1d9e"
+  },
+  "baseline_linux_process_exit": 1,
+  "baseline_linux_lsan": {
+    "allocations": 12,
+    "bytes": 360,
+    "functional_passes": 224,
+    "exit_code": 1,
+    "ci_bytes_difference": "Local libstdc++30bytes versus CI31bytes per header string allocation; same ownership stack, not identical ABI allocation sizes."
+  },
+  "candidate-linux-focused-exit": 0,
+  "candidate-linux-reader-exit": 0,
+  "candidate-linux-full-exit": 1,
+  "candidate-linux-harness-exit": 0,
+  "linux_full": {
+    "passed": false,
+    "diagnostic": "Pinned unchanged LZOkay lzokay.cpp:34 misaligned uint16_t load",
+    "suppression_added": false,
+    "runtime_error_count": 1,
+    "log_sha256": "402c918991a1033161a402c5fb3f1f01991be9dbf0abbc2a90259413c90886dd"
+  },
+  "java_compatibility": {
+    "candidate": "5db66cd74e3332625535c3ef3704bf2cda1dc6b7",
+    "base": "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "results": [
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "java",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "base",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "tail",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "bool",
+        "rows": 4,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty",
+        "rows": 28,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-slice",
+        "rows": 2,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "empty-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk",
+        "rows": 14,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-slice",
+        "rows": 3,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "java",
+        "case": "chunk-outside",
+        "rows": 0,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "base",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "legacy",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 0,
+        "query_count": 120,
+        "pass": true
+      },
+      {
+        "writer": "fixed",
+        "reader": "fixed",
+        "case": "120 FLOAT/DOUBLE operator/literal/negation combinations",
+        "batch": 3,
+        "query_count": 120,
+        "pass": true
+      }
+    ],
+    "files": {
+      "java-nulls.tsfile": {
+        "bytes": 5733,
+        "sha256": "404be6c685eaffa6715a0a6d97d0334036a471a6f67be4c32bb6fb676567ca45"
+      },
+      "java-floats.tsfile": {
+        "bytes": 3451,
+        "sha256": "354ed670dbef9a588e35d73ee4540615f090d4fb36f26849ea6064fca6d16cd0"
+      },
+      "base-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "base-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      },
+      "fixed-nulls.tsfile": {
+        "bytes": 5768,
+        "sha256": "089897ee4153a949502cb324401414cbebc0b9dc09156cd24c403129d14601a1"
+      },
+      "fixed-floats.tsfile": {
+        "bytes": 3468,
+        "sha256": "cbddc00ea70f8837bff4646d7fba6b2b05716a1896e7a9bb205a923f99ecbd34"
+      }
+    },
+    "standalone_reproductions": [
+      {
+        "mode": "nan-eq",
+        "rows": 4,
+        "expected_rows": 4,
+        "nan_rows": 0,
+        "timestamp_sum": 10
+      },
+      {
+        "mode": "nan-ne",
+        "rows": 2,
+        "expected_rows": 2,
+        "nan_rows": 2,
+        "timestamp_sum": 5
+      },
+      {
+        "mode": "nan-notlt",
+        "rows": 6,
+        "expected_rows": 6,
+        "nan_rows": 2,
+        "timestamp_sum": 15
+      },
+      {
+        "mode": "large",
+        "rows": 300,
+        "expected_rows": 300,
+        "nan_rows": 0,
+        "timestamp_sum": 44850
+      }
+    ],
+    "null_queries_checked": 96,
+    "floating_queries_checked": 1800,
+    "floating_cpp_queries": 1440,
+    "floating_java_queries": 360,
+    "scope": "PLAIN/UNCOMPRESSED,2 devices,2 chunks,page3,NULL tails/allNULL/boolean/offset/limit and FLOAT/DOUBLE NaN,+/-Inf,+/-0,+/-1,2,NULL; all6 comparisons against0,1,NaN,+/-Inf and nonNULL NOT; native structured row/batch vs legacy C++ and Java public projected scan plus app predicate. No Java native structured-predicate performance claim. Output includes exact ordered timestamps and bit-sensitive value classes.",
+    "writer_bytes": "Old/fixed C++ products identical for both fixtures; Java full-file byte equality not claimed."
+  },
+  "independent_harness_linux": {
+    "compile_command": [
+      "g++",
+      "-DCOV_ENABLED=1",
+      "-DENABLE_GZIP",
+      "-DENABLE_LZ4",
+      "-DENABLE_LZMA2",
+      "-DENABLE_LZOKAY",
+      "-DENABLE_MEM_STAT",
+      "-DENABLE_SNAPPY",
+      "-DENABLE_TEST",
+      "-DENABLE_THREADS",
+      "-DENABLE_ZLIB",
+      "-DENABLE_ZSTD",
+      "-DTSFILE_STATIC",
+      "-I/mnt/c/Users/hxd/Documents/Codex/2026-10-17/new-chat-2/work/pr03-c8b-src/cpp/src",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/include",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/third_party/snappy",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/_deps/snappy-1.2.2",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/_deps/lz4-1.9.4/lib",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/_deps/lzokay-5cb18da508cc4d3ec41bc04dccdeef9c5ffedfb2",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/third_party/zlib",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/_deps/zlib-1.3.1",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/_deps/zstd-1.5.7/build/cmake/../../lib",
+      "-I/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/_deps/xz-5.8.3/src/liblzma/api",
+      "-Wall",
+      "-std=c++11",
+      "-O0",
+      "-g",
+      "--coverage",
+      "-fprofile-update=atomic",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=undefined",
+      "-O0",
+      "-g",
+      "-std=gnu++11",
+      "-fprofile-arcs",
+      "-ftest-coverage",
+      "-DREVIEW_VARIANT=\"candidate-linux\"",
+      "-DREVIEW_COMMIT=\"5db66cd74e3332625535c3ef3704bf2cda1dc6b7\"",
+      "-fsanitize=address,undefined",
+      "-static-libasan",
+      "-static-libubsan",
+      "/mnt/c/Users/hxd/Documents/Codex/2026-10-17/new-chat-2/work/issue-03/validation/maintainer-head-c8b27546-20261025/pre-submission-review/harness/review_harness.cc",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/lib/libtsfile.a",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/lib/libsnappy.a",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/lib/libtsfile_lz4_bundled.a",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/lib/libtsfile_lzokay_bundled.a",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/lib/libz.a",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/lib/libzstd.a",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/lib/liblzma.a",
+      "-pthread",
+      "--coverage",
+      "-o",
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/independent-review-harness"
+    ],
+    "run_command": [
+      "/tmp/tsfile-pr03-c8b-fix-20261025-asan-cov/independent-review-harness",
+      "/mnt/c/Users/hxd/Documents/Codex/2026-10-17/new-chat-2/work/issue-03/validation/maintainer-head-c8b27546-20261025/review-harness-linux/run"
+    ],
+    "exit_code": 0,
+    "summary": {
+      "kind": "summary",
+      "completed": true,
+      "harness_errors": 0,
+      "query_cases": 24,
+      "evaluator_cases": 180,
+      "valid_control_failures": 0,
+      "query_semantic_mismatches": 0,
+      "evaluator_semantic_mismatches": 0,
+      "semantic_mismatches": 0
+    },
+    "sanitizer_diagnostics": false,
+    "semantic_gate_passed": true,
+    "scope": "180 direct dual-evaluator cases and24 full-file query controls pass,including12 malformed controls;no sanitizer diagnostics.",
+    "source_sha256": "2c89028b05e64c416233b5759f5af7fec816f7a9a0768bac473a1c558bb1056e",
+    "executable_sha256": "11765d87f81b0e27c6412c9620aa441ac6b45fe5a912b0cf851f10337af8fe44",
+    "flags_sha256": "5b9b85b8e9036caa8ec52266dd71aa64e3d0a728026a8d34a157d367d4a79d62"
+  },
+  "independent_harness_windows": {
+    "command": [
+      "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\pr03-c8b-drivers\\Release\\independent_review_harness.exe",
+      "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-c8b27546-20261025\\review-harness-windows\\run"
+    ],
+    "exit_code": 0,
+    "summary": {
+      "kind": "summary",
+      "completed": true,
+      "harness_errors": 0,
+      "query_cases": 24,
+      "evaluator_cases": 180,
+      "valid_control_failures": 0,
+      "query_semantic_mismatches": 0,
+      "evaluator_semantic_mismatches": 0,
+      "semantic_mismatches": 0
+    }
+  },
+  "coverage_by_diff": {
+    "candidate": {
+      "covered_lines": 2,
+      "executable_lines": 2,
+      "line_percent": 100.0,
+      "covered_branches": 0,
+      "branches": 0,
+      "branch_percent": null
+    },
+    "maintainer": {
+      "covered_lines": 885,
+      "executable_lines": 1040,
+      "line_percent": 85.09615384615384,
+      "covered_branches": 901,
+      "branches": 1452,
+      "branch_percent": 62.05234159779614
+    },
+    "whole-pr": {
+      "covered_lines": 963,
+      "executable_lines": 1120,
+      "line_percent": 85.98214285714286,
+      "covered_branches": 1015,
+      "branches": 1605,
+      "branch_percent": 63.2398753894081
+    }
+  },
+  "affected_files_coverage": {
+    "covered_lines": 3730,
+    "executable_lines": 4921,
+    "line_percent": 75.79760211339159,
+    "covered_branches": 3317,
+    "branches": 6307,
+    "branch_percent": 52.592357697796096
+  },
+  "spotless_passed": true,
+  "setup_events": {
+    "failed_initial_commit": "Git identity missing; exit128; no commit created",
+    "failed_dependent_build_launches": "Two launches returned missing script path before scripts had been prepared; no candidate compilation/test ran. Original outputs retained in Codex tool transcript.",
+    "recovery": "Reuse recorded prior commit author identity only for this commit; no global/local user config modified; prepare scripts only after commit success.",
+    "context_harness_compile_failures": [
+      "context-build.log:Windows INT64 ambiguity",
+      "context-build-qualified-enum.log:psapi before Windows types",
+      "context-build-final.log:Windows IN macro before TsFile headers",
+      "context-build-windows-headers-last.log:WriteFile ambiguity"
+    ],
+    "context_harness_compile_recovery": "context-build-qualified-writer.log passes before preflight/freeze; no timed sample existed",
+    "reader_tail_enumeration": "Two empty-selection assertions failed in audit script; corrected scope records zero extra tests,tool outputs retained",
+    "initial_evidence_manifest": "Initial draft included its own actively-written finalization-launch.log; rebuilt excluding it before final reviews/publication. Initial draft retained in evidence-freeze-setup and is not a current valid input manifest."
+  },
+  "source_submission_gate_passed": false,
+  "frozen_at": "2026-10-25T17:51:44.675618+00:00",
+  "public_head": "c8b27546f61d5880e714612379556cf860f18467",
+  "candidate_head": "5db66cd74e3332625535c3ef3704bf2cda1dc6b7",
+  "source_author": "MaintainerColinLee authored c8b;OpenAI Codex authored local5db lifetime repair and nonnull regression assertions.",
+  "source_pushed": false,
+  "query": {
+    "standard96": {
+      "cases": 96,
+      "processes": 13784,
+      "phase_processes": {
+        "warmup": 768,
+        "initial": 9216,
+        "confirmation_warmup": 152,
+        "confirmation": 3648
+      },
+      "phase_verified_queries": {
+        "warmup": 2624,
+        "initial": 31488,
+        "confirmation_warmup": 456,
+        "confirmation": 10944
+      },
+      "formal_verified_queries": 42432,
+      "warmup_verified_queries": 3080,
+      "confirmation_cases": 19,
+      "confirmed_case_count": 18,
+      "confirmed_comparisons": [
+        {
+          "case": "callback-w8-p100-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0396423436702862,
+          "bootstrap95": [
+            1.022542002704057,
+            1.049726087552496
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut100-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0394786778649932,
+          "bootstrap95": [
+            1.0144095765017116,
+            1.0864999814725609
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut100-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.036839973008426,
+          "bootstrap95": [
+            1.01845493145826,
+            1.076336876773366
+          ]
+        },
+        {
+          "case": "callback-w8-p1-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0361383041439813,
+          "bootstrap95": [
+            1.0265230827379304,
+            1.0557330847924018
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut0-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0352106827371652,
+          "bootstrap95": [
+            1.0232951383658047,
+            1.0602326656254815
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut0-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.034733103297127,
+          "bootstrap95": [
+            1.0152752846855035,
+            1.073162279602233
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut100-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0309191917463072,
+          "bootstrap95": [
+            1.01208616748374,
+            1.0852346909894366
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut100-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0302343449242455,
+          "bootstrap95": [
+            1.018382178650948,
+            1.0642979552857759
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut100-b1024",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0287035830808442,
+          "bootstrap95": [
+            1.00214561321265,
+            1.0557758632410457
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut0-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0238652755255309,
+          "bootstrap95": [
+            1.0156975517879585,
+            1.0450702103359744
+          ]
+        },
+        {
+          "case": "callback-w8-p1-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0161665540040652,
+          "bootstrap95": [
+            1.0124262083561417,
+            1.0254137836356563
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut50-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.015480566689205,
+          "bootstrap95": [
+            1.0025496351756156,
+            1.0527600832858988
+          ]
+        },
+        {
+          "case": "callback-w1-p1-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0149098772092902,
+          "bootstrap95": [
+            1.0067621808487064,
+            1.0218855875453317
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut0-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0143704477336084,
+          "bootstrap95": [
+            1.0027402882734975,
+            1.0527644877789135
+          ]
+        },
+        {
+          "case": "callback-w1-p100-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.013985171641277,
+          "bootstrap95": [
+            1.005647332031456,
+            1.0179458510303012
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut50-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.013542451618025,
+          "bootstrap95": [
+            1.000883177992942,
+            1.0494833436991937
+          ]
+        },
+        {
+          "case": "dense-w4-p100-b0",
+          "comparison": "fixed/prior",
+          "median_ratio": 1.0123600484639468,
+          "bootstrap95": [
+            1.0092934127022386,
+            1.015874245227543
+          ]
+        },
+        {
+          "case": "callback-w1-p1-b1024",
+          "comparison": "fixed/prior",
+          "median_ratio": 1.0073675495005654,
+          "bootstrap95": [
+            1.0032515908252349,
+            1.012682951258905
+          ]
+        },
+        {
+          "case": "callback-w1-p100-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.006425834702799,
+          "bootstrap95": [
+            1.0023274930939885,
+            1.0087138177606507
+          ]
+        },
+        {
+          "case": "callback-w8-p100-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0052473327681763,
+          "bootstrap95": [
+            1.0020270330398213,
+            1.0150767707414297
+          ]
+        },
+        {
+          "case": "float-not-t1-mixed0-cut50-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0036241415879512,
+          "bootstrap95": [
+            1.001237130183535,
+            1.0068203217750848
+          ]
+        }
+      ],
+      "confirmation_only_signals": [
+        {
+          "case": "callback-w1-p1-b0",
+          "comparison": "fixed/prior",
+          "median_ratio": 1.0091373813378912,
+          "bootstrap95": [
+            1.0053154683324201,
+            1.0143018933062762
+          ]
+        },
+        {
+          "case": "callback-w1-p1-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0132572167901723,
+          "bootstrap95": [
+            1.0084918435800747,
+            1.0204269949574134
+          ]
+        },
+        {
+          "case": "callback-w1-p100-b1024",
+          "comparison": "fixed/prior",
+          "median_ratio": 1.010302567390267,
+          "bootstrap95": [
+            1.004485945744206,
+            1.0168305045407924
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut100-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0197670851155847,
+          "bootstrap95": [
+            1.0052468067313787,
+            1.0585044442065819
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut100-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0232301166261961,
+          "bootstrap95": [
+            1.0046367851622875,
+            1.0570177254678397
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut100-b1024",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0163510415545656,
+          "bootstrap95": [
+            1.00072179736681,
+            1.0762736375280622
+          ]
+        }
+      ],
+      "query_gate_cleared": false,
+      "necessity_proven": false,
+      "protocol_sha256": "58ee4b2508275e9b81a39c7f4cc768933ea82ebb8ad7fd5d57657d5c1e560908",
+      "results_sha256": "79f624ad1453ed3aa740d65fe9862c4ed19b166fea6ea55aabc150004d18be56",
+      "raw_sha256": "30021b116fee0efb0e3ac37c5ac7c518464429a6760b2b29826700c16aaf4fe2",
+      "frozen_input_hashes_reverified": 1477,
+      "preflight": {
+        "integer_verified_queries": 2752,
+        "floating_verified_processes": 720,
+        "floating_verified_queries": 2160,
+        "java_verified_40000row_scans": 10,
+        "prior_native_negative_controls": [
+          {
+            "type": 0,
+            "cutoff": 0,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 0,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 50,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 50,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 100,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 100,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 0,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 0,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 50,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 50,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 100,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 100,
+            "batch": 1024,
+            "exit_code": 2
+          }
+        ],
+        "negative_in_timing": false
+      }
+    },
+    "longname12": {
+      "cases": 12,
+      "processes": 624,
+      "phase_processes": {
+        "warmup": 48,
+        "initial": 576
+      },
+      "phase_verified_queries": {
+        "warmup": 144,
+        "initial": 1728
+      },
+      "formal_verified_queries": 1728,
+      "warmup_verified_queries": 144,
+      "confirmation_cases": 0,
+      "confirmed_case_count": 0,
+      "confirmed_comparisons": [],
+      "confirmation_only_signals": [],
+      "query_gate_cleared": true,
+      "necessity_proven": false,
+      "protocol_sha256": "49fb009403377bfff332ec702473ad5e355781c0e469d97bbc8b1dad876ee454",
+      "results_sha256": "a9df14b2fbaf36dda3b0cdc89e3e9b958af36c10129313f9b8afae23dd7f8590",
+      "raw_sha256": "e627daaa5721e6b21cd2da032e34d71159b7cd9d2bbedcbaf59af1e8b65986cd",
+      "frozen_input_hashes_reverified": 1346,
+      "preflight": {
+        "cpp_full_queries": 216,
+        "java_40000row_scans": 3,
+        "cpp_writer_bytes_equal": true,
+        "java_byte_equality_claimed": false
+      }
+    }
+  },
+  "query_gate_cleared": false,
+  "independent_final_evidence_review": "pending at this evidence freeze; final reviews/outcome follow separately",
+  "coverage_provenance": "Fresh isolated final5db production/test profile only; baseline separate. Focused/reader/full-attempt/harness scope. Native gcov snapshot was collected before later no-test enumeration; retained native reports define counts,not a claim livegcda stayed unchanged after listing. No previous production counts transferred.",
+  "write": {
+    "retimed": false,
+    "reason": "Reader-only revision; historical write throughput retains original commits. Fresh writer products cross-read,not write-throughput measurement."
+  },
+  "unmeasured": [
+    "coldcache",
+    "P99",
+    "compressed query latency",
+    "general nonaligned FIELD performance",
+    "parallel scaling",
+    "query-only memory",
+    "old8 phase/individual-quantile/memory",
+    "current write throughput"
+  ],
+  "no_extended_frozen_rounds": true,
+  "ci_scope": {
+    "standalone_head": "c8b27546f61d5880e714612379556cf860f18467",
+    "actual_ci_checkout": "90db22940d13ec09d850c9e251433401c44835bb",
+    "merge_parents": [
+      "eb733133b9eee0b1eb74f7671d809ecd730cedc3",
+      "c8b27546f61d5880e714612379556cf860f18467"
+    ],
+    "tree_comparison": {
+      "cpp": {
+        "head": "5d9182370c9cb1714227517c96e73efb0bb94ac1",
+        "ci_merge": "4a99c6c845646da9ce49f42094b98df0315d1a0a"
+      },
+      "java": {
+        "head": "081b185db4a2ee1dfcc32bb1fc53d5b59c39f31a",
+        "ci_merge": "f8b65783f4ab55c5ec651cfb0688a95e324187de"
+      },
+      "python": {
+        "head": "795c3b274e883fcf8d7365306988934617cde735",
+        "ci_merge": "795c3b274e883fcf8d7365306988934617cde735"
+      }
+    },
+    "changed_files_vs_standalone": 71,
+    "names_sha256": "6aa9603b351326478bf50ca5160d21a418990fae4e3fa0f258c2f9ffddab6a7e",
+    "baseline_and_fixed_shared_driver_headers": {
+      "count": 170,
+      "identical": true,
+      "reason": "c8b→5db changes only reader .cc and test .cc. Shared header include path is byte-identical to frozen public c8b; baseline and fixed libraries are separately built."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-25T17:59:28.757168+00:00",
+  "head": "5db66cd74e3332625535c3ef3704bf2cda1dc6b7",
+  "public_head": "c8b27546f61d5880e714612379556cf860f18467",
+  "frozen_manifest_sha256": "2763bfab61ec65ae474f0d9f96f726be1bd7b9f1624c2c6e960ddd2d769aaa8c",
+  "reviews_sha256": {
+    "final-evidence-review-integration.json": "6f9d7f0d1d07bf69a558e4d5dab4199dcc41cb07b0c3c81a31b017b5e6ed5930",
+    "final-evidence-review-different-model.json": "c7ab838a6c69919248d7010608a13a27247d68778047fa3b534850c6b9259f90"
+  },
+  "actual_model_identities": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "earlier_summary_status": "pending refers to earlier evidence freeze; both final evidence reviews now complete,NOT_READY_TO_PUSH",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "source_pushed": false,
+  "query_gate_cleared": false,
+  "additional_post_freeze_review_assets": {
+    "pre-submission-review/final-coverage-oracle-audit-integration.json": "de92cbe54ab8d267974664a9b6cbcb287632208d54474594295860195d63a63c",
+    "pre-submission-review/final-freeze-provenance-audit-integration.json": "f5ef7a1f939a5c0cce94deeb386ba44ee5ee5af10c71f6430cb86b0f72ccd167",
+    "pre-submission-review/final-independent-recalculation-different-model.json": "d1450e7c74c3d9cec9ccdded9223b5a1befecf3a71aeff422cc414e51587df41",
+    "pre-submission-review/final-input-audit-integration.json": "3590b63ca961a3a2d7591a4bb04435b5a688ef7831a17113a86e18570db937fd",
+    "pre-submission-review/final-performance-audit-integration.json": "d84d9ed39910d5fffaa56f2194542e242b8de106210a971d512fd76700439b4c"
+  }
+}

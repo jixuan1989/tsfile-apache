@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-25T17:56:01.986481+00:00",
+  "status": "NOT_READY_TO_PUSH",
+  "overall_status": "NOT_READY_TO_PUSH",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "actual_model": "gpt-6-astra",
+  "runtime_identity": {
+    "session_id": "01a16181-6b51-75c0-91f5-0e4effcd27fa",
+    "agent_path": "/root/review_aligned_filter_model",
+    "parent_session_id": "01a146d7-a196-7d20-bcb2-28bd83157e4d",
+    "evidence_path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\22\\rollout-2026-10-22T10-47-14-01a16181-6b51-75c0-91f5-0e4effcd27fa.jsonl",
+    "latest_turn_context": {
+      "timestamp": "2026-10-25T17:54:20.007Z",
+      "model": "gpt-6-astra"
+    },
+    "verification": "Directly read current session turn_context; runtime-assigned model differs from implementor gpt-6.1-sol. This is runtime record provenance, not cryptographic backend serving attestation."
+  },
+  "public_head": "c8b27546f61d5880e714612379556cf860f18467",
+  "local_candidate_head": "5db66cd74e3332625535c3ef3704bf2cda1dc6b7",
+  "local_candidate_pushed": false,
+  "frozen_evidence_manifest_sha256": "2763bfab61ec65ae474f0d9f96f726be1bd7b9f1624c2c6e960ddd2d769aaa8c",
+  "manifest_file_count": 155,
+  "manifest_bytes": 41529653,
+  "manifest_hash_size_mismatches": [],
+  "input_sha256": {
+    "validation-report.md": "8c97904812957324074920858abddb81fed36ad021ca06bc4cab76460d83edc5",
+    "validation-summary.json": "0f844815ef14641628d2661b61023d1488ec0160f63fd8a7af817a30ff7e1c9d",
+    "source.patch": "670ff412c1149899acb5e0bafb3f21c1ddbba1462f47007593066fc304177d5b",
+    "local-repair.patch": "617908e182632c29ff8b67bd04270b9171ee9a8158bc92a1b2c3253f47282185",
+    "baseline-source-freeze.json": "8d9e1f1e3ab9787eb8c6aa408a1df77276cc0c3279d24a00bb34d1d68b825139",
+    "source-freeze.json": "1f42895aedd002ed17e1b1043982801a4b56d6d4291ec487c4689d1b138b9718",
+    "candidate-query-performance/protocol.json": "58ee4b2508275e9b81a39c7f4cc768933ea82ebb8ad7fd5d57657d5c1e560908",
+    "candidate-query-performance/processes.jsonl": "30021b116fee0efb0e3ac37c5ac7c518464429a6760b2b29826700c16aaf4fe2",
+    "candidate-query-performance/results.json": "79f624ad1453ed3aa740d65fe9862c4ed19b166fea6ea55aabc150004d18be56",
+    "context-query-performance/protocol.json": "49fb009403377bfff332ec702473ad5e355781c0e469d97bbc8b1dad876ee454",
+    "context-query-performance/processes.jsonl": "e627daaa5721e6b21cd2da032e34d71159b7cd9d2bbedcbaf59af1e8b65986cd",
+    "context-query-performance/results.json": "a9df14b2fbaf36dda3b0cdc89e3e9b958af36c10129313f9b8afae23dd7f8590",
+    "all-query-ratios.md": "13a43816e6602bc237866f8db239a213ed6e9d73955838545a3d267ca6f86dd1",
+    "all-query-metrics.md": "2ede6806365c4ba3d81b466c069a110cf8adf574ba3f4e14c2d3f0474e85450a",
+    "pre-submission-review/source-review-different-model.json": "47ab1b1ad330ffc4627100e84b19efee89fd4457732547fa6a4399fccac8b935",
+    "pre-submission-review/local-repair-source-review-different-model.json": "4159569b58bb6969da57ca08d3ba871abe0b86357b4b15517442c22210617684",
+    "pre-submission-review/protocol-review-different-model.json": "e8714a960e5a4188e7f1d3622cd1276bd9320387ec4087040dbb4bfe18351a29",
+    "pre-submission-review/final-independent-recalculation-different-model.json": "d1450e7c74c3d9cec9ccdded9223b5a1befecf3a71aeff422cc414e51587df41"
+  },
+  "original_manifest_sha256": "5ac07c9a0389e8dcbfb3a87766da54d876e388b9f5c5e5179f401bb34670c7f2",
+  "final_wording_closure": {
+    "finding_id": "FINAL-TEXT-001",
+    "original_observation": "spotless17 passes / spotless17 wording could be read as a test count instead of formatter version.",
+    "disposition": "CLOSED",
+    "correction": "Both English and Chinese now explicitly say Spotless using clang-format-17 passed. The original raw log records 349 clean files and BUILD SUCCESS; formatter configuration is 17.0.6.",
+    "old_report_sha256": "c837f957cf6fae619b09f71a8aabd76d6f9c95c4f31ba2b4ff01fef215f9c028",
+    "snapshot_directory": "pre-submission-review/before-spotless-wording",
+    "closure_verification": "All original 151 input names retained; four exact historical snapshot files added. Only report wording, summary frozen_at and finalizer freeze/wording logic changed. Raw source, queries, timing, statistics, coverage and Java inputs unchanged. All 155 current size/hash entries match."
+  },
+  "source_review": {
+    "baseline_production_files_verified": 233,
+    "candidate_production_files_verified": 260,
+    "git_objects_and_working_tree_hashes_verified": true,
+    "tracked_working_tree_clean": true,
+    "repair_scope": "Two explicit terminal ChunkHeader member destructors and result nonnull test assertions; no SSI/reset/ValueColumnState changes or unrelated noFIELD allocation optimization.",
+    "R1": {
+      "original_finding": "Owned measurement names in time_chunk_header_ and value_chunk_header_ were not destroyed in the placement-new destroy()+mem_free lifetime.",
+      "disposition": "CLOSED_IN_LOCAL_SOURCE_AND_FOCUSED_RUNTIME",
+      "evidence": "All supported production/resource-test call sites use terminal manual destruction; cross-chunk reuse uses reset. No later header accesses found. Baseline focused 224 functional tests exit 1 with LSan 360 bytes / 12 allocations; candidate focused 224 exit 0 without that leak. Public CI synthetic-merge 62-byte instances are separate ABI/scope evidence."
+    },
+    "R2": {
+      "original_finding": "Valid empty scan controls could accept E_OK with null result objects.",
+      "disposition": "CLOSED",
+      "evidence": "Nonnull assertions added to common scan and valid-empty controls; original 29-character real FIELD regression retained and focused tests executed."
+    },
+    "other_observations": "Recursive validity before empty shortcuts, NaN-safe finite statistics inversion, native nonNULL negation, double NOT and mask validity transitions reviewed. No remaining concrete correctness defect established in this frozen repair. Null-filter mask allocation remains an observation, not a demonstrated cause of measured regressions. Earlier hidden-NaN/min-max-only concern was withdrawn because the old local implementation also guarded NaN sum; old local repairs/results are not substituted for current evidence."
+  },
+  "independent_performance_recalculation": {
+    "companion": "pre-submission-review/final-independent-recalculation-different-model.json",
+    "standard": {
+      "cases": 96,
+      "processes": 13784,
+      "phase_processes": {
+        "warmup": 768,
+        "initial": 9216,
+        "confirmation_warmup": 152,
+        "confirmation": 3648
+      },
+      "phase_verified_queries": {
+        "warmup": 2624,
+        "initial": 31488,
+        "confirmation_warmup": 456,
+        "confirmation": 10944
+      },
+      "formal_verified_queries": 42432,
+      "warmup_verified_queries": 3080,
+      "confirmation_cases": 19,
+      "confirmed_case_count": 18,
+      "query_gate_cleared": false
+    },
+    "standard_confirmed_comparisons": 21,
+    "standard_confirmation_only_signals": 6,
+    "public_comparisons_confirmed": 4,
+    "largest_public_confirmed_ratio": 1.0287035830808442,
+    "largest_overall_confirmed_ratio": 1.0396423436702862,
+    "context": {
+      "processes": 624,
+      "phase_processes": {
+        "warmup": 48,
+        "initial": 576
+      },
+      "phase_queries": {
+        "warmup": 144,
+        "initial": 1728
+      },
+      "confirmed_comparisons": [],
+      "confirmation_selection": [],
+      "query_gate_cleared": true
+    },
+    "verified_groups": 127,
+    "ratio_table_rows_verified": 357,
+    "metric_table_rows_verified": 484,
+    "method": "Independently reconstructed every process order, command, neutral slot assignment, raw block, count/checksum oracle, scheduled trigger and sole confirmation selection. Recomputed 5000 common-block-index bootstrap pointwise intervals and all descriptive metrics for all 115 standard and 12 context groups. Exact agreement with stored results and rendered tables. Every process succeeded; no extra rounds or adverse sample removal found.",
+    "schedule": "Standard 24 initial blocks cover all 24 orders; marginal version/position/identity counts 6, joint cells 1 or 2. Complementary 48-block confirmation yields joint cells 3. Context two-version schedule separately balanced. Serial rounds follow completion of validation jobs.",
+    "limits": "Pointwise intervals are not familywise multiplicity control or equivalence tests. No causal attribution or necessary-cost proof. Context query gate is scoped to its 12 measured cases; its lack of triggers does not clear the standard gate or establish equivalence. Header destruction may occur during iteration/device exhaustion, so close_seconds is not an isolated header-release measurement. Old 8 cases provide block-average full time, not individual phase quantiles."
+  },
+  "oracle_and_java_review": {
+    "compatibility_queries": 1896,
+    "compatibility_split": {
+      "null_boolean_offset_limit": 96,
+      "floating": 1800
+    },
+    "integer_preflight_queries": 2752,
+    "floating_preflight_processes": 720,
+    "floating_preflight_queries": 2160,
+    "standard_java_complete_40000row_scans": 10,
+    "context_preflight_cpp_queries": 216,
+    "context_java_complete_40000row_scans": 3,
+    "checks": "Independent expected values/counts/order/NULL predicates checked against full-output validations; fresh raw compatibility and strict negative attribution retained. All current frozen executable/library/header/input/classpath hashes reverified. Main Java freeze has 1323 entries, including 1303 classes, 15 jars, 3 Java sources and 2 JDK executables; new context oracle frozen separately before its first Java use. No implicit empty classpath entry.",
+    "negative_controls": "Prior native ordered-NOT compatibility controls give exactly 40 wrong combinations per writer (32 nonNULL comparisons losing NaN plus 8 NaN-literal combinations). Twelve mixed-NaN prior-native performance preflight negatives exit 2 and are excluded from timing; correct prior_legacy references used.",
+    "context_expected_per_query": {
+      "is_null": {
+        "rows": 13334,
+        "checksum": 399993332
+      },
+      "is_not_null": {
+        "rows": 26666,
+        "checksum": 3999880002
+      }
+    },
+    "boundaries": "Java is a complete materialization oracle, not native Java predicate pushdown timing. Four standard C++ writer products and two context C++ products respectively match bytes; no Java whole-file byte-equality claim."
+  },
+  "tests_and_sanitizers": {
+    "candidate_windows_focused_passed": 224,
+    "candidate_windows_full": {
+      "registered": 1142,
+      "passed": 1129,
+      "skipped": 3,
+      "disabled": 10,
+      "failures": 0
+    },
+    "candidate_linux_focused_passed": 224,
+    "candidate_linux_reader": {
+      "registered": 292,
+      "passed": 291,
+      "disabled": 1,
+      "exit_code": 0
+    },
+    "independent_harness_each_platform": {
+      "logical_cases": 180,
+      "evaluator_calls": 360,
+      "file_queries": 24,
+      "invalid_queries": 12,
+      "valid_queries": 12,
+      "mismatches": 0
+    },
+    "full_linux_sanitizer": "OPEN / exit 1: unchanged pinned LZOkay lzokay.cpp:34 misaligned uint16 access during LZOTest.TestBytes1. No suppression or full-suite clean claim. Passing functional XML cannot replace this failed process.",
+    "full_linux_log_sha256": "402c918991a1033161a402c5fb3f1f01991be9dbf0abbc2a90259413c90886dd",
+    "review_method": "Parsed XML counts and raw log exits; checked sanitizer/profiling markers, baseline leak stacks, and relevant named regression cases. Reader-tail scope selected zero additional tests and executed none; initial audit-script empty-set failures are not hidden test executions."
+  },
+  "coverage_review": {
+    "native_gzip_objects_verified": 231,
+    "filtered_native_entries_verified": 56,
+    "canonical_files": 16,
+    "local_repair": {
+      "lines": [
+        2,
+        2
+      ],
+      "line_percent": 100.0,
+      "branches": [
+        0,
+        0
+      ],
+      "branch_percent": null,
+      "branch_label": "N/A"
+    },
+    "maintainer_6f_to_candidate": {
+      "lines": [
+        885,
+        1040
+      ],
+      "branches": [
+        901,
+        1452
+      ],
+      "line_percent": 85.09615384615384,
+      "branch_percent": 62.05234159779614
+    },
+    "whole_pr": {
+      "lines": [
+        963,
+        1120
+      ],
+      "line_percent": 85.98214285714286,
+      "branches": [
+        1015,
+        1605
+      ],
+      "branch_percent": 63.2398753894081
+    },
+    "selected_module": {
+      "lines": [
+        3730,
+        4921
+      ],
+      "line_percent": 75.79760211339159,
+      "branches": [
+        3317,
+        6307
+      ],
+      "branch_percent": 52.592357697796096
+    },
+    "method": "Verified native report hashes, decompressed objects, matched each filtered entry, canonicalized aliases and independently recomputed line/branch denominators and changed-line sets. Branch identity includes function and ordinal.",
+    "scope": "Fresh isolated 5db profile aggregates focused/reader/full-attempt/harness execution. No old public/local gcda transferred. Frozen native reports define counts; later no-test listing can alter live counters. Native gzip files were locally checked and their inventory frozen, while publication includes filtered counts/inventory rather than all gzip objects. No full-suite coverage or local 0/0 branch pass claim."
+  },
+  "report_scope_and_freeze": {
+    "english_and_chinese_checked": true,
+    "accurate_limits": [
+      "Public c8b, unpublished local 5db and synthetic-merge CI are distinct scopes.",
+      "Known-leaking public code is a valid functional timing comparator, not a memory-safety equivalent baseline.",
+      "Unresolved repeated and confirmation-only performance signals keep the query gate false.",
+      "Full Linux sanitizer remains failed despite clean targeted runs.",
+      "Earlier frozen rounds were neither extended nor used for cross-round speed ratios.",
+      "Evidence manifest initial active-stdout-log draft is preserved as invalid historical setup evidence; current manifest excludes that active artifact."
+    ],
+    "layering": "Frozen summary independent_final_evidence_review=pending describes freeze time. Subsequent independent reviews and final-review-outcome bind that summary and this review separately. Final review outputs intentionally excluded from their own input manifest; this is not a missing-review or source-gate pass claim."
+  },
+  "remaining_blockers": [
+    {
+      "id": "FINAL-PERF-OPEN",
+      "status": "OPEN",
+      "detail": "18 standard cases / 21 comparisons repeat a positive regression signal, including 4 against current public c8b; 6 additional confirmation-only signals remain unresolved. No necessity proof."
+    },
+    {
+      "id": "FINAL-SANITIZER-OPEN",
+      "status": "OPEN",
+      "detail": "Fresh full strict Linux sanitizer process fails in unchanged pinned LZOkay; targeted clean evidence does not waive full gate."
+    }
+  ],
+  "conclusion": "The frozen bilingual diagnostic report accurately represents the reviewed source, measured evidence and unresolved limits and may be published as diagnosis. Local source repair closure and pre-timing READY do not satisfy submission requirements. Overall NOT_READY_TO_PUSH; source remains unpublished.",
+  "review_actions": "Read-only source/evidence inspection and independent calculations, plus reviewer-owned JSON artifacts only. No new build, tests, queries, timing, source edits, Copilot, GitHub operations or source publication performed."
+}

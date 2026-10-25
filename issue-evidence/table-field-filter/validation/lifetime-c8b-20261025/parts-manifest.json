@@ -1,0 +1,71 @@
+{
+  "bytes": 2831699,
+  "sha256": "edad04342b893700c04c69469db06c6bd8a9a179696f1315c70ddf0879df2b4c",
+  "parts": [
+    {
+      "name": "scoped-diagnostics.zip.part01",
+      "bytes": 229376,
+      "sha256": "2f8421fa64bd7e241a164aa1dbfdae00094d01fc1dbfb9279a03d8688d0a0093"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part02",
+      "bytes": 229376,
+      "sha256": "7cfb47d31600fbfbc362b6a3439a15e3c860025f42408768a3dc7c762d9bd1c2"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part03",
+      "bytes": 229376,
+      "sha256": "112ce302cb68f753dcd38fd57b86366e3940bdb509184dbc37f4b603ee968d35"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part04",
+      "bytes": 229376,
+      "sha256": "e8028b22508535d9fbb31a05e1043f1cfb0d94e7dac10914fc14b9ca827a501a"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part05",
+      "bytes": 229376,
+      "sha256": "83f350b84fadcb2afa6c356209680d839c25e10cce17bd66af1693aedef6b7cc"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part06",
+      "bytes": 229376,
+      "sha256": "3c4345e9ad086e947acf066b9582ab2fe841a6767a16b5a012dd1c637b113065"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part07",
+      "bytes": 229376,
+      "sha256": "464752d684395842362ebd2d40170cbaf2b0c7e9a45744c44ab81bdc2bc7f324"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part08",
+      "bytes": 229376,
+      "sha256": "56a1408af502c4415c0f543b683d2901b0ee3c7e1682a7ec0fe2774e3130d8d5"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part09",
+      "bytes": 229376,
+      "sha256": "b6b07e4a2707097a1f52fc65763fffb9076d647f190a0729277f702dbdf168e2"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part10",
+      "bytes": 229376,
+      "sha256": "0e1e6d06f0d66c5e97d61fd3e87edaf032917aa6562928921b9c3e84a2c2e8af"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part11",
+      "bytes": 229376,
+      "sha256": "92ecbeb3176173a4cb66581ef6b44f44c322025a54b3816b83d0e1e4f8fc83c3"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part12",
+      "bytes": 229376,
+      "sha256": "a3bc598989494803d40fa74706d15ab78761b7e4b7978eb99ad52ff055f46b91"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part13",
+      "bytes": 79187,
+      "sha256": "734240c89e10d4c1bb0ae6aebea40521e35c6de1991be3b5bf514493c9e9e7e2"
+    }
+  ]
+}
