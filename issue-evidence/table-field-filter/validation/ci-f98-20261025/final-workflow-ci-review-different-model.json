@@ -1,0 +1,237 @@
+{
+  "status": "READY_FOR_CI_ONLY_DIAGNOSTIC_PUBLICATION",
+  "actual_model": "gpt-6-astra",
+  "ci_addendum_publication_ready": true,
+  "source_submission_gate_passed": false,
+  "source_submission_status": "NOT_READY_TO_PUSH",
+  "reviewed_at_utc": "2026-10-25T08:53:48.945805+00:00",
+  "identity": {
+    "agent_path": "/root/review_aligned_filter_model",
+    "session_id": "01a16181-6b51-75c0-91f5-0e4effcd27fa",
+    "parent_session_id": "01a146d7-a196-7d20-bcb2-28bd83157e4d",
+    "runtime_record_path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\22\\rollout-2026-10-22T10-47-14-01a16181-6b51-75c0-91f5-0e4effcd27fa.jsonl",
+    "latest_turn_context": {
+      "timestamp": "2026-10-25T08:52:26.639Z",
+      "model": "gpt-6-astra",
+      "record_sha256": "5a6a4ea0a58cd069ad0d72e35bfc3091f189b551530736890b5ea8048256ec53"
+    },
+    "provenance": "Direct read of this session turn_context and session_meta thread_spawn. Runtime assignment verified; not cryptographic backend attestation or offline model inference."
+  },
+  "head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+  "baseline": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "local_unsubmitted_candidate": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+  "evidence_manifest_sha256": "434058e2d8517b68045157bb5531ff0ff423715e73209facc8ab70fcf79ab27c",
+  "manifest_file": "evidence-freeze.json",
+  "verified_manifest_files": 28,
+  "verified_manifest_bytes": 6780207,
+  "manifest_mismatches": [],
+  "report_sha256": "98897925059fa17ef6709b587e1206eaf376380c28ec7db8b5c7cfe5c65a061a",
+  "pr_body_template_sha256": "ca6ea1f04b942117730c5af41a10cc1d4a8b5591cc24d56267fdc34cb4230c7c",
+  "reply_body_template_sha256": "eed7a41c5a71db5a9a035436e663de6bfba0adaf136cabdf73b1d631b1666158",
+  "ci_notice_template_sha256": "77c77b959ac0a639fc3d8dd7439ddc10dfda930e9cb4bed097f985e3a77e4261",
+  "input_hashes": {
+    "ci-checkout-scope.json": {
+      "bytes": 748,
+      "sha256": "8251720aa163d74a66f4e51658c0b5eca344707047c705bd4ca25de580d9a536"
+    },
+    "ci-followup-report.md": {
+      "bytes": 8259,
+      "sha256": "98897925059fa17ef6709b587e1206eaf376380c28ec7db8b5c7cfe5c65a061a"
+    },
+    "ci-jobs/121112692835.json": {
+      "bytes": 4200,
+      "sha256": "5d4b6a9c2462fd2b6934b1354c20341b77c8d843516a3c9b43a73884f6a6c1e3"
+    },
+    "ci-jobs/121112692835.log": {
+      "bytes": 901574,
+      "sha256": "6e0afb9027aed3b15d362c2767f8ce327edcedf6e223c80b985fca8f624d2972"
+    },
+    "ci-jobs/121112693009.json": {
+      "bytes": 3539,
+      "sha256": "39af45ad23a16d5c2c0aa54967cf15496fcd373d8a20a2670679e5210b3b6da2"
+    },
+    "ci-jobs/121112693009.log": {
+      "bytes": 775997,
+      "sha256": "341d65cf39fd9106ba6b493dbea4f586abebb7e1f2156035b92aabc69f30d081"
+    },
+    "ci-jobs/121112693028.json": {
+      "bytes": 4201,
+      "sha256": "dfd4552d23496c8e4b1ea347a40bbc76a3dfdbcc2d1a5a0c7a0833e26999144f"
+    },
+    "ci-jobs/121112693028.log": {
+      "bytes": 893780,
+      "sha256": "d4dbf4de766edb1deb06d23932647f89077fcb76c8bcc32febd2c2a8bfb12477"
+    },
+    "ci-jobs/121112693068.json": {
+      "bytes": 4201,
+      "sha256": "25ecaeb76c9fd7606fa8085c65541a2aaa0703a91c86c4977593e527aebddaff"
+    },
+    "ci-jobs/121112693068.log": {
+      "bytes": 896636,
+      "sha256": "2c6dcbde10051fae21d46fe7659aa3badf56b825a269a561f7e22d734b379b91"
+    },
+    "ci-jobs/121112693190.json": {
+      "bytes": 3539,
+      "sha256": "b0d3a451f84da522bdf47e25854616702eb7e90d568a27c8a84593011f2936d4"
+    },
+    "ci-jobs/121112693190.log": {
+      "bytes": 779659,
+      "sha256": "00a55573d0cea1c9515eeb4aceddb342afb2cec8e8f489f9517ecee979acddb7"
+    },
+    "ci-jobs/121112693234.json": {
+      "bytes": 3537,
+      "sha256": "b05bb8f31d33fa549173eb0b7743924d0e7b976bfbb7ea9f699635fb0b108e0d"
+    },
+    "ci-jobs/121112693234.log": {
+      "bytes": 779317,
+      "sha256": "b0b519fb6a52805afe06e42eebf7d37d5f13c2ff67f3bc81bb467b4e374baf57"
+    },
+    "ci-jobs/121112693293.json": {
+      "bytes": 3541,
+      "sha256": "870a49fc3492278ef9a57798bed7294f3c50ebc9ada3ba3da30d89ff217c4f28"
+    },
+    "ci-jobs/121112693293.log": {
+      "bytes": 776025,
+      "sha256": "d3cc374286cbba18941fcbc8bd6044ab32c095092d9ce5458b91273e6e88f7c0"
+    },
+    "ci-notice-template.md": {
+      "bytes": 1346,
+      "sha256": "77c77b959ac0a639fc3d8dd7439ddc10dfda930e9cb4bed097f985e3a77e4261"
+    },
+    "ci-summary.json": {
+      "bytes": 9983,
+      "sha256": "9b52bc1a58cde03376fb223e81335dd8481acd1bca209735d8a7bc25fd739d07"
+    },
+    "ci-validation.json": {
+      "bytes": 51161,
+      "sha256": "6afd6826d197f391d06d6240dfd2a6131d2b29e1cb79aacf0f783e0aa304ae07"
+    },
+    "pr-body-template.md": {
+      "bytes": 45223,
+      "sha256": "ca6ea1f04b942117730c5af41a10cc1d4a8b5591cc24d56267fdc34cb4230c7c"
+    },
+    "prepare-ci-addendum.py": {
+      "bytes": 12439,
+      "sha256": "fb63b2423a6216e5919d99d65b8f049e244e5ffe9285da98beed4ca94a6c6ecd"
+    },
+    "remote-compare.json": {
+      "bytes": 19698,
+      "sha256": "0edd23c22c10c7955573fc7415d4e53b79e2511947a52a82e1b65a333c1bd502"
+    },
+    "remote-monitor.json": {
+      "bytes": 765062,
+      "sha256": "e5a2b40a5669c6d812fb2a994adc13688b02da5965cd86a0f7af45cc8819e380"
+    },
+    "reply-body-template.md": {
+      "bytes": 23589,
+      "sha256": "eed7a41c5a71db5a9a035436e663de6bfba0adaf136cabdf73b1d631b1666158"
+    },
+    "scope.json": {
+      "bytes": 1234,
+      "sha256": "1afb60a286224c59acb0c0584b3b451370cc4f20479c0f5b9f45c31126a32266"
+    },
+    "unit-test-cpp.yml": {
+      "bytes": 4622,
+      "sha256": "5832479fd2fe84e5876692dd3ae6909428e6ec2c278871df2cae3f289a93c8fa"
+    },
+    "unit-test-python.yml": {
+      "bytes": 4164,
+      "sha256": "c0c8c7c6925a1ef6c24b51902d065e467964ad24de676ec3b358181cd08863bc"
+    },
+    "workflow.patch": {
+      "bytes": 2933,
+      "sha256": "20b078eb92ab3de92609d773124a8a74a0c9b37b93dd49d3b118b5443e84ee8b"
+    }
+  },
+  "preserved_initial_review": {
+    "path": "pre-submission-review/workflow-ci-review-different-model.json",
+    "sha256": "da8a1744e5c35a620444fedfb1ac228ea07b3606cd2a85db1004f0f984ad42ad",
+    "unchanged": true
+  },
+  "verified_observations": [
+    "Local Git diff fcab to f98 contains exactly .github/workflows/unit-test-cpp.yml and .github/workflows/unit-test-python.yml. Standalone cpp/java/python tree objects are identical.",
+    "Local Git verifies synthetic merge dcd29245266b02f63cd1b5915532fe8e6f922fd6 and its parents eb733133b9eee0b1eb74f7671d809ecd730cedc3 and f98ff7bd52466dcae2dc8122d847be0de9595d59. Merge differs from standalone f98 in 71 files; cpp/java tree hashes differ, python is identical. All seven archived logs check out the merge.",
+    "All 28 frozen file byte counts and SHA256 values independently recomputed and matched. Seven complete logs inspected, not all 49 check logs. Current frozen check-record count is 47 success, one neutral, one skipped.",
+    "Final English and Chinese report and notice preserve merge versus standalone scope, skipped/disabled counts, historical adverse results, strict sanitizer limitations, local2525 unsubmitted status, and no fresh local correctness/compatibility/coverage/timing claim.",
+    "PR/reply template diffs versus before snapshots add the same CI notice and update current-head wording in four bilingual status paragraphs. Historical measurements and other content remain unchanged.",
+    "Two Asan jobs visibly link address,undefined sanitizers. Visible logs contain no runtime error or Address/LeakSanitizer error marker. Passing-test complete stdout/stderr are absent, so this is not proof of an equivalent strict nonrecovering UBSan run and does not overturn earlier LZOkay failure."
+  ],
+  "actual_log_counts": {
+    "121112692835": {
+      "ctest_passed_entries": 1360,
+      "ctest_skipped_entries": 3,
+      "ctest_disabled_entries": 10,
+      "sha256": "6e0afb9027aed3b15d362c2767f8ce327edcedf6e223c80b985fca8f624d2972"
+    },
+    "121112693009": {
+      "ctest_passed_entries": 1362,
+      "ctest_skipped_entries": 3,
+      "ctest_disabled_entries": 10,
+      "sha256": "341d65cf39fd9106ba6b493dbea4f586abebb7e1f2156035b92aabc69f30d081"
+    },
+    "121112693028": {
+      "ctest_passed_entries": 1360,
+      "ctest_skipped_entries": 3,
+      "ctest_disabled_entries": 10,
+      "sha256": "d4dbf4de766edb1deb06d23932647f89077fcb76c8bcc32febd2c2a8bfb12477"
+    },
+    "121112693068": {
+      "ctest_passed_entries": 1360,
+      "ctest_skipped_entries": 3,
+      "ctest_disabled_entries": 10,
+      "sha256": "2c6dcbde10051fae21d46fe7659aa3badf56b825a269a561f7e22d734b379b91"
+    },
+    "121112693190": {
+      "ctest_passed_entries": 1362,
+      "ctest_skipped_entries": 3,
+      "ctest_disabled_entries": 10,
+      "sha256": "00a55573d0cea1c9515eeb4aceddb342afb2cec8e8f489f9517ecee979acddb7"
+    },
+    "121112693234": {
+      "ctest_passed_entries": 1362,
+      "ctest_skipped_entries": 3,
+      "ctest_disabled_entries": 10,
+      "sha256": "b0b519fb6a52805afe06e42eebf7d37d5f13c2ff67f3bc81bb467b4e374baf57"
+    },
+    "121112693293": {
+      "ctest_passed_entries": 1362,
+      "ctest_skipped_entries": 3,
+      "ctest_disabled_entries": 10,
+      "sha256": "d3cc374286cbba18941fcbc8bd6044ab32c095092d9ce5458b91273e6e88f7c0"
+    }
+  },
+  "python_counts": {
+    "3.14": {
+      "passed": 602,
+      "skipped": 0
+    },
+    "3.11": {
+      "passed": 602,
+      "skipped": 0
+    },
+    "3.9": {
+      "passed": 601,
+      "skipped": 1
+    }
+  },
+  "raw_findings_and_dispositions": [
+    {
+      "id": "F98-CI-SCOPE",
+      "disposition": "CLOSED_IN_FINAL_DRAFT",
+      "observation": "CI tests execute synthetic merge, not standalone f98. Final report, notice and both bodies explicitly disclose this."
+    },
+    {
+      "id": "F98-CI-COUNTS",
+      "disposition": "CLOSED_IN_FINAL_DRAFT",
+      "observation": "CTest total includes skipped entries. Correct values are 1362 Passed +3 Skipped +10 Disabled for four C++ jobs; 1360 +3 +10 for each Python C++ stage. Initial review shorthand of 1365/1363 as passes is superseded by these independently recounted entries; initial record preserved."
+    },
+    {
+      "id": "F98-CI-SANITIZER",
+      "disposition": "LIMITATION_ACCURATELY_DISCLOSED",
+      "observation": "CI job success does not establish clean complete strict local sanitizer output. No causal attribution or suppression proposed."
+    }
+  ],
+  "actionable_issues": [],
+  "publication_scope": "Approve only the frozen diagnostic report/notice and bound PR/reply templates. EVIDENCE_REPORT_URL may be deterministically replaced with the verified content-addressed report URL; no other reviewed text change is covered. This review performs no publication and grants no source push/merge or submission-gate pass.",
+  "restrictions_observed": "No builds, tests, timings, source edits or remote calls performed in this closure. Prior evidence rounds not rerun or recombined."
+}

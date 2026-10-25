@@ -1,0 +1,331 @@
+{
+  "status": "READY_FOR_CI_DIAGNOSTIC_PUBLICATION_ONLY",
+  "actual_model": "gpt-6.1-sol",
+  "ci_addendum_publication_ready": true,
+  "source_submission_gate_passed": false,
+  "reviewed_at_utc": "2026-10-25T08:53:33.937475+00:00",
+  "reviewer": {
+    "agent": "/root/review_pr1026_maintainer",
+    "session": {
+      "id": "01a15cc5-7771-7131-8b29-3a98ac6923d1",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a146d7-a196-7d20-bcb2-28bd83157e4d",
+            "depth": 1,
+            "agent_path": "/root/review_pr1026_maintainer",
+            "agent_nickname": "Singer",
+            "agent_role": null
+          }
+        }
+      },
+      "originator": "Codex Desktop"
+    },
+    "latest_turn_context": {
+      "timestamp": "2026-10-25T08:45:46.747Z",
+      "model": "gpt-6.1-sol"
+    },
+    "runtime_record": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\21\\rollout-2026-10-21T12-43-27-01a15cc5-7771-7131-8b29-3a98ac6923d1.jsonl",
+    "limit": "Actual selected local runtime assignment; not offline inference or cryptographic backend attestation. Independent agent same model as implementor; separate different-model review is not replaced."
+  },
+  "frozen_manifest_sha256": "434058e2d8517b68045157bb5531ff0ff423715e73209facc8ab70fcf79ab27c",
+  "frozen_manifest_file_count": 28,
+  "all_frozen_file_hashes_and_sizes_verified": true,
+  "report_sha256": "98897925059fa17ef6709b587e1206eaf376380c28ec7db8b5c7cfe5c65a061a",
+  "pr_body_template_sha256": "ca6ea1f04b942117730c5af41a10cc1d4a8b5591cc24d56267fdc34cb4230c7c",
+  "reply_body_template_sha256": "eed7a41c5a71db5a9a035436e663de6bfba0adaf136cabdf73b1d631b1666158",
+  "bindings": {
+    "evidence-freeze.json": {
+      "sha256": "434058e2d8517b68045157bb5531ff0ff423715e73209facc8ab70fcf79ab27c",
+      "bytes": 4142
+    },
+    "ci-followup-report.md": {
+      "sha256": "98897925059fa17ef6709b587e1206eaf376380c28ec7db8b5c7cfe5c65a061a",
+      "bytes": 8259
+    },
+    "ci-notice-template.md": {
+      "sha256": "77c77b959ac0a639fc3d8dd7439ddc10dfda930e9cb4bed097f985e3a77e4261",
+      "bytes": 1346
+    },
+    "pr-body-template.md": {
+      "sha256": "ca6ea1f04b942117730c5af41a10cc1d4a8b5591cc24d56267fdc34cb4230c7c",
+      "bytes": 45223
+    },
+    "reply-body-template.md": {
+      "sha256": "eed7a41c5a71db5a9a035436e663de6bfba0adaf136cabdf73b1d631b1666158",
+      "bytes": 23589
+    },
+    "scope.json": {
+      "sha256": "1afb60a286224c59acb0c0584b3b451370cc4f20479c0f5b9f45c31126a32266",
+      "bytes": 1234
+    },
+    "workflow.patch": {
+      "sha256": "20b078eb92ab3de92609d773124a8a74a0c9b37b93dd49d3b118b5443e84ee8b",
+      "bytes": 2933
+    },
+    "remote-compare.json": {
+      "sha256": "0edd23c22c10c7955573fc7415d4e53b79e2511947a52a82e1b65a333c1bd502",
+      "bytes": 19698
+    },
+    "remote-monitor.json": {
+      "sha256": "e5a2b40a5669c6d812fb2a994adc13688b02da5965cd86a0f7af45cc8819e380",
+      "bytes": 765062
+    },
+    "ci-validation.json": {
+      "sha256": "6afd6826d197f391d06d6240dfd2a6131d2b29e1cb79aacf0f783e0aa304ae07",
+      "bytes": 51161
+    },
+    "ci-summary.json": {
+      "sha256": "9b52bc1a58cde03376fb223e81335dd8481acd1bca209735d8a7bc25fd739d07",
+      "bytes": 9983
+    },
+    "ci-checkout-scope.json": {
+      "sha256": "8251720aa163d74a66f4e51658c0b5eca344707047c705bd4ca25de580d9a536",
+      "bytes": 748
+    }
+  },
+  "head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+  "baseline": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "maintainer_commit_count": 1,
+  "commit_author": {
+    "name": "ColinLee",
+    "email": "shuolin_l@163.com",
+    "date": "2026-10-25T07:56:13Z"
+  },
+  "changed_files": [
+    ".github/workflows/unit-test-cpp.yml",
+    ".github/workflows/unit-test-python.yml"
+  ],
+  "production_source_changes_between_standalone_heads": false,
+  "trees": {
+    "cpp": {
+      "base": "1d44d1115244a5e1954f2c8bafebf6513f3edeb6",
+      "head": "1d44d1115244a5e1954f2c8bafebf6513f3edeb6",
+      "merge": "05f2daab3ec0cf11f290910ecbe391908d1d87e6"
+    },
+    "java": {
+      "base": "081b185db4a2ee1dfcc32bb1fc53d5b59c39f31a",
+      "head": "081b185db4a2ee1dfcc32bb1fc53d5b59c39f31a",
+      "merge": "f8b65783f4ab55c5ec651cfb0688a95e324187de"
+    },
+    "python": {
+      "base": "795c3b274e883fcf8d7365306988934617cde735",
+      "head": "795c3b274e883fcf8d7365306988934617cde735",
+      "merge": "795c3b274e883fcf8d7365306988934617cde735"
+    }
+  },
+  "actual_ci_checkout": {
+    "merge": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+    "parents": [
+      "eb733133b9eee0b1eb74f7671d809ecd730cedc3",
+      "f98ff7bd52466dcae2dc8122d847be0de9595d59"
+    ],
+    "merge_vs_head_changed_files": 71,
+    "cpp_java_differ_from_standalone_head": true,
+    "python_tree_equal": true
+  },
+  "remote_check_record_counts": {
+    "success": 47,
+    "neutral": 1,
+    "skipped": 1
+  },
+  "check_record_count": 49,
+  "raw_logs_reviewed": 7,
+  "jobs": [
+    {
+      "id": "121112693293",
+      "name": "unit-test (ubuntu-24.04, Release, NoAsan)",
+      "api_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+      "actual_checkout": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+      "ctest_statuses": {
+        "passed": 1362,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "visible_summaries": [
+        "[INFO] 100% tests passed, 0 tests failed out of 1365"
+      ],
+      "asan_link_flag_visible": false,
+      "no_sanitizer_error_marker_in_downloaded_runner_log": true,
+      "log_sha256": "d3cc374286cbba18941fcbc8bd6044ab32c095092d9ce5458b91273e6e88f7c0",
+      "metadata_sha256": "870a49fc3492278ef9a57798bed7294f3c50ebc9ada3ba3da30d89ff217c4f28",
+      "setup_and_maven_build_test_steps_success": true,
+      "completed_at": "2026-10-25T08:04:51Z"
+    },
+    {
+      "id": "121112693234",
+      "name": "unit-test (ubuntu-24.04, Debug, Asan)",
+      "api_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+      "actual_checkout": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+      "ctest_statuses": {
+        "passed": 1362,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "visible_summaries": [
+        "[INFO] 100% tests passed, 0 tests failed out of 1365"
+      ],
+      "asan_link_flag_visible": true,
+      "no_sanitizer_error_marker_in_downloaded_runner_log": true,
+      "log_sha256": "b0b519fb6a52805afe06e42eebf7d37d5f13c2ff67f3bc81bb467b4e374baf57",
+      "metadata_sha256": "b05bb8f31d33fa549173eb0b7743924d0e7b976bfbb7ea9f699635fb0b108e0d",
+      "setup_and_maven_build_test_steps_success": true,
+      "completed_at": "2026-10-25T08:07:25Z"
+    },
+    {
+      "id": "121112693190",
+      "name": "unit-test (ubuntu-24.04, Debug, NoAsan)",
+      "api_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+      "actual_checkout": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+      "ctest_statuses": {
+        "passed": 1362,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "visible_summaries": [
+        "[INFO] 100% tests passed, 0 tests failed out of 1365"
+      ],
+      "asan_link_flag_visible": false,
+      "no_sanitizer_error_marker_in_downloaded_runner_log": true,
+      "log_sha256": "00a55573d0cea1c9515eeb4aceddb342afb2cec8e8f489f9517ecee979acddb7",
+      "metadata_sha256": "b0d3a451f84da522bdf47e25854616702eb7e90d568a27c8a84593011f2936d4",
+      "setup_and_maven_build_test_steps_success": true,
+      "completed_at": "2026-10-25T08:09:08Z"
+    },
+    {
+      "id": "121112693068",
+      "name": "unit-test (ubuntu-24.04, 3.14)",
+      "api_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+      "actual_checkout": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+      "ctest_statuses": {
+        "passed": 1360,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "visible_summaries": [
+        "[INFO] 100% tests passed, 0 tests failed out of 1363",
+        "============================= 602 passed in 16.49s ============================="
+      ],
+      "asan_link_flag_visible": false,
+      "no_sanitizer_error_marker_in_downloaded_runner_log": true,
+      "log_sha256": "2c6dcbde10051fae21d46fe7659aa3badf56b825a269a561f7e22d734b379b91",
+      "metadata_sha256": "25ecaeb76c9fd7606fa8085c65541a2aaa0703a91c86c4977593e527aebddaff",
+      "setup_and_maven_build_test_steps_success": true,
+      "completed_at": "2026-10-25T08:07:57Z"
+    },
+    {
+      "id": "121112693028",
+      "name": "unit-test (ubuntu-24.04, 3.11)",
+      "api_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+      "actual_checkout": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+      "ctest_statuses": {
+        "passed": 1360,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "visible_summaries": [
+        "[INFO] 100% tests passed, 0 tests failed out of 1363",
+        "============================= 602 passed in 20.54s ============================="
+      ],
+      "asan_link_flag_visible": false,
+      "no_sanitizer_error_marker_in_downloaded_runner_log": true,
+      "log_sha256": "d4dbf4de766edb1deb06d23932647f89077fcb76c8bcc32febd2c2a8bfb12477",
+      "metadata_sha256": "dfd4552d23496c8e4b1ea347a40bbc76a3dfdbcc2d1a5a0c7a0833e26999144f",
+      "setup_and_maven_build_test_steps_success": true,
+      "completed_at": "2026-10-25T08:11:17Z"
+    },
+    {
+      "id": "121112693009",
+      "name": "unit-test (ubuntu-24.04, Release, Asan)",
+      "api_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+      "actual_checkout": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+      "ctest_statuses": {
+        "passed": 1362,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "visible_summaries": [
+        "[INFO] 100% tests passed, 0 tests failed out of 1365"
+      ],
+      "asan_link_flag_visible": true,
+      "no_sanitizer_error_marker_in_downloaded_runner_log": true,
+      "log_sha256": "341d65cf39fd9106ba6b493dbea4f586abebb7e1f2156035b92aabc69f30d081",
+      "metadata_sha256": "39af45ad23a16d5c2c0aa54967cf15496fcd373d8a20a2670679e5210b3b6da2",
+      "setup_and_maven_build_test_steps_success": true,
+      "completed_at": "2026-10-25T08:10:55Z"
+    },
+    {
+      "id": "121112692835",
+      "name": "unit-test (ubuntu-24.04, 3.9)",
+      "api_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+      "actual_checkout": "dcd29245266b02f63cd1b5915532fe8e6f922fd6",
+      "ctest_statuses": {
+        "passed": 1360,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "visible_summaries": [
+        "[INFO] 100% tests passed, 0 tests failed out of 1363",
+        "======================= 601 passed, 1 skipped in 22.71s ========================"
+      ],
+      "asan_link_flag_visible": false,
+      "no_sanitizer_error_marker_in_downloaded_runner_log": true,
+      "log_sha256": "6e0afb9027aed3b15d362c2767f8ce327edcedf6e223c80b985fca8f624d2972",
+      "metadata_sha256": "5d4b6a9c2462fd2b6934b1354c20341b77c8d843516a3c9b43a73884f6a6c1e3",
+      "setup_and_maven_build_test_steps_success": true,
+      "completed_at": "2026-10-25T08:12:01Z"
+    }
+  ],
+  "workflow_review": {
+    "actionable_new_workflow_defects": [],
+    "reasoning": "Linux matrices now target Ubuntu24.04; apt-get installs clang-format17 anduuid before update-alternatives. Removing the prior yum fallback is consistent with these Ubuntu-only Linux matrix entries. Raw logs show all7 replacements reached dependency setup and Maven build/test success; Python3.9 setup succeeds. No test selection,sanitizer acceptance policy,production source or local repair was changed by this commit."
+  },
+  "raw_observations_and_closure": [
+    {
+      "id": "ci-scope-integration-1",
+      "observation": "API check/job headsha is f98 but all actual checkout logs contain dcd29245266b02f63cd1b5915532fe8e6f922fd6. Its C++/Java trees differ and71files differ fromstandalone head.",
+      "classification": "Evidence boundary,not a newworkflow sourcebug",
+      "disposition": "CLOSED_IN_FROZEN_REPORT_AND_TEMPLATES",
+      "resolution": "Exact mergeidentity,parents and separate source-equality scope disclosed bilingually. No merged count transferred to standalone correctness or timing."
+    },
+    {
+      "id": "ci-count-integration-2",
+      "observation": "CTest success summaryoutof1365 includes3skipped;another10are disabled. FourC++jobs actually1362Passed;PythonC++stages1360Passed plus3skip10disabled;Python3.9has601pass1skip.",
+      "disposition": "CLOSED_IN_FROZEN_REPORT",
+      "resolution": "Exact statuses and skipped fixture/index controls disclosed. These are testentries,not assertions. No false fixture cross-reading claim."
+    },
+    {
+      "id": "ci-sanitizer-integration-3",
+      "observation": "BothAsan configurations visibly link address+undefined. No sanitizererror marker appears in downloadedrunnerlogs,but passingtest stdout/stderr is omitted and no inspectedworkflow/CMake/log sets nonrecoveringUBSan/halt-on-error equivalence. Oldlocal script explicitly uses both -fno-sanitize-recover=undefined andhalt_on_error1.",
+      "disposition": "CLOSED_WITH_EXPLICIT_LIMIT",
+      "resolution": "CIjob success is narrow evidenceforitsmerge/toolchain;it doesnot erase oldstandalone fullLZOkayfailure or clearlocal2525gate. This review doesnot assert thathiddenUBactuallyoccurredor diagnosewhyCIpassed."
+    }
+  ],
+  "publication_draft_review": {
+    "english_and_chinese_report_and_notice_agree": true,
+    "no_new_local_run_or_performance_claim": true,
+    "source_and_query_gates_remain_false": true,
+    "historical_evidence_and_AI_disclosures_preserved": true,
+    "exact_template_delta_verification": {
+      "pr-body-template.md": "Exactly the reviewed bilingual CI notice prepend plus four current-head wording substitutions; all remaining historical evidence and disclosures unchanged.",
+      "reply-body-template.md": "Exactly the reviewed bilingual CI notice prepend plus four current-head wording substitutions; all remaining historical evidence and disclosures unchanged."
+    },
+    "placeholder_rule": "Only replace each EVIDENCE_REPORT_URL with the same readback-verified content-addressed URL of this frozen report. Any other report/body edit or source/head change requires new scope review. Parent publisher must also enforce unchanged remote body and publichead before writing."
+  },
+  "historical_scope_preserved": {
+    "local_candidate": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+    "local_candidate_pushed": false,
+    "prior_final_review_status": "NOT_READY_TO_PUSH",
+    "prior_review_path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\finite-stats-followup-20261023\\pre-submission-review\\final-evidence-review-integration.json",
+    "prior_review_sha256": "ee70978e136b46788b1946ea5e52d0aedceaf73ef70cf949018432568046f335",
+    "public_fcab_performance_numbers": "Original frozenfcab/11bround2.6430–2.8513finitezeroNOTratios retain oldheads;no newf98timing.6malformedempty/LIMIT0findingsretainoldreproscope.",
+    "local2525_performance": "Old15fixed/baseflags,max+2.9397%,necessarycostunproven and fullstrictsanitizerfailure remain;no new measurements.",
+    "PR1018_PR1024_and_new_issue_approval_unchanged": true
+  },
+  "complete_pre_submission_gate_passed": false,
+  "performance_gate_passed": false,
+  "production_push_approved_by_this_review": false,
+  "unresolved_report_findings": [],
+  "final_conclusion": "Frozen CI diagnostic addendum and narrow body/reply updates are ready under URL substitution/concurrency/readback conditions. Overall production source remains NOT_READY_TO_PUSH; setup recovery and successful mergedCItests do not clear existing correctness,queryperformance,coverage/sanitizer limits.",
+  "activity": "Read/hash/parse/localGitobjectinspection only. No fresh build,test,query,timing,sourceedit,gitfetch,productionpush,Copilotrequest,GitHubwriteorotherremotewrite."
+}

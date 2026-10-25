@@ -1,0 +1,31 @@
+{
+  "baseline_head": "fcab7437130421bed2604311461a7a7aa6e9a255",
+  "current_head": "f98ff7bd52466dcae2dc8122d847be0de9595d59",
+  "changed_files": [
+    ".github/workflows/unit-test-cpp.yml",
+    ".github/workflows/unit-test-python.yml"
+  ],
+  "identical_trees": {
+    "cpp": {
+      "before": "1d44d1115244a5e1954f2c8bafebf6513f3edeb6",
+      "after": "1d44d1115244a5e1954f2c8bafebf6513f3edeb6"
+    },
+    "java": {
+      "before": "081b185db4a2ee1dfcc32bb1fc53d5b59c39f31a",
+      "after": "081b185db4a2ee1dfcc32bb1fc53d5b59c39f31a"
+    },
+    "python": {
+      "before": "795c3b274e883fcf8d7365306988934617cde735",
+      "after": "795c3b274e883fcf8d7365306988934617cde735"
+    }
+  },
+  "patch_sha256": "20b078eb92ab3de92609d773124a8a74a0c9b37b93dd49d3b118b5443e84ee8b",
+  "remote_ci_counts": {
+    "success": 47,
+    "neutral": 1,
+    "skipped": 1
+  },
+  "local_candidate_head_unchanged": "2525a557fc1fa67e2c813cc0f42959d499dc2ff6",
+  "source_tests_or_timing_rerun": false,
+  "evidence_scope": "Workflow-only follow-up; old-head correctness and performance results retain their original commit identities. Identical cpp/java/python Git trees demonstrate source equality, not a new performance run."
+}
