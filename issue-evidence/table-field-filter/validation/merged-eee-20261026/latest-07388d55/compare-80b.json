@@ -1,0 +1,309 @@
+{
+  "url": "https://api.github.com/repos/apache/tsfile/compare/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b...07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "html_url": "https://github.com/apache/tsfile/compare/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b...07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "permalink_url": "https://github.com/apache/tsfile/compare/apache:80bdef8...apache:07388d5",
+  "diff_url": "https://github.com/apache/tsfile/compare/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b...07388d55cf05002fc74bc0c1e23d5e517be92b53.diff",
+  "patch_url": "https://github.com/apache/tsfile/compare/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b...07388d55cf05002fc74bc0c1e23d5e517be92b53.patch",
+  "base_commit": {
+    "sha": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+    "node_id": "C_kwDOKulTHdoAKDgwYmRlZjhkZWQxOGM5YTlmODc1MjBkYmZhOTRjNWQyMGEyZmVlMGI",
+    "commit": {
+      "author": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T06:10:03Z"
+      },
+      "committer": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T06:10:03Z"
+      },
+      "message": "[C++] Align field predicate literals with Java numeric conversions",
+      "tree": {
+        "sha": "6615c7d996299b4f5c6e014ed0979ed31b3e37eb",
+        "url": "https://api.github.com/repos/apache/tsfile/git/trees/6615c7d996299b4f5c6e014ed0979ed31b3e37eb"
+      },
+      "url": "https://api.github.com/repos/apache/tsfile/git/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+    "html_url": "https://github.com/apache/tsfile/commit/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+    "comments_url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b/comments",
+    "author": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eee39799948699c58e292ee6361f1da8154378c2",
+        "url": "https://api.github.com/repos/apache/tsfile/commits/eee39799948699c58e292ee6361f1da8154378c2",
+        "html_url": "https://github.com/apache/tsfile/commit/eee39799948699c58e292ee6361f1da8154378c2"
+      }
+    ]
+  },
+  "merge_base_commit": {
+    "sha": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+    "node_id": "C_kwDOKulTHdoAKDgwYmRlZjhkZWQxOGM5YTlmODc1MjBkYmZhOTRjNWQyMGEyZmVlMGI",
+    "commit": {
+      "author": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T06:10:03Z"
+      },
+      "committer": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T06:10:03Z"
+      },
+      "message": "[C++] Align field predicate literals with Java numeric conversions",
+      "tree": {
+        "sha": "6615c7d996299b4f5c6e014ed0979ed31b3e37eb",
+        "url": "https://api.github.com/repos/apache/tsfile/git/trees/6615c7d996299b4f5c6e014ed0979ed31b3e37eb"
+      },
+      "url": "https://api.github.com/repos/apache/tsfile/git/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+    "html_url": "https://github.com/apache/tsfile/commit/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+    "comments_url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b/comments",
+    "author": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eee39799948699c58e292ee6361f1da8154378c2",
+        "url": "https://api.github.com/repos/apache/tsfile/commits/eee39799948699c58e292ee6361f1da8154378c2",
+        "html_url": "https://github.com/apache/tsfile/commit/eee39799948699c58e292ee6361f1da8154378c2"
+      }
+    ]
+  },
+  "status": "ahead",
+  "ahead_by": 1,
+  "behind_by": 0,
+  "total_commits": 1,
+  "commits": [
+    {
+      "sha": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "node_id": "C_kwDOKulTHdoAKDA3Mzg4ZDU1Y2YwNTAwMmZjNzRiYzBjMWUyM2Q1ZTUxN2JlOTJiNTM",
+      "commit": {
+        "author": {
+          "name": "ColinLee",
+          "email": "shuolin_l@163.com",
+          "date": "2026-10-26T06:26:32Z"
+        },
+        "committer": {
+          "name": "ColinLee",
+          "email": "shuolin_l@163.com",
+          "date": "2026-10-26T06:26:32Z"
+        },
+        "message": "[C++] Reject missing NOT operands before query execution",
+        "tree": {
+          "sha": "990a246556c677a9d766c898e41a738e7a77fc75",
+          "url": "https://api.github.com/repos/apache/tsfile/git/trees/990a246556c677a9d766c898e41a738e7a77fc75"
+        },
+        "url": "https://api.github.com/repos/apache/tsfile/git/commits/07388d55cf05002fc74bc0c1e23d5e517be92b53",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/apache/tsfile/commits/07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "html_url": "https://github.com/apache/tsfile/commit/07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "comments_url": "https://api.github.com/repos/apache/tsfile/commits/07388d55cf05002fc74bc0c1e23d5e517be92b53/comments",
+      "author": {
+        "login": "ColinLeeo",
+        "id": 105656576,
+        "node_id": "U_kgDOBkwxAA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ColinLeeo",
+        "html_url": "https://github.com/ColinLeeo",
+        "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+        "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+        "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+        "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "ColinLeeo",
+        "id": 105656576,
+        "node_id": "U_kgDOBkwxAA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ColinLeeo",
+        "html_url": "https://github.com/ColinLeeo",
+        "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+        "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+        "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+        "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+          "url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+          "html_url": "https://github.com/apache/tsfile/commit/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "sha": "d8811d83485c449fcf289d2d9293892f71e8b1ac",
+      "filename": "cpp/src/reader/filter/aligned_field_filter.cc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 2,
+      "changes": 10,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.cc",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.cc",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.cc?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -321,7 +321,11 @@ AlignedFieldFilter::Ptr AlignedFieldFilter::not_filter(Ptr child) {\n }\n \n AlignedFieldFilter::Ptr AlignedFieldFilter::negate(Ptr node) {\n-    if (node == nullptr) return nullptr;\n+    if (node == nullptr) {\n+        // Preserve the invalid operand so query validation cannot mistake\n+        // this predicate for the optional \"no FIELD filter\" argument.\n+        return Ptr(new AlignedFieldFilter(Kind::NOT, nullptr, nullptr));\n+    }\n     switch (node->kind_) {\n         case Kind::COMPARISON: {\n             // The literal type does not identify the column type: an integer\n@@ -346,6 +350,8 @@ AlignedFieldFilter::Ptr AlignedFieldFilter::negate(Ptr node) {\n         case Kind::IS_NOT_NULL:\n             return is_null(node->column_);\n         case Kind::NOT:\n+            // Repeated negation must not erase a missing operand either.\n+            if (!node->left_) return node;\n             return std::move(node->left_);\n         case Kind::AND:\n             return or_filter(negate(std::move(node->left_)),\n@@ -354,7 +360,7 @@ AlignedFieldFilter::Ptr AlignedFieldFilter::negate(Ptr node) {\n             return and_filter(negate(std::move(node->left_)),\n                               negate(std::move(node->right_)));\n     }\n-    return nullptr;\n+    return node;\n }\n \n std::vector<std::string> AlignedFieldFilter::referenced_columns() const {"
+    },
+    {
+      "sha": "a29f38833202bdb09ce9f7454f816ccd495e5276",
+      "filename": "cpp/src/reader/filter/aligned_field_filter.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.h",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.h",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.h?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -78,6 +78,8 @@ class AlignedFieldFilter : public Filter {\n     static Ptr compare(std::string column, CompareOp op, Literal literal);\n     static Ptr is_null(std::string column);\n     static Ptr is_not_null(std::string column);\n+    // Logical operands must be non-null. A missing operand remains an invalid\n+    // non-null tree, rejected with E_INVALID_ARG when bound or queried.\n     static Ptr and_filter(Ptr left, Ptr right);\n     static Ptr or_filter(Ptr left, Ptr right);\n     static Ptr not_filter(Ptr child);"
+    },
+    {
+      "sha": "ac66127a572689a62764be633d746fa4553066de",
+      "filename": "cpp/test/reader/aligned_field_filter_regression_test.cc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 30,
+      "changes": 74,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Faligned_field_filter_regression_test.cc",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Faligned_field_filter_regression_test.cc",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Ftest%2Freader%2Faligned_field_filter_regression_test.cc?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -485,37 +485,51 @@ TEST_P(AlignedFieldFilterRegressionTest,\n             ASSERT_EQ(writer.close(), E_OK);\n         }\n         for (int mode : {0, 1, 2}) {\n-            for (bool conjunction : {false, true}) {\n-                for (bool malformed : {false, true}) {\n-                    SCOPED_TRACE(::testing::Message()\n-                                 << populated << \":\" << mode << \":\"\n-                                 << conjunction << \":\" << malformed);\n-                    auto left = A::is_not_null(\"v\");\n-                    auto right = malformed ? A::Ptr() : A::is_null(\"v\");\n-                    auto filter =\n-                        conjunction\n-                            ? A::and_filter(std::move(left), std::move(right))\n-                            : A::or_filter(std::move(left), std::move(right));\n-                    LocalRandomAccessReadFile file;\n-                    ASSERT_EQ(file.open(filename_), E_OK);\n-                    TableQueryExecutor executor(&file, std::get<1>(GetParam()));\n-                    ResultSet* result = nullptr;\n-                    const int ret =\n-                        mode == 0 ? executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n-                                                   filter.release(), result)\n-                                  : executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n-                                                   filter.release(), 0,\n-                                                   mode == 2 ? 0 : -1, result);\n-                    EXPECT_EQ(ret, malformed ? E_INVALID_ARG : E_OK);\n-                    if (malformed) EXPECT_EQ(result, nullptr);\n-                    if (result != nullptr) {\n-                        if (!malformed) {\n-                            bool next = false;\n-                            EXPECT_EQ(result->next(next), E_OK);\n-                            EXPECT_EQ(next,\n-                                      populated && mode != 2 && !conjunction);\n+            for (int kind : {0, 1, 2}) {\n+                for (int negations : {0, 1, 2, 3}) {\n+                    for (bool malformed : {false, true}) {\n+                        SCOPED_TRACE(::testing::Message()\n+                                     << populated << \":\" << mode << \":\" << kind\n+                                     << \":\" << negations << \":\" << malformed);\n+                        auto left = A::is_not_null(\"v\");\n+                        auto right = malformed ? A::Ptr() : A::is_null(\"v\");\n+                        A::Ptr filter;\n+                        if (kind == 0) {\n+                            filter = A::and_filter(std::move(left),\n+                                                   std::move(right));\n+                        } else if (kind == 1) {\n+                            filter =\n+                                A::or_filter(std::move(left), std::move(right));\n+                        } else {\n+                            filter = A::not_filter(std::move(right));\n+                        }\n+                        for (int n = 0; n < negations; ++n)\n+                            filter = A::not_filter(std::move(filter));\n+                        LocalRandomAccessReadFile file;\n+                        ASSERT_EQ(file.open(filename_), E_OK);\n+                        TableQueryExecutor executor(&file,\n+                                                    std::get<1>(GetParam()));\n+                        ResultSet* result = nullptr;\n+                        const int ret =\n+                            mode == 0\n+                                ? executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n+                                                 filter.release(), result)\n+                                : executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n+                                                 filter.release(), 0,\n+                                                 mode == 2 ? 0 : -1, result);\n+                        EXPECT_EQ(ret, malformed ? E_INVALID_ARG : E_OK);\n+                        if (malformed) EXPECT_EQ(result, nullptr);\n+                        if (result != nullptr) {\n+                            if (!malformed) {\n+                                bool next = false;\n+                                EXPECT_EQ(result->next(next), E_OK);\n+                                const bool matches =\n+                                    (kind != 0) != (negations % 2 != 0);\n+                                EXPECT_EQ(next,\n+                                          populated && mode != 2 && matches);\n+                            }\n+                            executor.destroy_query_data_set(result);\n                         }\n-                        executor.destroy_query_data_set(result);\n                     }\n                 }\n             }"
+    },
+    {
+      "sha": "c560535c8fa53e4d00acfc630ee23337704d06bf",
+      "filename": "cpp/test/reader/filter/aligned_field_filter_test.cc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 0,
+      "changes": 26,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Ffilter%2Faligned_field_filter_test.cc",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Ffilter%2Faligned_field_filter_test.cc",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Ftest%2Freader%2Ffilter%2Faligned_field_filter_test.cc?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -33,6 +33,32 @@\n namespace storage {\n namespace {\n \n+TEST(AlignedFieldFilterTest, MissingNotOperandsStayInvalidAfterRewriting) {\n+    using namespace common;\n+    using A = AlignedFieldFilter;\n+    TableSchema schema(\n+        \"t\", {{\"v\", INT64, UNCOMPRESSED, PLAIN, ColumnCategory::FIELD}});\n+    for (int shape = 0; shape < 5; ++shape) {\n+        A::Ptr filter;\n+        if (shape > 0) {\n+            auto left = shape % 2 == 0 ? A::Ptr() : A::is_null(\"v\");\n+            auto right = shape % 2 == 0 ? A::is_null(\"v\") : A::Ptr();\n+            filter = shape <= 2\n+                         ? A::and_filter(std::move(left), std::move(right))\n+                         : A::or_filter(std::move(left), std::move(right));\n+        }\n+        for (int depth = 1; depth <= 8; ++depth) {\n+            SCOPED_TRACE(::testing::Message() << shape << \":\" << depth);\n+            filter = A::not_filter(std::move(filter));\n+            ASSERT_NE(filter, nullptr);\n+            EXPECT_FALSE(filter->is_valid());\n+            EXPECT_EQ(filter->bind(schema), E_INVALID_ARG);\n+            SelectionMask mask;\n+            EXPECT_EQ(filter->evaluate_columns({}, 0, mask), E_INVALID_ARG);\n+        }\n+    }\n+}\n+\n TEST(AlignedFieldFilterTest, NumericBindingMatchesJavaNumberConversions) {\n     using namespace common;\n     using A = AlignedFieldFilter;"
+    }
+  ]
+}

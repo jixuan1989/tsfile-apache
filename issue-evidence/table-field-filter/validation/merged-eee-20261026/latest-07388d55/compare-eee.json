@@ -1,0 +1,413 @@
+{
+  "url": "https://api.github.com/repos/apache/tsfile/compare/eee39799948699c58e292ee6361f1da8154378c2...07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "html_url": "https://github.com/apache/tsfile/compare/eee39799948699c58e292ee6361f1da8154378c2...07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "permalink_url": "https://github.com/apache/tsfile/compare/apache:eee3979...apache:07388d5",
+  "diff_url": "https://github.com/apache/tsfile/compare/eee39799948699c58e292ee6361f1da8154378c2...07388d55cf05002fc74bc0c1e23d5e517be92b53.diff",
+  "patch_url": "https://github.com/apache/tsfile/compare/eee39799948699c58e292ee6361f1da8154378c2...07388d55cf05002fc74bc0c1e23d5e517be92b53.patch",
+  "base_commit": {
+    "sha": "eee39799948699c58e292ee6361f1da8154378c2",
+    "node_id": "C_kwDOKulTHdoAKGVlZTM5Nzk5OTQ4Njk5YzU4ZTI5MmVlNjM2MWYxZGE4MTU0Mzc4YzI",
+    "commit": {
+      "author": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T03:06:02Z"
+      },
+      "committer": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T03:06:02Z"
+      },
+      "message": "Merge develop and resolve CI workflow conflicts",
+      "tree": {
+        "sha": "914ff62483189ea68e5a017286bde6cf36c94db4",
+        "url": "https://api.github.com/repos/apache/tsfile/git/trees/914ff62483189ea68e5a017286bde6cf36c94db4"
+      },
+      "url": "https://api.github.com/repos/apache/tsfile/git/commits/eee39799948699c58e292ee6361f1da8154378c2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/tsfile/commits/eee39799948699c58e292ee6361f1da8154378c2",
+    "html_url": "https://github.com/apache/tsfile/commit/eee39799948699c58e292ee6361f1da8154378c2",
+    "comments_url": "https://api.github.com/repos/apache/tsfile/commits/eee39799948699c58e292ee6361f1da8154378c2/comments",
+    "author": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+        "url": "https://api.github.com/repos/apache/tsfile/commits/c01ee105d397b1ed16a4daf335db9d8176036bac",
+        "html_url": "https://github.com/apache/tsfile/commit/c01ee105d397b1ed16a4daf335db9d8176036bac"
+      },
+      {
+        "sha": "ef1107d1fc681066cdd99e6f2c55fa2ec67393fe",
+        "url": "https://api.github.com/repos/apache/tsfile/commits/ef1107d1fc681066cdd99e6f2c55fa2ec67393fe",
+        "html_url": "https://github.com/apache/tsfile/commit/ef1107d1fc681066cdd99e6f2c55fa2ec67393fe"
+      }
+    ]
+  },
+  "merge_base_commit": {
+    "sha": "eee39799948699c58e292ee6361f1da8154378c2",
+    "node_id": "C_kwDOKulTHdoAKGVlZTM5Nzk5OTQ4Njk5YzU4ZTI5MmVlNjM2MWYxZGE4MTU0Mzc4YzI",
+    "commit": {
+      "author": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T03:06:02Z"
+      },
+      "committer": {
+        "name": "ColinLee",
+        "email": "shuolin_l@163.com",
+        "date": "2026-10-26T03:06:02Z"
+      },
+      "message": "Merge develop and resolve CI workflow conflicts",
+      "tree": {
+        "sha": "914ff62483189ea68e5a017286bde6cf36c94db4",
+        "url": "https://api.github.com/repos/apache/tsfile/git/trees/914ff62483189ea68e5a017286bde6cf36c94db4"
+      },
+      "url": "https://api.github.com/repos/apache/tsfile/git/commits/eee39799948699c58e292ee6361f1da8154378c2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/tsfile/commits/eee39799948699c58e292ee6361f1da8154378c2",
+    "html_url": "https://github.com/apache/tsfile/commit/eee39799948699c58e292ee6361f1da8154378c2",
+    "comments_url": "https://api.github.com/repos/apache/tsfile/commits/eee39799948699c58e292ee6361f1da8154378c2/comments",
+    "author": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ColinLeeo",
+      "id": 105656576,
+      "node_id": "U_kgDOBkwxAA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ColinLeeo",
+      "html_url": "https://github.com/ColinLeeo",
+      "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+      "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+      "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+      "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+        "url": "https://api.github.com/repos/apache/tsfile/commits/c01ee105d397b1ed16a4daf335db9d8176036bac",
+        "html_url": "https://github.com/apache/tsfile/commit/c01ee105d397b1ed16a4daf335db9d8176036bac"
+      },
+      {
+        "sha": "ef1107d1fc681066cdd99e6f2c55fa2ec67393fe",
+        "url": "https://api.github.com/repos/apache/tsfile/commits/ef1107d1fc681066cdd99e6f2c55fa2ec67393fe",
+        "html_url": "https://github.com/apache/tsfile/commit/ef1107d1fc681066cdd99e6f2c55fa2ec67393fe"
+      }
+    ]
+  },
+  "status": "ahead",
+  "ahead_by": 2,
+  "behind_by": 0,
+  "total_commits": 2,
+  "commits": [
+    {
+      "sha": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+      "node_id": "C_kwDOKulTHdoAKDgwYmRlZjhkZWQxOGM5YTlmODc1MjBkYmZhOTRjNWQyMGEyZmVlMGI",
+      "commit": {
+        "author": {
+          "name": "ColinLee",
+          "email": "shuolin_l@163.com",
+          "date": "2026-10-26T06:10:03Z"
+        },
+        "committer": {
+          "name": "ColinLee",
+          "email": "shuolin_l@163.com",
+          "date": "2026-10-26T06:10:03Z"
+        },
+        "message": "[C++] Align field predicate literals with Java numeric conversions",
+        "tree": {
+          "sha": "6615c7d996299b4f5c6e014ed0979ed31b3e37eb",
+          "url": "https://api.github.com/repos/apache/tsfile/git/trees/6615c7d996299b4f5c6e014ed0979ed31b3e37eb"
+        },
+        "url": "https://api.github.com/repos/apache/tsfile/git/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+      "html_url": "https://github.com/apache/tsfile/commit/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+      "comments_url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b/comments",
+      "author": {
+        "login": "ColinLeeo",
+        "id": 105656576,
+        "node_id": "U_kgDOBkwxAA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ColinLeeo",
+        "html_url": "https://github.com/ColinLeeo",
+        "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+        "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+        "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+        "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "ColinLeeo",
+        "id": 105656576,
+        "node_id": "U_kgDOBkwxAA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ColinLeeo",
+        "html_url": "https://github.com/ColinLeeo",
+        "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+        "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+        "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+        "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "eee39799948699c58e292ee6361f1da8154378c2",
+          "url": "https://api.github.com/repos/apache/tsfile/commits/eee39799948699c58e292ee6361f1da8154378c2",
+          "html_url": "https://github.com/apache/tsfile/commit/eee39799948699c58e292ee6361f1da8154378c2"
+        }
+      ]
+    },
+    {
+      "sha": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "node_id": "C_kwDOKulTHdoAKDA3Mzg4ZDU1Y2YwNTAwMmZjNzRiYzBjMWUyM2Q1ZTUxN2JlOTJiNTM",
+      "commit": {
+        "author": {
+          "name": "ColinLee",
+          "email": "shuolin_l@163.com",
+          "date": "2026-10-26T06:26:32Z"
+        },
+        "committer": {
+          "name": "ColinLee",
+          "email": "shuolin_l@163.com",
+          "date": "2026-10-26T06:26:32Z"
+        },
+        "message": "[C++] Reject missing NOT operands before query execution",
+        "tree": {
+          "sha": "990a246556c677a9d766c898e41a738e7a77fc75",
+          "url": "https://api.github.com/repos/apache/tsfile/git/trees/990a246556c677a9d766c898e41a738e7a77fc75"
+        },
+        "url": "https://api.github.com/repos/apache/tsfile/git/commits/07388d55cf05002fc74bc0c1e23d5e517be92b53",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/apache/tsfile/commits/07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "html_url": "https://github.com/apache/tsfile/commit/07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "comments_url": "https://api.github.com/repos/apache/tsfile/commits/07388d55cf05002fc74bc0c1e23d5e517be92b53/comments",
+      "author": {
+        "login": "ColinLeeo",
+        "id": 105656576,
+        "node_id": "U_kgDOBkwxAA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ColinLeeo",
+        "html_url": "https://github.com/ColinLeeo",
+        "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+        "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+        "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+        "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "ColinLeeo",
+        "id": 105656576,
+        "node_id": "U_kgDOBkwxAA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105656576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ColinLeeo",
+        "html_url": "https://github.com/ColinLeeo",
+        "followers_url": "https://api.github.com/users/ColinLeeo/followers",
+        "following_url": "https://api.github.com/users/ColinLeeo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ColinLeeo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ColinLeeo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ColinLeeo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ColinLeeo/orgs",
+        "repos_url": "https://api.github.com/users/ColinLeeo/repos",
+        "events_url": "https://api.github.com/users/ColinLeeo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ColinLeeo/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+          "url": "https://api.github.com/repos/apache/tsfile/commits/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+          "html_url": "https://github.com/apache/tsfile/commit/80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "sha": "621f8756c73bf5a939effeb580b7beab01463d38",
+      "filename": "cpp/src/reader/column_mapping.h",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 11,
+      "changes": 15,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Fcolumn_mapping.h",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Fcolumn_mapping.h",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Fsrc%2Freader%2Fcolumn_mapping.h?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -52,17 +52,10 @@ class ColumnMapping {\n         return common::E_OK;\n     }\n \n-    int add_filter_columns(const AlignedFieldFilter& filter,\n-                           TableSchema& schema) {\n+    int add_filter_columns(AlignedFieldFilter& filter, TableSchema& schema) {\n+        const int ret = filter.bind(schema);\n+        if (ret != common::E_OK) return ret;\n         for (const auto& column_name : filter.referenced_columns()) {\n-            const int column_index = schema.find_column_index(column_name);\n-            if (column_index < 0) {\n-                return common::E_COLUMN_NOT_EXIST;\n-            }\n-            if (schema.get_column_categories()[column_index] !=\n-                common::ColumnCategory::FIELD) {\n-                return common::E_INVALID_ARG;\n-            }\n             field_columns_.insert(column_name);\n         }\n         return common::E_OK;\n@@ -106,4 +99,4 @@ class ColumnMapping {\n \n }  // namespace storage\n \n-#endif  // READER_COLUMN_MAPPING_H\n\\ No newline at end of file\n+#endif  // READER_COLUMN_MAPPING_H"
+    },
+    {
+      "sha": "d8811d83485c449fcf289d2d9293892f71e8b1ac",
+      "filename": "cpp/src/reader/filter/aligned_field_filter.cc",
+      "status": "modified",
+      "additions": 159,
+      "deletions": 15,
+      "changes": 174,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.cc",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.cc",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.cc?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -23,8 +23,10 @@\n #include <cctype>\n #include <cmath>\n #include <cstring>\n+#include <limits>\n #include <utility>\n \n+#include \"common/schema.h\"\n #include \"common/statistic.h\"\n \n namespace storage {\n@@ -104,6 +106,121 @@ bool is_string_type(common::TSDataType type) {\n            type == common::BLOB;\n }\n \n+bool is_numeric_type(common::TSDataType type) {\n+    return type == common::INT32 || type == common::INT64 ||\n+           type == common::FLOAT || type == common::DOUBLE ||\n+           type == common::DATE || type == common::TIMESTAMP;\n+}\n+\n+template <typename T, typename S>\n+T java_number_cast(S value) {\n+    return static_cast<T>(value);\n+}\n+\n+// Java narrows integral values by retaining the low bits, while narrowing a\n+// floating-point value saturates and maps NaN to zero. Avoid C++'s undefined\n+// floating-to-integer overflow and implementation-defined signed narrowing.\n+template <>\n+int32_t java_number_cast<int32_t, int64_t>(int64_t value) {\n+    const uint32_t bits = static_cast<uint32_t>(value);\n+    int32_t result;\n+    std::memcpy(&result, &bits, sizeof(result));\n+    return result;\n+}\n+\n+template <typename T, typename S>\n+T java_floating_to_integer(S value) {\n+    if (std::isnan(value)) return 0;\n+    if (value >= static_cast<S>(std::numeric_limits<T>::max()))\n+        return std::numeric_limits<T>::max();\n+    if (value <= static_cast<S>(std::numeric_limits<T>::min()))\n+        return std::numeric_limits<T>::min();\n+    return static_cast<T>(value);\n+}\n+\n+template <>\n+int32_t java_number_cast<int32_t, float>(float value) {\n+    return java_floating_to_integer<int32_t>(value);\n+}\n+template <>\n+int32_t java_number_cast<int32_t, double>(double value) {\n+    return java_floating_to_integer<int32_t>(value);\n+}\n+template <>\n+int64_t java_number_cast<int64_t, float>(float value) {\n+    return java_floating_to_integer<int64_t>(value);\n+}\n+template <>\n+int64_t java_number_cast<int64_t, double>(double value) {\n+    return java_floating_to_integer<int64_t>(value);\n+}\n+\n+template <>\n+float java_number_cast<float, double>(double value) {\n+    const double maximum = std::numeric_limits<float>::max();\n+    // Round values just above Float.MAX_VALUE back to the maximum; the\n+    // halfway point to the next exponent rounds to infinity in Java.\n+    const double overflow =\n+        maximum + std::ldexp(1.0, std::numeric_limits<float>::max_exponent -\n+                                      std::numeric_limits<float>::digits - 1);\n+    if (value > maximum)\n+        return value >= overflow ? std::numeric_limits<float>::infinity()\n+                                 : std::numeric_limits<float>::max();\n+    if (value < -maximum)\n+        return value <= -overflow ? -std::numeric_limits<float>::infinity()\n+                                  : -std::numeric_limits<float>::max();\n+    return static_cast<float>(value);\n+}\n+\n+template <typename T>\n+T java_number_value(const AlignedFieldFilter::Literal& literal) {\n+    switch (literal.type) {\n+        case common::DATE:\n+        case common::INT32:\n+            return java_number_cast<T>(literal.int32_value);\n+        case common::TIMESTAMP:\n+        case common::INT64:\n+            return java_number_cast<T>(literal.int64_value);\n+        case common::FLOAT:\n+            return java_number_cast<T>(literal.float_value);\n+        case common::DOUBLE:\n+            return java_number_cast<T>(literal.double_value);\n+        default:\n+            ASSERT(false);\n+            return T();\n+    }\n+}\n+\n+int bind_literal(AlignedFieldFilter::Literal& literal,\n+                 common::TSDataType column_type) {\n+    using Literal = AlignedFieldFilter::Literal;\n+    if (is_numeric_type(column_type) && is_numeric_type(literal.type)) {\n+        switch (column_type) {\n+            case common::DATE:\n+            case common::INT32:\n+                literal = Literal::int32(java_number_value<int32_t>(literal));\n+                break;\n+            case common::TIMESTAMP:\n+            case common::INT64:\n+                literal = Literal::int64(java_number_value<int64_t>(literal));\n+                break;\n+            case common::FLOAT:\n+                literal = Literal::float32(java_number_value<float>(literal));\n+                break;\n+            case common::DOUBLE:\n+                literal = Literal::float64(java_number_value<double>(literal));\n+                break;\n+            default:\n+                return common::E_NOT_SUPPORT;\n+        }\n+        return common::E_OK;\n+    }\n+    if ((column_type == common::BOOLEAN && literal.type == common::BOOLEAN) ||\n+        (is_string_type(column_type) && is_string_type(literal.type)))\n+        return common::E_OK;\n+    return common::E_NOT_SUPPORT;\n+}\n+\n std::string normalize_column_name(const std::string& column) {\n     std::string normalized(column);\n     for (char& ch : normalized) {\n@@ -204,22 +321,22 @@ AlignedFieldFilter::Ptr AlignedFieldFilter::not_filter(Ptr child) {\n }\n \n AlignedFieldFilter::Ptr AlignedFieldFilter::negate(Ptr node) {\n-    if (node == nullptr) return nullptr;\n+    if (node == nullptr) {\n+        // Preserve the invalid operand so query validation cannot mistake\n+        // this predicate for the optional \"no FIELD filter\" argument.\n+        return Ptr(new AlignedFieldFilter(Kind::NOT, nullptr, nullptr));\n+    }\n     switch (node->kind_) {\n         case Kind::COMPARISON: {\n-            // Flipping an ordered operator is not the same as negating the\n-            // comparison when the value is NaN: every ordered comparison with\n-            // NaN is false, so NOT (x < 5) is true for a NaN value while\n-            // x >= 5 stays false. Keep the operand and mark the leaf negated;\n-            // evaluation then computes !(value <op> literal) for non-null\n-            // rows. Equality negation stays exact (NOT (x == v) is x != v for\n-            // every value), so it keeps its operator flip and its pruning.\n+            // The literal type does not identify the column type: an integer\n+            // constant can bind to a floating-point column. Preserve ordered\n+            // negation until binding so NOT (NaN < 5) remains true, while NULL\n+            // remains unknown. Equality can still flip its operator directly.\n             const bool ordered = node->compare_op_ == CompareOp::LT ||\n                                  node->compare_op_ == CompareOp::LE ||\n                                  node->compare_op_ == CompareOp::GT ||\n                                  node->compare_op_ == CompareOp::GE;\n-            if (ordered && (node->literal_.type == common::FLOAT ||\n-                            node->literal_.type == common::DOUBLE)) {\n+            if (ordered) {\n                 return Ptr(new AlignedFieldFilter(\n                     Kind::COMPARISON, node->column_, node->compare_op_,\n                     node->literal_, !node->negated_));\n@@ -233,6 +350,8 @@ AlignedFieldFilter::Ptr AlignedFieldFilter::negate(Ptr node) {\n         case Kind::IS_NOT_NULL:\n             return is_null(node->column_);\n         case Kind::NOT:\n+            // Repeated negation must not erase a missing operand either.\n+            if (!node->left_) return node;\n             return std::move(node->left_);\n         case Kind::AND:\n             return or_filter(negate(std::move(node->left_)),\n@@ -241,7 +360,7 @@ AlignedFieldFilter::Ptr AlignedFieldFilter::negate(Ptr node) {\n             return and_filter(negate(std::move(node->left_)),\n                               negate(std::move(node->right_)));\n     }\n-    return nullptr;\n+    return node;\n }\n \n std::vector<std::string> AlignedFieldFilter::referenced_columns() const {\n@@ -282,6 +401,31 @@ bool AlignedFieldFilter::is_valid() const {\n     return false;\n }\n \n+int AlignedFieldFilter::bind(TableSchema& schema) {\n+    if (kind_ == Kind::AND || kind_ == Kind::OR || kind_ == Kind::NOT) {\n+        if (!left_ || (kind_ != Kind::NOT && !right_))\n+            return common::E_INVALID_ARG;\n+        const int ret = left_->bind(schema);\n+        if (ret != common::E_OK || kind_ == Kind::NOT) return ret;\n+        return right_->bind(schema);\n+    }\n+    const common::ColumnSchema column = schema.get_column_schema(column_);\n+    if (!column.is_valid()) return common::E_COLUMN_NOT_EXIST;\n+    if (column.column_category_ != common::ColumnCategory::FIELD)\n+        return common::E_INVALID_ARG;\n+    if (kind_ != Kind::COMPARISON) return common::E_OK;\n+    const int ret = bind_literal(literal_, column.data_type_);\n+    if (ret != common::E_OK) return ret;\n+    // Integral, Boolean, and string columns have no NaN values. Canonicalize\n+    // their bound operators once, retaining the existing execution fast path.\n+    if (negated_ && column.data_type_ != common::FLOAT &&\n+        column.data_type_ != common::DOUBLE) {\n+        compare_op_ = negate_comparison(compare_op_);\n+        negated_ = false;\n+    }\n+    return common::E_OK;\n+}\n+\n bool AlignedFieldFilter::may_match(\n     const std::map<std::string, Statistic*>& statistics,\n     int64_t row_count) const {\n@@ -314,7 +458,7 @@ bool AlignedFieldFilter::may_match(\n \n     if (auto* typed = dynamic_cast<Int32Statistic*>(statistic)) {\n         if (literal_.type != common::INT32) return true;\n-        switch (compare_op_) {\n+        switch (negated_ ? negate_comparison(compare_op_) : compare_op_) {\n             case CompareOp::EQ:\n                 return typed->min_value_ <= literal_.int32_value &&\n                        literal_.int32_value <= typed->max_value_;\n@@ -334,7 +478,7 @@ bool AlignedFieldFilter::may_match(\n     }\n     if (auto* typed = dynamic_cast<Int64Statistic*>(statistic)) {\n         if (literal_.type != common::INT64) return true;\n-        switch (compare_op_) {\n+        switch (negated_ ? negate_comparison(compare_op_) : compare_op_) {\n             case CompareOp::EQ:\n                 return typed->min_value_ <= literal_.int64_value &&\n                        literal_.int64_value <= typed->max_value_;\n@@ -442,7 +586,7 @@ bool AlignedFieldFilter::all_match(\n \n     if (auto* typed = dynamic_cast<Int32Statistic*>(statistic)) {\n         if (literal_.type != common::INT32) return false;\n-        switch (compare_op_) {\n+        switch (negated_ ? negate_comparison(compare_op_) : compare_op_) {\n             case CompareOp::EQ:\n                 return typed->min_value_ == literal_.int32_value &&\n                        typed->max_value_ == literal_.int32_value;\n@@ -461,7 +605,7 @@ bool AlignedFieldFilter::all_match(\n     }\n     if (auto* typed = dynamic_cast<Int64Statistic*>(statistic)) {\n         if (literal_.type != common::INT64) return false;\n-        switch (compare_op_) {\n+        switch (negated_ ? negate_comparison(compare_op_) : compare_op_) {\n             case CompareOp::EQ:\n                 return typed->min_value_ == literal_.int64_value &&\n                        typed->max_value_ == literal_.int64_value;"
+    },
+    {
+      "sha": "a29f38833202bdb09ce9f7454f816ccd495e5276",
+      "filename": "cpp/src/reader/filter/aligned_field_filter.h",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 2,
+      "changes": 15,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.h",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.h",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Fsrc%2Freader%2Ffilter%2Faligned_field_filter.h?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -32,6 +32,7 @@\n #include \"reader/filter/selection_mask.h\"\n \n namespace storage {\n+class TableSchema;\n \n // Column-aware predicate used by aligned batch readers. It deliberately does\n // not implement TableFieldFilter::satisfy_row(); aligned execution evaluates\n@@ -77,6 +78,8 @@ class AlignedFieldFilter : public Filter {\n     static Ptr compare(std::string column, CompareOp op, Literal literal);\n     static Ptr is_null(std::string column);\n     static Ptr is_not_null(std::string column);\n+    // Logical operands must be non-null. A missing operand remains an invalid\n+    // non-null tree, rejected with E_INVALID_ARG when bound or queried.\n     static Ptr and_filter(Ptr left, Ptr right);\n     static Ptr or_filter(Ptr left, Ptr right);\n     static Ptr not_filter(Ptr child);\n@@ -93,6 +96,13 @@ class AlignedFieldFilter : public Filter {\n     // as a full-page match and skip evaluation.\n     bool is_valid() const;\n \n+    // Bind once before execution: validate FIELD references and literal types,\n+    // and convert numeric constants to the declared column type using Java's\n+    // Number.intValue/longValue/floatValue/doubleValue rules. Comparisons and\n+    // statistics pruning then use the same normalized constant, even on empty\n+    // or all-NULL inputs.\n+    int bind(TableSchema& schema);\n+\n     // Conservatively decides whether any row in a page can satisfy the filter.\n     // Missing or unsupported statistics always return true.\n     bool may_match(const std::map<std::string, Statistic*>& statistics,\n@@ -125,8 +135,9 @@ class AlignedFieldFilter : public Filter {\n     std::string column_;\n     CompareOp compare_op_ = CompareOp::EQ;\n     Literal literal_;\n-    // True when this comparison leaf negates an ordered FLOAT/DOUBLE\n-    // comparison. Flipping the operator is not equivalent there: NaN makes\n+    // True when this leaf negates an ordered comparison. Preserve it until\n+    // binding identifies the column type. Flipping the operator is not\n+    // equivalent for FLOAT/DOUBLE: NaN makes\n     // every ordered comparison false, so the negation must be evaluated as\n     // !(value <op> literal). NULL still never satisfies either form.\n     bool negated_ = false;"
+    },
+    {
+      "sha": "ac66127a572689a62764be633d746fa4553066de",
+      "filename": "cpp/test/reader/aligned_field_filter_regression_test.cc",
+      "status": "modified",
+      "additions": 164,
+      "deletions": 30,
+      "changes": 194,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Faligned_field_filter_regression_test.cc",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Faligned_field_filter_regression_test.cc",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Ftest%2Freader%2Faligned_field_filter_regression_test.cc?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -319,6 +319,126 @@ TEST_P(AlignedFieldFilterRegressionTest, NotPreservesFloatingNaNRowSemantics) {\n     }\n }\n \n+TEST_P(AlignedFieldFilterRegressionTest,\n+       JavaNumericLiteralsUseTheDeclaredColumnType) {\n+    write_floats();\n+    for (const std::string column : {\"v\", \"f\", \"d\"}) {\n+        for (const auto& literal :\n+             {A::Literal::int32(1), A::Literal::int64(1),\n+              A::Literal::float32(1), A::Literal::float64(1)}) {\n+            for (auto op :\n+                 {A::CompareOp::EQ, A::CompareOp::NE, A::CompareOp::LT,\n+                  A::CompareOp::LE, A::CompareOp::GT, A::CompareOp::GE}) {\n+                for (bool negate : {false, true}) {\n+                    SCOPED_TRACE(::testing::Message()\n+                                 << column << \":\" << int(literal.type) << \":\"\n+                                 << int(op) << \":\" << negate);\n+                    auto filter = A::compare(column, op, literal);\n+                    if (negate) filter = A::not_filter(std::move(filter));\n+                    Rows expected;\n+                    for (int device = 0; device < 3; ++device) {\n+                        for (uint32_t r = 0; r < float_values_.size(); ++r) {\n+                            if (column != \"v\" && device == 2) continue;\n+                            const double value = column == \"v\"\n+                                                     ? device * 100 + r\n+                                                     : float_values_[r];\n+                            if (compare(value, 1, op) != negate)\n+                                expected.push_back({r, device * 100 + r});\n+                        }\n+                    }\n+                    EXPECT_EQ(scan({\"v\"}, std::move(filter)), expected);\n+                }\n+            }\n+        }\n+    }\n+}\n+\n+TEST_P(AlignedFieldFilterRegressionTest,\n+       InvalidLiteralTypesFailBeforeReadingAnyData) {\n+    for (int contents : {0, 1, 2}) {\n+        {\n+            TableSchema schema(\n+                \"t\",\n+                {{\"v\", INT64, UNCOMPRESSED, PLAIN, ColumnCategory::FIELD},\n+                 {\"anchor\", INT64, UNCOMPRESSED, PLAIN, ColumnCategory::FIELD},\n+                 {\"flag\", BOOLEAN, UNCOMPRESSED, PLAIN, ColumnCategory::FIELD},\n+                 {\"s\", STRING, UNCOMPRESSED, PLAIN, ColumnCategory::FIELD}});\n+            WriteFile file;\n+            create(file);\n+            TsFileTableWriter writer(&file, &schema);\n+            if (contents > 0) {\n+                Tablet tablet(\"t\", {\"anchor\", \"v\", \"flag\", \"s\"},\n+                              {INT64, INT64, BOOLEAN, STRING},\n+                              {ColumnCategory::FIELD, ColumnCategory::FIELD,\n+                               ColumnCategory::FIELD, ColumnCategory::FIELD},\n+                              2);\n+                for (int r = 0; r < 2; ++r) {\n+                    ASSERT_EQ(tablet.add_timestamp(r, r), E_OK);\n+                    ASSERT_EQ(tablet.add_value(r, \"anchor\", int64_t(r)), E_OK);\n+                    if (contents == 2) {\n+                        ASSERT_EQ(tablet.add_value(r, \"v\", int64_t(r + 1)),\n+                                  E_OK);\n+                        ASSERT_EQ(tablet.add_value(r, \"flag\", true), E_OK);\n+                        ASSERT_EQ(tablet.add_value(r, \"s\", \"value\"), E_OK);\n+                    }\n+                }\n+                ASSERT_EQ(writer.write_table(tablet), E_OK);\n+            }\n+            ASSERT_EQ(writer.close(), E_OK);\n+        }\n+        // Schema-only, all-NULL, and populated tables must reject the same\n+        // invalid types, including LIMIT 0 and both query overloads.\n+        for (int mode : {0, 1, 2}) {\n+            for (int shape = 0; shape < 6; ++shape) {\n+                SCOPED_TRACE(::testing::Message()\n+                             << contents << \":\" << mode << \":\" << shape);\n+                A::Ptr filter;\n+                if (shape == 0) {\n+                    filter = A::compare(\"v\", A::CompareOp::EQ,\n+                                        A::Literal::string(\"wrong\"));\n+                } else if (shape == 1) {\n+                    filter = A::compare(\"v\", A::CompareOp::EQ,\n+                                        A::Literal::boolean(true));\n+                } else if (shape == 2) {\n+                    filter =\n+                        A::compare(\"s\", A::CompareOp::EQ, A::Literal::int64(1));\n+                } else if (shape == 3) {\n+                    filter = A::compare(\"flag\", A::CompareOp::EQ,\n+                                        A::Literal::int32(1));\n+                } else if (shape == 4) {\n+                    filter =\n+                        A::and_filter(A::compare(\"v\", A::CompareOp::GT,\n+                                                 A::Literal::int64(100)),\n+                                      A::compare(\"v\", A::CompareOp::EQ,\n+                                                 A::Literal::string(\"wrong\")));\n+                } else {\n+                    filter = A::or_filter(\n+                        A::compare(\"v\", A::CompareOp::GE, A::Literal::int64(0)),\n+                        A::compare(\"v\", A::CompareOp::EQ,\n+                                   A::Literal::boolean(true)));\n+                }\n+                LocalRandomAccessReadFile file;\n+                ASSERT_EQ(file.open(filename_), E_OK);\n+                TableQueryExecutor executor(&file, std::get<1>(GetParam()));\n+                ResultSet* result = nullptr;\n+                const int ret =\n+                    mode == 0 ? executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n+                                               filter.release(), result)\n+                              : executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n+                                               filter.release(), 0,\n+                                               mode == 1 ? 0 : -1, result);\n+                EXPECT_EQ(ret, E_NOT_SUPPORT);\n+                EXPECT_EQ(result, nullptr);\n+                if (result != nullptr) executor.destroy_query_data_set(result);\n+            }\n+        }\n+        const Rows expected = contents == 2 ? Rows{{0, 1}, {1, 2}} : Rows{};\n+        EXPECT_EQ(scan({\"v\"},\n+                       A::compare(\"v\", A::CompareOp::GE, A::Literal::int32(1))),\n+                  expected);\n+    }\n+}\n+\n TEST_P(AlignedFieldFilterRegressionTest, IncompleteOrCannotBypassEvaluation) {\n     write_floats();\n     // Every row of every page satisfies the left operand, so page statistics\n@@ -365,37 +485,51 @@ TEST_P(AlignedFieldFilterRegressionTest,\n             ASSERT_EQ(writer.close(), E_OK);\n         }\n         for (int mode : {0, 1, 2}) {\n-            for (bool conjunction : {false, true}) {\n-                for (bool malformed : {false, true}) {\n-                    SCOPED_TRACE(::testing::Message()\n-                                 << populated << \":\" << mode << \":\"\n-                                 << conjunction << \":\" << malformed);\n-                    auto left = A::is_not_null(\"v\");\n-                    auto right = malformed ? A::Ptr() : A::is_null(\"v\");\n-                    auto filter =\n-                        conjunction\n-                            ? A::and_filter(std::move(left), std::move(right))\n-                            : A::or_filter(std::move(left), std::move(right));\n-                    LocalRandomAccessReadFile file;\n-                    ASSERT_EQ(file.open(filename_), E_OK);\n-                    TableQueryExecutor executor(&file, std::get<1>(GetParam()));\n-                    ResultSet* result = nullptr;\n-                    const int ret =\n-                        mode == 0 ? executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n-                                                   filter.release(), result)\n-                                  : executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n-                                                   filter.release(), 0,\n-                                                   mode == 2 ? 0 : -1, result);\n-                    EXPECT_EQ(ret, malformed ? E_INVALID_ARG : E_OK);\n-                    if (malformed) EXPECT_EQ(result, nullptr);\n-                    if (result != nullptr) {\n-                        if (!malformed) {\n-                            bool next = false;\n-                            EXPECT_EQ(result->next(next), E_OK);\n-                            EXPECT_EQ(next,\n-                                      populated && mode != 2 && !conjunction);\n+            for (int kind : {0, 1, 2}) {\n+                for (int negations : {0, 1, 2, 3}) {\n+                    for (bool malformed : {false, true}) {\n+                        SCOPED_TRACE(::testing::Message()\n+                                     << populated << \":\" << mode << \":\" << kind\n+                                     << \":\" << negations << \":\" << malformed);\n+                        auto left = A::is_not_null(\"v\");\n+                        auto right = malformed ? A::Ptr() : A::is_null(\"v\");\n+                        A::Ptr filter;\n+                        if (kind == 0) {\n+                            filter = A::and_filter(std::move(left),\n+                                                   std::move(right));\n+                        } else if (kind == 1) {\n+                            filter =\n+                                A::or_filter(std::move(left), std::move(right));\n+                        } else {\n+                            filter = A::not_filter(std::move(right));\n+                        }\n+                        for (int n = 0; n < negations; ++n)\n+                            filter = A::not_filter(std::move(filter));\n+                        LocalRandomAccessReadFile file;\n+                        ASSERT_EQ(file.open(filename_), E_OK);\n+                        TableQueryExecutor executor(&file,\n+                                                    std::get<1>(GetParam()));\n+                        ResultSet* result = nullptr;\n+                        const int ret =\n+                            mode == 0\n+                                ? executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n+                                                 filter.release(), result)\n+                                : executor.query(\"t\", {\"v\"}, nullptr, nullptr,\n+                                                 filter.release(), 0,\n+                                                 mode == 2 ? 0 : -1, result);\n+                        EXPECT_EQ(ret, malformed ? E_INVALID_ARG : E_OK);\n+                        if (malformed) EXPECT_EQ(result, nullptr);\n+                        if (result != nullptr) {\n+                            if (!malformed) {\n+                                bool next = false;\n+                                EXPECT_EQ(result->next(next), E_OK);\n+                                const bool matches =\n+                                    (kind != 0) != (negations % 2 != 0);\n+                                EXPECT_EQ(next,\n+                                          populated && mode != 2 && matches);\n+                            }\n+                            executor.destroy_query_data_set(result);\n                         }\n-                        executor.destroy_query_data_set(result);\n                     }\n                 }\n             }"
+    },
+    {
+      "sha": "c560535c8fa53e4d00acfc630ee23337704d06bf",
+      "filename": "cpp/test/reader/filter/aligned_field_filter_test.cc",
+      "status": "modified",
+      "additions": 104,
+      "deletions": 0,
+      "changes": 104,
+      "blob_url": "https://github.com/apache/tsfile/blob/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Ffilter%2Faligned_field_filter_test.cc",
+      "raw_url": "https://github.com/apache/tsfile/raw/07388d55cf05002fc74bc0c1e23d5e517be92b53/cpp%2Ftest%2Freader%2Ffilter%2Faligned_field_filter_test.cc",
+      "contents_url": "https://api.github.com/repos/apache/tsfile/contents/cpp%2Ftest%2Freader%2Ffilter%2Faligned_field_filter_test.cc?ref=07388d55cf05002fc74bc0c1e23d5e517be92b53",
+      "patch": "@@ -24,13 +24,117 @@\n #include <cmath>\n #include <limits>\n #include <random>\n+#include <tuple>\n \n+#include \"common/schema.h\"\n #include \"common/statistic.h\"\n #include \"reader/filter/selection_mask.h\"\n \n namespace storage {\n namespace {\n \n+TEST(AlignedFieldFilterTest, MissingNotOperandsStayInvalidAfterRewriting) {\n+    using namespace common;\n+    using A = AlignedFieldFilter;\n+    TableSchema schema(\n+        \"t\", {{\"v\", INT64, UNCOMPRESSED, PLAIN, ColumnCategory::FIELD}});\n+    for (int shape = 0; shape < 5; ++shape) {\n+        A::Ptr filter;\n+        if (shape > 0) {\n+            auto left = shape % 2 == 0 ? A::Ptr() : A::is_null(\"v\");\n+            auto right = shape % 2 == 0 ? A::is_null(\"v\") : A::Ptr();\n+            filter = shape <= 2\n+                         ? A::and_filter(std::move(left), std::move(right))\n+                         : A::or_filter(std::move(left), std::move(right));\n+        }\n+        for (int depth = 1; depth <= 8; ++depth) {\n+            SCOPED_TRACE(::testing::Message() << shape << \":\" << depth);\n+            filter = A::not_filter(std::move(filter));\n+            ASSERT_NE(filter, nullptr);\n+            EXPECT_FALSE(filter->is_valid());\n+            EXPECT_EQ(filter->bind(schema), E_INVALID_ARG);\n+            SelectionMask mask;\n+            EXPECT_EQ(filter->evaluate_columns({}, 0, mask), E_INVALID_ARG);\n+        }\n+    }\n+}\n+\n+TEST(AlignedFieldFilterTest, NumericBindingMatchesJavaNumberConversions) {\n+    using namespace common;\n+    using A = AlignedFieldFilter;\n+    using L = A::Literal;\n+    using Case = std::tuple<TSDataType, L, L>;\n+    const double infinity = std::numeric_limits<double>::infinity();\n+    const double nan = std::numeric_limits<double>::quiet_NaN();\n+    const float maximum = std::numeric_limits<float>::max();\n+    const double overflow = double(maximum) + std::ldexp(1.0, 103);\n+    // Golden results verified against Java ValueFilterApi.eq, including\n+    // narrowing, saturation, rounding, NaN, signed zero, and date aliases.\n+    const std::vector<Case> cases{\n+        {INT64, L::int32(10), L::int64(10)},\n+        {INT32, L::int64(4294967297LL), L::int32(1)},\n+        {INT32, L::int64(INT64_MAX), L::int32(-1)},\n+        {INT32, L::int64(INT64_MIN), L::int32(0)},\n+        {INT32, L::float64(1.9), L::int32(1)},\n+        {INT32, L::float32(-1.9F), L::int32(-1)},\n+        {INT32, L::float64(infinity), L::int32(INT32_MAX)},\n+        {INT32, L::float64(-infinity), L::int32(INT32_MIN)},\n+        {INT64, L::float64(nan), L::int64(0)},\n+        {INT64, L::float64(infinity), L::int64(INT64_MAX)},\n+        {INT64, L::float32(-infinity), L::int64(INT64_MIN)},\n+        {INT64, L::float64(std::ldexp(1.0, 63)), L::int64(INT64_MAX)},\n+        {INT64, L::float64(std::nextafter(std::ldexp(1.0, 63), 0.0)),\n+         L::int64(9223372036854774784LL)},\n+        {DATE, L::int64(4294967297LL), L::int32(1)},\n+        {TIMESTAMP, L::int32(10), L::int64(10)},\n+        {FLOAT, L::int64(16777217), L::float32(16777216)},\n+        {DOUBLE, L::int64(9007199254740993LL), L::float64(9007199254740992.0)},\n+        {FLOAT, L::float64(std::nextafter(double(maximum), infinity)),\n+         L::float32(maximum)},\n+        {FLOAT, L::float64(std::nextafter(overflow, 0.0)), L::float32(maximum)},\n+        {FLOAT, L::float64(overflow), L::float32(infinity)},\n+        {FLOAT, L::float64(std::nextafter(-overflow, 0.0)),\n+         L::float32(-maximum)},\n+        {FLOAT, L::float64(-overflow), L::float32(-infinity)},\n+        {FLOAT, L::float64(nan), L::float32(nan)},\n+        {FLOAT, L::float64(-0.0), L::float32(-0.0F)},\n+        {DOUBLE, L::float32(1.9F), L::float64(1.89999997615814208984375)}};\n+    for (const auto& item : cases) {\n+        const TSDataType type = std::get<0>(item);\n+        const L& input = std::get<1>(item);\n+        const L& expected = std::get<2>(item);\n+        SCOPED_TRACE(::testing::Message()\n+                     << int(type) << \":\" << int(input.type));\n+        TableSchema schema(\n+            \"t\", {{\"v\", type, UNCOMPRESSED, PLAIN, ColumnCategory::FIELD}});\n+        auto filter = A::compare(\"v\", A::CompareOp::EQ, input);\n+        ASSERT_EQ(filter->bind(schema), E_OK);\n+        const L& actual = filter->literal();\n+        ASSERT_EQ(actual.type, expected.type);\n+        if (actual.type == INT32) {\n+            EXPECT_EQ(actual.int32_value, expected.int32_value);\n+        } else if (actual.type == INT64) {\n+            EXPECT_EQ(actual.int64_value, expected.int64_value);\n+        } else if (actual.type == FLOAT) {\n+            if (std::isnan(expected.float_value)) {\n+                EXPECT_TRUE(std::isnan(actual.float_value));\n+            } else {\n+                EXPECT_EQ(actual.float_value, expected.float_value);\n+                EXPECT_EQ(std::signbit(actual.float_value),\n+                          std::signbit(expected.float_value));\n+            }\n+        } else {\n+            if (std::isnan(expected.double_value)) {\n+                EXPECT_TRUE(std::isnan(actual.double_value));\n+            } else {\n+                EXPECT_EQ(actual.double_value, expected.double_value);\n+                EXPECT_EQ(std::signbit(actual.double_value),\n+                          std::signbit(expected.double_value));\n+            }\n+        }\n+    }\n+}\n+\n TEST(SelectionMaskTest, BooleanOperationsAndTrailingBits) {\n     SelectionMask left(70);\n     SelectionMask right(70);"
+    }
+  ]
+}

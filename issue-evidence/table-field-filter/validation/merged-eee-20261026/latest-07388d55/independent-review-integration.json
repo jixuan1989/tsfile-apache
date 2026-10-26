@@ -1,0 +1,137 @@
+{
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "actual_model_identity": "gpt-6.1-sol",
+  "reviewed_at": "2026-10-26T06:40:42.614690+00:00",
+  "baseline_commit": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+  "final_commit": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "frozen_manifest_sha256": "5db06482552b0a6f8dd9f4e9353abd3c59e5d6085dc6fa62397d0e50c787b502",
+  "historical_eee_manifest_sha256": "abf83c304145aaab52421bb60b0dd1a943aec14fa93b8cd7b2aa383e72797749",
+  "new_source_freeze_sha256": "106376de3f7c34fe40387e514b23591bf33e20d20e163244d65d0fb46732fc4e",
+  "source_submission_gate_passed": false,
+  "diagnostic_publication_allowed": true,
+  "new_head_source_approved": false,
+  "source_and_evidence_hashes": {
+    "commit.json": {
+      "sha256": "7128850865ac0bf7737fe05125a48da948dd840d045eafb5fa7a863160b4615b",
+      "bytes": 15137
+    },
+    "compare-eee.json": {
+      "sha256": "498788d6afa1012ca497c140dee96a22e658c752af095134c2c8bf2b85dc6a97",
+      "bytes": 52938
+    },
+    "compare-80b.json": {
+      "sha256": "1ff2e57dcb42faf15178d0574ab345d4efb667886d6e8d6a5d240b2bae254378",
+      "bytes": 24175
+    },
+    "pull-after-guard.json": {
+      "sha256": "c7ebf828ce55ea40e8c0c9f9c95527dbacfc811653193e3cb6299dc9a5c890e8",
+      "bytes": 82622
+    },
+    "source-location.json": {
+      "sha256": "c7c72951718f3b835bead54a496d60bbc2cdbffca54ae9b01d4afc6e8de313cc",
+      "bytes": 782
+    },
+    "new-head-source-freeze.json": {
+      "sha256": "106376de3f7c34fe40387e514b23591bf33e20d20e163244d65d0fb46732fc4e",
+      "bytes": 231284
+    },
+    "remote-monitor-snapshot.json": {
+      "sha256": "7817c46cab3bcd8436f10d5b6e6f1367515b07e5e254a4409cccb18c2d7bc122",
+      "bytes": 774542
+    },
+    "historical-eee-publication.json": {
+      "sha256": "932f0857c770b2cf6a3a27995935bae1f13bd79f845441cde6bc7d83cf9e1641",
+      "bytes": 15690
+    },
+    "historical-publication-guard.log": {
+      "sha256": "59b4b3805e1de1f69b19a991c63ace2e593ab8a1666647beb408e29b7df140c3",
+      "bytes": 361
+    },
+    "previous-80b-publication-guard.log": {
+      "sha256": "79bc0f9c20b4cfea16a2d15910bfda96cb852b907708083794bd2fe7a89945e7",
+      "bytes": 500
+    },
+    "pull-before-patch.json": {
+      "sha256": "9e2defd4c235988b4ec74e437543faa765843b7e7c45384d08e536ce18ec09c2",
+      "bytes": 82622
+    },
+    "reply-before-patch.json": {
+      "sha256": "c3b63bd923d12d15b9cf6737463d8c0750db3f14a004ccbf4369656bcee0a913",
+      "bytes": 43784
+    },
+    "previous-80b-diagnostic-manifest.json": {
+      "sha256": "46fdad5982f7e731fb22ff9572394c6071014b36e1991daae5d539c49104012a",
+      "bytes": 2361
+    },
+    "previous-80b-review-integration.json": {
+      "sha256": "8910aa7dfe9af8faa5c21c836675a48ca3e4fc97457ba74de1c92c367e42ff3c",
+      "bytes": 6328
+    },
+    "previous-80b-review-different-model.json": {
+      "sha256": "78da3a1f47fff2f0efaf9aa0177f6aadc9ea932e4425ec6f052cf287ae1057e3",
+      "bytes": 6926
+    },
+    "followup-summary.json": {
+      "sha256": "42800748a45ada47aca7a5bc2076d3f289d496722f00bca783f0b66432491755",
+      "bytes": 1102
+    },
+    "current-head-notice.md": {
+      "sha256": "5d79e6ca495d9fa8f81190651921d85c314b8b06a2d063bdec64dad0c8c5dede",
+      "bytes": 4710
+    },
+    "new-head-scope-annex.md": {
+      "sha256": "1732d7ab76aab727d035d73c1a54e9faf9ecd026700f9210670b5355dc9ffa27",
+      "bytes": 5671
+    },
+    "publish-historical-diagnostics.py": {
+      "sha256": "3e1efda01d0640307ec3b6b2cfd3ecd55c8e982a0afe4fb4ee048c252e31cfbd",
+      "bytes": 7789
+    }
+  },
+  "hash_verification": {
+    "annex_files": 19,
+    "new_source_inputs": 870,
+    "historical_eee_files_unchanged": 269,
+    "cumulative_production_changes": [
+      "cpp/src/reader/column_mapping.h",
+      "cpp/src/reader/filter/aligned_field_filter.cc",
+      "cpp/src/reader/filter/aligned_field_filter.h"
+    ],
+    "hash_mismatches": 0
+  },
+  "raw_findings": [
+    {
+      "id": "scope-only",
+      "finding": "Local clean073HEAD/parent80b checked; latest2production+2tests, cumulativeeee3production+2tests. MissingNOT negate(null) now retains invalid nonnull node, repeatedNOT checks missing left; wording accurately describes patch intent without establishing runtime correctness. Java production unchanged.",
+      "disposition": "Metadata scope accepted. Fresh numeric/reuse/sharedpredicate/malformedNOT/emptyLIMIT0/allNULL/NaNNOT/statistics rowbatch validation remains pending; no code approval."
+    },
+    {
+      "id": "guard-provenance",
+      "finding": "Frozen80breviews and guard preserve earlier attempt. Historicaleee32assets readback preceded finalhead guard; subsequent80bpublisher failed initialhead assertion before upload/PR/reply writes.",
+      "disposition": "Historical labels accurate; no newhead localtests/timings or priorresult transfer. Previous failed guard is not source failure/pass."
+    },
+    {
+      "id": "historical-gaps",
+      "finding": "EN/ZH notice keeps eee21cases23repeat+4only,writer2048headerfailures/filelayoutdifference,fullstrictLZOkayfailure and coverage gaps. Originaleee269frozeninputs remain byteidentical.",
+      "disposition": "Source/write/query gates false; no waiver through metadata annex."
+    },
+    {
+      "id": "ci",
+      "finding": "Timestamped CI snapshot reports29inprogress16success1neutral1skipped; pending is explicitly neither failure nor acceptance.",
+      "disposition": "Observation only; no rerun/workflow change requested."
+    },
+    {
+      "id": "publication",
+      "finding": "Publisher uses exact073initial/prepatchhead guards,new073marker,same existing comment,originalbody equality recheck,full AI footer/history preservation,review+manifestbinding,assetreadback and evidencebranchfastforward only. Annex explicitly says sequential checks are not atomic remote transactions.",
+      "disposition": "Allow scoped diagnostic PR/samereply publication only. Stop on observed changedhead/body. No production sourcepush,issue,merge,Copilot/review-setting or CIrerun authorized."
+    }
+  ],
+  "overall_conclusion": "No diagnostic-publication blocker found. Latest source/test/performance approval remains false; diagnostic publication permitted solely on exact frozen manifest and truthful historical/current scope.",
+  "final_head_closure": "This closes metadata/publication review, not full073source acceptance. No tests/timing/source/frozen edits/remote writes performed.",
+  "current_runtime_identity": {
+    "timestamp": "2026-10-26T06:40:03.377Z",
+    "raw_record_plus_lf_sha256": "792b8e411ccf6b1003ee95246b7dc6f64bc31b856f254dff2c6e99e88c5c62bf",
+    "model": "gpt-6.1-sol"
+  },
+  "runtime_identity_limit": "Actual selected runtime assignment, same model as previously verified root; independent agent, not different-model reviewer. No proxy/rename/offline inference or cryptographic backend attestation claim."
+}

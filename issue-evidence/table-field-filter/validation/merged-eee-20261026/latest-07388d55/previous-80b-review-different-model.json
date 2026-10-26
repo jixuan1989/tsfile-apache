@@ -1,0 +1,101 @@
+{
+  "at": "2026-10-26T06:31:31.831265+00:00",
+  "reviewer_agent": "/root/review_c01_lifetime_model",
+  "actual_model": "gpt-6-astra",
+  "runtime_identities": [
+    {
+      "path": "C:/Users/hxd/.codex/sessions/2026/10/26/rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "timestamp": "2026-10-26T06:29:17.425Z",
+      "model": "gpt-6-astra",
+      "record_sha256": "fa8226669f86e8ea1ce50c73fb9fdcc608d1a1fdb3350b13e89eb5e5b84f8937"
+    },
+    {
+      "path": "C:/Users/hxd/.codex/sessions/2026/10/17/rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "timestamp": "2026-10-26T05:21:37.376Z",
+      "model": "gpt-6.1-sol",
+      "record_sha256": "170f6acf76b95c42aefa206c658d4bdddf9a74553d1203cd8b2b48d4f20a286d"
+    }
+  ],
+  "actual_model_differs_from_implementer": true,
+  "identity_limit": "Actual selected local turn_context assignment; raw record UTF8 SHA256 excluding line terminator. Not cryptographic backend attestation or offline inference verification.",
+  "baseline_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "final_head": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+  "diagnostic_publication_manifest_sha256": "46fdad5982f7e731fb22ff9572394c6071014b36e1991daae5d539c49104012a",
+  "historical_evidence_manifest_sha256": "abf83c304145aaab52421bb60b0dd1a943aec14fa93b8cd7b2aa383e72797749",
+  "new_source_freeze_sha256": "ab97f85c731fecd769deecd7eba3ad470d0dbb04614be94faf4b5314ff57bdf8",
+  "source_submission_gate_passed": false,
+  "diagnostic_publication_allowed": true,
+  "overall_conclusion": "Diagnostic annex may be published with eee results explicitly historical and all80b local gates pending. No correctness/performance approval of80b; unchangedJava does not validate changedC++ semantics.",
+  "verified": {
+    "annex_files": 14,
+    "historical_manifest_files": 269,
+    "production_file_hash_size_gitblob_mappings": 870,
+    "source_head_exact": true,
+    "source_worktree_clean": true,
+    "parent_exactly_eee": true,
+    "changed_files": 5,
+    "changed_cpp_production": [
+      "cpp/src/reader/column_mapping.h",
+      "cpp/src/reader/filter/aligned_field_filter.cc",
+      "cpp/src/reader/filter/aligned_field_filter.h"
+    ],
+    "unchanged_java_inputs": 610,
+    "ci_snapshot_at": "2026-10-26T06:23:50.587320+00:00",
+    "ci_raw_counts": {
+      "in_progress": 19,
+      "success": 28,
+      "neutral": 1,
+      "skipped": 1
+    },
+    "all_check_run_heads_match": true,
+    "historical_assets_in_readback_record": 32,
+    "historical_evidence_commit": "1b7b3e5e790b59c80814b322622093c02b12cac8",
+    "stopped_guard_before_pr_reply_patch": true,
+    "pr_and_reply_bodies_equal_original_eee_prepublication_snapshots": true
+  },
+  "raw_findings": [
+    {
+      "id": "80B-ANNEX-1",
+      "status": "pending fresh validation; honestly disclosed",
+      "finding": "Three production files add in-place schema binding and Java-style numeric conversions; ColumnMapping now calls bind before collecting referenced fields. Ordered NOT is preserved until binding reveals the column type; integer statistics account for negated leaves. This changes semantics and pruning despite unchanged Java production.",
+      "disposition": "Require fresh exact-head correctness/sanitizer/oracle/coverage/query evidence, including integer low-bit narrowing, NaN/infinity/saturation/rounding endpoints, statistics vs row consistency, empty/LIMIT0/allNULL. No old result transfer."
+    },
+    {
+      "id": "80B-ANNEX-2",
+      "status": "validation risk; not a demonstrated defect in this scope",
+      "finding": "bind mutates literals/operators recursively. A failing later child can leave an earlier child bound; repeated binding to another schema can reuse an already narrowed literal or canonicalized NOT operator. Whether reuse is allowed depends on ownership/caller contract and must be checked rather than inferred from single-use tests.",
+      "disposition": "Annex explicitly includes reused/shared predicates. Fresh review must establish one-shot ownership or independently test rebind/failed-bind/clone behavior. No test execution or new production defect claim here."
+    },
+    {
+      "id": "80B-ANNEX-3",
+      "status": "historical unresolved; preserved",
+      "finding": "EEE retains21cases/23repeated increases,4confirmation-only signals, affected writer2048header compatibility failure and differing75617/98037byte products, strict fullLZOkayfailure and broader coverage gaps.",
+      "disposition": "EN/ZH notice labels historicaleee and new80b pending. Appended full warning continues exacteee scope. No source waiver, equivalence, historical timing transfer or newissue publication."
+    },
+    {
+      "id": "80B-ANNEX-4",
+      "status": "guard worked; no corrective source action",
+      "finding": "Original publisher reached readback of32evidence assets then failed exact-head assertion before PR/reply edits. Rawguard log and before/after bodies support this chronology.",
+      "disposition": "Historical evidence commit remains valid foreee. New annex requires two new manifest-bound diagnostic reviews and current80bhead check before publication."
+    }
+  ],
+  "publisher_review": {
+    "input_script_sha256": "2b761f21659b0cdd761ac3686fcd25681733709e5459ef0657f831df30c6780b",
+    "assessment": "Verifies account, current head/unmerged state, all old/new manifest hashes and two annex review gates. Writes only configured evidence ref with nonforce parent/commit guard; compares every uploaded asset readback. Checks current head again before PR update; requires original body/footer and rechecks body inside PATCH helper; reply authorship/original body preserved. Unknown PATCH result is read back before retry. Historical bodies enclosed in details, disclosure footer retained. Prospective PR/reply sizes below65000. No source ref push, merge, newissue, Copilot or CI rerun.",
+    "concurrency_limit": "Head/body guards are sequential API checks rather than a server-side atomic transaction. They detect observed changes; no claim that they prevent all changes racing after the last check.",
+    "authorization_scope": "Review of diagnostic publication only; this reviewer performed no external writes."
+  },
+  "review_limits": [
+    "No newhead local tests or timings executed by reviewer; no full80b source approval.",
+    "CachedCI counts are the stated snapshot, not live completion or acceptance.",
+    "Historical asset readback verified from persisted publication record and prior bound review; no remote reread by reviewer.",
+    "No exhaustive upstream duplicate search or released-version claim."
+  ],
+  "final_closure": {
+    "source_gate_false": true,
+    "old_manifest_immutable": true,
+    "no_frozen_or_source_edits": true,
+    "new_review_only_write": true,
+    "runtime_verified_current": true
+  }
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\hxd\Documents\Codex\2026-10-17\new-chat-2\work\issue-03\validation\maintainer-head-eee39799-20261026\publish-evidence.py", line 105, in <module>
+    assert pull['head']['sha']==s['public_head'] and not pull['merged']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

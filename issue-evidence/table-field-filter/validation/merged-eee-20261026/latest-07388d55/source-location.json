@@ -1,0 +1,13 @@
+{
+  "head": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "source": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\pr03-073-src",
+  "validation_directory": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-07388d55-20261026",
+  "source_freeze": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\maintainer-head-07388d55-20261026\\source-freeze.json",
+  "source_freeze_sha256": "106376de3f7c34fe40387e514b23591bf33e20d20e163244d65d0fb46732fc4e",
+  "changed_production": [
+    "cpp/src/reader/column_mapping.h",
+    "cpp/src/reader/filter/aligned_field_filter.cc",
+    "cpp/src/reader/filter/aligned_field_filter.h"
+  ],
+  "new_tests_or_timing_executed": false
+}

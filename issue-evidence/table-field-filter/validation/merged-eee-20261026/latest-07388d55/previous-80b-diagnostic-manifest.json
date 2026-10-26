@@ -1,0 +1,61 @@
+{
+  "scope": "New80b source/CI metadata and blocked original publication guard; historicaleee immutable evidence already fully reviewed and read back, no current local test/timing transfer. Both actual independent annex reviews follow this freeze.",
+  "files": {
+    "commit.json": {
+      "bytes": 31472,
+      "sha256": "9c8a3a6f7fb5f083ece56a6c5d46a5a641a5e6b3c767dc0307a04f6ecfa25a94"
+    },
+    "compare-eee.json": {
+      "bytes": 41059,
+      "sha256": "c65e0eaecc27709db05d010e482abc3a34f65b2caab4d78797249e0a5c9c1ec9"
+    },
+    "pull-after-guard.json": {
+      "bytes": 82622,
+      "sha256": "9e2defd4c235988b4ec74e437543faa765843b7e7c45384d08e536ce18ec09c2"
+    },
+    "source-location.json": {
+      "bytes": 782,
+      "sha256": "806e4b2c33f7d3030c5a35aac42cb59a380742ad114890821880963a1f09bb2a"
+    },
+    "new-head-source-freeze.json": {
+      "bytes": 231279,
+      "sha256": "ab97f85c731fecd769deecd7eba3ad470d0dbb04614be94faf4b5314ff57bdf8"
+    },
+    "remote-monitor-snapshot.json": {
+      "bytes": 784390,
+      "sha256": "7456202c707ec5bb15dae8faf4dbb691309c6cc55e6298e6dcdc612a459cc01b"
+    },
+    "historical-eee-publication.json": {
+      "bytes": 15690,
+      "sha256": "932f0857c770b2cf6a3a27995935bae1f13bd79f845441cde6bc7d83cf9e1641"
+    },
+    "historical-publication-guard.log": {
+      "bytes": 361,
+      "sha256": "59b4b3805e1de1f69b19a991c63ace2e593ab8a1666647beb408e29b7df140c3"
+    },
+    "pull-before-patch.json": {
+      "bytes": 82622,
+      "sha256": "9e2defd4c235988b4ec74e437543faa765843b7e7c45384d08e536ce18ec09c2"
+    },
+    "reply-before-patch.json": {
+      "bytes": 43784,
+      "sha256": "c3b63bd923d12d15b9cf6737463d8c0750db3f14a004ccbf4369656bcee0a913"
+    },
+    "followup-summary.json": {
+      "bytes": 2603,
+      "sha256": "4b9556fbdcdb5ed35dad71eccf1bf1eff4cded46845c782a0f8f1cbdbd08150b"
+    },
+    "current-head-notice.md": {
+      "bytes": 4127,
+      "sha256": "034cfa9803ff5d83ccf4fb10a687326e529a90d27b7e9af45125b28e216c940d"
+    },
+    "new-head-scope-annex.md": {
+      "bytes": 5593,
+      "sha256": "18e6fed41b76e5d88e33327aaef216a16696811192f6363ea3915c11e4a43b26"
+    },
+    "publish-historical-diagnostics.py": {
+      "bytes": 7701,
+      "sha256": "2b761f21659b0cdd761ac3686fcd25681733709e5459ef0657f831df30c6780b"
+    }
+  }
+}

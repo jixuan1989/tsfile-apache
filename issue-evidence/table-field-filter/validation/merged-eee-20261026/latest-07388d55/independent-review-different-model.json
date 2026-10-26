@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-26T06:41:41.523939+00:00",
+  "scope": "Diagnostic metadata annex/publication review only; no full source acceptance",
+  "reviewer_agent": "/root/review_c01_lifetime_model",
+  "actual_model": "gpt-6-astra",
+  "runtime_identities": [
+    {
+      "path": "C:/Users/hxd/.codex/sessions/2026/10/26/rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "timestamp": "2026-10-26T06:40:11.034Z",
+      "model": "gpt-6-astra",
+      "record_sha256": "4b80bb344f064764fe48a43be75b840e19828329d80a43eaf06e29926bed0bc7"
+    },
+    {
+      "path": "C:/Users/hxd/.codex/sessions/2026/10/17/rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "timestamp": "2026-10-26T06:36:22.796Z",
+      "model": "gpt-6.1-sol",
+      "record_sha256": "93af8fddd7887c1b90942954340394cf75715e5e67662afcf7789c05a07ab3e3"
+    }
+  ],
+  "actual_model_differs_from_implementer": true,
+  "identity_limit": "Selected runtime turn_context assignment, exact raw UTF8 lineSHA excluding terminator; not backend cryptographic or offline attestation.",
+  "parent_head": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+  "final_head": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "historical_validated_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "diagnostic_publication_manifest_sha256": "5db06482552b0a6f8dd9f4e9353abd3c59e5d6085dc6fa62397d0e50c787b502",
+  "new_source_freeze_sha256": "106376de3f7c34fe40387e514b23591bf33e20d20e163244d65d0fb46732fc4e",
+  "historical_evidence_manifest_sha256": "abf83c304145aaab52421bb60b0dd1a943aec14fa93b8cd7b2aa383e72797749",
+  "source_submission_gate_passed": false,
+  "diagnostic_publication_allowed": true,
+  "overall_conclusion": "Annex truthfully separates latest073 pending validation from historicaleee failed/open gates. Diagnostic publication permitted within reviewed scope; no numeric-binding or malformed-NOT behavior approval and no result transfer.",
+  "verified": {
+    "annex_files_hash_size": 19,
+    "historical_manifest_hashes": 269,
+    "source_file_hash_size_gitblob_mappings": 870,
+    "exact_head_parent_clean_worktree": true,
+    "latest_changes": {
+      "cpp_production": 2,
+      "tests": 2
+    },
+    "cumulative_eee_changes": {
+      "cpp_production": 3,
+      "tests": 2
+    },
+    "unchanged_java_production_inputs": 610,
+    "ci_snapshot_at": "2026-10-26T06:37:24.324696+00:00",
+    "raw_ci_counts": {
+      "in_progress": 29,
+      "success": 16,
+      "neutral": 1,
+      "skipped": 1
+    },
+    "all_ci_run_heads_match_latest": true,
+    "pr_reply_bodies_equal_eee_prepublication_snapshots": true,
+    "previous80b_publication_record_absent": true
+  },
+  "raw_findings": [
+    {
+      "id": "073-SCOPE-1",
+      "status": "pending fresh validation; properly disclosed",
+      "finding": "Latest source preserves a non-null invalid NOT tree for null operand and prevents repeated NOT simplification from erasing missing operand. Metadata description matches inspected two-file production diff; this is not runtime verification.",
+      "disposition": "Fresh tests must cover malformed nested/repeated negation, errors before empty/LIMIT0/allNULL execution, plus cumulative numeric conversions, row/batch/statistics and failed/reused/shared binding semantics. Do not infer correctness from unchanged610Java inputs."
+    },
+    {
+      "id": "073-SCOPE-2",
+      "status": "historical unresolved; properly disclosed",
+      "finding": "EEE retains query21cases23repeated comparisons+4confirmation-only signals, writer2048header failures10C++ attempts versus five validJava products, lowbudget file-size divergence, fullLZOkaysanitizer failure and broader coverage gaps.",
+      "disposition": "Notice/annex label all old metrics historical; latest073and80b have no local tests/timings. No source gate waiver or claimed new defect."
+    },
+    {
+      "id": "073-GUARD-1",
+      "status": "guard worked; metadata confirmed",
+      "finding": "EEE publisher stopped after32asset readbacks but before PR/reply patch;80b publisher stopped at initial head assertion before writes. Rawguard code locations, missing80bpublication record and unchanged body snapshots corroborate chronology.",
+      "disposition": "No prior publication success inferred. Latest publisher rechecks073 head and binds new annex reviews."
+    }
+  ],
+  "publisher_review": {
+    "script_sha256": "3e1efda01d0640307ec3b6b2cfd3ecd55c8e982a0afe4fb4ee048c252e31cfbd",
+    "difference_from_previously_reviewed80b": "Only evidence subdirectory, commit message and marker change to073; same exact-head guards read f.head from latest frozen summary.",
+    "guards": "Account/head/unmerged checks; both old/new manifests; two manifest-bound diagnostic approvals with sourcegatefalse; nonforce evidence-only ref parent check and full asset readback; head recheck before PR patch; exact original body concurrency checks including inside helper, existing same reply ID and author check, full configured bilingualAIfooter. No source branch, merge, newissue, Copilot or CI rerun.",
+    "limitations": "Sequential checks detect observed changes; not server-side atomic transactions. Historical readback verified from persisted evidence, no reviewer remote calls."
+  },
+  "final_closure": {
+    "only_written_file": "independent-review-different-model.json",
+    "no_tests_timing_source_frozen_or_remote_mutations": true,
+    "diagnostic_only": true,
+    "current_quality_gates_pending_false": true
+  }
+}

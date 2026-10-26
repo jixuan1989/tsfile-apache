@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\hxd\Documents\Codex\2026-10-17\new-chat-2\work\issue-03\validation\remote-followup-80bdef8d-20261026\publish-historical-diagnostics.py", line 36, in <module>
+    pull=api('repos/'+state['upstream']+'/pulls/'+str(item['pr_number']));assert pull['head']['sha']==f['head'] and not pull['merged']
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

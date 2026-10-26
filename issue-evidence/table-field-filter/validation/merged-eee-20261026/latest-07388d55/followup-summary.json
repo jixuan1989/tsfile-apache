@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-26T06:39:47.754546+00:00",
+  "head": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "parent": "80bdef8ded18c9a9f87520dbfa94c5d20a2fee0b",
+  "historical_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "historical_manifest_sha256": "abf83c304145aaab52421bb60b0dd1a943aec14fa93b8cd7b2aa383e72797749",
+  "source_freeze_sha256": "106376de3f7c34fe40387e514b23591bf33e20d20e163244d65d0fb46732fc4e",
+  "source_pushed": false,
+  "new_head_tests_or_timing_executed": false,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "stopped_publishers": {
+    "eee": "all32assets read back; exact-head guard failed before PR/reply edit",
+    "80b": "initial exact-head guard failed before uploads or PR/reply edit"
+  },
+  "review_scope": "Current metadata and historical diagnostic publication only, not source acceptance",
+  "raw_ci_snapshot": {
+    "checked_at": "2026-10-26T06:37:24.324696+00:00",
+    "counts": {
+      "in_progress": 29,
+      "success": 16,
+      "neutral": 1,
+      "skipped": 1
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "at": "2026-10-26T06:39:47.764546+00:00",
+  "scope": "Diagnostic metadata only; latest073source tests and all gates pending; historicaleee frozen independently",
+  "files": {
+    "commit.json": {
+      "sha256": "7128850865ac0bf7737fe05125a48da948dd840d045eafb5fa7a863160b4615b",
+      "bytes": 15137
+    },
+    "compare-eee.json": {
+      "sha256": "498788d6afa1012ca497c140dee96a22e658c752af095134c2c8bf2b85dc6a97",
+      "bytes": 52938
+    },
+    "compare-80b.json": {
+      "sha256": "1ff2e57dcb42faf15178d0574ab345d4efb667886d6e8d6a5d240b2bae254378",
+      "bytes": 24175
+    },
+    "pull-after-guard.json": {
+      "sha256": "c7ebf828ce55ea40e8c0c9f9c95527dbacfc811653193e3cb6299dc9a5c890e8",
+      "bytes": 82622
+    },
+    "source-location.json": {
+      "sha256": "c7c72951718f3b835bead54a496d60bbc2cdbffca54ae9b01d4afc6e8de313cc",
+      "bytes": 782
+    },
+    "new-head-source-freeze.json": {
+      "sha256": "106376de3f7c34fe40387e514b23591bf33e20d20e163244d65d0fb46732fc4e",
+      "bytes": 231284
+    },
+    "remote-monitor-snapshot.json": {
+      "sha256": "7817c46cab3bcd8436f10d5b6e6f1367515b07e5e254a4409cccb18c2d7bc122",
+      "bytes": 774542
+    },
+    "historical-eee-publication.json": {
+      "sha256": "932f0857c770b2cf6a3a27995935bae1f13bd79f845441cde6bc7d83cf9e1641",
+      "bytes": 15690
+    },
+    "historical-publication-guard.log": {
+      "sha256": "59b4b3805e1de1f69b19a991c63ace2e593ab8a1666647beb408e29b7df140c3",
+      "bytes": 361
+    },
+    "previous-80b-publication-guard.log": {
+      "sha256": "79bc0f9c20b4cfea16a2d15910bfda96cb852b907708083794bd2fe7a89945e7",
+      "bytes": 500
+    },
+    "pull-before-patch.json": {
+      "sha256": "9e2defd4c235988b4ec74e437543faa765843b7e7c45384d08e536ce18ec09c2",
+      "bytes": 82622
+    },
+    "reply-before-patch.json": {
+      "sha256": "c3b63bd923d12d15b9cf6737463d8c0750db3f14a004ccbf4369656bcee0a913",
+      "bytes": 43784
+    },
+    "previous-80b-diagnostic-manifest.json": {
+      "sha256": "46fdad5982f7e731fb22ff9572394c6071014b36e1991daae5d539c49104012a",
+      "bytes": 2361
+    },
+    "previous-80b-review-integration.json": {
+      "sha256": "8910aa7dfe9af8faa5c21c836675a48ca3e4fc97457ba74de1c92c367e42ff3c",
+      "bytes": 6328
+    },
+    "previous-80b-review-different-model.json": {
+      "sha256": "78da3a1f47fff2f0efaf9aa0177f6aadc9ea932e4425ec6f052cf287ae1057e3",
+      "bytes": 6926
+    },
+    "followup-summary.json": {
+      "sha256": "42800748a45ada47aca7a5bc2076d3f289d496722f00bca783f0b66432491755",
+      "bytes": 1102
+    },
+    "current-head-notice.md": {
+      "sha256": "5d79e6ca495d9fa8f81190651921d85c314b8b06a2d063bdec64dad0c8c5dede",
+      "bytes": 4710
+    },
+    "new-head-scope-annex.md": {
+      "sha256": "1732d7ab76aab727d035d73c1a54e9faf9ecd026700f9210670b5355dc9ffa27",
+      "bytes": 5671
+    },
+    "publish-historical-diagnostics.py": {
+      "sha256": "3e1efda01d0640307ec3b6b2cfd3ecd55c8e982a0afe4fb4ee048c252e31cfbd",
+      "bytes": 7789
+    }
+  }
+}
