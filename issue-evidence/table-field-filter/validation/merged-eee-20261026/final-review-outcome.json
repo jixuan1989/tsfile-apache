@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-26T06:06:59.458685+00:00",
+  "head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "public_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "frozen_manifest_sha256": "abf83c304145aaab52421bb60b0dd1a943aec14fa93b8cd7b2aa383e72797749",
+  "reviews_sha256": {
+    "final-evidence-review-integration.json": "045505d2860afb90a39c9f3f49b4c366c2ebbdbb016175a13a87bf7b6adfc523",
+    "final-evidence-review-different-model.json": "cc0bda6eb8e3c3e295e200fd58617db595b68b2d2d66b26179352ed42575e824"
+  },
+  "actual_model_identities": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "earlier_summary_status": "pending refers to earlier evidence freeze; both final reviews complete and source gate remains uncleared",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "source_pushed": false,
+  "query_gate_cleared": false,
+  "additional_post_freeze_review_assets": {
+    "pre-submission-review/final-audit-different-model.json": "f3f70828f605fde18c2495414daf6acdbf90da0b1c3fc0804660cc1162b19cb5",
+    "pre-submission-review/final-controls-audit-different-model.json": "d47a5dacf9d094ef28736d466af3d83497433eb97abda72f2855ab5d2a8cd714",
+    "pre-submission-review/final-cpp-diff-recompute-integration.json": "cda5c328cf2482c74848c0b290cbb649dec1e932580d6af065fe8b657c9b86c0",
+    "pre-submission-review/final-independent-raw-audit-integration.json": "d0a822e7f3d656307588b4907a581a62764e2a1c6fd9fa2230e1da1b2c1ce0c7",
+    "pre-submission-review/final-independent-recompute-integration.json": "4449122b526ee19d69c180020bf57fb2e596235b64299d355913ee996f216034",
+    "pre-submission-review/final-java-audit-different-model.json": "a1398595d79bd571693e5619dc1aef2ae5e9efab8f2d9fec2675b1789dcbd270",
+    "pre-submission-review/final-schedule-source-audit-integration.json": "da97065cc910963bfd84d04a5852497eb81e362dceca81e9e642dec146c3558a",
+    "pre-submission-review/final-supplemental-audit-different-model.json": "fa58c8a6a0d0018c0c84e0a9eb37504b3d6faccedd20c6c9429263d458d18abd"
+  }
+}

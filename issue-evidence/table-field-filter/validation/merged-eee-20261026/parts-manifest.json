@@ -1,0 +1,121 @@
+{
+  "bytes": 5072432,
+  "sha256": "816ae00f3f452413e79752e3e770799101ca991e41fb155dfbce72bcb5469fc0",
+  "parts": [
+    {
+      "name": "scoped-diagnostics.zip.part01",
+      "bytes": 229376,
+      "sha256": "1588574876a83b9570c19002d0a61494b214e397a799df553b0be7fe5f8432fb"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part02",
+      "bytes": 229376,
+      "sha256": "4846233aac5509364053844ffe88d24de3255d8230cdf276d4832e62aa2359cf"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part03",
+      "bytes": 229376,
+      "sha256": "7ca4eae85d7f20d6766132305f3a6c0d41ec08908a80e5831076d2cb787312ac"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part04",
+      "bytes": 229376,
+      "sha256": "24972f6d92cd5fa36f7e8c4035ec823d1de88bc3b93ed13a9f28d7606c82fb45"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part05",
+      "bytes": 229376,
+      "sha256": "4cd8a3a53e4e39db203df6d1a38301f9fe1cfd3fa2e85d64d4750b9e6dd04c40"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part06",
+      "bytes": 229376,
+      "sha256": "7589a510e0eba0b4d3384366d9db9881e93944dd45ab3bb2c8265bfc6b57fbc6"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part07",
+      "bytes": 229376,
+      "sha256": "2b24439c6e5c49e84bfbae81f3981566cf2e45bbac256143dec390a934d755a5"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part08",
+      "bytes": 229376,
+      "sha256": "cdf8d4237b44ae70a7192a77b160ab03a0038e07f74d342cfda51eef11f19947"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part09",
+      "bytes": 229376,
+      "sha256": "2468a0efab404728430f7024e8b696682650c3b402b9fafa9b02e0dddc88db4c"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part10",
+      "bytes": 229376,
+      "sha256": "db9e12fde53031128eef17f62a28f547cb3f3576457cdf27b4d72a74299c4db6"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part11",
+      "bytes": 229376,
+      "sha256": "5cb755f91f49826a604d7dfa7ec57e7681203f5dbe808a9d45af51b46b57b71c"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part12",
+      "bytes": 229376,
+      "sha256": "b036a389e6456d23c9678e0b0f2f55293e6545ba20e95d23e0f79e440e340324"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part13",
+      "bytes": 229376,
+      "sha256": "47486dc4891c948a4c5f17bbfb388bb974a3f2d452c3ffa31baf8034d4c40a5c"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part14",
+      "bytes": 229376,
+      "sha256": "e71fefa013e369840cf60a96710373acfaed834d707efa22da4e8176d64c589e"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part15",
+      "bytes": 229376,
+      "sha256": "125a08d1936670c0d4ea9b458acd1068cfd6dfb74a4c88322f484216bebb4445"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part16",
+      "bytes": 229376,
+      "sha256": "cc882f006a90e50ea022ff4a804d5acfba48713b51f3c11acc1061d0441c6bd6"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part17",
+      "bytes": 229376,
+      "sha256": "484612454f962d1cdb402a362609eed8a94f3edc47c031036449e9d895fd0aea"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part18",
+      "bytes": 229376,
+      "sha256": "94d5ae9c574ce939012b5f0d691ab08a0d39235a6fce400d24670fcba34f6655"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part19",
+      "bytes": 229376,
+      "sha256": "eee1128d5038606e329b07280601b04f227f36b00bfe920eded32d85d7ba5e44"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part20",
+      "bytes": 229376,
+      "sha256": "2dee53906c5ae8cdfc5e85033f0271ef958a7b697d90471eddeeb12107e30121"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part21",
+      "bytes": 229376,
+      "sha256": "357fe03edda26c07c0adf7cf5414cb6d4f09b28d9c10cb785cc679fda2c0a6a6"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part22",
+      "bytes": 229376,
+      "sha256": "361fc07569bfa568ebd12e408d19deaf9f44148b182a2292813de73260ea5d98"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part23",
+      "bytes": 26160,
+      "sha256": "3aab8436b02a0b90c2251dac107091f5b3c1c25ca9029fa84d82fbd9c2994328"
+    }
+  ]
+}

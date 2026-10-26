@@ -1,0 +1,634 @@
+{
+  "review_type": "Final independent different actual model evidence and diagnostic publication review",
+  "at": "2026-10-26T06:02:51.102565+00:00",
+  "reviewer_agent": "/root/review_c01_lifetime_model",
+  "actual_model": "gpt-6-astra",
+  "runtime_identities": [
+    {
+      "path": "C:/Users/hxd/.codex/sessions/2026/10/26/rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "timestamp": "2026-10-26T05:58:58.303Z",
+      "model": "gpt-6-astra",
+      "record_sha256": "11f4a96bc00d4a2a976fb28f345964f838876e477d6fe515f7cc768ea115ed66"
+    },
+    {
+      "path": "C:/Users/hxd/.codex/sessions/2026/10/17/rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "timestamp": "2026-10-26T05:21:37.376Z",
+      "model": "gpt-6.1-sol",
+      "record_sha256": "170f6acf76b95c42aefa206c658d4bdddf9a74553d1203cd8b2b48d4f20a286d"
+    }
+  ],
+  "actual_model_differs_from_implementer": true,
+  "identity_limit": "Raw local turn_context runtime assignment verified, with SHA256 of exact UTF8 record excluding newline. Not cryptographic backend attestation or offline execution verification.",
+  "baseline_head": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+  "final_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "current_pr_base": "ef1107d1fc681066cdd99e6f2c55fa2ec67393fe",
+  "source_freeze_sha256": "a46216afa1afef8a88a8539d616bd8d68abf86fb81b83862c5af8e9b336f41eb",
+  "evidence_manifest_sha256": "abf83c304145aaab52421bb60b0dd1a943aec14fa93b8cd7b2aa383e72797749",
+  "manifest_files_verified": 269,
+  "source_production_inputs_verified": 870,
+  "source_clean": true,
+  "source_submission_gate_passed": false,
+  "diagnostic_publication_allowed": true,
+  "overall_conclusion": "Exact eee evidence supports diagnostic publication only. Query increases repeat and confirmation-only signals remain unresolved; affected writer compatibility/performance is blocked by inherited long-header failure; strict full sanitizer fails; coverage is below broader acceptance targets. No source submission, merge, performance equivalence or retrospective gate waiver approved.",
+  "raw_findings": [
+    {
+      "id": "FINAL-EEE-1",
+      "status": "open; accurately disclosed",
+      "finding": "Across fresh96+14 cases,21cases/23comparisons repeat an increase and4confirmation-only signals persist. Seven repeat and three confirmation-only comparisons are against preceding c01. Largest repeated fixed/base increase5.170866845% in callback-w8-p1-b1024. Necessary/minimized extra cost and causal attribution are not established.",
+      "disposition": "Source/query gate remains false; bilingual top warnings and detailed ratios retain all signals. No arbitrary tolerance, sample removal, historical pooling or further round approved."
+    },
+    {
+      "id": "FINAL-EEE-2",
+      "status": "open; accurately disclosed",
+      "finding": "Shared PageArena accounting affects writer metadata/flush. At2048-byte FIELD and8192budget, c01file75617bytes versus eeefile98037bytes. Ten C++reader attempts fail across five products, while all five Java4000row/order/value/NULL oracles pass. Exact c01/eee trace offset112 gets1024bytes, parse6; separate8192bytes parse0 with2056byteheader and2048name. Original1180 has same source span; no original1180 runtime claim.",
+      "disposition": "Keep aborted writer scope, no accepted writer timings or shortened replacement; treat as inherited header limit separate from1035/1038. No sourcefix/newissue publication approved."
+    },
+    {
+      "id": "FINAL-EEE-3",
+      "status": "open; accurately disclosed",
+      "finding": "Strict full Linux sanitizer exits1 at pinned unchanged LZOkay line34 misaligned uint16 load. Focused224/reader292/imported30/harness/lifecycle positives do not establish whole-suite cleanliness.",
+      "disposition": "Retained unsuppressed failure and source gatefalse; remote CIgreen statuses do not override it."
+    },
+    {
+      "id": "FINAL-EEE-4",
+      "status": "open; accurately disclosed",
+      "finding": "C++ currentPR diff963/1120lines1015/1605branches; module5016/6411lines4782/10177branches. Java changed lines1264/1600branches528/774. Native and JaCoCo branch semantics are separate; no pooled percentage.",
+      "disposition": "No complete coverage-gate pass claimed. Incremental C++9/10lines5/10branches alone cannot approve wholePR."
+    },
+    {
+      "id": "FINAL-EEE-5",
+      "status": "resolved evidence handling; initial failure retained",
+      "finding": "First JaCoCo0.8.12/JDK24 run had major68 instrumentation failure despite139JUnit passes. Dedicated fresh0.8.13checkout changes only pom.xml plugin version; same870production inputs,139tests/15classes pass and no instrumentation diagnostics.",
+      "disposition": "Independently recomputed rawJaCoCoXML/diffs/module counters; unsupported attempt not counted as valid coverage. Tooling-only change does not alter query artifacts or production head."
+    },
+    {
+      "id": "PROTO-EEE-1",
+      "status": "resolved before measurement; retained",
+      "finding": "Initial frozen protocol incorrectly said reader-only.",
+      "disposition": "Corrected generator/protocol before measurement to query-only scope and unresolved writer acceptance; exact protocol21c5de4f3bce0540c83931560bddcd544cfa6c79deb4abd6e75658502d2610d8 reviewed. Original finding/draft retained. Context057dbecbfd181110d962680ae3828cfbeb9d250b8b6a9fff674ce58f675dcef1 unchanged."
+    },
+    {
+      "id": "FINAL-EEE-6",
+      "status": "resolved evidence handling; initial failure retained",
+      "finding": "Initial explicit Java compatibility classpath omitted logging resource and DEBUGstdout broke textual oracle.",
+      "disposition": "Initial failure/freeze retained; corrected WARNstderr resource frozen before corrected run. No backdated first-invocation freeze or stale c01classes claim."
+    }
+  ],
+  "independent_audit": {
+    "timing": {
+      "candidate-query-performance": {
+        "raw_processes": 14384,
+        "phase_processes": {
+          "warmup": 768,
+          "initial": 9216,
+          "confirmation_warmup": 176,
+          "confirmation": 4224
+        },
+        "phase_queries": {
+          "warmup": 2624,
+          "initial": 31488,
+          "confirmation_warmup": 728,
+          "confirmation": 17472
+        },
+        "all_statistic_groups_recomputed": 118,
+        "selected_cases": [
+          "callback-w1-p100-b0",
+          "callback-w1-p100-b1024",
+          "callback-w8-p1-b0",
+          "callback-w8-p1-b1024",
+          "callback-w8-p100-b0",
+          "callback-w8-p100-b1024",
+          "callback-null-b0",
+          "unfiltered-all-b0",
+          "unfiltered-time-b0",
+          "unfiltered-offset-b0",
+          "unfiltered-sparse-b0",
+          "unfiltered-sparse-b1024",
+          "float-not-t1-mixed0-cut0-b0",
+          "float-not-t1-mixed0-cut50-b0",
+          "float-not-t1-mixed1-cut50-b0",
+          "float-not-t1-mixed1-cut50-b1024",
+          "float-callback-t0-cut0-b1024",
+          "float-callback-t0-cut50-b0",
+          "float-callback-t0-cut100-b1024",
+          "float-callback-t1-cut0-b1024",
+          "float-callback-t1-cut50-b0",
+          "float-callback-t1-cut100-b0"
+        ],
+        "repeat_comparisons": [
+          {
+            "case": "callback-w1-p100-b0",
+            "comparison": "fixed/public",
+            "median_ratio": 1.011527542770232,
+            "bootstrap95": [
+              1.0076396606179938,
+              1.0188671528723414
+            ]
+          },
+          {
+            "case": "callback-w1-p100-b1024",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0149738356261824,
+            "bootstrap95": [
+              1.0077459749931479,
+              1.0246156913674394
+            ]
+          },
+          {
+            "case": "callback-w8-p1-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.039644714526494,
+            "bootstrap95": [
+              1.0208914794452952,
+              1.052863972037996
+            ]
+          },
+          {
+            "case": "callback-w8-p1-b1024",
+            "comparison": "fixed/base",
+            "median_ratio": 1.051708668451431,
+            "bootstrap95": [
+              1.0432711477666612,
+              1.0608422947051432
+            ]
+          },
+          {
+            "case": "callback-w8-p100-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0291860704903213,
+            "bootstrap95": [
+              1.0227465927968595,
+              1.0331895557622888
+            ]
+          },
+          {
+            "case": "callback-w8-p100-b1024",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0426846904364206,
+            "bootstrap95": [
+              1.0366380502134835,
+              1.046673573115435
+            ]
+          },
+          {
+            "case": "unfiltered-all-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0176170634629318,
+            "bootstrap95": [
+              1.0099375371452897,
+              1.02119310251991
+            ]
+          },
+          {
+            "case": "unfiltered-time-b0",
+            "comparison": "fixed/public",
+            "median_ratio": 1.0038815698731116,
+            "bootstrap95": [
+              1.0006249770667723,
+              1.0058125047415514
+            ]
+          },
+          {
+            "case": "unfiltered-time-b0",
+            "comparison": "fixed/prior",
+            "median_ratio": 1.0072739650255569,
+            "bootstrap95": [
+              1.0034247827757137,
+              1.0105597192964602
+            ]
+          },
+          {
+            "case": "unfiltered-time-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0182814653851109,
+            "bootstrap95": [
+              1.0138481222932614,
+              1.024037260271459
+            ]
+          },
+          {
+            "case": "unfiltered-offset-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0181881288311927,
+            "bootstrap95": [
+              1.0093629138939098,
+              1.0206282162847768
+            ]
+          },
+          {
+            "case": "unfiltered-sparse-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0075361701508312,
+            "bootstrap95": [
+              1.0054621389665692,
+              1.0107076129456665
+            ]
+          },
+          {
+            "case": "float-not-t1-mixed0-cut50-b0",
+            "comparison": "fixed/public",
+            "median_ratio": 1.006559533073554,
+            "bootstrap95": [
+              1.003445542632524,
+              1.0099957024846007
+            ]
+          },
+          {
+            "case": "float-not-t1-mixed1-cut50-b0",
+            "comparison": "fixed/public",
+            "median_ratio": 1.0072372909294065,
+            "bootstrap95": [
+              1.0033128059630507,
+              1.0106933151006074
+            ]
+          },
+          {
+            "case": "float-not-t1-mixed1-cut50-b1024",
+            "comparison": "fixed/public",
+            "median_ratio": 1.0031530233143715,
+            "bootstrap95": [
+              1.0004636860601328,
+              1.0063783290752264
+            ]
+          },
+          {
+            "case": "float-callback-t0-cut0-b1024",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0175045262117646,
+            "bootstrap95": [
+              1.0105411556200026,
+              1.0223186143512655
+            ]
+          },
+          {
+            "case": "float-callback-t0-cut50-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0152680422548337,
+            "bootstrap95": [
+              1.0130104242986993,
+              1.0201305494253532
+            ]
+          },
+          {
+            "case": "float-callback-t0-cut100-b1024",
+            "comparison": "fixed/base",
+            "median_ratio": 1.010938391504931,
+            "bootstrap95": [
+              1.002921165169455,
+              1.0191022892316204
+            ]
+          },
+          {
+            "case": "float-callback-t1-cut0-b1024",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0147949195194306,
+            "bootstrap95": [
+              1.0070826265152735,
+              1.0199371223256575
+            ]
+          },
+          {
+            "case": "float-callback-t1-cut50-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0175579927962062,
+            "bootstrap95": [
+              1.007854303411297,
+              1.0209645475455278
+            ]
+          },
+          {
+            "case": "float-callback-t1-cut100-b0",
+            "comparison": "fixed/base",
+            "median_ratio": 1.0114939466472719,
+            "bootstrap95": [
+              1.0071371115853687,
+              1.0218795946995873
+            ]
+          }
+        ],
+        "confirmation_only": [
+          {
+            "case": "callback-w1-p100-b1024",
+            "comparison": "fixed/public",
+            "median_ratio": 1.008720445850928,
+            "bootstrap95": [
+              1.0020373642070441,
+              1.014603005092924
+            ]
+          },
+          {
+            "case": "callback-w1-p100-b1024",
+            "comparison": "fixed/prior",
+            "median_ratio": 1.0139435978917173,
+            "bootstrap95": [
+              1.0100610364524303,
+              1.0203142995411931
+            ]
+          },
+          {
+            "case": "unfiltered-all-b0",
+            "comparison": "fixed/public",
+            "median_ratio": 1.0028930168886716,
+            "bootstrap95": [
+              1.0008055810729717,
+              1.0110444355194446
+            ]
+          },
+          {
+            "case": "unfiltered-sparse-b0",
+            "comparison": "fixed/public",
+            "median_ratio": 1.0036016173601838,
+            "bootstrap95": [
+              1.0001186295765683,
+              1.006959959230552
+            ]
+          }
+        ],
+        "frozen_files_rehashed": 1244
+      },
+      "context-query-performance": {
+        "raw_processes": 1228,
+        "phase_processes": {
+          "warmup": 56,
+          "initial": 672,
+          "confirmation_warmup": 20,
+          "confirmation": 480
+        },
+        "phase_queries": {
+          "warmup": 168,
+          "initial": 2016,
+          "confirmation_warmup": 60,
+          "confirmation": 1440
+        },
+        "all_statistic_groups_recomputed": 19,
+        "selected_cases": [
+          "long-n0-b0-parallel1",
+          "long-n0-b1-parallel1",
+          "long-n0-b1024-parallel0",
+          "long-n0-b0-parallel0-early",
+          "long-n1-b0-parallel0-early"
+        ],
+        "repeat_comparisons": [
+          {
+            "case": "long-n0-b1024-parallel0",
+            "comparison": "fixed/public",
+            "median_ratio": 1.007920817888956,
+            "bootstrap95": [
+              1.0007978103175283,
+              1.0188437723267447
+            ]
+          },
+          {
+            "case": "long-n1-b0-parallel0-early",
+            "comparison": "fixed/public",
+            "median_ratio": 1.0156497910757403,
+            "bootstrap95": [
+              1.0093513539237615,
+              1.02387551665451
+            ]
+          }
+        ],
+        "confirmation_only": [],
+        "frozen_files_rehashed": 1117
+      }
+    },
+    "cpp_coverage": {
+      "candidate": {
+        "covered_lines": 9,
+        "executable_lines": 10,
+        "line_percent": 90.0,
+        "covered_branches": 5,
+        "branches": 10,
+        "branch_percent": 50.0
+      },
+      "maintainer": {
+        "covered_lines": 894,
+        "executable_lines": 1050,
+        "line_percent": 85.14285714285714,
+        "covered_branches": 906,
+        "branches": 1462,
+        "branch_percent": 61.96990424076608
+      },
+      "whole-pr": {
+        "covered_lines": 972,
+        "executable_lines": 1130,
+        "line_percent": 86.01769911504425,
+        "covered_branches": 1020,
+        "branches": 1615,
+        "branch_percent": 63.1578947368421
+      },
+      "current-pr": {
+        "covered_lines": 963,
+        "executable_lines": 1120,
+        "line_percent": 85.98214285714286,
+        "covered_branches": 1015,
+        "branches": 1605,
+        "branch_percent": 63.2398753894081
+      }
+    },
+    "cpp_module": {
+      "covered_lines": 5016,
+      "executable_lines": 6411,
+      "line_percent": 78.24052409920449,
+      "covered_branches": 4782,
+      "branches": 10177,
+      "branch_percent": 46.98830696668959
+    },
+    "controls": {
+      "counts": {
+        "all_raw_timing_process_oracles": 15612,
+        "successful_cpp_preflight_process_oracles": 1668,
+        "expected_negative_preflights": 12,
+        "compat_null_queries": 96,
+        "compat_float_queries": 1800,
+        "compat_expected_negative_processes": 3,
+        "native_gcov_objects_hashed": 232,
+        "filtered_entries_matched_to_native": 252,
+        "physical_header_aliases_checked": 32,
+        "lifetime_controls_raw_verified": 6,
+        "independent_harness_platforms": 2
+      },
+      "xml": {
+        "candidate-windows-focused": {
+          "passed": 224
+        },
+        "candidate-windows-full": {
+          "passed": 1138,
+          "skipped": 3,
+          "disabled": 10
+        },
+        "candidate-linux-focused": {
+          "passed": 224
+        },
+        "candidate-linux-reader": {
+          "passed": 292,
+          "disabled": 1
+        },
+        "imported-linux-regressions": {
+          "passed": 30
+        }
+      },
+      "strict_full_sanitizer_clean": false,
+      "success": true
+    },
+    "java": {
+      "java-affected-test-reports": {
+        "classes": 15,
+        "tests": 139,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "java-coverage/test-reports": {
+        "classes": 15,
+        "tests": 139,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "java-coverage-supported/test-reports": {
+        "classes": 15,
+        "tests": 139,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "modules": {
+        "tsfile": {
+          "INSTRUCTION": {
+            "covered": 36895,
+            "missed": 127523
+          },
+          "BRANCH": {
+            "covered": 2342,
+            "missed": 12632
+          },
+          "LINE": {
+            "covered": 8606,
+            "missed": 27504
+          },
+          "COMPLEXITY": {
+            "covered": 2724,
+            "missed": 14436
+          },
+          "METHOD": {
+            "covered": 1955,
+            "missed": 7492
+          },
+          "CLASS": {
+            "covered": 305,
+            "missed": 601
+          }
+        }
+      },
+      "diff_scopes": {
+        "candidate": {
+          "covered_lines": 1264,
+          "executable_lines": 1600,
+          "covered_branches": 528,
+          "branches": 774,
+          "line_percent": 79.0,
+          "branch_percent": 68.21705426356588,
+          "changed_java_files": 50,
+          "changed_files_absent_from_XML": []
+        },
+        "maintainer": {
+          "covered_lines": 1264,
+          "executable_lines": 1600,
+          "covered_branches": 528,
+          "branches": 774,
+          "line_percent": 79.0,
+          "branch_percent": 68.21705426356588,
+          "changed_java_files": 50,
+          "changed_files_absent_from_XML": []
+        },
+        "whole-pr": {
+          "covered_lines": 1264,
+          "executable_lines": 1600,
+          "covered_branches": 528,
+          "branches": 774,
+          "line_percent": 79.0,
+          "branch_percent": 68.21705426356588,
+          "changed_java_files": 50,
+          "changed_files_absent_from_XML": []
+        },
+        "current-pr": {
+          "covered_lines": 0,
+          "executable_lines": 0,
+          "covered_branches": 0,
+          "branches": 0,
+          "line_percent": null,
+          "branch_percent": null,
+          "changed_java_files": 0,
+          "changed_files_absent_from_XML": []
+        }
+      },
+      "tooling_checkout_head": "eee39799948699c58e292ee6361f1da8154378c2",
+      "tracked_changes": [
+        "pom.xml"
+      ],
+      "production_inputs_verified_in_each_checkout": 870,
+      "original_source_head": "eee39799948699c58e292ee6361f1da8154378c2",
+      "original_status": "",
+      "initial_instrumentation_failure_present": true,
+      "success": true
+    },
+    "supplemental": {
+      "candidate-query-performance": {
+        "ordered_blocks_verified": 3596
+      },
+      "context-query-performance": {
+        "ordered_blocks_verified": 614
+      },
+      "arena_fixture_bytes_reverified": 10,
+      "header_trace_and_all_five_crossread_oracles": true,
+      "source_blob_mappings_verified": 870,
+      "runtime_identities": [
+        {
+          "path": "C:/Users/hxd/.codex/sessions/2026/10/26/rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+          "timestamp": "2026-10-26T05:58:58.303Z",
+          "model": "gpt-6-astra",
+          "record_sha256": "11f4a96bc00d4a2a976fb28f345964f838876e477d6fe515f7cc768ea115ed66"
+        },
+        {
+          "path": "C:/Users/hxd/.codex/sessions/2026/10/17/rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+          "timestamp": "2026-10-26T05:21:37.376Z",
+          "model": "gpt-6.1-sol",
+          "record_sha256": "170f6acf76b95c42aefa206c658d4bdddf9a74553d1203cd8b2b48d4f20a286d"
+        }
+      ],
+      "success": true
+    }
+  },
+  "publication_review": {
+    "files": [
+      "validation-report.md",
+      "current-head-publication-notice.md",
+      "publish-evidence.py",
+      "remote-pr-before-publication.json",
+      "remote-reply-before-publication.json"
+    ],
+    "assessment": "Current merged-head warning is prominent in EN/ZH; old PR/reply retained as historical details, not transferred evidence. Prospective body/reply remain under65000characters. Publisher requires both manifest-bound diagnostic approvals and sourcegatefalse, checks current remote head/unmerged state and original remote body before update, publishes evidence branch only, preserves unknown PATCH outcome handling/readback, and creates no issue/source push/merge/Copilot request. Frozen prior remote content and AI footer preserved.",
+    "authorization_limit": "This is technical diagnostic-publication review, not source approval or an external action by this reviewer."
+  },
+  "final_head_closure": {
+    "all_manifest_hashes_rechecked_at_close": true,
+    "exact_source_and_tooling_checkout_production_hashes_verified": true,
+    "native_gcov_raw_reports_verified": 232,
+    "filtered_native_entries_verified": 252,
+    "physical_aliases_verified": 32,
+    "statistics_groups_recomputed": 137,
+    "raw_timing_process_oracles_verified": 15612,
+    "ordered_raw_blocks_verified": 4210,
+    "no_frozen_inputs_modified": true,
+    "reviewer_tests_benchmarks_or_remote_writes": false
+  },
+  "audit_artifacts": {
+    "pre-submission-review/final-audit-different-model.py": "ec622cd00190f7182c5db58979831ca7b916496bfb4c956e00dc752543068a8f",
+    "pre-submission-review/final-audit-different-model.json": "f3f70828f605fde18c2495414daf6acdbf90da0b1c3fc0804660cc1162b19cb5",
+    "pre-submission-review/final-controls-audit-different-model.py": "dd95c5f4b5470ac071d022bbbdca9c64bbf72f6cef637a0c000477d2e4a62750",
+    "pre-submission-review/final-controls-audit-different-model.json": "d47a5dacf9d094ef28736d466af3d83497433eb97abda72f2855ab5d2a8cd714",
+    "pre-submission-review/final-java-audit-different-model.json": "a1398595d79bd571693e5619dc1aef2ae5e9efab8f2d9fec2675b1789dcbd270",
+    "pre-submission-review/final-supplemental-audit-different-model.json": "fa58c8a6a0d0018c0c84e0a9eb37504b3d6faccedd20c6c9429263d458d18abd"
+  }
+}

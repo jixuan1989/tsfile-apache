@@ -1,0 +1,867 @@
+{
+  "frozen_at": "2026-10-26T05:58:28.015896+00:00",
+  "public_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "candidate_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "baseline_head": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+  "current_pr_base": "ef1107d1fc681066cdd99e6f2c55fa2ec67393fe",
+  "source_repository": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\pr03-eee-src",
+  "source_author": "Maintainer ColinLee merged c01 and develop ef1107. Codex authored these validation artifacts; no production source push.",
+  "production_hashes_reverified": 870,
+  "candidate-windows-focused": {
+    "total": 224,
+    "passed": 224,
+    "disabled": 0,
+    "skipped": 0,
+    "failure": 0
+  },
+  "candidate-windows-full": {
+    "total": 1151,
+    "passed": 1138,
+    "disabled": 10,
+    "skipped": 3,
+    "failure": 0
+  },
+  "candidate-linux-focused": {
+    "total": 224,
+    "passed": 224,
+    "disabled": 0,
+    "skipped": 0,
+    "failure": 0
+  },
+  "candidate-linux-reader": {
+    "total": 293,
+    "passed": 292,
+    "disabled": 1,
+    "skipped": 0,
+    "failure": 0
+  },
+  "imported-linux-regressions": {
+    "total": 30,
+    "passed": 30,
+    "disabled": 0,
+    "skipped": 0,
+    "failure": 0
+  },
+  "java_affected": {
+    "classes": 15,
+    "tests": 139,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "sanitizer": {
+    "focused_reader_harness_imported_and6positive_lifetime_passed": true,
+    "full_passed": false,
+    "full_exit": 1,
+    "failure": "Unchanged pinned LZOkay lzokay.cpp:34 misaligned uint16_t load in LZOTest.TestBytes1; no suppression."
+  },
+  "compatibility": {
+    "standard_complete_queries": 1896,
+    "scope": "96NULL/boolean/OFFSET/LIMIT plus1800FLOAT/DOUBLE; both cross directions and self-read, values/order/NULL checked. 2048-byte FIELD-name supplemental compatibility fails; no blanket interoperability pass. Java encryption affected tests139 pass, but encrypted Java/C++ file interchange unmeasured.",
+    "java_freeze_limit": "Initial dependencies/classes/JDK frozen before first compatibility invocation. First run had DEBUG stdout because explicit logback resource omitted. Revised freeze adds logback-compat.xml after that failed run; corrected run passes. No backdated pre-first-run claim. Maven/JUnit/Javac precede dependency freeze."
+  },
+  "lifetime": {
+    "at": "2026-10-26T05:11:37.047633+00:00",
+    "source_sha256": "c6708aacd2d359e8cadd70d584c06456ca21d1df9d6e24e005afcbe5d4363df0",
+    "records": [
+      {
+        "head": "eee39799948699c58e292ee6361f1da8154378c2",
+        "variant": "fixed",
+        "mode": "headers",
+        "exit_code": 0,
+        "completed_functional_control": true,
+        "lsan_leak": false,
+        "stdout_sha256": "545883b6d80a7dbff1eb383549a69662036233dac313cb4ded56d78a227dac4f",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "gcov_redirected": false,
+        "executable_sha256": "f9ff4000f5416a2199aea66b63b330b7615586a66c3abd1699e9c21627f7d5d6"
+      },
+      {
+        "head": "eee39799948699c58e292ee6361f1da8154378c2",
+        "variant": "fixed",
+        "mode": "reset",
+        "exit_code": 0,
+        "completed_functional_control": true,
+        "lsan_leak": false,
+        "stdout_sha256": "b3938e2d02791594d680a6623ed02014eb94e287073d04b66a292089ca717db0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "gcov_redirected": false,
+        "executable_sha256": "f9ff4000f5416a2199aea66b63b330b7615586a66c3abd1699e9c21627f7d5d6"
+      },
+      {
+        "head": "eee39799948699c58e292ee6361f1da8154378c2",
+        "variant": "fixed",
+        "mode": "error-time",
+        "exit_code": 0,
+        "completed_functional_control": true,
+        "lsan_leak": false,
+        "stdout_sha256": "f3832a66ca67b175ca81579deae64fc037dc4523ba3c1839cc5300b92ba09a5c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "gcov_redirected": false,
+        "executable_sha256": "f9ff4000f5416a2199aea66b63b330b7615586a66c3abd1699e9c21627f7d5d6"
+      },
+      {
+        "head": "eee39799948699c58e292ee6361f1da8154378c2",
+        "variant": "fixed",
+        "mode": "error-value",
+        "exit_code": 0,
+        "completed_functional_control": true,
+        "lsan_leak": false,
+        "stdout_sha256": "c726d2d116e6e8530af5e4faeb6bd0b9c0858b3c1d87a778131061c868d4f6a0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "gcov_redirected": false,
+        "executable_sha256": "f9ff4000f5416a2199aea66b63b330b7615586a66c3abd1699e9c21627f7d5d6"
+      },
+      {
+        "head": "eee39799948699c58e292ee6361f1da8154378c2",
+        "variant": "fixed",
+        "mode": "full",
+        "exit_code": 0,
+        "completed_functional_control": true,
+        "lsan_leak": false,
+        "stdout_sha256": "cae82ade89a354cd3fe5efcbaf9a2a9d0a304932947b820ea46b0c4e26414ce5",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "gcov_redirected": false,
+        "executable_sha256": "f9ff4000f5416a2199aea66b63b330b7615586a66c3abd1699e9c21627f7d5d6"
+      },
+      {
+        "head": "eee39799948699c58e292ee6361f1da8154378c2",
+        "variant": "fixed",
+        "mode": "early",
+        "exit_code": 0,
+        "completed_functional_control": true,
+        "lsan_leak": false,
+        "stdout_sha256": "d4dee6156c00b0e1a04fb334c12c763e25782bacfdaeeda4b12f193b654df4e9",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "gcov_redirected": false,
+        "executable_sha256": "f9ff4000f5416a2199aea66b63b330b7615586a66c3abd1699e9c21627f7d5d6"
+      }
+    ],
+    "public_negative_control_count": 0,
+    "fixed_clean_control_count": 6,
+    "scope": "Direct synthetic long time/value headers: successful load,reset/reload,error after time name,error after value name;real 42row NULL/missing-column table:full exhaustion and early close. Each process has external30s timeout. Synthetic zero-body headers test resource ownership,not row-decoder correctness.",
+    "fixed_coverage_profile_only": true,
+    "public_old_profiles_redirected": "No old baseline rerun"
+  },
+  "coverage_by_diff": {
+    "candidate": {
+      "covered_lines": 9,
+      "executable_lines": 10,
+      "line_percent": 90.0,
+      "covered_branches": 5,
+      "branches": 10,
+      "branch_percent": 50.0
+    },
+    "maintainer": {
+      "covered_lines": 894,
+      "executable_lines": 1050,
+      "line_percent": 85.14285714285714,
+      "covered_branches": 906,
+      "branches": 1462,
+      "branch_percent": 61.96990424076608
+    },
+    "whole-pr": {
+      "covered_lines": 972,
+      "executable_lines": 1130,
+      "line_percent": 86.01769911504425,
+      "covered_branches": 1020,
+      "branches": 1615,
+      "branch_percent": 63.1578947368421
+    },
+    "current-pr": {
+      "covered_lines": 963,
+      "executable_lines": 1120,
+      "line_percent": 85.98214285714286,
+      "covered_branches": 1015,
+      "branches": 1605,
+      "branch_percent": 63.2398753894081
+    }
+  },
+  "coverage_language_scope": "C++ native gcov and separate Java JaCoCo reported individually; no pooled multilingual or cross-tool branch percentage.",
+  "java_coverage_measured": true,
+  "affected_files_coverage": {
+    "covered_lines": 5016,
+    "executable_lines": 6411,
+    "line_percent": 78.24052409920449,
+    "covered_branches": 4782,
+    "branches": 10177,
+    "branch_percent": 46.98830696668959
+  },
+  "selected_module_files": 21,
+  "isolated_final_profile": true,
+  "query": {
+    "standard96": {
+      "cases": 96,
+      "processes": 14384,
+      "phase_processes": {
+        "warmup": 768,
+        "initial": 9216,
+        "confirmation_warmup": 176,
+        "confirmation": 4224
+      },
+      "phase_verified_queries": {
+        "warmup": 2624,
+        "initial": 31488,
+        "confirmation_warmup": 728,
+        "confirmation": 17472
+      },
+      "formal_verified_queries": 48960,
+      "warmup_verified_queries": 3352,
+      "confirmation_cases": 22,
+      "confirmed_case_count": 19,
+      "confirmed_comparisons": [
+        {
+          "case": "callback-w8-p1-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.051708668451431,
+          "bootstrap95": [
+            1.0432711477666612,
+            1.0608422947051432
+          ]
+        },
+        {
+          "case": "callback-w8-p100-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0426846904364206,
+          "bootstrap95": [
+            1.0366380502134835,
+            1.046673573115435
+          ]
+        },
+        {
+          "case": "callback-w8-p1-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.039644714526494,
+          "bootstrap95": [
+            1.0208914794452952,
+            1.052863972037996
+          ]
+        },
+        {
+          "case": "callback-w8-p100-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0291860704903213,
+          "bootstrap95": [
+            1.0227465927968595,
+            1.0331895557622888
+          ]
+        },
+        {
+          "case": "unfiltered-time-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0182814653851109,
+          "bootstrap95": [
+            1.0138481222932614,
+            1.024037260271459
+          ]
+        },
+        {
+          "case": "unfiltered-offset-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0181881288311927,
+          "bootstrap95": [
+            1.0093629138939098,
+            1.0206282162847768
+          ]
+        },
+        {
+          "case": "unfiltered-all-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0176170634629318,
+          "bootstrap95": [
+            1.0099375371452897,
+            1.02119310251991
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut50-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0175579927962062,
+          "bootstrap95": [
+            1.007854303411297,
+            1.0209645475455278
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut0-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0175045262117646,
+          "bootstrap95": [
+            1.0105411556200026,
+            1.0223186143512655
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut50-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0152680422548337,
+          "bootstrap95": [
+            1.0130104242986993,
+            1.0201305494253532
+          ]
+        },
+        {
+          "case": "callback-w1-p100-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0149738356261824,
+          "bootstrap95": [
+            1.0077459749931479,
+            1.0246156913674394
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut0-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0147949195194306,
+          "bootstrap95": [
+            1.0070826265152735,
+            1.0199371223256575
+          ]
+        },
+        {
+          "case": "callback-w1-p100-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.011527542770232,
+          "bootstrap95": [
+            1.0076396606179938,
+            1.0188671528723414
+          ]
+        },
+        {
+          "case": "float-callback-t1-cut100-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0114939466472719,
+          "bootstrap95": [
+            1.0071371115853687,
+            1.0218795946995873
+          ]
+        },
+        {
+          "case": "float-callback-t0-cut100-b1024",
+          "comparison": "fixed/base",
+          "median_ratio": 1.010938391504931,
+          "bootstrap95": [
+            1.002921165169455,
+            1.0191022892316204
+          ]
+        },
+        {
+          "case": "unfiltered-sparse-b0",
+          "comparison": "fixed/base",
+          "median_ratio": 1.0075361701508312,
+          "bootstrap95": [
+            1.0054621389665692,
+            1.0107076129456665
+          ]
+        },
+        {
+          "case": "unfiltered-time-b0",
+          "comparison": "fixed/prior",
+          "median_ratio": 1.0072739650255569,
+          "bootstrap95": [
+            1.0034247827757137,
+            1.0105597192964602
+          ]
+        },
+        {
+          "case": "float-not-t1-mixed1-cut50-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0072372909294065,
+          "bootstrap95": [
+            1.0033128059630507,
+            1.0106933151006074
+          ]
+        },
+        {
+          "case": "float-not-t1-mixed0-cut50-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.006559533073554,
+          "bootstrap95": [
+            1.003445542632524,
+            1.0099957024846007
+          ]
+        },
+        {
+          "case": "unfiltered-time-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0038815698731116,
+          "bootstrap95": [
+            1.0006249770667723,
+            1.0058125047415514
+          ]
+        },
+        {
+          "case": "float-not-t1-mixed1-cut50-b1024",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0031530233143715,
+          "bootstrap95": [
+            1.0004636860601328,
+            1.0063783290752264
+          ]
+        }
+      ],
+      "confirmation_only_signals": [
+        {
+          "case": "callback-w1-p100-b1024",
+          "comparison": "fixed/public",
+          "median_ratio": 1.008720445850928,
+          "bootstrap95": [
+            1.0020373642070441,
+            1.014603005092924
+          ]
+        },
+        {
+          "case": "callback-w1-p100-b1024",
+          "comparison": "fixed/prior",
+          "median_ratio": 1.0139435978917173,
+          "bootstrap95": [
+            1.0100610364524303,
+            1.0203142995411931
+          ]
+        },
+        {
+          "case": "unfiltered-all-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0028930168886716,
+          "bootstrap95": [
+            1.0008055810729717,
+            1.0110444355194446
+          ]
+        },
+        {
+          "case": "unfiltered-sparse-b0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0036016173601838,
+          "bootstrap95": [
+            1.0001186295765683,
+            1.006959959230552
+          ]
+        }
+      ],
+      "query_gate_cleared": false,
+      "necessity_proven": false,
+      "protocol_sha256": "21c5de4f3bce0540c83931560bddcd544cfa6c79deb4abd6e75658502d2610d8",
+      "results_sha256": "69461044d311d3449d7223b753bbbf40a51c74f9af8f63f5a3ffdb9fbd47dfdf",
+      "raw_sha256": "4425fc0d317f1c755de9d01ab861383564848943739079e1842080a40984b75a",
+      "frozen_input_hashes_reverified": 1244,
+      "preflight": {
+        "integer_verified_queries": 2752,
+        "floating_verified_processes": 720,
+        "floating_verified_queries": 2160,
+        "java_verified_40000row_scans": 10,
+        "prior_native_negative_controls": [
+          {
+            "type": 0,
+            "cutoff": 0,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 0,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 50,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 50,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 100,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 0,
+            "cutoff": 100,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 0,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 0,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 50,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 50,
+            "batch": 1024,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 100,
+            "batch": 0,
+            "exit_code": 2
+          },
+          {
+            "type": 1,
+            "cutoff": 100,
+            "batch": 1024,
+            "exit_code": 2
+          }
+        ],
+        "negative_in_timing": false
+      }
+    },
+    "longname14": {
+      "cases": 14,
+      "processes": 1228,
+      "phase_processes": {
+        "warmup": 56,
+        "initial": 672,
+        "confirmation_warmup": 20,
+        "confirmation": 480
+      },
+      "phase_verified_queries": {
+        "warmup": 168,
+        "initial": 2016,
+        "confirmation_warmup": 60,
+        "confirmation": 1440
+      },
+      "formal_verified_queries": 3456,
+      "warmup_verified_queries": 228,
+      "confirmation_cases": 5,
+      "confirmed_case_count": 2,
+      "confirmed_comparisons": [
+        {
+          "case": "long-n1-b0-parallel0-early",
+          "comparison": "fixed/public",
+          "median_ratio": 1.0156497910757403,
+          "bootstrap95": [
+            1.0093513539237615,
+            1.02387551665451
+          ]
+        },
+        {
+          "case": "long-n0-b1024-parallel0",
+          "comparison": "fixed/public",
+          "median_ratio": 1.007920817888956,
+          "bootstrap95": [
+            1.0007978103175283,
+            1.0188437723267447
+          ]
+        }
+      ],
+      "confirmation_only_signals": [],
+      "query_gate_cleared": false,
+      "necessity_proven": false,
+      "protocol_sha256": "057dbecbfd181110d962680ae3828cfbeb9d250b8b6a9fff674ce58f675dcef1",
+      "results_sha256": "0eb8c0bfdce56576649f0066576497fbd003a664f36a08fff73a30d48ef1c7de",
+      "raw_sha256": "457f37b12d78b98dcf62ba7b2faabaae56d5f009516f862c6a351bff48d2e1ae",
+      "frozen_input_hashes_reverified": 1117,
+      "preflight": {
+        "cpp_full_queries": 216,
+        "cpp_verified_early_close_queries": 36,
+        "java_40000row_scans": 3,
+        "cpp_writer_bytes_equal": true,
+        "java_byte_equality_claimed": false
+      }
+    }
+  },
+  "query_gate_cleared": false,
+  "write": {
+    "gate_passed": false,
+    "status": "supplement_preflight_aborted_correctness_failure_no_accepted_write_measurements",
+    "affected": "PageArena accounting affects TsFileIOWriter metadata memory check/flush; Java writer/header encryption changes are also imported. Reader-only classification is invalid.",
+    "prospective_cases": {
+      "writes": 4,
+      "queries": 32,
+      "rows": 4000,
+      "devices": 2,
+      "name_lengths": [
+        29,
+        2048
+      ],
+      "budgets": [
+        8192,
+        134217728
+      ]
+    },
+    "observation": "All5long-field-name files pass full independent Java4000row/order/NULL/value oracle, but bothc01/eee C++ readers fail with E_PARTIAL_READ=6 (10processes). Offset112 short1024parse fails; extra8192read parses2056byteheader. Production wrapper returns original data/error. Original1180 source has same read logic, not runtime-tested. Incidental preflight write_seconds are not accepted performance.",
+    "encrypted_cross_language_scope": "not measured; affected Java unit tests do not replace encrypted file interchange or performance",
+    "prior_writes_transfer_allowed": false
+  },
+  "header_boundary_runtime_record": "header-boundary-trace.json",
+  "source_submission_gate_passed": false,
+  "source_pushed": false,
+  "final_independent_evidence_review_status": "pending_at_this_evidence_freeze; final-review-outcome binds subsequent actual reviews,not a gate pass",
+  "remote_ci": {
+    "checked_at": "2026-10-26T05:53:14.727413+00:00",
+    "tracked_prs": [
+      {
+        "id": "01",
+        "number": 1018,
+        "head": "5fb363774ed7b492252d2933707545edca5ca981",
+        "state": "open",
+        "merged": false,
+        "counts": {
+          "success": 38,
+          "neutral": 1,
+          "skipped": 1
+        },
+        "changes_since_initial_check": {
+          "reviews": [],
+          "comments": [],
+          "discussion": []
+        }
+      },
+      {
+        "id": "02",
+        "number": 1024,
+        "head": "75592b89d1523a96090e8bca1dcb4cd2180162e5",
+        "state": "open",
+        "merged": false,
+        "counts": {
+          "success": 38,
+          "neutral": 1,
+          "skipped": 1
+        },
+        "changes_since_initial_check": {
+          "reviews": [],
+          "comments": [],
+          "discussion": []
+        }
+      },
+      {
+        "id": "03",
+        "number": 1026,
+        "head": "eee39799948699c58e292ee6361f1da8154378c2",
+        "state": "open",
+        "merged": false,
+        "counts": {
+          "success": 46,
+          "neutral": 1,
+          "skipped": 1,
+          "failure": 1
+        },
+        "changes_since_initial_check": {
+          "reviews": [],
+          "comments": [],
+          "discussion": []
+        }
+      }
+    ],
+    "current_head": "eee39799948699c58e292ee6361f1da8154378c2",
+    "current_counts": {
+      "success": 46,
+      "neutral": 1,
+      "skipped": 1,
+      "failure": 1
+    },
+    "no_new_substantive_review": true,
+    "existing_failed_job_assessment": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\remote-followup-eee39799-20261026\\ci-failure-assessment.json",
+    "prior_CI_annex": "https://github.com/jixuan1989/tsfile-apache/blob/d7b99b409eab1cf6dfc2ce98f3cc99c03444f1a0/issue-evidence/table-field-filter/validation/lifetime-c01-20261026/ci-and-source-report.md"
+  },
+  "limits": [
+    "Warm cache only; no cold cache/P99/compressed/general nonaligned FIELD/parallel scalability/query-only memory measurements.",
+    "Original8total-only metrics retained; no phase/per-query quantile/memory backfill claimed.",
+    "PR01/02 query gaps and PR02 diagnostic stop rules retain their prior scope."
+  ],
+  "java_coverage": {
+    "at": "2026-10-26T05:57:22.708443+00:00",
+    "head": "eee39799948699c58e292ee6361f1da8154378c2",
+    "source": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\pr03-eee-jcov13-src",
+    "after_all_query_measurements": true,
+    "separate_checkout": true,
+    "no_old_exec": true,
+    "tool_version": "0.8.13",
+    "tooling_override_record": "tooling-override.json",
+    "maven_exit": 0,
+    "instrumentation_diagnostics": [],
+    "junit": [
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 20,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 21,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "tests": 139,
+    "reports": [
+      {
+        "module": "tsfile",
+        "xml_sha256": "2bcbc0d6a183312473beb45d34e699db0a22b956900679f7a8306911928dd196"
+      }
+    ],
+    "modules": {
+      "tsfile": {
+        "INSTRUCTION": {
+          "covered": 36895,
+          "missed": 127523
+        },
+        "BRANCH": {
+          "covered": 2342,
+          "missed": 12632
+        },
+        "LINE": {
+          "covered": 8606,
+          "missed": 27504
+        },
+        "COMPLEXITY": {
+          "covered": 2724,
+          "missed": 14436
+        },
+        "METHOD": {
+          "covered": 1955,
+          "missed": 7492
+        },
+        "CLASS": {
+          "covered": 305,
+          "missed": 601
+        }
+      }
+    },
+    "diff_scopes": {
+      "candidate": {
+        "covered_lines": 1264,
+        "executable_lines": 1600,
+        "covered_branches": 528,
+        "branches": 774,
+        "line_percent": 79.0,
+        "branch_percent": 68.21705426356588,
+        "changed_java_files": 50,
+        "changed_files_absent_from_XML": []
+      },
+      "maintainer": {
+        "covered_lines": 1264,
+        "executable_lines": 1600,
+        "covered_branches": 528,
+        "branches": 774,
+        "line_percent": 79.0,
+        "branch_percent": 68.21705426356588,
+        "changed_java_files": 50,
+        "changed_files_absent_from_XML": []
+      },
+      "whole-pr": {
+        "covered_lines": 1264,
+        "executable_lines": 1600,
+        "covered_branches": 528,
+        "branches": 774,
+        "line_percent": 79.0,
+        "branch_percent": 68.21705426356588,
+        "changed_java_files": 50,
+        "changed_files_absent_from_XML": []
+      },
+      "current-pr": {
+        "covered_lines": 0,
+        "executable_lines": 0,
+        "covered_branches": 0,
+        "branches": 0,
+        "line_percent": null,
+        "branch_percent": null,
+        "changed_java_files": 0,
+        "changed_files_absent_from_XML": []
+      }
+    },
+    "original_frozen_query_inputs_unchanged": true,
+    "production_hashes_reverified": 870,
+    "scope": "Existing profile with recorded tooling-only JaCoCo0.8.13 POM override, affected15testclasses only. Native C++ and JaCoCo branch semantics reported separately, no pooled percentage; source files absent XML disclosed. JDK24 instrumentation diagnostics, if any, remain in full log."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "actual_model_identity": "gpt-6.1-sol",
+  "reviewed_at": "2026-10-26T06:02:09.187446+00:00",
+  "baseline_commit": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+  "final_commit": "eee39799948699c58e292ee6361f1da8154378c2",
+  "frozen_manifest_sha256": "abf83c304145aaab52421bb60b0dd1a943aec14fa93b8cd7b2aa383e72797749",
+  "source_manifest_sha256": "a46216afa1afef8a88a8539d616bd8d68abf86fb81b83862c5af8e9b336f41eb",
+  "source_submission_gate_passed": false,
+  "diagnostic_publication_allowed": true,
+  "query_acceptance_passed": false,
+  "write_acceptance_passed": false,
+  "source_and_evidence_hashes": {
+    "source-freeze.json": "a46216afa1afef8a88a8539d616bd8d68abf86fb81b83862c5af8e9b336f41eb",
+    "validation-report.md": "f4a4ae02bac57ace60f746729cab33a67c254ee92b02bccd6e23513a4d39a6ff",
+    "validation-summary.json": "fe0bc0d13141ead8787712feb883e73037cf3860f59834e79feadd77273468fc",
+    "current-head-publication-notice.md": "f3a7f167c64cb09d9b40f76ae1d09c6079f700533edb3f82141013e88e3dbcde",
+    "publish-evidence.py": "785551ba71d8641a6ad64d01823b5368177f182f1652bcbe1952b838cc272e60",
+    "remote-pr-before-publication.json": "acb7d3148167932a7d68914799ca52aaaeff011127fcf63ac292aac0e9e75e67",
+    "remote-reply-before-publication.json": "c3b63bd923d12d15b9cf6737463d8c0750db3f14a004ccbf4369656bcee0a913",
+    "pre-submission-review/final-independent-recompute-integration.json": "4449122b526ee19d69c180020bf57fb2e596235b64299d355913ee996f216034",
+    "pre-submission-review/final-independent-raw-audit-integration.json": "d0a822e7f3d656307588b4907a581a62764e2a1c6fd9fa2230e1da1b2c1ce0c7",
+    "pre-submission-review/final-cpp-diff-recompute-integration.json": "cda5c328cf2482c74848c0b290cbb649dec1e932580d6af065fe8b657c9b86c0",
+    "pre-submission-review/final-schedule-source-audit-integration.json": "da97065cc910963bfd84d04a5852497eb81e362dceca81e9e642dec146c3558a"
+  },
+  "verification_summary": "All269 frozen files,870 production source inputs and2361 protocol inputs verified hash-identical. Only new final-* review outputs written; no frozen file modified. No tests/timings/source edits/remote writes executed by reviewer.",
+  "raw_findings": [
+    {
+      "id": "performance",
+      "severity": "blocking-source-acceptance",
+      "finding": "Verified14384main+1228context raw processes with no child failures,3360+576formal blocks exactly matching results. Replayed all5000resample block-bootstrap summaries with zero mismatch and independently reclassified21cases23repeated comparisons,4confirmation-only;7repeated/3confirmation-only fixed/public(c01). Main48960formal3352warmup/context3456formal228warmup queries match raw repeats.",
+      "disposition": "Query/source gates false. Pointwise multiple-case signals not familywise proof or source causality, but unexplained repeated regressions cannot be waived; no old pooling or further rounds authorized."
+    },
+    {
+      "id": "affected-lifetime-correctness",
+      "severity": "closed-with-scope",
+      "finding": "Windows224focused/1151total(full1138pass3skip10disabled),Linux224focused/293reader(total292pass1disabled) XML reproduced. Fresh30imported tests and6lifecycle positives retain bounded scope. Independent complete FLOAT oracle matches15positive120query outputs,3prior negatives each40wrong orderedNOT combinations; declared1896compatibility query scope and preflight boundaries disclosed.",
+      "disposition": "Affected evidence supported. Not all-file/all-codec/encrypted interoperability or full-suite sanitizer pass."
+    },
+    {
+      "id": "blocked-arena",
+      "severity": "blocking-write-acceptance",
+      "finding": "Retained prospectively declared2048FIELD fixture:10C++read processes return6,5Javafull4000row oracles pass. Sameoffset112 short1024parse6 versus separate8192parse0 name2048/header2056 supports pre-existing chunk-header capacity; wrapper unchanged original return/buffer. Bytes current98037 versusc0175617 atlowbudget prove writer layout differs while Java values correct. Original1180 source only, not runtime.",
+      "disposition": "No accepted write timing from incidental preflightwrite_seconds. No shorter replacement, affected writer equivalence, source fix/new issue or release-range claim.1035/1038 remain separately tracked."
+    },
+    {
+      "id": "cpp-coverage",
+      "severity": "blocking-source-acceptance",
+      "finding": "Independently aggregated21file native counts5016/6411lines4782/10177branches; fourdiff scopes candidate9/10&5/10,maintainer894/1050&906/1462,wholePR972/1130&1020/1615,currentPR963/1120&1015/1605 reproduced. Fresh isolated profile, copied-header aliases and no oldgcda transfer disclosed.",
+      "disposition": "CurrentPR85.98% below90%; candidate90% cannot replace it. Branch/nativeJava denominators separate."
+    },
+    {
+      "id": "java-tooling-coverage",
+      "severity": "accepted-diagnostic-with-coverage-gap",
+      "finding": "OriginalJaCoCo0.8.12/JDK24rawlog shows major68 instrumentation errors despite139tests completed; not accepted coverage. Dedicated0.8.13checkout has only POM plugin version diff,870production source hashes remain same. NativeXML independently reproduces affected1264/1600lines528/774branches,module8606/36110lines2342/14974branches;15JUnitclasses139tests0fail/error/skip. currentPRzero/zero=N/A.",
+      "disposition": "Tooling-only corrected profile valid scoped coverage; below90% affected coverage remains disclosed. Repeated same139tests not additional distinct tests; encryptedJava unit success not cross-language encrypted interchange."
+    },
+    {
+      "id": "strict-full",
+      "severity": "unresolved-existing-failure",
+      "finding": "Exacteee strict Linux full log retains pinnedLZOkay34misaligned uint16_t failure. No suppression or fullsuite pass. CI Windows504 setup failure occurs before project build/test; remote treeidentity does not override strictlocal failure.",
+      "disposition": "Fullsan/source gates remain open; no unrelated repair inferred."
+    },
+    {
+      "id": "publication-truthfulness",
+      "severity": "informational",
+      "finding": "Complete EN/ZH report+notice prominently state queryUNCLEARED,writerblocked,strictfullfailure,coverage gaps and no production push. Prospective publisher binds manifest+both final reviews,sourcefalse,exactcurrenthead checks,originalPR/replybody snapshot equality,historypreservation and evidence readback. Original templates/body/reply archived; masked CI/setup evidence scoped.",
+      "disposition": "Diagnostic publication allowed solely for frozen evidence and truthful current notice. No source acceptance,production push,merge,newissue,Copilot or test rerun approved. Actual publication remains root responsibility."
+    }
+  ],
+  "disposition_and_test_evidence": "Source reviewed earlier at exact frozeneee. This final review inspects existing raw outputs/native profiles and independently recalculates counts/oracles/coverage; bootstrap replay uses inspected frozen summary functions on raw-verified blocks, not fresh measurement. No acceptance gates waived.",
+  "overall_conclusion": "Final exact-head review closes diagnostic evidence as truthful with no outstanding publication blocker found. Source/query/write submission approval denied; repeated regressions,below-target coverage,strictfullsan failure and blockedarena scope remain unresolved.",
+  "final_head_followup": "Closure applies solely to eee and manifestabf83c...; changed source/evidence/protocol requires fresh applicable review. Preserve historical head scopes and first review drafts.",
+  "current_runtime_identities": [
+    {
+      "agent": "/root/review_c01_lifetime_agent",
+      "raw_record_plus_lf_sha256": "1b4e17f856336b5c3d2782307ecf78e3bf833bda31b88b69c21801c4b4c483d0",
+      "model": "gpt-6.1-sol",
+      "timestamp": "2026-10-26T05:58:46.240Z"
+    },
+    {
+      "agent": "/root",
+      "raw_record_plus_lf_sha256": "1cfd63c6439c27ed0acb40e8bceda09f670b9d36b5b4d6ae33fb8434c9d98530",
+      "model": "gpt-6.1-sol",
+      "timestamp": "2026-10-26T05:21:37.376Z"
+    }
+  ],
+  "runtime_identity_limitation": "Selected actual runtime assignment independently read from own and root turn_context, both gpt-6.1-sol; reviewer agent is independent but same model as root, not different-model reviewer. No rename/proxy/offline or cryptographic backend attestation claimed."
+}
