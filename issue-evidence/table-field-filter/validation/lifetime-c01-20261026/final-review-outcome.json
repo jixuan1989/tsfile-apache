@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-26T03:57:11.854826+00:00",
+  "head": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+  "public_head": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+  "frozen_manifest_sha256": "279612776b5e8a0367fb1242e0a9bc8c4ef12d9714478458d0858115b26d61c0",
+  "reviews_sha256": {
+    "final-evidence-review-integration.json": "4f807f9476235ae7bfe3a82580e7ebf73d7ff8fe166aed257dc907829880db63",
+    "final-evidence-review-different-model.json": "f270219243d3fcbc407f76b992b2ee4d8ed21f60746748cc5c08898bd3be0760"
+  },
+  "actual_model_identities": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "earlier_summary_status": "pending refers to earlier evidence freeze; both final reviews complete and source gate remains uncleared",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "source_pushed": false,
+  "query_gate_cleared": false,
+  "additional_post_freeze_review_assets": {
+    "pre-submission-review/final-audit-different-model.json": "920e45bbfc1ea5cc247a6d48e68d94c838bf90df400127d7a93d1f96214dc9e6",
+    "pre-submission-review/final-audit-different-model.py": "c87646175ba9cb986e4462197de03f4f4e74e112cd676e7e0ed814c2f0a8d7a4",
+    "pre-submission-review/final-controls-audit-different-model.json": "2baef1a4abe7b393e5be2e99733868e12f1b8281268d354698995df946dfe64e",
+    "pre-submission-review/final-controls-audit-different-model.py": "8f6660f49a498dfbd833223c96dc84044299930cce6a6f9f9f550d03f1c7e879",
+    "pre-submission-review/final-independent-audit-integration.py": "764ae99a2dc4eb09d2a7af4370546bc2bc9534bca6fe7f8db048f99f05fed28a",
+    "pre-submission-review/final-independent-raw-audit-integration.json": "820f1c19d60e8f4c5f14811db76fdc2f387c6d80b1d0371b1117ab0cb19ce1a7",
+    "pre-submission-review/final-independent-raw-audit-integration.py": "394f1c44bd35edc43cc7099d64af59fa0c1e0d79a729bd45168df4a43bb93ddb",
+    "pre-submission-review/final-independent-recompute-integration.json": "1821c583a3ca4e7f882979270b33b582eea849fd8cfdccaecc18503b9ea82d22"
+  },
+  "latest_public_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "latest_public_head_local_validation": "pending; no c01 metrics transferred",
+  "remote_addendum_manifest_sha256": "ff9509cc86d9bc16b82b6aa2c92d64570ab7241560766fd062b65683447c9e6c",
+  "remote_addendum_review_sha256": {
+    "independent-review-integration.json": "602dc660d3529b76e4dfcf6348743bd7ebf6d650991a707265222dbd27746e2b",
+    "independent-review-different-model.json": "2461e9de68288af1b8d43ade023f4467d0ac1f29266f8ed2ab368a1c11604893"
+  }
+}

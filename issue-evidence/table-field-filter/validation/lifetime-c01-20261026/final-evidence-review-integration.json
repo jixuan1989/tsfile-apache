@@ -1,0 +1,102 @@
+{
+  "frozen_input_hash_verification": "All173 manifest file hashes match; protocol frozen-input hashes previously independently verified with zero mismatches. HEAD rechecked exact c01, clean worktree.",
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "frozen_manifest_sha256": "279612776b5e8a0367fb1242e0a9bc8c4ef12d9714478458d0858115b26d61c0",
+  "final_commit": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+  "disposition_and_test_evidence": "No tests, benchmark executions, source changes or remote writes performed by reviewer. New final-* audit artifacts only. Evidence computation inspected existing raw outputs and filtered native counts; deterministic statistics replay is separate from measurement.",
+  "final_head_followup": "Review closed for frozen c01 evidence; source submission rejected, diagnostic publication permitted. Any changed source/protocol/evidence needs fresh applicable review.",
+  "source_submission_gate_passed": false,
+  "runtime_identity_limit": "Selected runtime turn_context assignment, not cryptographic backend attestation or offline inference.",
+  "reviewed_at": "2026-10-26T03:46:55.5645188Z",
+  "diagnostic_publication_allowed": true,
+  "baseline_commit": "c8b27546f61d5880e714612379556cf860f18467",
+  "actual_model_identity": "gpt-6.1-sol",
+  "current_runtime_identity": {
+    "raw_line_with_lf_sha256": "f5bf84e5e84895f4b7588c3d330529e4d5f3254ac77fb4502295b2698c166bbf",
+    "timestamp": "2026-10-26T03:38:50.321Z",
+    "model": "gpt-6.1-sol"
+  },
+  "raw_findings": [
+    {
+      "disposition": "Keep source/query gates false. No necessity, minimized cost or causal attribution established; no further rounds authorized by this review.",
+      "severity": "blocking-source-submission",
+      "finding": "Raw13584 main processes map exactly to3168 formal common blocks;828context map to384. Every child exit0/no recorded failure. Replayed all bootstrap/metric summaries with zero mismatch. Independently classified7cases8repeated comparisons,4confirmation-only. No repeated fixed/public; unresolved fixed/public confirmation-only in callback-null-b1024 and unfiltered-all-b0. Context1confirmation repeats no signal, not equivalence.",
+      "id": "performance"
+    },
+    {
+      "disposition": "Closes targeted missing ownership evidence only; unsupported repeated destroy/automatic destruction remains outside contract.",
+      "severity": "closed",
+      "finding": "Old6controls leak162/2,162/2,65/1,162/2,194/2,97/1; slow stacks identify owning ChunkHeader strings from load_by_aligned_meta. New6functional controls complete with clean sanitizer diagnostics, including reset, errors and early close.",
+      "id": "lifetime"
+    },
+    {
+      "disposition": "Report exact denominators and incomplete whole-PR gate.",
+      "severity": "blocking-source-submission",
+      "finding": "Independent filtered native aggregation reproduces16files3734/4921lines,3322/6307branches. Incremental188/189 each executed7751times,2/2. WholePR85.98% remains below90%; no inherited cumulative coverage transfer.",
+      "id": "coverage"
+    },
+    {
+      "disposition": "No suppression/full-pass claim. Diagnostic report accurately distinguishes affected pass and full failure.",
+      "severity": "unresolved-existing",
+      "finding": "Local full log shows LZOTest.TestBytes1 misaligned uint16_t load pinned LZOkay34, strict failure retained. Affected Windows focused/full and Linux focused/reader XML counts reproduced; remote CI checks merged tree, not standalone c01.",
+      "id": "strict-full"
+    },
+    {
+      "disposition": "Supports declared correctness scope, not untested codecs/nativeJava pushdown or arbitrary files.",
+      "severity": "closed-with-scope",
+      "finding": "Independently generated complete120 FLOAT/DOUBLE expected outputs;15positive output tables match exactly,3prior negative tables each differ40ordered-NOT combinations.1896total queries includes96 NULL controls and1800float. Preflight reader/writer provenance and bidirectional Java application-filter boundaries disclosed; known1034/1035 remain separately scoped.",
+      "id": "oracle"
+    },
+    {
+      "disposition": "Diagnostic publication allowed for this frozen manifest. Actual publication remains root responsibility and must retain all limitations. Final reviews are postfreeze and bound separately.",
+      "severity": "informational",
+      "finding": "Prospective publisher PR/reply prepends complete EN/ZH UNCLEARED warning, preserves history and AI authorship, includes raw archive/hash readback and exact-head guard. Requires both final reviews false source gate/true diagnostic permission. No production branch push or new issue creation in script.",
+      "id": "publication"
+    }
+  ],
+  "overall_conclusion": "Incremental lifetime source review closes with no blocking new ownership defect under terminal destroy+mem_free. Fresh leak controls establish targeted repair. Whole-PR submission gate remains false: repeated query regressions and unresolved confirmation-only signals, coverage below90% whole-PR target, strict full Linux failure retained. Diagnostic publication accurately discloses these failures and is allowed; no production source push approved.",
+  "source_and_evidence_hashes": [
+    {
+      "path": "final-evidence-manifest.json",
+      "sha256": "279612776b5e8a0367fb1242e0a9bc8c4ef12d9714478458d0858115b26d61c0"
+    },
+    {
+      "path": "validation-summary.json",
+      "sha256": "949f969c05d4d795bb3772f39a2e08e26b07b9f073b7771d23fded46b042f159"
+    },
+    {
+      "path": "validation-report.md",
+      "sha256": "6be6842f40e01977c09962c50061baf222336afde5c2c772530fa9f011353db5"
+    },
+    {
+      "path": "publish-evidence.py",
+      "sha256": "5a5fba08bb0adec4e21e176e843c21a8e6c379744a2c39b3968f9e8bc2df8140"
+    },
+    {
+      "path": "performance-warning-bilingual.md",
+      "sha256": "542c6a0edb3f169e600fd82a3484a31a06f03dc34e6ae661fcceb341fa2b00c8"
+    },
+    {
+      "path": "pre-submission-review/final-independent-recompute-integration.json",
+      "sha256": "1821c583a3ca4e7f882979270b33b582eea849fd8cfdccaecc18503b9ea82d22"
+    },
+    {
+      "path": "pre-submission-review/final-independent-raw-audit-integration.json",
+      "sha256": "820f1c19d60e8f4c5f14811db76fdc2f387c6d80b1d0371b1117ab0cb19ce1a7"
+    }
+  ],
+  "warning_clarification_followup": {
+    "changed_frozen_names": [
+      "finalize-evidence.py",
+      "performance-warning-bilingual.md",
+      "validation-report.md"
+    ],
+    "clarification_record_sha256": "e95a292ed3d2cd3d81e26a7b4d9d93197c3e2d55b367514d8684f4bf7ffa76f0",
+    "hash_mismatches": 0,
+    "finding": "Independently compared manifests and exact three file diffs. Only EN/ZH warning names and quantifies two already-audited c8b confirmation-only signals, generator mirrors wording, and guard preserves original pre-review frozen name set when finalizer reused. Ratios/interval rounding agree with existing raw-derived confirmation summaries. All other frozen hashes unchanged; source/statistics/protocol gates unchanged.",
+    "disposition": "Clarification improves disclosure; prior raw audit findings retained. Source gate false and diagnostic publication allowed true remain justified for new manifest.",
+    "new_manifest_verified_files": 173,
+    "prior_review_preserved_at": "../maintainer-head-c01ee105-20261026-first-review-snapshot/pre-submission-review/final-evidence-review-integration.json",
+    "prior_manifest_sha256": "35a3156981c86256e6f508d5a39070c852a8ff9913e4037a34bdab3554b64701"
+  }
+}

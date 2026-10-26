@@ -1,0 +1,184 @@
+{
+  "status": "NOT_READY_FOR_SOURCE_SUBMISSION_DIAGNOSTICS_REVIEWED",
+  "source_submission_gate_passed": false,
+  "diagnostic_publication_allowed": true,
+  "query_gate_cleared": false,
+  "frozen_manifest_sha256": "279612776b5e8a0367fb1242e0a9bc8c4ef12d9714478458d0858115b26d61c0",
+  "baseline_commit": "c8b27546f61d5880e714612379556cf860f18467",
+  "final_commit": "c01ee105d397b1ed16a4daf335db9d8176036bac",
+  "agent_identity": "/root/review_c01_lifetime_model",
+  "actual_model_identity": "gpt-6-astra",
+  "reviewed_at": "2026-10-26T03:43:00.4763531Z",
+  "model_identity_verification": {
+    "implementer_timestamp": "2026-10-26T02:43:10.587Z",
+    "source": "Direct selective latest turn_context read from runtime rollout",
+    "implementer_model": "gpt-6.1-sol",
+    "implementer_record_sha256_utf8_without_line_terminator": "89f4d5152e4c2734ccb3545681d77169f1fb11345d4bf79cf508bfd483cc913f",
+    "reviewer_record_sha256_utf8_without_line_terminator": "3ec8a2bcca954a198655ca6bbba066fe4a7a319a5b3a187a5c5604aab1cc15ff",
+    "reviewer_model": "gpt-6-astra",
+    "limit": "Actual assigned runtime model, not cryptographic serving attestation or offline inference.",
+    "reviewer_timestamp": "2026-10-26T03:39:00.593Z",
+    "reviewer_session": "01a1761a-0b9a-7fc0-ad15-f94cf7695321"
+  },
+  "source_and_evidence_hashes": [
+    {
+      "path": "pre-submission-review/final-audit-different-model.py",
+      "sha256": "c87646175ba9cb986e4462197de03f4f4e74e112cd676e7e0ed814c2f0a8d7a4"
+    },
+    {
+      "path": "pre-submission-review/final-audit-different-model.json",
+      "sha256": "920e45bbfc1ea5cc247a6d48e68d94c838bf90df400127d7a93d1f96214dc9e6"
+    },
+    {
+      "path": "pre-submission-review/final-controls-audit-different-model.py",
+      "sha256": "8f6660f49a498dfbd833223c96dc84044299930cce6a6f9f9f550d03f1c7e879"
+    },
+    {
+      "path": "pre-submission-review/final-controls-audit-different-model.json",
+      "sha256": "2baef1a4abe7b393e5be2e99733868e12f1b8281268d354698995df946dfe64e"
+    },
+    {
+      "path": "source-freeze.json",
+      "sha256": "d25a6385ae6efd35bd6e6f83d71575619d34372f4a6372aa9534f2c801c5aa7e"
+    },
+    {
+      "path": "publish-evidence.py",
+      "sha256": "5a5fba08bb0adec4e21e176e843c21a8e6c379744a2c39b3968f9e8bc2df8140"
+    },
+    {
+      "path": "validation-report.md",
+      "sha256": "6be6842f40e01977c09962c50061baf222336afde5c2c772530fa9f011353db5"
+    },
+    {
+      "path": "validation-summary.json",
+      "sha256": "949f969c05d4d795bb3772f39a2e08e26b07b9f073b7771d23fded46b042f159"
+    },
+    {
+      "path": "candidate-query-performance/protocol.json",
+      "sha256": "178c2c3325fddf5f9cdc24b70e6240f8fbce2d213d70b352f3566caf725aaefd"
+    },
+    {
+      "path": "context-query-performance/protocol.json",
+      "sha256": "0ba031bf4fe69d949cd0da5ef4ebb948a44b703b7db7a6442b0b4463040fd017"
+    },
+    {
+      "path": "finalize-evidence.py",
+      "sha256": "06fa4f9a955dd988fe52aa96201dc7f3b7db266c5b7bb63ce9fd9dd5a47b3988"
+    },
+    {
+      "path": "performance-warning-bilingual.md",
+      "sha256": "542c6a0edb3f169e600fd82a3484a31a06f03dc34e6ae661fcceb341fa2b00c8"
+    },
+    {
+      "path": "warning-clarification-record.json",
+      "sha256": "e95a292ed3d2cd3d81e26a7b4d9d93197c3e2d55b367514d8684f4bf7ffa76f0"
+    }
+  ],
+  "raw_findings": [
+    {
+      "id": "F-C01-PERFORMANCE",
+      "disposition": "Retain as unresolved. No necessary/minimized extra cost or causal attribution established; no tolerance, additional rounds, old pooling or source push authorized by this review.",
+      "priority": 1,
+      "finding": "Source/query acceptance remains uncleared. Independent reconstruction of all129 statistic groups finds7cases/8repeated comparisons and4confirmation-only signals. Two confirmation-only comparisons are versus immediately preceding c8b: callback-null-b1024 at1.0081152253 and unfiltered-all-b0 at1.0075084456. There are no repeated c8b comparisons; that is not equivalence.",
+      "test_evidence": "All14412raw process outputs checked against independent analytic row/count/checksum oracles; all114main+15context group ratio bootstrap and metrics independently recomputed. Worst repeated fixed/base callback-w8-p1-b1024=1.0603646263,95percentile[1.0495568589,1.0653652372]."
+    },
+    {
+      "id": "F-C01-COVERAGE",
+      "disposition": "Incremental local fix coverage cannot clear whole-PR gate. Report correctly keeps scopes separate; no transfer of older cumulative profile accepted.",
+      "priority": 1,
+      "finding": "Fresh incremental2/2 is100%, but wholePR963/1120=85.9821% remains below required90%; branch1015/1605=63.2399%. Maintainer scope885/1040=85.0962%;selected16file module3734/4921lines and3322/6307branches.",
+      "test_evidence": "Rehashed232native gcov reports; all58filtered entries equal their native source records;24physical source/header aliases match current hashes. Independently rebuilt canonical line/branch merging and all three diff scopes plus module totals."
+    },
+    {
+      "id": "F-C01-SANITIZER",
+      "disposition": "Explicitly retained limitation, not hidden or reattributed to c01. Final source gate remains false.",
+      "priority": 1,
+      "finding": "Strict standalone full Linux suite remains failed on pinned unchanged LZOkay lzokay.cpp:34 misaligned load; exit1 retained. This is not a clean full-suite result even though affected focused/reader/harness/lifetime paths pass and merged upstream CI is green.",
+      "test_evidence": "Read raw full exit/log. Fresh XML independently counted Windows224focused/1129full+3skip10disabled and Linux224focused/291reader+1disabled. Both independent harness summaries180evaluator combinations and24query controls pass."
+    },
+    {
+      "id": "F-C01-OWNERSHIP",
+      "disposition": "Affected lifetime repair supported. Do not generalize to repeated destroy, automatic destruction after destroy, future members, or full sanitizer cleanliness.",
+      "priority": 2,
+      "finding": "Two terminal swaps are valid for current ChunkHeader ownership. Fresh direct64/96byte header controls, reset/reload, error after time allocation, error after value allocation, real42row full and early close produce6c8b leaks and6c01 clean results. Slow-unwind attribution resolves both changed owners.",
+      "test_evidence": "All12raw lifecycle outputs/hashes checked;6attribution traces independently parse162/2,162/2,65/1,162/2,194/2,97/1bytes/allocations. Source clean at exactc01;260production hashes reverified."
+    },
+    {
+      "id": "F-C01-TEST-NULL",
+      "disposition": "Retained known test gap, not silently marked as code-fixed. No newly introduced production defect identified in this c01 delta.",
+      "priority": 2,
+      "finding": "Public gtest expected-empty helpers retain weaker E_OK/null acceptance; oldlocal5db added assertions remain unpushed. New external valid LIMIT0/empty/file controls establish their measured contracts without changing those gtests.",
+      "test_evidence": "Earlier source review bound in frozenmanifest; newlifetime full/early controls require nonnull validLIMIT0 and independent harness verifies valid/malformed files."
+    },
+    {
+      "id": "F-C01-DIAGNOSTIC-PUBLICATION",
+      "disposition": "Diagnostic publication allowed within existing user authorization, conditional on its runtime head/manifest checks and other final review. This is not source approval. The zero-repeatc8b statement must be read with retained2confirmation-onlyc8b signals, not a claimc8b equivalence.",
+      "priority": 3,
+      "finding": "Prospective publisher updates only evidence branch and existing PR/reply after exact head,manifest and two final-review checks. It preserves historical content, author attribution, EN/ZH warnings, unresolved query/coverage/full-sanitizer gates, and separate1034/1035scope. No production branch push, merge, Copilot request or newissue is performed by that script.",
+      "test_evidence": "Read publish-evidence.py prospective body/reply composition,performance-warning-bilingual.md and validation-report.md. Frozen manifest and scripts rehashed. No remote operation performed by reviewer."
+    }
+  ],
+  "independent_validation": {
+    "native_gcov_reports_rehashed": 232,
+    "original8": "Full per-cell/order/NULL validation retained; timing remains total-only with8correlated repeats, no new phase/P95/memory claim.",
+    "context_formal_queries": 2304,
+    "context_processes": 828,
+    "main_warmup_queries": 3096,
+    "main_repeated_cases": 7,
+    "main_processes": 13584,
+    "protocol_dependency_hashes_reverified": [
+      1477,
+      1346
+    ],
+    "context_confirmations": 1,
+    "preflight_and_source_provenance": "Exact prior protocol review is in173frozenassets and all dependent hashes unchanged; physical6f256/prior11b260/c01260Git mappings and233c8bpre-edit source records independently checked in prior phase; fresh current260productionhashes and cleanHEAD rechecked now.",
+    "compatibility_null_queries": 96,
+    "old_float_negative_processes": 3,
+    "context_warmup_queries": 180,
+    "all_raw_process_oracles": 14412,
+    "main_confirmation_only_c8b": 2,
+    "main_confirmations": 18,
+    "expected_preflight_negative_exits": 12,
+    "ci": "Independently parsed both rawlogs1400unique IDs each:1387Passed,3Skipped,10Disabled;checkout3dcb84ad syntheticmerge.1390summary includes skips. No transfer to standalonec01.",
+    "context_repeats": 0,
+    "compatibility_float_queries": 1800,
+    "filtered_native_entries": 58,
+    "manifest_files_rehashed": 173,
+    "native_reports_are_local_full_files": "Published filtered inputs plus original report hashes retain declared scoped coverage; entire native reports not required to be in diagnostic archive.",
+    "main_repeated_c8b": 0,
+    "successful_cpp_preflight_process_oracles": 1668,
+    "main_formal_queries": 42816,
+    "main_confirmation_only_comparisons": 4,
+    "no_tests_or_timing_by_reviewer": true,
+    "main_repeated_comparisons": 8,
+    "context_cases": 14
+  },
+  "publication_limits": [
+    "No source_submission_gate pass and no overall query equivalence.",
+    "Keep all repeated and confirmation-only observations, native negative controls, strictfull failure and scope exclusions prominent.",
+    "Known-leakingc8b can supply latency observations but is not quality-equivalent or memory-safe baseline; do not infer that necessary leak release should be removed.",
+    "WholePRcoverage below90 and necessary/minimizedperformance cost remain unresolved.",
+    "Runtime identity is selected assignment; mergedCI differs from standalonehead; no releasedrange or localruntime reproduction claim for1034/1035."
+  ],
+  "reviewer_audit_setup_note": "One read-only CI inspection initially used Windows defaultGBK and failed UTF8 decoding; retried explicitlyutf8-sig. No input/result changed and no test rerun.",
+  "final_head_followup": "Completed on exactc01 and clarified exactmanifest279612776b5e8a0367fb1242e0a9bc8c4ef12d9714478458d0858115b26d61c0. Original full audit evidence unchanged and linked through preserved oldmanifest snapshot. Source_submission_gate_passed FALSE;diagnostic_publication_allowed TRUE.",
+  "prior_frozen_manifest_sha256": "35a3156981c86256e6f508d5a39070c852a8ff9913e4037a34bdab3554b64701",
+  "warning_clarification_closure": {
+    "reviewed_at": "2026-10-26T03:47:23.472697+00:00",
+    "old_manifest_sha256": "35a3156981c86256e6f508d5a39070c852a8ff9913e4037a34bdab3554b64701",
+    "new_manifest_sha256": "279612776b5e8a0367fb1242e0a9bc8c4ef12d9714478458d0858115b26d61c0",
+    "manifest_membership_unchanged": 173,
+    "all_new_manifest_files_rehashed": 173,
+    "only_changed_frozen_inputs": [
+      "finalize-evidence.py",
+      "performance-warning-bilingual.md",
+      "validation-report.md"
+    ],
+    "result": "Accepted. Both EN/ZH top warnings explicitly identify and quantify the two c8b confirmation-only signals with matching intervals and non-equivalence wording. Generator selects fixed/public confirmation-only records; manifest guard excludes newly added post-freeze review products on reuse. No changed source, protocols, raw samples, statistics or gate decisions.",
+    "previous_review_preserved": "work\\issue-03\\validation\\maintainer-head-c01ee105-20261026-first-review-snapshot\\pre-submission-review\\final-evidence-review-different-model.json",
+    "previous_review_sha256": "f7cfcad4199e1572586b06d3c2491a8b2cd1eef068d459ed22d5c00319f8e9a8",
+    "prior_audits": "Original final-audit JSON remains bound to old manifest; exact173name manifest comparison proves only these3wording/generator inputs changed. All underlying statistical/control evidence and prior raw findings retained unchanged.",
+    "no_new_tests_or_timing": true,
+    "reviewer_audit_note": "An attempted Chinese-literal Python command check was affected by shell codepage and stopped before writing; repeated with UTF8 file decoding and ASCII numeric assertions. File text contains no replacement character."
+  }
+}
