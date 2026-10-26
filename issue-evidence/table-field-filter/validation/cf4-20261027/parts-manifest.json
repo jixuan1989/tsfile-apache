@@ -1,0 +1,181 @@
+{
+  "bytes": 36666989,
+  "sha256": "483c5e9a02359904c7ff41846694013f3fa3e1a223e8a9b075138cf49143c328",
+  "parts": [
+    {
+      "name": "scoped-diagnostics.zip.part01",
+      "bytes": 1048576,
+      "sha256": "74d2c2d83cdfd6b9f91f858513c8e3135c7298c72836f8cf6afa31fa61c76b10"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part02",
+      "bytes": 1048576,
+      "sha256": "929b692d856b3843199dcf0900221a2c880f3d3e27e026bbbcbdf84a9a0b36d1"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part03",
+      "bytes": 1048576,
+      "sha256": "f764b52bf651c25e9259788a5a7cf75c0eda83d2defc494c3e195febff390606"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part04",
+      "bytes": 1048576,
+      "sha256": "e141e60e13261ed7c5f0064de8ddc290a49cb9cfec21d7009372372c252cf8c7"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part05",
+      "bytes": 1048576,
+      "sha256": "809b35ee4c45b630dc2db61a34cb91111df9f26c8d3074915f1bfb5603821d3b"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part06",
+      "bytes": 1048576,
+      "sha256": "d562f7f390af250820cdf2b7adafaf56fe86fd106ed4216a810eaeb8fd493e2c"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part07",
+      "bytes": 1048576,
+      "sha256": "8098bbf40ef4157e16010e6d73988aa145abb6876b6cf3db5528f72b211e1456"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part08",
+      "bytes": 1048576,
+      "sha256": "ed6cd290b02d6de26f25e2c59910d0cd7510b5f801aa90bbb41988622be31d84"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part09",
+      "bytes": 1048576,
+      "sha256": "ed32c6bd240f0db5881308bc8a0fcb2bdae94ce661b07bdf7be2ac2a2e70c5a3"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part10",
+      "bytes": 1048576,
+      "sha256": "8d9c1e663f42c609f9dd122a299c0728160b6bda5426d3961bbdaf54eb83a977"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part11",
+      "bytes": 1048576,
+      "sha256": "4f4eded337fcaef89d29a01a7fe1d25856daea0332b0d2e539ad7c5784c570ba"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part12",
+      "bytes": 1048576,
+      "sha256": "2424f01d60a9aa6585131b170b33fea9838f7d8ff47a98fcfedec27827f4b648"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part13",
+      "bytes": 1048576,
+      "sha256": "ce50f8e8ce14d5fcd1ad83a7e6571bfb98ad328f6102253e88afa587efa7d494"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part14",
+      "bytes": 1048576,
+      "sha256": "aea5f19059aa9f007aba0fb9e0d5c6e2d8cfc6f5ec06d3fca84e98c6e9712276"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part15",
+      "bytes": 1048576,
+      "sha256": "7f6fcbb5c1fd7fbb4b6a9a93f6210a0c392b159f4d3830d9562277e0ae3adc06"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part16",
+      "bytes": 1048576,
+      "sha256": "5e187dd6af20c0eecb8a55922966ef961c9e249bfd83e1de43680d9c5c6d5f28"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part17",
+      "bytes": 1048576,
+      "sha256": "52956a18b32c24e47329c118afbad5440fe93d4f12389cb00bacdaa814456903"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part18",
+      "bytes": 1048576,
+      "sha256": "4bcd2dcbe41928f4f8cb4154bd55c24a280bb66d56b7613df6dd9c05ece3b351"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part19",
+      "bytes": 1048576,
+      "sha256": "153330323145f45ac695213ac29dbf7e1d9efe2cb89db8348b4acf095ba26376"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part20",
+      "bytes": 1048576,
+      "sha256": "8bec25d76040e1abb98fdefb06bdefa6984264b3111aebb71d65977bf1ccf2fc"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part21",
+      "bytes": 1048576,
+      "sha256": "6e7e7ee7542dc6772c95e64d392677bbcf998683a1b1a28cb1ee330e341c6f7e"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part22",
+      "bytes": 1048576,
+      "sha256": "72e27635582ecf9a5a3d7ed9d4bd000d375a4902ce6d0c1143ee3bf05dafe6d3"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part23",
+      "bytes": 1048576,
+      "sha256": "82044ca690248d2e75c12f0fe68a93a07169ed309e4533fca1fe1e12cea092be"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part24",
+      "bytes": 1048576,
+      "sha256": "e38c16047473b5f148b52c2b8d9e8823514e06500655dedc3906cd4bd4af5755"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part25",
+      "bytes": 1048576,
+      "sha256": "211907e5d55ba5764b933d3a21d41b847172d83259f1cc7e5185894a05664368"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part26",
+      "bytes": 1048576,
+      "sha256": "1b1f1bb7ee65fac61cefa9a7e3d3bdf8917b77d2d48a103b6b450546b3fd0c8d"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part27",
+      "bytes": 1048576,
+      "sha256": "9accd4caaed0405804cf985f65f4c2a18cb806bb4f68e5bdddbf09516438a37e"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part28",
+      "bytes": 1048576,
+      "sha256": "2fa379231f7efc1f193999ec7e1c711a2352da41edb42696710a4cde642a8d33"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part29",
+      "bytes": 1048576,
+      "sha256": "c4cfa137a28c06ab39bc81c551e9879147d274575ac50fdb0c2b0696660af057"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part30",
+      "bytes": 1048576,
+      "sha256": "5dce3092c23b990564bf89214ad04c11b94aa75bc589b9735ea8ebf7a522b5ba"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part31",
+      "bytes": 1048576,
+      "sha256": "1f3f2590bdd2c395f2c99263a881d646372e55125c8ed1676940427ddbfabbd9"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part32",
+      "bytes": 1048576,
+      "sha256": "1616b84df48c71bfe8e9bb24610f4d227d4befd8b78aaa68bcc81ee7d6995f70"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part33",
+      "bytes": 1048576,
+      "sha256": "6ae311e4524ff7a3c2a041ab92176c78e3a948d75f838634e1ad581bc5f5b769"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part34",
+      "bytes": 1048576,
+      "sha256": "147b85a475ad21e5b2787c00af97c26d6f113a20da11a49111a4d317c15b5b47"
+    },
+    {
+      "name": "scoped-diagnostics.zip.part35",
+      "bytes": 1015405,
+      "sha256": "b27e52c2d9e5b14513780f0d560d74e239d0ee1fb561149bcde47f14c099898d"
+    }
+  ]
+}

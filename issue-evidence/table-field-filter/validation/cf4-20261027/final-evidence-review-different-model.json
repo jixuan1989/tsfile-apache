@@ -1,0 +1,175 @@
+{
+  "at": "2026-10-26T18:21:06.915061+00:00",
+  "reviewer_agent": "/root/review_c01_lifetime_model",
+  "actual_model": "gpt-6-astra",
+  "runtime_identities": [
+    {
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "timestamp": "2026-10-26T18:13:23.631Z",
+      "model": "gpt-6-astra",
+      "record_sha256": "b1b33bd5b9450ce864e40a8d9e107188b1dd9b110f89b94375ee8b520e8cd3e0"
+    },
+    {
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\17\\rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "timestamp": "2026-10-26T17:54:06.397Z",
+      "model": "gpt-6.1-sol",
+      "record_sha256": "be056d5437f9978cbb314c20bfb29b915e3f830397e80dd8dd78ef00c5f96065"
+    }
+  ],
+  "actual_model_differs_from_root": true,
+  "runtime_identity_limit": "Selectively verified actual runtime assignment records, exact raw turn_context SHA256 excluding line endings. Not backend cryptographic attestation or a claim of offline inference.",
+  "status": "DIAGNOSTIC_PUBLICATION_ONLY",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "CI_gate_passed": false,
+  "final_head": "cf4c9aacbaf009915327838569db97129eb4f584",
+  "baseline_head": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "preceding_measured_head": "eee39799948699c58e292ee6361f1da8154378c2",
+  "baseline_commits": [
+    "eee39799948699c58e292ee6361f1da8154378c2",
+    "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+    "0fc5e19631402bb86db1d828981e078699b4afcc",
+    "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "ef1107d1fc681066cdd99e6f2c55fa2ec67393fe"
+  ],
+  "additional_whole_pr_baseline": "1180b13675e11a0230708af2cc70d037e0e12623",
+  "manifest_sha256": "263c4230074bc8cf722b17432fedc8921c1a8b6b560df71e2e5ecd513803a451",
+  "manifest_file_count": 793,
+  "initial_manifest_sha256": "97cc98cd3aaa9f1ef2f03f5331a0a2389b93678b73fef6fd5f52944131804da4",
+  "source_freeze_sha256": "bde2255a7547e5343bf8480e9ad54923bf26b48cdca48a8d03a48dca7ff073d5",
+  "source_inputs_checked": 895,
+  "source_clean": true,
+  "source_git_blob_mappings_checked": 895,
+  "protocol_sha256": "1ff6118258fa0e7035d1ea890a35646f336175440136280059d09a3dfb87029e",
+  "context_protocol_sha256": "753f284e17784463641ea5ddad141566f4f515d9a0301027cba4c5482295f2fd",
+  "layout_protocol_sha256": "dd957afa6b89b4036876ac4679c2e6b6f2f380fdb0d54935f8bfb4c1907e476e",
+  "publisher_sha256": "8df8c2ee8ea3b58f212b5939f7c316951bddf4b623b346b6fdfe19345d4ef47b",
+  "publisher_initial_supplemental_sha256": "20c7b1c5a8869e58fc242a4a2d9fe6b385cee957a16d00061fc82931303b5c3e",
+  "publisher_provenance": "Initial supplemental script was outside original773 manifest. Corrected exact publisher is now included in revised793 manifest at validation-tooling-sources/publish_cf4_diagnostics.py. This review binds both revision history and final executable hash.",
+  "audit_workproducts": {
+    "final-cf4-statistics-audit-different-model.py": "85dd15d557ccbbd6664c0ac75b6c88735f7d509bbcbaf9d2640ea52511cdec39",
+    "final-cf4-statistics-audit-different-model.json": "cf294fd8f942aba34509ab131390f6242d992ed8b6ce80ce07f4424219eb8a10",
+    "final-cf4-controls-audit-different-model.py": "2a391a2a02dcc915403a1e055c4334bbd93e00000da03acb76905c59e77fc278",
+    "final-cf4-controls-audit-different-model.json": "be491329cac30de873e7208fe28ad11df6aa5a5be8a746ca02beed99adbf2053"
+  },
+  "audit_provenance": "Raw/statistics workproducts bind initial773 manifest. Revised793 retains all those statistical/source inputs unchanged. All793 hashes reverified; the only modified original files are report/summary. Removing added correction text/field reconstructs their initial exact hashes.",
+  "raw_findings": [
+    {
+      "id": "CF4-F1",
+      "kind": "valid publication evidence omission",
+      "original_finding": "The 15 authoritative fresh Surefire XML files are outside initial773 manifest and absent from Java runtime freeze. Quiet Maven log does not substantiate139-test denominator. Existing XML independently totals15classes139tests with no failures/errors/skips.",
+      "disposition": "RESOLVED: exact existing XML copied byte-for-byte into java-surefire-original-results with original paths, sizes and SHA256; all15 independently parsed,139tests,zero failures/errors/skips. Revised793 manifest freezes them. No rerun, backdating or result transfer. Original manifest retained; report/summary explicitly disclose correction."
+    },
+    {
+      "id": "CF4-F2",
+      "kind": "publisher checkpoint/ZIP durability refinement from parallel integration review",
+      "original_finding": "Direct publication.json/outcome writes and direct final ZIP creation could leave truncated persistent files after interruption; resuming then fails early and recovery is manual.",
+      "disposition": "RESOLVED for reviewed single publisher execution: atomic_bytes writes temporary file, flushes/fsyncs and os.replace; ZIP first built at temporary path, tested and compared entry-by-entry, fsynced then replaced. Existing ZIP is validated on reuse. Uncertain remote outcomes still require observed-state reconciliation; no complete automatic-recovery promise."
+    },
+    {
+      "id": "CF4-F3",
+      "kind": "independent statistical conclusion",
+      "finding": "All26764 raw timing processes match expected complete sequence, phases, block orders and slots; successful outcomes/empty stderr and executable hashes verified. Independent formulas validate all returned rows/checksums. All275 statistical groups recomputed, including5000 seeded paired bootstrap intervals and phase metrics. Main96:26cases42repeat comparisons,5confirmation-only,32confirmations; context14:0initial signals; layout76:56repeat,57confirmations. Aggregate82cases98repeat comparisons; no equivalence inference.",
+      "disposition": "Report/summary match. Main18 and layout56 repeated comparisons are against eee. One main confirmation-only versus eee (callback-w1-p1-b0,+0.80617%) remains unresolved. Query gate false; no extra rounds or pooling."
+    },
+    {
+      "id": "CF4-F4",
+      "kind": "comparison scope",
+      "finding": "Layout percent is bucket cutoff combined with sparse v0 IS NULL, not combined hit rate. Width1/4/8 plus bucket means actual2/5/9 physical/returned FIELDs on both paths; native vs explicitly materializing opaque callback includes full checking and teardown.12same-callback controls are separate. Timed product is fixed writer; other products are correctness cross-reads.",
+      "disposition": "Publication states these boundaries and actual counts. Nonaligned hidden-filter-only timing, dense/unfiltered100%combined-hit layout, compressed/cold/P99/generalparallel/query-onlymemory and original8/PR01/PR02 gaps remain unmeasured. No pure-engine or general equivalence claim."
+    },
+    {
+      "id": "CF4-F5",
+      "kind": "Java NULL evidence boundary",
+      "finding": "Native Java Table interior NULL failure remains on old C++,cf4 C++ and Java own writer. Actual raw-series Java maps prove physical presence/absence and reconstruct union NULL independently; six40000row product oracles valid.",
+      "disposition": "No native Java Table NULL acceptance or Java performance claimed. Raw maps are explicitly untimed materializing oracle. Failed attempts including all-reader stack-owned TimeBetween harness misuse are preserved and classified correctly."
+    },
+    {
+      "id": "CF4-F6",
+      "kind": "correctness and sanitizer gate",
+      "finding": "Windows XML245focused; full1163passed3skipped10disabled. Linux245focused,317reader+1disabled. Standard raw cross-language oracle96NULL+1800floating queries passes, with40orderedNOT mismatches in each of3oldprior controls retained. Numeric1536 lines exactly match actualJava Number/ValueFilterApi,18masks per binding; C++ helper checks bothColumnView andTsBlock evaluators (55296 evaluations). Strict fullLinux exits1 at unchangedLZOkay misaligned load line34.",
+      "disposition": "Scoped passes verified; no fullsanitizer pass. Fresh139Java XML now frozen. Allocation/submit/future exception safety remains unproven; no new production bug inferred from harness misuse."
+    },
+    {
+      "id": "CF4-F7",
+      "kind": "coverage provenance",
+      "finding": "230native gcov objects checked;252filtered entries match native reports;34physicalheader aliases match finalsource. Four zero-context production diffs byte-exact with Git. Recomputed candidate81/89lines92/136branches;maintainer171/185and213/299;whole-pr1083/1273and1176/1806;current-pr1075/1263and1172/1796;module5118/6550and4749/10356.",
+      "disposition": "Only latestincremental line scopes exceed90%; wholePR/module/branches do not. Fresh Java module coverage unmeasured; Java production diff toef1107 empty,N/A0/0,not100%. Historicaleeecoverage does not transfer."
+    },
+    {
+      "id": "CF4-F8",
+      "kind": "unresolved adverse controls",
+      "finding": "Shared-library caller parent10x4 andcf4 100x4 pass, parentnegative not reproduced. Freshcf4 headerdiagnostic stillerror6 atoffset112/read1024;diagnostic8192sameoffset parses2056-byteheader/name2048. Historical5Java4000row checks are explicitly historical; no accepted new writer timings. CodeQL870/870scan/SARIFexport then failure nearupload has no explicit causaldiagnostic. Java/codeql.yml unchanged versusef1107,cpp/pythonworkflows differ.",
+      "disposition": "No race fix proof or performance attribution; no writer acceptance. CI cause unresolved and gatefalse; no invented network/security finding or rerun success."
+    },
+    {
+      "id": "CF4-F9",
+      "kind": "publication authorization and recovery boundary",
+      "finding": "Reviewed state resolves only evidence branch issue-evidence/table-field-filter in jixuan1989/tsfile-apache and own PR1026/existing own reply inapache/tsfile. Publisher validates exact manifest/reviews/modelpair/scriptclosure, archive contents, cachedblob hashes and remoteGitblob bytes; nonforce evidence ref update rejects concurrent branch movement. Ownhead/open/unmerged and before-or-wantedbody guards precede edits; unknown PATCH errors are readback-reconciled. @PUBLIC_ROOT@ replaced with actual createdcommitURL, fullfooter retained; original fullbody/reply exactly archived.",
+      "disposition": "Diagnostic publication allowed for exact frozen inputs and finalscript. Head/body checks are optimistic separate requests, not atomicCAS; race-free or fullautomatic recovery not established. Timeout aborts; subsequent resume checks actualstate. No sourcepush/newissue/merge/Copilot/upstreamsettings permission. Completion of actual publication remains parent responsibility."
+    }
+  ],
+  "test_evidence": {
+    "counts": {
+      "all_raw_timing_process_oracles": 17112,
+      "successful_cpp_preflight_process_oracles": 1668,
+      "expected_negative_preflights": 12,
+      "compat_null_queries": 96,
+      "compat_float_queries": 1800,
+      "compat_expected_negative_processes": 3,
+      "native_gcov_objects_hashed": 230,
+      "filtered_entries_matched_to_native": 252,
+      "physical_header_aliases_checked": 34,
+      "layout_raw_process_oracles": 9652,
+      "raw_schedule_records_verified": 26764
+    },
+    "xml": {
+      "candidate-windows-focused": {
+        "passed": 245
+      },
+      "candidate-windows-full": {
+        "passed": 1163,
+        "skipped": 3,
+        "disabled": 10
+      },
+      "candidate-linux-focused": {
+        "passed": 245
+      },
+      "candidate-linux-reader": {
+        "passed": 317,
+        "disabled": 1
+      }
+    },
+    "strict_full_sanitizer_clean": false,
+    "success": true
+  },
+  "statistics": {
+    "groups": 275,
+    "raw_processes": 26764,
+    "formal_verified_queries": 80256,
+    "warmup_verified_queries": 5196,
+    "repeat_cases": 82,
+    "repeat_comparisons": 98,
+    "confirmation_only_comparisons": 5,
+    "worst_repeat": {
+      "case": "layout0-w1-p100-b1024",
+      "comparison": "fixed/public",
+      "median_ratio": 2.7010311799906956,
+      "bootstrap95": [
+        2.688332075721672,
+        2.7058418193637044
+      ]
+    }
+  },
+  "final_head_closure": {
+    "source_review": "Earlier preliminary source review still applies to identical895 inputs and exactcf4. Numeric/NULL/ownership/decoder scope findings refined by fresh evidence, not retroactive acceptance.",
+    "protocol_review": "Three exact final hashes reviewed before measurements; original signatures preserved. All dependencies rehashed after completion.",
+    "full_evidence": "Initial773 and revised793 manifests all checked; revision adds rawJavaresults and publisherdurability correction without source/sample changes.",
+    "publication": "Bilingual report/summary/proposedPR/reply retain allfailed/unmeasured gates and fullAIfooter. No unresolved valid diagnostic-publication blocker remains.",
+    "conclusion": "NOT_READY_TO_PUSH. Diagnostic evidence may be published under reviewed guards; no source/query/write/CI acceptance or historicalPR approval."
+  },
+  "reviewer_actions": "Read-only source/evidence/metadata review and independent calculation. Wrote new audit scripts/results and finalreview only. No tests/benchmarks rerun, production/frozen input edits or remote mutations."
+}

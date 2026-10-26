@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-26T18:22:04.953215+00:00",
+  "head": "cf4c9aacbaf009915327838569db97129eb4f584",
+  "manifest_sha256": "263c4230074bc8cf722b17432fedc8921c1a8b6b560df71e2e5ecd513803a451",
+  "reviews_sha256": {
+    "final-evidence-review-integration.json": "7dc15315009ebc99be48475dc44b390f482689ec949158ae389cd84430535d0a",
+    "final-evidence-review-different-model.json": "9b044590e1136b44f4452230c77110d567e7e3f9a334412c52fb03fd37a00e0e"
+  },
+  "actual_models": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "source_pushed": false,
+  "summary_pending_review_marker": "Summary was frozen before actual final reviews; this outcome binds their completed diagnostic-only permission.",
+  "publisher_sha256": "8df8c2ee8ea3b58f212b5939f7c316951bddf4b623b346b6fdfe19345d4ef47b"
+}

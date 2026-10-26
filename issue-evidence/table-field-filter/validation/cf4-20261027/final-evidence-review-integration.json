@@ -1,0 +1,136 @@
+{
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "actual_model_identity": "gpt-6.1-sol",
+  "reviewed_at": "2026-10-26T18:20:31.565438+00:00",
+  "baseline_commits": [
+    "eee39799948699c58e292ee6361f1da8154378c2",
+    "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+    "0fc5e19631402bb86db1d828981e078699b4afcc",
+    "11bfc35c99f8e845939a6753f004ecee38c7a2ec",
+    "6f4a971eefffcc81cf62a75b6ad8bc91460b0fa6",
+    "ef1107d1fc681066cdd99e6f2c55fa2ec67393fe"
+  ],
+  "baseline_commit": "eee39799948699c58e292ee6361f1da8154378c2",
+  "previous_monitored_head": "07388d55cf05002fc74bc0c1e23d5e517be92b53",
+  "immediate_parent": "0fc5e19631402bb86db1d828981e078699b4afcc",
+  "historical_original_pr_base": "1180b13675e11a0230708af2cc70d037e0e12623",
+  "final_commit": "cf4c9aacbaf009915327838569db97129eb4f584",
+  "frozen_manifest_sha256": "263c4230074bc8cf722b17432fedc8921c1a8b6b560df71e2e5ecd513803a451",
+  "source_manifest_sha256": "bde2255a7547e5343bf8480e9ad54923bf26b48cdca48a8d03a48dca7ff073d5",
+  "source_submission_gate_passed": false,
+  "diagnostic_publication_allowed": true,
+  "query_acceptance_passed": false,
+  "write_acceptance_passed": false,
+  "CI_acceptance_passed": false,
+  "publisher_execution_review_closed": true,
+  "source_and_evidence_hashes": {
+    "source-freeze.json": "bde2255a7547e5343bf8480e9ad54923bf26b48cdca48a8d03a48dca7ff073d5",
+    "validation-summary.json": "5aeb8aaaf7abf5457b11e62feb9b3274d3bd8aa61fead7eb88b5c5ff1b1afa98",
+    "validation-report.md": "a58a83c6145d38a983352161918b434602e11fff959bf011b78d40c6f3878d28",
+    "proposed-pr-body.md": "661f64e11d454ff41b358599cfa7f260fe02d5ef32beb7222f8a4d1542943786",
+    "proposed-reply.md": "6168679396aeaef37fb83eef8880b4e1393de13c05134868d80c4466a0f1b8d2",
+    "previous-public-pr-body.md": "e8e6e55c2e11ae00afd61a5d88794720fb9d73007b6d56d1a50da4021af9b596",
+    "previous-public-reply.md": "c74f5b7d0ce7a4fc50aefe3db9d5533c4fa329a694de85e68f3093117507089f",
+    "pre-submission-review/final-review-raw-recompute-integration.json": "3dfb87ad39cefb142ef599202d70ef6e629fa750fdc2b3487668ac9bc4767bb7",
+    "java-surefire-original-results/provenance.json": "1692a154f936b66193db62a5c180da5da1e5d8306c535e8c0b0da77005fe9ebb",
+    "validation-tooling-sources/publish_cf4_diagnostics.py": "8df8c2ee8ea3b58f212b5939f7c316951bddf4b623b346b6fdfe19345d4ef47b"
+  },
+  "verification_summary": "All final793manifestfiles verified;895source and3485protocolinputs/rawstatistics unchanged from fullreview. Only2originaldocs changed with bilingual correction;20newraw/tooling/provenanceassets. No tests/timing/source/frozenedits orremoteactions byreviewer.",
+  "raw_findings": [
+    {
+      "id": "timing-classification",
+      "severity": "blocking-source-query-acceptance",
+      "finding": "Independent rawclassification:main96 26cases42repeatedcomparisons+5confirmation-only;context14noinitialsignals;layout76 56repeatcases/comparisons. Total82cases98comparisons repeated. Processes16384/728/9652;formal50880/2016/27360,warmup3432/168/1596 match rawrepeats. Largestlayout0w1pct100batch1024 ratio2.7010312 with lower>1 inbothphases.",
+      "disposition": "Source/querygatesfalse,no tolerance,necessity/minimalcost/causality proof or additionalrounds; pointwise95notfamilywise,effectscopedwholequery."
+    },
+    {
+      "id": "layout-oracle-and-scope",
+      "severity": "accepted-with-explicit-gaps",
+      "finding": "684readprocesses2052preflightqueries independently count/checksumverified,actualphysicaloutput2/5/9v-plusbucket identicaloldcallback/native. PredicatebucketcutANDv0ISNULL meanscutsnotcombinedhitrates. SixactualJava per-series40000rowunions in finalpreflightpass; earlierstandalone raw-series file has3andisnotmiscounted. Allcells/NULL/ordercheckedbydrivers.",
+      "disposition": "Matchedphysicalprojection wholematerializedquery comparison valid; oldopaque reference notengineisolated. Nonalignedhidden-filter-only/dense/unfiltered100%combinedhit,Javaqueryperformance unmeasured; alignedhiddenprojectioncannotgeneralize."
+    },
+    {
+      "id": "java-table-null-and-harness",
+      "severity": "unresolved-separate-correctness-scope",
+      "finding": "JavaTableinteriorNULLfailure retainedonoldCpp/newCpp/Javaownfiles; actualrawseriesfirstd0v0t1andpointpresence supportsdifferentAPIoracle,not nativeTablepassorwirecorruption. StackownedTimeBetweencrashesall3versionsharnessmisuse,correctedheaptransferallmatrixrerunbeforefreeze; earliernamespace/compilefailuresretained.",
+      "disposition": "No blanketJavaTablecompatibility,productionnegativeorissuepublication claim. Rawmaterializationuntimed; fixedharness notnewsourcefix."
+    },
+    {
+      "id": "numeric-and-standard-compat",
+      "severity": "closed-with-scope",
+      "finding": "1536actualJava boxedNumber normalizedbits+18masks each matchCppoutput;sourcechecks bothTsBlock/ColumnView,55296masks total. Independently constructed standardFLOATexpectedtable matches15positive120queryoutputs;3oldpriornegatives each40wrongorderedNOT retained. Standard1896completecrossreads scopedfixtures only.",
+      "disposition": "Supportdeclarednumberbinding/evaluators,not allbitpatterns/rounding/endian/NaNpayload/fullfiletiming. Querytakesuniqueownership;consumedpointerreuse/crossschemarebindnotvalidatedcontract."
+    },
+    {
+      "id": "lifetime-race-errors",
+      "severity": "limits-retained",
+      "finding": "Frozenper-taskkdecoder/compressorisolation andterminalerror/reset/maskbounds/SSIcleanupsource reviewedpreliminarily;newresource/int-errorregressionsscopedpass. Actualhiddenvisibilitysharedcallerparent10x4andfixed100x4bothpass (rawpasssummariesconfirmed); oldraceNOTreproduced.",
+      "disposition": "Noexperimentalbefore-afternegativeorconfirmationofmaintainerlargerclaim. Allocation/submit/futureexceptions remainunproven;sourcegatefalse,noassertionallerrorpaths safe."
+    },
+    {
+      "id": "native-coverage-and-tests",
+      "severity": "blocking-whole-source-gate",
+      "finding": "Native22filegcovindependentlyaggregates5118/6550lines4749/10356branches;4diffs81/89&92/136,171/185&213/299,1083/1273&1176/1806,1075/1263&1172/1796reproduced. WindowsXML1176entries1163pass3skip10disabled/focus245;Linuxreader318entries317pass1disabled/focus245. Java15classes139affectedtestsreportedpass;freshJavawholemodulecoverageNOTcollected.",
+      "disposition": "Incremental91.01%/92.43%cannotreplacewholePR85.07%/current85.11%;Java0/0N/A,nohistoricalpercentage transfer. No poolednative/Java rates."
+    },
+    {
+      "id": "writer-fullsan-CI",
+      "severity": "unresolved-gates",
+      "finding": "Freshcf4same2048headerfixturestillerror6/short1024parse6,diagnostic8192parse2056header;old5Java4000readsremainhistorical. Writerthroughputunaccepted. FullstrictLZOkay34misaligneduint16failure retained. CodeQLJava870/870SARIFexportandupload-stage failure hasnoexplicitcause;annotationsonlyrunnernotice.",
+      "disposition": "Write/fullsan/CIgatesfalse. No cause/securityfinding/networkfix/retryimagined. Cold/P99/compressed/scaling/querymemory/original8metrics/PR01/02gapsretained."
+    },
+    {
+      "id": "diagnostic-text",
+      "severity": "publication-content-accepted",
+      "finding": "CompleteEN/ZHreport+proposedbody/replyprominentlydisclosefailedgates,realcombinedhit/projection/materialization,oldcallerunreproduced,JavaNULLfailure,coverage/Javaunmeasured,writer/fullsan/CIgaps. @PUBLIC_ROOT@limitedtoexactevidencecommitURL;fulloldbody/replyarchivedwithfrozenhashes;fullAIfooterpresent.",
+      "disposition": "Exactfrozendiagnosticcontenttruthful,publicationallowedonly;nohistoricalretroactiveapproval orsourcepush/newissue/merge/Copilot."
+    },
+    {
+      "id": "postfreeze-publisher-recovery",
+      "severity": "execution-audit-followup",
+      "finding": "Supplementalpublisher20c7b1c5a8869e58fc242a4a2d9fe6b385cee957a16d00061fc82931303b5c3e checksownaccount,state-derivedevidencebranch,exactopenhead,manifest+bothreviews+executionclosurehashes,blobreaddback,oldbodyequalityandunknownPATCHGETreconciliation. Sequentialguardsnotatomictransactions. DirectrecordJSONsaveandfinalZIPcreationcanleaveunreadablerecord/partialarchiveafterinterruption;rerunfailsclosedbutcannotautomaticallyrecover.",
+      "disposition": "Reportedtorootfornarrowfixorhonestmanual-recoverylimit. Evidence/contentpublicationpermissiondoesnotbyitselfclosethispostfreezeexecutionaudit;finalexecutionclosuremustbindreviewedfinalpublisherhash. No remoteactions performed."
+    }
+  ],
+  "postfreeze_publisher_audit": {
+    "path": "work/publish_cf4_diagnostics.py",
+    "sha256": "8df8c2ee8ea3b58f212b5939f7c316951bddf4b623b346b6fdfe19345d4ef47b",
+    "not_in_original773_manifest": true,
+    "execution_recovery_followup_pending": false,
+    "in_final793_manifest": true
+  },
+  "overall_conclusion": "Final793exactcf4evidence and reviewed8df8publisher have no remaining concrete diagnostic-publication blocker. Diagnosticpublication permitted;source/query/write/CIacceptance remain false. Priorvalidfindings preserved and explicitly closed;guard/recoverylimitations disclosed.",
+  "final_head_followup": "Finalclosure applies exactcf4and793manifest263c4230... pluspublisher8df8...; original773reviewandallfindingspreserved in historicalsnapshot. Source/evidence/protocol changes require freshapplicablereview. No tests,timing,source/frozenedits or remoteactions byreviewer.",
+  "current_runtime_identity": {
+    "raw_record_plus_lf_sha256": "22ae9bf50990a684bb9bc1648668fbf6398c7e3f71e2a03f31c4fc3753e83478",
+    "timestamp": "2026-10-26T18:13:07.115Z",
+    "model": "gpt-6.1-sol"
+  },
+  "runtime_identity_limit": "Actual selected own turn_context identity, same-model independent agent relative previously verified root. No proxy/rename/offline inference or cryptographic backend-hosting attestation.",
+  "final_793_closure": {
+    "prior_manifest_sha256": "97cc98cd3aaa9f1ef2f03f5331a0a2389b93678b73fef6fd5f52944131804da4",
+    "prior_review_snapshot": "final-evidence-review-integration-before-surefire-archive.json",
+    "prior_review_sha256": "ddeabd0d63fad766b7efca7c368942aa59d18ef797248aba22786df9aec04099",
+    "all793hashes_verified": true,
+    "original773_changed_names": [
+      "validation-report.md",
+      "validation-summary.json"
+    ],
+    "original771_other_hashes_unchanged": true,
+    "new20assets": "15 originalSurefire XML+provenance+oldmanifest+3toolingsources",
+    "new_test_or_timing_execution": false,
+    "raw_findings_and_dispositions": [
+      {
+        "finding": "Original773manifest omitted authoritative15Surefire XML outside validationdirectory. Prior claim139tests lacked bundledrawXML though source logs existed. Valid independentmodelreview provenance finding.",
+        "fix": "Sameexistingresults copied with originalpaths/SHA/size/counts,no testsrerun. Independently compared all15copies byteforbyte to originaltargetreports and parsed139tests,0fail/error/skip. No extra execution claimed.",
+        "disposition": "Closed archive completeness gap for affected139testclaim; notJava modulecoverage or newdistincttests."
+      },
+      {
+        "finding": "Supplementalpublisher20c7directJSONcheckpoint/outcome andfinalZIP writes were failclosed but vulnerable to interruption-corrupted restartstate.",
+        "fix": "Finalpublisher8df8uses atomic_bytes tempwrite+flush+fsync+replace forpublicationstate andoutcome;ZIPwrites temporarypath,validatesallentries/testzip,fsyncs thenreplacesfinalarchive. Originalrecord/archive staysvalid during incomplete tempwrite. Narrowreviewverifiedcallsandhashcopy.",
+        "disposition": "Identified recovery gaps closed. Optimistic sequentialhead/body guards remain non-atomic,notzero-race orfullautomaticrecoveryguarantee; report now explicitly discloses those limits."
+      }
+    ],
+    "execution_scope": "Diagnosticassets only,evidencebranchreadback,ownPR/samecomment/head/bodyguards/fullAIfooter/closurehashes. No sourcepush/newissue/merge/Copilot. Finalpublication-execution-review-closure.json must bind thisreview andfinalpublisher."
+  }
+}
