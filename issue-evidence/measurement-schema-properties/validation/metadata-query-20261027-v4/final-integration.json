@@ -1,0 +1,151 @@
+{
+  "at": "2026-10-27T10:28:33.396159+00:00",
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "actual_model_identity": "gpt-6.1-sol",
+  "runtime_provenance": {
+    "timestamp": "2026-10-27T10:25:26.127Z",
+    "model": "gpt-6.1-sol",
+    "raw_line_sha256": "13078272058d068f0f031d4e41853f5ce24f36081e2770780ab355b801dbf51a"
+  },
+  "runtime_limit": "Selected runtime assignment from local turn_context; not backend cryptographic or offline attestation.",
+  "baseline_commit": "12e39fe9d9dace63cc0ad39664aa0fbf5e29f52f",
+  "final_commit": "5fb363774ed7b492252d2933707545edca5ca981",
+  "evidence_manifest_sha256": "cee9d2792f438f0ed44cc628f12e8b66175a132afa741e8a8ee8a601043cf613",
+  "publication_plan_sha256": "7ca4d129ba241e10e914d9272c2609f0bbeac5edab9d297a011fc0def9955aef",
+  "report_sha256": "26b670f37f40e23302aea9143033c0674849e33a732b18a284c9341f1712f30b",
+  "publication_bridge_sha256": "b6b178672b37e8f8724d5fa39dd2604768d30334f6e13717312294856c09cdc0",
+  "publication_orchestrator_sha256": "30d2c79f348f4f41a1b744fe0565cd0fd0cc85f76cbc6dab1bccc9545737449e",
+  "raw_audit_path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\pre-submission-review\\metadata-query-20261027\\raw-audit-integration.json",
+  "raw_audit_sha256": "15100b6a074ee578d2bb3583fdf30559925ff1debd93db8535f9a583bb6ba76a",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "status": "DIAGNOSTIC_PUBLICATION_ONLY_NOT_NEW_SOURCE_ACCEPTANCE",
+  "independent_recomputation": {
+    "at": "2026-10-27T10:21:13.792049+00:00",
+    "evidence_manifest_sha256": "cee9d2792f438f0ed44cc628f12e8b66175a132afa741e8a8ee8a601043cf613",
+    "evidence_items_verified": 39417,
+    "protocol_inputs_verified": 4199,
+    "processes_raw_oracles_and_exact_schedule_verified": 18432,
+    "bootstrap_comparisons_recomputed": 546,
+    "selection_cases": 18,
+    "totals": {
+      "processes": 18432,
+      "formal_queries": 55296,
+      "excluded_warmup_queries": 18432,
+      "formal_rows": 203079168,
+      "formal_nonnull_field_points": 779069952,
+      "excluded_warmup_rows": 67693056,
+      "stages": {
+        "initial": 11520,
+        "confirmation": 6912
+      }
+    },
+    "classifications": {
+      "reader_A": {
+        "no_pointwise_increase": 52,
+        "initial_only": 3,
+        "confirmation_only": 2,
+        "repeated": 3
+      },
+      "reader_B": {
+        "no_pointwise_increase": 52,
+        "initial_only": 7,
+        "confirmation_only": 1
+      },
+      "crossed_A_B": {
+        "no_pointwise_increase": 56,
+        "repeated": 2,
+        "confirmation_only": 1,
+        "initial_only": 1
+      },
+      "baseline_copy": {
+        "no_pointwise_increase": 56,
+        "confirmation_only": 2,
+        "initial_only": 2
+      },
+      "fixed_copy": {
+        "no_pointwise_increase": 58,
+        "initial_only": 2
+      },
+      "baseline_identity": {
+        "no_pointwise_increase": 57,
+        "initial_only": 3
+      },
+      "fixed_identity": {
+        "no_pointwise_increase": 59,
+        "initial_only": 1
+      }
+    },
+    "metric_groups_recomputed": 624,
+    "metric_distributions_recomputed": 5616,
+    "ZIP": {
+      "parts": 28,
+      "bytes": 14610760,
+      "sha256": "ebbe7b44ef49d4126e30130f755e31dccb94ef3a80f16647ea6bd9a28934b699",
+      "testzip": null,
+      "members": 39418,
+      "hash_verified_members": 39417,
+      "binaries_payloads_excluded": true
+    },
+    "publication_plan_sha256": "7ca4d129ba241e10e914d9272c2609f0bbeac5edab9d297a011fc0def9955aef",
+    "reviewer_no_query_build_test_remote_state_actions": true
+  },
+  "raw_findings": [
+    {
+      "id": "lazy-schema-clock",
+      "opinion": "Initial cached-schema label was inaccurate: get_table_schema invokes lazy metadata load on a fresh reader.",
+      "disposition": "Closed before final qualification: first_schema_load_seconds explicitly includes lazy load plus lookup, not isolated deserialization."
+    },
+    {
+      "id": "v3-image-identity",
+      "opinion": "V3 permanently assigned baseline to a.exe and fixed to b.exe despite neutral slot copies; version/basename effects remained confounded.",
+      "disposition": "V3 NOT_READY preserved and unexecuted. V4 swaps both identities every paired block, balances role order and slot, and adds identity controls. This reduces specified confounding; does not prove all OS identity effects absent."
+    },
+    {
+      "id": "v3-per-child-warmup",
+      "opinion": "Separate process warmups do not remove each formal child first-query startup.",
+      "disposition": "V4 fixes first-of-four exclusion in every child; only final three medians enter paired block bootstrap. Raw aggregate points independently divided by four before formal-three throughput."
+    },
+    {
+      "id": "java-projection-and-capture",
+      "opinion": "Original Java wide Tree projection failed; requested32 returned30 after all-NULL nonaligned v7 bloom pruning, and original text capture lost a GBK stdout segment.",
+      "disposition": "Original Java assertion stderr and later32/30 raw projection output preserved. Corrected raw-series/NULL-absence qualification is explicitly narrower than native Table/wide projection. Lost stdout is not recoverable and no claim of recovering those bytes is accepted; reviewer did not locate a standalone UnicodeDecodeError trace in archived log/JSON. This does not invalidate the later exact-byte qualification."
+    },
+    {
+      "id": "persistence-v4-staging",
+      "opinion": [
+        {
+          "id": "partial-staging-recovery",
+          "opinion": "T.mkdir() precedes journal creation and four staging files are written with xb. Interruption before journal leaves an existing directory; rerun T.mkdir() fails and no recovery path validates or resumes partial staging.",
+          "disposition": "Valid blocker, original script not executed; separate corrected artifact required."
+        },
+        {
+          "id": "all-target-preflight",
+          "opinion": "The apply loop validates each payload/target only when reached. A later target conflict or bad payload can be discovered after workflow has already been changed. Preflight every target/payload before applying, retain per-target immediate checks.",
+          "disposition": "Valid recovery safeguard gap; correction requested."
+        }
+      ],
+      "disposition": "Original independently hashed v4 persistence script HELD and not approved. Main publication approval is separate. New v5 receives a separate conditional local persistence closure record; no retrospective v4 approval."
+    }
+  ],
+  "judgments": {
+    "source": "One-line serializer return-code change reviewed against exact baseline/head. Existing old libraries and baseline header overlay are hash bound; this round rebuilds the harness, not production. No new full production correctness/sanitizer/coverage/write gate claimed.",
+    "oracle": "Independently recomputed integer FLOAT exact value/checksum/NULL/count/point oracle for all formal/warmup raw children, exact commands and complete schedule. Limited-result EOF means consumption of the requested OFFSET/LIMIT result, not the whole file.",
+    "statistics": "All 546 pointwise paired-block bootstrap comparisons, selection18 and classifications reproduced. Reader_A three and crossed_A_B two repeated comparisons remain unresolved. All copy/identity controls have zero repeated comparisons, which is not equivalence or causality. Nonempty crossed A/B uses the same valid fixed-writer file, not old-writer end-to-end acceptance.",
+    "metrics": "624 groups and5616 descriptive distributions recomputed; four-query aggregate points normalized per query before three-query formal totals. Peak working set includes process initialization, warmup and oracle, not query-only memory.",
+    "archive": "39417 evidence hashes,4199 protocol hashes and28 parts independently verified; joined ZIP exact hash/testzip and39418 safe unique members including all raw evidence checked. Runtime binaries/JDK/JAR/classes/TsFile payloads are local hash-bound references, not bundled runnable artifacts.",
+    "publication": "Exact previous public PR body preserved as a complete substring and AI disclosure preserved. Plan/assets and bridge/orchestrator hashes checked. Exact open/head/body/branch-parent checks, forcefalse, commit-unknown fail-closed behavior, full blob/tree and exact same-author body readback required. Guards are optimistic and not atomic remote CAS; one coordinated publisher only. No production refs, merge, issues or Copilot action authorized."
+  },
+  "persistence_artifacts": {
+    "held_v4_sha256": "42adeaad3e3b41a1d51c0d554f16eef48300278c2a6f281242697ec107839e12",
+    "held_review_sha256": "e66bb00dfe06efae891c777caa46f74576a182b5150f7d4877a224e2e84c7104",
+    "separate_v5_sha256": "66fc3387dfdae6d4a69187ffe8487b6e1d9bd9436ce6ece22b2bb9667d747cf7",
+    "separate_v5_closure_sha256": "602e991e45b35fe28ed941e690c358ebad2f5c04a5ce88a41c0bd8b7337c8b28",
+    "scope": "Not part of frozen39417 manifest; separately reviewed execution artifacts. Runs only after truthful exact publication readback and independent closure guards."
+  },
+  "final_head_closure": "Exact frozen head and baseline bound; final4199 input and clean-head verification passed in retained actual execution evidence. Review accepts diagnostic publication only, preserves historical PR boundaries and all new acceptance gates false.",
+  "review_actions": "Read-only source/evidence/metadata and independent static/raw arithmetic; wrote only new reviewer work products. No query/build/test/timing/state/remote operation."
+}

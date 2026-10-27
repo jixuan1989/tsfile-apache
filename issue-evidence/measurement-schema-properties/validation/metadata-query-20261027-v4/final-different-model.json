@@ -1,0 +1,165 @@
+{
+  "at": "2026-10-27T10:23:36.190873+00:00",
+  "actual_model_identity": "gpt-6-astra",
+  "agent_identity": "/root/review_c01_lifetime_model",
+  "runtime_provenance": [
+    {
+      "role": "reviewer",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "model": "gpt-6-astra",
+      "timestamp": "2026-10-27T10:18:54.643Z",
+      "raw_line_sha256": "67cd51aa5053be9684b97433bdbf08d236ddf50c78cab6fe8006792c546545a4"
+    },
+    {
+      "role": "root",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\17\\rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "model": "gpt-6.1-sol",
+      "timestamp": "2026-10-27T09:52:58.588Z",
+      "raw_line_sha256": "608fd7dede293f6a475c163f3d630c202eef803aaf8e3edd6a83f6a1c59635e8"
+    }
+  ],
+  "identity_limit": "Local runtime assignment metadata only; not cryptographic backend or offline inference attestation.",
+  "baseline_commit": "12e39fe9d9dace63cc0ad39664aa0fbf5e29f52f",
+  "final_commit": "5fb363774ed7b492252d2933707545edca5ca981",
+  "evidence_manifest_sha256": "cee9d2792f438f0ed44cc628f12e8b66175a132afa741e8a8ee8a601043cf613",
+  "publication_plan_sha256": "7ca4d129ba241e10e914d9272c2609f0bbeac5edab9d297a011fc0def9955aef",
+  "protocol_manifest_sha256": "9d92c0e81bfcb0fd3f6b85ae3951b012e365f667f1bf1f6c2f1e88d79712a7aa",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "status": "DIAGNOSTIC_PUBLICATION_ONLY_NOT_SOURCE_ACCEPTANCE",
+  "artifact_bindings": {
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\evidence-manifest-v4.json": "cee9d2792f438f0ed44cc628f12e8b66175a132afa741e8a8ee8a601043cf613",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\protocol-input-manifest-v4.json": "9d92c0e81bfcb0fd3f6b85ae3951b012e365f667f1bf1f6c2f1e88d79712a7aa",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\validation-report-v4.md": "26b670f37f40e23302aea9143033c0674849e33a732b18a284c9341f1712f30b",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\analysis-summary-v4.json": "2e56118a5ba6e605087be36348891391518793e6c1c86e1edd602f01e2c3292b",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\report-metrics-v4.json": "004e7cd2548415b8c8282502e49d2a2c3728ffe0db58df06f6c08dc6467f392f",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\publication-final-v4\\publication-plan.json": "7ca4d129ba241e10e914d9272c2609f0bbeac5edab9d297a011fc0def9955aef",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\publication-final-v4\\proposed-pr-body.md": "21c30b50721e38e9b7a79299d2848da961e61443195b6c0754b52bd76ae13ec0",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\publication-final-v4\\evidence.zip": "ebbe7b44ef49d4126e30130f755e31dccb94ef3a80f16647ea6bd9a28934b699",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\publication_bridge_v4.py": "b6b178672b37e8f8724d5fa39dd2604768d30334f6e13717312294856c09cdc0",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\publication_orchestrator_v4.js": "30d2c79f348f4f41a1b744fe0565cd0fd0cc85f76cbc6dab1bccc9545737449e",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\pre-submission-review\\metadata-query-20261027\\final-raw-audit-different-model.json": "f45c18a00887e92b7f01103f8de6d0b8d0e2c0d48f73574d9495ee6b8e4d4a4e",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-01\\validation\\metadata-query-20261027\\pre-submission-review\\protocol-ready-different-model-v4.json": "e76370e644cf4f2ea3e2882a6e57fa421d59e47cc31c2e274de5e1f9e10e6e7c"
+  },
+  "raw_findings": [
+    {
+      "id": "early-schema-label",
+      "original": "cached_schema_seconds included first lazy metadata loading.",
+      "disposition": "Closed before final qualification/timing: first_schema_load_seconds explicitly lazy metadata+lookup, not isolated deserialization; plan occurs after explicit preload and may read othermetadata."
+    },
+    {
+      "id": "java-allnull-schema-fidelity",
+      "original": "Java type/category not directly checked, allNULLv7 could not be covered by pointvalues.",
+      "disposition": "Closed with direct C++/Java declaredtype/category checks including v7. Rawseries plusabsence remains onlyreference; originalwideTree32-to30 failure and GBKstdoutloss retained."
+    },
+    {
+      "id": "v3-image-identity-and-warmup",
+      "original": "Baseline alwaysa.exe/fixedalwaysb.exe and onlystagewarmups violated identity lesson.",
+      "disposition": "OriginalV3 NOT_READY retained unexecuted. V4 crossed2assignments perblock and fixedfirstquerywarmup perchild, clustering bothassignments inblock. Actualfinalschedule/commands independentlymatched; sameversion12copies previouslyhashverified."
+    },
+    {
+      "id": "adverse-performance-results",
+      "observation": "Independent546 initial/confirmation pointestimates+12000bootstrapCIs reproduce within2.22e-16. Exact18selection, all420classifications reproduce: reader_A3repeated/3initialonly/2confirmationonly; crossed2/1/1; reader_B0/7/1; copy/identity repeated0 with allsingle-roundeffects retained. Worstcrossed1.0230369591388266 CI[1.0105172841196395,1.0366023049853346] is nonempty samevalidfilecomparison.",
+      "disposition": "Valid unresolveddiagnostic signals, not oldwriterend-to-end, sourcecause, necessary/minimalcost exception or querygatepass."
+    },
+    {
+      "id": "archive-and-publisher-scope",
+      "observation": "34plannedassets matched;28parts reconstruct14610760byteZIP SHA256 ebbe7b44ef49d4126e30130f755e31dccb94ef3a80f16647ea6bd9a28934b699. All39417manifestmembers byte/hashmatch ZIP, plus exactmanifestitself; no executables/JDK/JAR/TsFilepayloads bundled. Inputsource/binaryprovenance hashbound locally, nothermeticarchive. Originalbody archived exactbytes; newbody preservesoldtext apartfromterminalnewline andprependsEN/ZH warning, AIfooter retained.",
+      "disposition": "No blocking diagnosticpublication issue. Existinghistoricalclaims not reapproved; newwarning/report explicitlyseparate old16/write/coverage fromnewsupplement."
+    }
+  ],
+  "independent_verification": {
+    "evidence_manifest_sha256": "cee9d2792f438f0ed44cc628f12e8b66175a132afa741e8a8ee8a601043cf613",
+    "hashed_files": 39417,
+    "mismatches": 0,
+    "raw_processes": 18432,
+    "formal_queries": 55296,
+    "warmup_queries": 18432,
+    "formal_rows": 203079168,
+    "formal_points": 779069952,
+    "comparison_estimates_recomputed": 546,
+    "metric_groups": 624,
+    "selected": 18,
+    "max_float_difference": 2.220446049250313e-16,
+    "signals": {
+      "reader_A": {
+        "no_pointwise_increase": 52,
+        "initial_only": 3,
+        "confirmation_only": 2,
+        "repeated": 3
+      },
+      "reader_B": {
+        "no_pointwise_increase": 52,
+        "initial_only": 7,
+        "confirmation_only": 1
+      },
+      "crossed_A_B": {
+        "no_pointwise_increase": 56,
+        "repeated": 2,
+        "confirmation_only": 1,
+        "initial_only": 1
+      },
+      "baseline_copy": {
+        "no_pointwise_increase": 56,
+        "confirmation_only": 2,
+        "initial_only": 2
+      },
+      "fixed_copy": {
+        "no_pointwise_increase": 58,
+        "initial_only": 2
+      },
+      "baseline_identity": {
+        "no_pointwise_increase": 57,
+        "initial_only": 3
+      },
+      "fixed_identity": {
+        "no_pointwise_increase": 59,
+        "initial_only": 1
+      }
+    },
+    "all_raw_commands_schedules_oracles_verified_in_preceding_independent_readonly_pass": true,
+    "empty_metric_handling": "count0,nullstats; initialauditassumptionNonecorrected, notproductfinding",
+    "no_benchmark_or_main_analysis_script_executed": true
+  },
+  "verification_method": "Separate reviewer arithmetic and schedule enumeration, rawfileJSON/exit/stderr/commands checks and independent oraclecounts/checksum/NULL/point calculations; didnotinvoke implementer analysis/report script or anybenchmark. All624stage/case/role/assignment groups recomputed phase min/quantiles/max/count, throughput and wholeprocessmemory; emptyfirstresult stats count0/null. Raw4-pointcounts divided4 before formal3accounting:203079168rows779069952nonNULLFIELDpoints. Qualification720plus14Java boundedreadrecords remain within priorreview scope, notrerun.",
+  "source_and_evidence_closure": "All39417evidencefilehashes match cee9d279...; final4199integrityrecord allmatch andcleanhead5fb363. Currentgitclean/exacthead independentlychecked. Productiondiff stilloriginalserializercondition only plusoriginaltests; cachedlibraries+baselineoverlay provenance notnewproductionbuild. No newfullsuite/coverage/san/writeacceptance. Historicalcoverage/write metrics explicitlyhistorical, notretroactiveindependentgate.",
+  "publisher_review": [
+    "Actualbridge/orchestrator hashes boundplan andtwoactualmodel finalreviews. Onlyfork evidencebranch newprefix atoprecordedparent, forcefalse with expected_sha lease; no productionref, issue/comment/reviewer/Copilot/merge action. Toolarguments match previouslyinspected actualGitHubmetadata.",
+    "Metadata checksauthenticatedCLIlogin, exactopenunmergedPRhead, oldbodyhash/equality, parent anddestinationabsence. Connectorprofile separate. Allblobhashes verified, completeasset tree/readback beforebody; unknowncommitmarker beforePOST, errors/unknownshape stop, cachedblobidentitychecked.",
+    "PRbody uses UTF8textnormalized templatehash, only @PUBLIC_ROOT@ commitURLreplacement; originalbody andfooterbound. CLIwrites body-onlypayload afterfreshhead/bodyguard, savesattempt/result, then exactbodyGETreadback. A timeout/nonzeroexit requiresinspection, notblindretry. Finalfinishchecks currentref/head/body andreadbackflag.",
+    "Reviews andscripts published separately fromZIP toavoidcircularhash. Singleorchestrator expected; optimisticPRbody/headguards notserverCAS, check-to-writewindows remain. No multi-stepcrashatomicity or exhaustiveautomaticrecovery guarantee."
+  ],
+  "scope_limits": [
+    "Normalpriority/noaffinity/sharedhost/ambientOS cache, no controlledcold/P99. Firstresult roworblockreadiness beforecellverification, fullincludesverification/cleanup; peakwholeprocess includesstartup/oracle/all4queries, notqueryonlyheap.",
+    "Metadata16/128 fields butonly1/8projections, anchorv0; complete OFFSET/LIMITresult notfullfilescan. Nonemptybaselinewriterinvalid, excludednegative8reads, formalA/Bsamevalidfixedfile.",
+    "No nativeFIELDselectivity, soleallNULLprojection, compressed/specialfloat/generalfile-size/parallelscaling/allTreeAPIs/JavaTableorJava-performance claim. Old16notpooled; PR02stopdirections/PR03unresolvedsignals/issue04approvalobjectunchanged.",
+    "546pointwiseestimates/420selectedtests notfamilywisecontrol/equivalence. Samebinarycontrolswithnorepeat do notproveOS/path effectsabsent or attributeprimarysignals tosource."
+  ],
+  "review_actions": "Read-onlylocalsource/artifact/raw/statistics/archive/script/gitmetadata/runtime audit. No remote requests, query/build/test/timing/source/state/frozenfile mutation. Onlynewreviewer audit outputs written.",
+  "final_conclusion": "Frozen diagnostic evidence andexactpublicationplan approved for diagnosticsharing only. Expandedquery/source/writer/CI gates remainfalse; historicalPR doesnotretroactivelypass newindependentreviewgate, andno productionpushauthorized.",
+  "supplemental_persistence_review": {
+    "script_path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\persist_pr01_metadata_v4.py",
+    "script_sha256": "42adeaad3e3b41a1d51c0d554f16eef48300278c2a6f281242697ec107839e12",
+    "not_in_evidence_manifest": true,
+    "diagnostic_persistence_allowed": false,
+    "status": "HELD_PENDING_CORRECTION",
+    "findings": [
+      {
+        "id": "partial-prejournal-staging-not-recoverable",
+        "severity": "blocking-local-persistence",
+        "observation": "If interrupted after T.mkdir but before transaction.json, next invocation enters fresh branch again and T.mkdir raises FileExistsError. Existing partiallywritten xb stagingfiles also block recreation. Current recovery works only after completejournal exists, not prejournal partialstaging.",
+        "required_change": "Use deterministic resumable staging with exist_ok directory, existingfile exactbytes validation and atomic writes for absentfiles; verify all4complete payload/backup hashes before publishingjournal."
+      },
+      {
+        "id": "all-target-preflight-missing",
+        "severity": "hardening-required-with-fix",
+        "observation": "Current loop validates and replaces workflow before checking state currenthash/backup/payload. A preexisting concurrentstatechange may cause partialpublication that could have been refused before anyreplacement.",
+        "required_change": "Validate alltargets andallstagedpayloads first, then retain per-targetbefore/after check immediately beforeatomicreplace."
+      }
+    ],
+    "scope": "Evidence/publication approval remains distinct; do not execute held persistence script. Preserve frozeninputs andsupply correctedscript forindependentclosure."
+  }
+}
