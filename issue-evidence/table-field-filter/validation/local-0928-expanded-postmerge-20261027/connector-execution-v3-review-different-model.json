@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-27T07:28:25.181110+00:00",
+  "actual_model_identity": "gpt-6-astra",
+  "agent_identity": "/root/review_c01_lifetime_model",
+  "runtime_provenance": [
+    {
+      "role": "reviewer",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "model": "gpt-6-astra",
+      "timestamp": "2026-10-27T07:27:11.737Z",
+      "raw_line_sha256": "5e5962054bc915d4983b26942296ba8888ac66350255ba33d26d56e8143b5851"
+    },
+    {
+      "role": "root",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\17\\rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "model": "gpt-6.1-sol",
+      "timestamp": "2026-10-27T06:33:27.919Z",
+      "raw_line_sha256": "9478a50e650c221f0646d0de5f0531230286ee2bf5fd7302958d04f361e4368e"
+    }
+  ],
+  "identity_limit": "Local assignment metadata only, not backend/offline proof.",
+  "connector_execution_plan_sha256": "c976cc8ab8882b2496905031158c6ac4b99a7edb48a78db4bfcbc05bc80d8e4a",
+  "bridge_sha256": "1860826105ad4a22cc0aa4f1d2f1597d3f048abd0ffbb356b3a74d028e311a60",
+  "orchestrator_sha256": "d86d6434997222911a9e0d14d412f43c3a1d12eda9f8990e652937c2ec63ba47",
+  "postmerge_persistence_script_sha256": "fce412e29ac3b4b170de3ba71010ae33dd9853cd0b887fe46716b739f0d32da9",
+  "publication_plan_sha256": "65dfb8d6e004b452c8d32afeac4cb3ad45e5b875ded93282179ae30abb166a67",
+  "baseline_commit": "50a25ab8ab6589c483a639d5a37d3b8e8bbe6a0a",
+  "final_commit": "0928f7a82f7ca21d5d5dc90b2195538167917097",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "status": "DIAGNOSTIC_CONNECTOR_TRANSPORT_ONLY",
+  "artifact_bindings": {
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\publication-after-merge\\connector-publication-v3.json": "c17cd040fbc838db52e063f6537156baaa4280bc738d2fe1b79368d07040bb11",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\pre-submission-review\\live-type-expanded-query-20261027\\connector-execution-v2-review-different-model.json": "e2adccfd2788c5bcc1f4a6efcf9881e1544740d63a417c31c42fc97853a5615c",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\pre-submission-review\\live-type-expanded-query-20261027\\postmerge-persistence-v2-review-different-model.json": "c48f64a2f532144555daf3085d1d1364648ba41b5011f9b61235291eaaeee10f"
+  },
+  "raw_findings": [
+    {
+      "id": "duplicate-flat-metrics-selection",
+      "observation": "Alloriginal16assets still hashed before selection. Onlyflatmetrics removed; independently read ZIP diagnostics/metrics.json and compared exactbytes to2388568-byte flatfile SHA2a4f32c008af7dcfecffaef06b7d0807abdf639215c550d6ad062672f337cd27. All distributions preserved.",
+      "disposition": "Accepted; original16-input plan is retained historical provenance; v3 publication_selection defines actual15baseasset transport, not lost data."
+    },
+    {
+      "id": "cached-eight-blobs",
+      "observation": "Independently recomputed SHA256 and GitblobSHA for all8cachedassets and matched retained nonerror createblobreceipts. Newrecord has no tree/commit/ref/completion. JS skips only matchingbothhashes, adds sameentry, does not synthesize freshwrite receipt; mandatoryfinalremoteGET unchanged.",
+      "disposition": "Accepted bounded continuation; this review did not queryremote or itself verify currentremote availability."
+    },
+    {
+      "id": "prior-error-and-retry-history",
+      "observation": "Prior v2 had actual partialblobprogress after initial500/404 and a bounded retry; nextmetrics500/404 caused stop. Earlier v2_corrections field describes its pre-run historical moment, not current noexecution claim. v3 explicitpublication_selection and retainedrecord distinguish actualhistory.",
+      "disposition": "No claim of publicationcompletion or retroactive no-retry; no timing/query retries involved."
+    },
+    {
+      "id": "persist-record-path",
+      "observation": "Actual byte diff of persistv2/v3 is exactly four Q/publication.json references changed to Q/connector-publication-v3.json, including read, hashbinding and state/activity paths. Codecfix/receiptrequirements/recovery/statepreservation unchanged.",
+      "disposition": "Conditionally accepted only after newv3 completeasset/bodyreadback. Partial8blob cache cannot satisfy completed_at/readbackguards."
+    }
+  ],
+  "preserved_controls": [
+    "Exactmergedhead/bodyguard, normalizedtemplatehash/verifiedbeforeasset, singleexpectedparent reflease forcefalse, contentaddressedblobchecks, unknowncommitmarker beforePOST, errorstop/manualinspection, exactallasset/bodyreadback remain unchanged.",
+    "Compactref/bodyreceipts preservefullresponse instore/toolhistory; no credential or production-source transport.",
+    "Original source/query/writer/CI gatesfalse and all performance signals/oldreviews unchanged."
+  ],
+  "limitations": [
+    "No server-side atomicPRbodyCAS or multi-stepcrashatomicity; singleorchestrator/manualrecovery assumptions remain.",
+    "No remoteoperation or completionconfirmed by thisreview; actualfinalGET stillrequired.",
+    "Plan scope historical16asset wording is qualified by explicitv3 omissionofduplicateflatmetrics; fullmetrics remainsavailable inarchive."
+  ],
+  "actions": "Localdiff/hash/ZIPbytes/retainedreceipt/runtimeinspection only; no bridge,script,remote,state,query,test or timing execution.",
+  "conclusion": "No newblocker for exactv3bounded diagnostic continuation or record-path-only persistence after actualcompletedreadback; no sourcepush or acceptanceapproval."
+}

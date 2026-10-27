@@ -1,0 +1,101 @@
+{
+  "reviewed_at": "2026-10-27T06:16:51.349492+00:00",
+  "actual_model_identity": "gpt-6.1-sol",
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "runtime_provenance": {
+    "rollout": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-10-01a17619-e1bd-7492-b0bc-84d4681528fb.jsonl",
+    "latest_turn_context": {
+      "timestamp": "2026-10-27T06:15:10.513Z",
+      "model": "gpt-6.1-sol",
+      "raw_line_sha256_including_lf": "237a77484d3e208fe524d375663ef1c5ed6d02f962e140ad29cf7fb547906e06"
+    },
+    "limitation": "Selected runtime assignment only, not cryptographic/backend/offline attestation."
+  },
+  "baseline_commit": "50a25ab8ab6589c483a639d5a37d3b8e8bbe6a0a",
+  "final_commit": "0928f7a82f7ca21d5d5dc90b2195538167917097",
+  "eee_reference_commit": "eee39799948699c58e292ee6361f1da8154378c2",
+  "manifest_sha256": "b97e8c775901ed10f41a30ccedcc610b0f03c5f2525befae14d39a684d383f26",
+  "report_sha256": "ed0fb9ed90b644ea2557a278c57cff906c872d7c506a976f1aa79dc8b9a944dd",
+  "protocol_sha256": "455601cb6fd161a1d37237eb78382aca5b622ebf5da21179377af9c54def23b4",
+  "raw_audit_sha256": "31577f8b21bd10c89f36252a6f6d3ad8521b7693e8dc8bf4fa00d3ff25309b04",
+  "persistence_original_finding_sha256": "22c24636a57e0cf89004ff30ca8ca41f9ae4ec0ac843b3325726f6e60729720d",
+  "raw_findings": [
+    {
+      "finding": "All2797 frozen hashes and6172 protected prior inputs match. Three source checkouts remain clean at exact commits; six protocol opinion canonical copies match originals.",
+      "disposition": "Closed for exact source/evidence provenance; source unchanged and no reviewer source or remote write."
+    },
+    {
+      "finding": "27243 raw processes, exact18/36 schedule/commands/oracles,81single selection and726 comparisons independently reconstruct; all12000-draw CIs and block logs match.",
+      "disposition": "38workspace/42EEE repeated,15/5initial-only,2/3confirmation-only signals preserved. No equivalence, cost/CPU/necessary-minimal attribution or old12 clearance."
+    },
+    {
+      "finding": "1089metricgroups/8712distributions, logical FIELD points/row throughput and full-prefix counts independently match.",
+      "disposition": "Formal74304full+324prefix, warmup/preflight separate; median/nearest-rankP95 descriptive, within-process correlated. PeakWS process-level; plan combined metadata and firstnext deferred; context early-close not full result."
+    },
+    {
+      "finding": "Correct EEE application references may materialize/validate hidden predicate extras; explicit callback controls match projection. Newfixture Java/binary/longname timing, writer/encryption/coldP99codec/scaling and PR01/02 gaps remain.",
+      "disposition": "Report EN/ZH truthful, old12signals/LZOkay/CodeQL/coverage/header/Javaalias/interiorNULL retained. Original8 current clocks do not rewrite historical total-only records."
+    },
+    {
+      "finding": "Original universal consumption wording and actual prelaunch GBK failure were corrected in new bound files before formal queries.",
+      "disposition": "Original records immutable, six opinions exact copied; own earlier missed-default-encoding and full-prefix wording limitations preserved."
+    },
+    {
+      "finding": "Frozen persistence script lacks existingjournal recovery and atomically staged immutable originals/payload/journal/completion. Partialworkflow or state commit blocks rerun on business assertions; backups may be overwritten.",
+      "disposition": "VALID, CLOSED only by newly frozen persist_live_type_expanded_v2.py: existing bound journal recovery precedes business assertions; immutable exact backups/payloads atomically staged, atomic journal/completion, workflow-first/state-last and per-target before/after checks. Original defective frozen script remains held and must not be executed."
+    },
+    {
+      "finding": "Largest repeated effects are unfiltered scan controls: layout_benchmark.cc mode0 passes null FIELD predicate; single_device_tsblock_reader.cc:732 guards satisfy_field_filter by nonnull FIELD; both get_column_data_type calls occur inside that method.",
+      "disposition": "Static source boundary verified. Scan observations are not direct per-row getter execution cost and prove no CPU/cache/loader/allocator cause. Existing stored phase/order/identity data may be analyzed without extending any closed query/probe round.",
+      "evidence": [
+        "src/layout_benchmark.cc:172",
+        "cpp/src/reader/block/single_device_tsblock_reader.cc:732",
+        "cpp/src/reader/block/single_device_tsblock_reader.cc:824",
+        "cpp/src/reader/block/single_device_tsblock_reader.cc:862"
+      ]
+    }
+  ],
+  "diagnostic_report_approved": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "status": "NOT_READY_TO_PUSH",
+  "reviewer_tests_queries_builds_timing_source_state_remote_actions": false,
+  "manifest_path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\final-evidence-manifest-v2.json",
+  "manifest_files_verified": 2863,
+  "original2797_manifest_sha256": "90e5940381b6b4e448b99f39af92092b905c99118e8d7e3c6d2b5e7c47509eec",
+  "original_review_sha256": "8b0575f0bf040ec2ede47944bcf2015cb003b2e9d937d0378a60bb9933df31d7",
+  "persistence_v2_script_sha256": "9ae7c4dc000c89e7364f2e706872987d8864d728f3b403ca220383a603d9cce7",
+  "persistence_v2_closure": {
+    "original2797_hash_bindings_and_bytes_unchanged": true,
+    "all2863_hashes_verified": true,
+    "six_helpers_AST_identical_to_reviewed_live_type_script": true,
+    "existing_transaction_recovery_before_business_assertions": true,
+    "binding_checks": [
+      "manifest",
+      "source_head",
+      "actual_review_records",
+      "inputs_sha256",
+      "exact_target_paths",
+      "exact_payload_names",
+      "exact_backup_names",
+      "backup_before_hashes",
+      "all_target_before_or_after_hashes",
+      "all_payload_after_hashes"
+    ],
+    "deterministic_prejournal_staging": "inputs.recorded_at fixes generated payload timestamp; same-byte existing backups/payloads tolerated, differing bytes stop",
+    "publication": "Atomic UUID same-directory temporary write/flush/fsync/replace for staged files, journal, targets and completed marker; workflow first, state last, per-target recheck and all-output verification.",
+    "six_actual_isolated_fault_records_reviewed": true,
+    "two_recovered_transactions_backups_payloads_and_targets_hashes_verified": true,
+    "synthetic_receipts_not_model_approvals": true,
+    "real_target_pinned_hashes_still_match": true,
+    "real_transaction_directory_absent": true,
+    "fault_results_sha256": "a81c4aa1335a1536bb51617addc22cec08f1a2fdce3fe2bddfb480f4cf6a918f",
+    "pure_payload_proof_sha256": "02aaba5f0255991ce85a0e8d6b2664185d5c5a5e7d7cdaa69fcf8454ed69b806",
+    "correction_notes_sha256": "69d1619e4c2db95382148206efedf218795caf48c89f8b5302789310c86c4359",
+    "limit": "Not multi-file crash atomicity, filesystem/powerloss proof, CAS or exhaustive OS-failure coverage. Reviewer inspected stored cases only, did not run them."
+  },
+  "conclusion": "Truthful local diagnostic evidence and corrected v2 persistence preparation approved. All source/query/writer/CI gates remain false, no historical result or signal cleared, no necessary/minimal cost established. No source/test/query/timing/state/remote action executed by reviewer.",
+  "persistence_review_closed": true
+}

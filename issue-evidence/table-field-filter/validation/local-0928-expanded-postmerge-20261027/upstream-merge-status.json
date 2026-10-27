@@ -1,0 +1,363 @@
+{
+  "checked_at": "2026-10-27T06:43:23.864838+00:00",
+  "pr_url": "https://github.com/apache/tsfile/pull/1026",
+  "head": "cf4c9aacbaf009915327838569db97129eb4f584",
+  "state": "closed",
+  "merged": true,
+  "merged_at": "2026-10-27T06:28:01Z",
+  "merge_commit_sha": "0d42092cd51993dc82ab3f390d7866d6404d11a1",
+  "merged_by": "ColinLeeo",
+  "counts": {
+    "success": 47,
+    "neutral": 1,
+    "skipped": 1
+  },
+  "check_runs": [
+    {
+      "name": "Analyze (go)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359584001/job/122041232923",
+      "completed_at": "2026-10-26T17:23:23Z"
+    },
+    {
+      "name": "Analyze (python)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359584001/job/122041224351",
+      "completed_at": "2026-10-26T17:13:49Z"
+    },
+    {
+      "name": "Analyze (c-cpp)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359584001/job/122041193358",
+      "completed_at": "2026-10-26T16:45:39Z"
+    },
+    {
+      "name": "Analyze (java)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359584001/job/122041191759",
+      "completed_at": "2026-10-27T06:13:45Z"
+    },
+    {
+      "name": "Validate java fixtures with cpp",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583369/job/121731731710",
+      "completed_at": "2026-10-26T18:18:01Z"
+    },
+    {
+      "name": "Validate cpp fixtures with java",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583369/job/121731731586",
+      "completed_at": "2026-10-26T18:07:56Z"
+    },
+    {
+      "name": "Relocated static SDK and CLI install layouts",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583366/job/121726859201",
+      "completed_at": "2026-10-26T18:11:23Z"
+    },
+    {
+      "name": "BUNDLED from cache with network downloads disabled",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583366/job/121726859060",
+      "completed_at": "2026-10-26T18:06:29Z"
+    },
+    {
+      "name": "CodeQL",
+      "status": "completed",
+      "conclusion": "neutral",
+      "html_url": "https://github.com/apache/tsfile/runs/121710183688",
+      "completed_at": "2026-10-26T16:45:34Z"
+    },
+    {
+      "name": "unit-test (25, macos-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106901",
+      "completed_at": "2026-10-26T17:08:47Z"
+    },
+    {
+      "name": "unit-test (21, windows-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106737",
+      "completed_at": "2026-10-26T16:40:33Z"
+    },
+    {
+      "name": "unit-test (25, windows-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106731",
+      "completed_at": "2026-10-26T16:36:20Z"
+    },
+    {
+      "name": "unit-test (25, ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106708",
+      "completed_at": "2026-10-26T17:18:32Z"
+    },
+    {
+      "name": "unit-test (17, ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106661",
+      "completed_at": "2026-10-26T17:20:10Z"
+    },
+    {
+      "name": "unit-test (17, windows-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106619",
+      "completed_at": "2026-10-26T16:40:33Z"
+    },
+    {
+      "name": "unit-test (21, ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106603",
+      "completed_at": "2026-10-26T17:18:06Z"
+    },
+    {
+      "name": "unit-test (17, macos-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106596",
+      "completed_at": "2026-10-26T17:09:03Z"
+    },
+    {
+      "name": "Generate cpp fixtures",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583369/job/121701106439",
+      "completed_at": "2026-10-26T17:24:07Z"
+    },
+    {
+      "name": "Generate java fixtures",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583369/job/121701106325",
+      "completed_at": "2026-10-26T17:13:28Z"
+    },
+    {
+      "name": "unit-test (21, macos-latest)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583774/job/121701106241",
+      "completed_at": "2026-10-26T17:07:50Z"
+    },
+    {
+      "name": "SYSTEM from an external package prefix",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583366/job/121701105885",
+      "completed_at": "2026-10-26T16:33:23Z"
+    },
+    {
+      "name": "BUNDLED from a fresh archive cache",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583366/job/121701105766",
+      "completed_at": "2026-10-26T17:15:18Z"
+    },
+    {
+      "name": "Legacy core build with CMake 3.11",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583366/job/121701105425",
+      "completed_at": "2026-10-26T16:31:14Z"
+    },
+    {
+      "name": "codecov",
+      "status": "completed",
+      "conclusion": "skipped",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583377/job/121701100341",
+      "completed_at": "2026-10-26T16:29:14Z"
+    },
+    {
+      "name": "cppcheck",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359584161/job/121701099300",
+      "completed_at": "2026-10-26T16:30:52Z"
+    },
+    {
+      "name": "unit-test-msvc (Release, Asan, default)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583633/job/121701098805",
+      "completed_at": "2026-10-26T16:40:48Z"
+    },
+    {
+      "name": "unit-test-msvc (Debug, NoAsan, v141)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583633/job/121701098799",
+      "completed_at": "2026-10-26T16:50:43Z"
+    },
+    {
+      "name": "unit-test-msvc (Release, NoAsan, v141)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583633/job/121701098758",
+      "completed_at": "2026-10-26T16:47:19Z"
+    },
+    {
+      "name": "unit-test (macos-latest, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098671",
+      "completed_at": "2026-10-26T17:18:28Z"
+    },
+    {
+      "name": "unit-test (macos-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098666",
+      "completed_at": "2026-10-26T17:10:52Z"
+    },
+    {
+      "name": "unit-test (ubuntu-24.04, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098615",
+      "completed_at": "2026-10-26T16:39:42Z"
+    },
+    {
+      "name": "unit-test-py-msvc (3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583701/job/121701098591",
+      "completed_at": "2026-10-26T16:49:25Z"
+    },
+    {
+      "name": "unit-test (windows-latest, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098573",
+      "completed_at": "2026-10-26T17:01:27Z"
+    },
+    {
+      "name": "unit-test (windows-latest, 3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098564",
+      "completed_at": "2026-10-26T16:48:54Z"
+    },
+    {
+      "name": "unit-test (macos-latest, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098508",
+      "completed_at": "2026-10-26T17:02:37Z"
+    },
+    {
+      "name": "unit-test (ubuntu-24.04, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098505",
+      "completed_at": "2026-10-26T16:40:38Z"
+    },
+    {
+      "name": "unit-test-py-msvc (3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583701/job/121701098478",
+      "completed_at": "2026-10-26T16:50:17Z"
+    },
+    {
+      "name": "unit-test (ubuntu-24.04, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098462",
+      "completed_at": "2026-10-26T16:44:31Z"
+    },
+    {
+      "name": "unit-test-msvc (Debug, Asan, default)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583633/job/121701098451",
+      "completed_at": "2026-10-26T16:48:12Z"
+    },
+    {
+      "name": "unit-test (ubuntu-24.04, Release, Asan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701098364",
+      "completed_at": "2026-10-26T16:45:41Z"
+    },
+    {
+      "name": "unit-test (ubuntu-24.04, Debug, NoAsan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701098149",
+      "completed_at": "2026-10-26T16:37:06Z"
+    },
+    {
+      "name": "unit-test (windows-latest, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583667/job/121701098037",
+      "completed_at": "2026-10-26T17:01:29Z"
+    },
+    {
+      "name": "unit-test-py-msvc (3.9)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583701/job/121701098021",
+      "completed_at": "2026-10-26T16:50:57Z"
+    },
+    {
+      "name": "unit-test (macos-latest, Debug, NoAsan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701097871",
+      "completed_at": "2026-10-26T17:05:44Z"
+    },
+    {
+      "name": "unit-test (windows-latest, Release, NoAsan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701097692",
+      "completed_at": "2026-10-26T16:59:40Z"
+    },
+    {
+      "name": "unit-test (ubuntu-24.04, Release, NoAsan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701097593",
+      "completed_at": "2026-10-26T16:40:45Z"
+    },
+    {
+      "name": "unit-test (ubuntu-24.04, Debug, Asan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701097477",
+      "completed_at": "2026-10-26T16:38:01Z"
+    },
+    {
+      "name": "unit-test (macos-latest, Debug, Asan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701097354",
+      "completed_at": "2026-10-26T17:02:10Z"
+    },
+    {
+      "name": "unit-test (macos-latest, Release, NoAsan)",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/apache/tsfile/actions/runs/40359583437/job/121701097239",
+      "completed_at": "2026-10-26T17:03:40Z"
+    }
+  ],
+  "agent_merged": false,
+  "source_pushed": false,
+  "unpublished_candidate_gates_unchanged": true
+}

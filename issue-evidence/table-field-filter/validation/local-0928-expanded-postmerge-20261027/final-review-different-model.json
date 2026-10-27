@@ -1,0 +1,114 @@
+{
+  "at": "2026-10-27T06:19:36.236959+00:00",
+  "actual_model_identity": "gpt-6-astra",
+  "agent_identity": "/root/review_c01_lifetime_model",
+  "runtime_identities": [
+    {
+      "role": "reviewer",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "model": "gpt-6-astra",
+      "timestamp": "2026-10-27T06:18:11.021Z",
+      "raw_line_sha256": "c2fe7356b1787f295399c96e24e3d645517f575151eaee5c13076d85947c4cb6"
+    },
+    {
+      "role": "root",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\17\\rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "model": "gpt-6.1-sol",
+      "timestamp": "2026-10-27T04:57:47.480Z",
+      "raw_line_sha256": "6926b9f170fa53b8f6ad3bd46279a7a8ec2546614419f04f1017545b13b992dc"
+    }
+  ],
+  "identity_limit": "Selective local turn_context assignment metadata, not cryptographic backend or offline-inference attestation.",
+  "baseline_commit": "50a25ab8ab6589c483a639d5a37d3b8e8bbe6a0a",
+  "final_commit": "0928f7a82f7ca21d5d5dc90b2195538167917097",
+  "public_reference_commit": "eee39799948699c58e292ee6361f1da8154378c2",
+  "manifest_sha256": "b97e8c775901ed10f41a30ccedcc610b0f03c5f2525befae14d39a684d383f26",
+  "report_sha256": "ed0fb9ed90b644ea2557a278c57cff906c872d7c506a976f1aa79dc8b9a944dd",
+  "persistence_script_sha256": "9ae7c4dc000c89e7364f2e706872987d8864d728f3b403ca220383a603d9cce7",
+  "diagnostic_report_approved": true,
+  "query_gate_cleared": false,
+  "source_submission_gate_passed": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "status": "NOT_READY_TO_PUSH",
+  "artifact_bindings": {
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\final-evidence-manifest-v2.json": "b97e8c775901ed10f41a30ccedcc610b0f03c5f2525befae14d39a684d383f26",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\final-evidence-manifest.json": "90e5940381b6b4e448b99f39af92092b905c99118e8d7e3c6d2b5e7c47509eec",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\validation-report.md": "ed0fb9ed90b644ea2557a278c57cff906c872d7c506a976f1aa79dc8b9a944dd",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\persistence-correction-v2.md": "69d1619e4c2db95382148206efedf218795caf48c89f8b5302789310c86c4359",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\persist_live_type_expanded_v2.py": "9ae7c4dc000c89e7364f2e706872987d8864d728f3b403ca220383a603d9cce7",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\pre-submission-review\\live-type-expanded-query-20261027\\final-raw-audit-different-model.json": "a27821b86d098ad85bca0a1f28f39d97bdba4a2cdceb47deb16ee1e415763444",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\pre-submission-review\\live-type-expanded-query-20261027\\final-held-findings-different-model.json": "01c892fcc2167819cc0168fde928426fe6a873500afa1c176e94943e788a61cb",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\persistence-recovery-validation\\results.json": "a81c4aa1335a1536bb51617addc22cec08f1a2fdce3fe2bddfb480f4cf6a918f",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\persistence-recovery-validation\\pure-payload-proof.json": "02aaba5f0255991ce85a0e8d6b2664185d5c5a5e7d7cdaa69fcf8454ed69b806"
+  },
+  "verification": {
+    "all_manifest_files_hashed": 2863,
+    "hash_mismatches": 0,
+    "original_2797_bindings_and_bytes_unchanged": true,
+    "source_head_clean_and_exact": true,
+    "six_helpers_independently_AST_equal_to_prior_reviewed_candidate_persistence": true,
+    "actual_state_and_workflow_match_frozen_inputs": true,
+    "real_transaction_absent": true,
+    "no_queries_builds_tests_or_persistence_executed_by_reviewer": true
+  },
+  "raw_findings": [
+    {
+      "id": "recovery-material-durability",
+      "original": "Original backups, staged payloads and journal were written without flushed/fsynced atomic publication.",
+      "disposition": "Closed for bounded local diagnostic persistence by v2 atomic staging of all four files before atomic journal, immediate exact readback and atomic completion. Original rejected script and opinion remain frozen."
+    },
+    {
+      "id": "partial-commit-resume",
+      "original": "Integration reviewer discovered, and this reviewer corroborated, failure to resume after workflow replacement or after state replacement before completion.",
+      "disposition": "Closed: existing bound transaction resumes before running-status and duplicate-annex assertions; exact before/after target states accepted. Six retained isolated filesystem fault cases inspected, including both interruption/replay cases, corrupt payload, concurrent target, wrong binding and partial staging. Synthetic receipts are not model approval."
+    },
+    {
+      "id": "refreeze-reuse-advice",
+      "original": "Warned against rescanning an existing manifest into itself on refreeze.",
+      "disposition": "Clarified, not a defect of original2797: original finalizer asserts output absent. New helper preserves all2797 and adds explicit repair/review/test artifacts into distinct v2 output; original manifest remains unchanged."
+    },
+    {
+      "id": "full-versus-prefix-wording",
+      "original": "Original protocol consumption wording overstated early-close scope.",
+      "disposition": "Closed before measurement in corrected notes and protocol, retaining original opinions; 2640 full/18 prefix preflight and 74304 full/324 prefix formal explicitly distinguished."
+    },
+    {
+      "id": "GBK-prelaunch",
+      "original": "Default Windows decoding failed on UTF8 real review JSON before any child/query.",
+      "disposition": "Original failure preserved; explicit UTF8 runner narrow change separately approved before exact frozen round. Prior review missed this portability issue."
+    }
+  ],
+  "independent_raw_audit": {
+    "record": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\pre-submission-review\\live-type-expanded-query-20261027\\final-raw-audit-different-model.json",
+    "sha256": "a27821b86d098ad85bca0a1f28f39d97bdba4a2cdceb47deb16ee1e415763444",
+    "raw_processes": 27243,
+    "formal_queries": 74628,
+    "warmup_queries": 10206,
+    "comparisons_independently_recomputed": 726,
+    "metric_groups_independently_recomputed": 1089,
+    "confirmation_cases": 81,
+    "signal_counts": {
+      "workspace": {
+        "repeated": 38,
+        "initial_only": 15,
+        "confirmation_only": 2
+      },
+      "EEE": {
+        "repeated": 42,
+        "initial_only": 5,
+        "confirmation_only": 3
+      }
+    },
+    "method": "Original separate explicit oracle loops, command/order/slot reconstruction, ratios and deterministic paired-block bootstrap plus metric recomputation; not execution of implementer summarizers. Unchanged raw audit remains applicable; v2 adds persistence-only evidence."
+  },
+  "persistence_scope": "Reviewed full v2 script, six helper ASTs, actual fault artifacts and validator, pure payload proof, input pins and refreeze helper. Whole-state restoration assertion confines changes to draft03 expanded diagnostic entry, appended backlog, declared root progress/monitor/activity and exact workflow annex; other drafts, queue, issue04 and prior evidence remain protected. Recovery binds head/manifest/actual review hashes/input hash/exact target paths/payload and backup hashes. Frozen recorded_at makes pre-journal staging deterministic. No actual target written in this review.",
+  "residual_limits": [
+    "No multi-file atomic commit, atomic CAS, power-loss or filesystem-crash proof; immediate hash checks still have a check-to-replace concurrency window.",
+    "Six fault cases are bounded injected Python failures on owned temporary files; real state proof is read-only, not synthetic model approval.",
+    "Current-PC/allocation history does not prove CPU or necessary-cost causality. Mode0 layout returns null FIELD filter; reader lines732-733 guard satisfy_field_filter, whose two new getter calls are at824/862. Worst unfiltered scans therefore do not directly measure getter invocation cost.",
+    "Original28 12EEE increases remain unresolved; new282 signals cannot be pooled or used to rewrite older acceptance. Hidden-field EEE extra materialization and logical nonNULL FIELD point denominator remain disclosed.",
+    "No fresh expanded-fixture Java/write throughput, longbinary/longname timing, cold/P99/codec/scaling/query-only-memory acceptance. LZOkay, CodeQL, wholePR coverage, header, Java alias/otherNULL, encryption, PR01/02 and issue04 constraints remain."
+  ],
+  "final_head_closure": "Exact0928 source unchanged and clean; final diagnostic approval binds v2 manifest plus immutable original report and correction annex. Only local diagnostic persistence approved; source/query/writer/CI gates remain false and no source push authorized."
+}

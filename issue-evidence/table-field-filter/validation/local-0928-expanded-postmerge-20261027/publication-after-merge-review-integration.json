@@ -1,0 +1,55 @@
+{
+  "reviewed_at": "2026-10-27T06:47:30.742756+00:00",
+  "actual_model_identity": "gpt-6.1-sol",
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "runtime_provenance": {
+    "rollout": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-10-01a17619-e1bd-7492-b0bc-84d4681528fb.jsonl",
+    "latest_turn_context": {
+      "timestamp": "2026-10-27T06:46:18.346Z",
+      "model": "gpt-6.1-sol",
+      "raw_line_sha256_including_lf": "7e052c43d0d9b1fb917a050af74396f661fb302ec6e34ed6408dbb4ba78c89a7"
+    },
+    "limit": "Selected runtime assignment only, not backend/offline attestation."
+  },
+  "baseline_commit": "50a25ab8ab6589c483a639d5a37d3b8e8bbe6a0a",
+  "final_commit": "0928f7a82f7ca21d5d5dc90b2195538167917097",
+  "public_commit": "cf4c9aacbaf009915327838569db97129eb4f584",
+  "merge_commit": "0d42092cd51993dc82ab3f390d7866d6404d11a1",
+  "publication_plan_sha256": "65dfb8d6e004b452c8d32afeac4cb3ad45e5b875ded93282179ae30abb166a67",
+  "publisher_sha256": "0aa0cb41ee166ffcfb89699193fab5ddb1b944ff1c719ef87577890e932d2b48",
+  "prior_publication_review_sha256": "489c13c8209083637628c69c0932d6298374ad114149cfbf38b0e8bfc62e1913",
+  "evidence_manifest_sha256": "b97e8c775901ed10f41a30ccedcc610b0f03c5f2525befae14d39a684d383f26",
+  "raw_findings": [
+    {
+      "finding": "Upstream snapshot records maintainer ColinLeeo merge at06:28:01Z to0d42092c with PRheadcf4 unchanged; actual49 check entries recompute47success/1neutral/1skipped, JavaAnalyze success.",
+      "disposition": "New EN/ZH notices accurately distinguish latest upstream result from immutable earlier failure snapshot and no CI for unpublished0928. No agent merge/source push or retroactive metric/source gate pass claimed.",
+      "evidence": {
+        "snapshot_sha256": "08df658b377958456c1102ef86a090ea8c467298bd474026e37c3eb596819638"
+      }
+    },
+    {
+      "finding": "Publisher differs only new publication/review names and guard requiring exact head+closed+merged+exact mergeSHA.",
+      "disposition": "Same diagnostic-only ref/body operation boundary. Guard supersedes old open requirement; original plan/script/review remain unchanged. Existing single-instance/nonCAS/unknown-result stop limitations remain."
+    },
+    {
+      "finding": "All16 new planned assets verified; onlyREADME and new narrow status asset differ from originalassetset; archive parts, manifests,reports,metrics,results and finalreviews identical.",
+      "disposition": "Original ZIP/53member scope and hash checks remain valid; no new implementation/binary/state/credential bundle or sample mutation. Baseline/final0928 unchanged."
+    },
+    {
+      "finding": "Template retains complete old PR body original prose and originalfooter, inserting bilingual postmerge status into new localcandidate annex; original body archive remains byte-identical.",
+      "disposition": "Currentmerge/CI explicitly updated, old faileddata retainedas history;12oldEEE and38workspace/42EEE newrepeat signals alluncleared. No query/write/CI/source acceptance."
+    },
+    {
+      "finding": "Oldattempt stopped on GET/guard before remote mutations as reported; newaftermerge executable still performs authenticated GET/guard before blob/tree/commit/ref/body actions.",
+      "disposition": "No safety exception formergedPR; exactbody andnewprefix guard/readback retained. This reviewer issued no remote calls. Only single authorized newpublisher invocation, unknownstate/conflict stops for inspection."
+    }
+  ],
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "status": "POSTMERGE_DIAGNOSTIC_PUBLICATION_ONLY_NOT_READY_TO_PUSH",
+  "conclusion": "Postmerge diagnostic publication may proceed under exact newguard and existing limitations. Upstream merge/greenCI does not validate unpublished0928 or waive any retained local acceptance failure.",
+  "reviewer_source_state_remote_query_test_actions": false
+}

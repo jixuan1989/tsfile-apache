@@ -1,0 +1,54 @@
+{
+  "reviewed_at": "2026-10-27T07:27:39.845502+00:00",
+  "actual_model_identity": "gpt-6.1-sol",
+  "agent_identity": "/root/review_c01_lifetime_agent",
+  "runtime_provenance": {
+    "rollout": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-10-01a17619-e1bd-7492-b0bc-84d4681528fb.jsonl",
+    "latest_turn_context": {
+      "timestamp": "2026-10-27T07:26:33.081Z",
+      "model": "gpt-6.1-sol",
+      "raw_line_sha256_including_lf": "ae133abdd54a7fefa7e69e6d8cbdd12ef630f06980cef2dd471d22260623c0eb"
+    },
+    "limit": "Selected runtime assignment only, not backend/offline attestation."
+  },
+  "baseline_commit": "50a25ab8ab6589c483a639d5a37d3b8e8bbe6a0a",
+  "final_commit": "0928f7a82f7ca21d5d5dc90b2195538167917097",
+  "connector_execution_plan_sha256": "c976cc8ab8882b2496905031158c6ac4b99a7edb48a78db4bfcbc05bc80d8e4a",
+  "bridge_sha256": "1860826105ad4a22cc0aa4f1d2f1597d3f048abd0ffbb356b3a74d028e311a60",
+  "orchestrator_sha256": "d86d6434997222911a9e0d14d412f43c3a1d12eda9f8990e652937c2ec63ba47",
+  "postmerge_persistence_v3_sha256": "fce412e29ac3b4b170de3ba71010ae33dd9853cd0b887fe46716b739f0d32da9",
+  "publication_plan_sha256": "65dfb8d6e004b452c8d32afeac4cb3ad45e5b875ded93282179ae30abb166a67",
+  "prior_v2_review_sha256": "cf7f7cec50086626209d4540c8c3d527b32aa80bf68e617b69155020fa9a5d73",
+  "v3_record_sha256_at_review": "c17cd040fbc838db52e063f6537156baaa4280bc738d2fe1b79368d07040bb11",
+  "raw_findings": [
+    {
+      "finding": "All16 original assets hash verified beforepop; onlyduplicate flat2388568B metrics object omitted, complete identical metrics bytes remain in unchanged53memberZIP.",
+      "disposition": "No sample/distribution data loss, no metrics retry. Independent reconstructed ZIP and extractedmetrics bytecomparison passes; report/bodylinks remainarchive-oriented."
+    },
+    {
+      "finding": "Eight cachedblob entries correspond to eight actual successful storedconnectorreceipts with exact computedGitblobSHA andSHA256.",
+      "disposition": "Cache skip only when bothhashes match; no fabricatednewwrite receipt. Finaltreeprefix/everyblobGET stillmandatory. Currentv3record no tree/commit; old401/500receipts/record retained."
+    },
+    {
+      "finding": "Bridgev3 retains canonicalbeforeasset hash and normalizedUTF8template fix; unknowncommit andexpectedparentlease/mergedhead/body/fullreadback unchanged. JSnewcachebranch only changeswhetheridenticalcontentaddressedblob is reposted.",
+      "disposition": "No newunresolved transportblocker. Singleinstance, stopinspectunknown/conflict, optimisticbody/nonCAS andnoncrashatomiclimits remain."
+    },
+    {
+      "finding": "Persistencev3 differs fromcodec-correctedv2 only four publicationrecordpath replacements.",
+      "disposition": "Confirmed exacttextsubstitution. Newrecordmustactuallycomplete allreadback/bodyhash/falsegates beforelocalwrites; priorjournal/backup/whole-state-preservation review applies. No persistence executed or completedpublication claimed."
+    },
+    {
+      "finding": "Actual firstpart500 andlargeflatmetrics500 are preserved transportfailures; knowncontentaddressed retry history separate from timing.",
+      "disposition": "No timing/source/queryretry or gatewaiver. Omissionis redundancyonly, not removingbadresults. Allsource/query/writer/CIfalse."
+    }
+  ],
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "postmerge_persistence_path_delta_review_closed": true,
+  "status": "CONNECTOR_V3_DIAGNOSTIC_PUBLICATION_ONLY_NOT_READY_TO_PUSH",
+  "conclusion": "Exactv3 may continue boundeddiagnostic publication usingverifiedcachedblobs andZIP-completemetrics, withmandatoryfinalremote readback. No sourcepush or acceptancegateapproval.",
+  "reviewer_remote_source_state_query_test_actions": false
+}

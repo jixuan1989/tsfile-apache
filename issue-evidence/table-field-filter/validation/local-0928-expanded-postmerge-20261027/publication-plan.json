@@ -1,0 +1,91 @@
+{
+  "upstream": "apache/tsfile",
+  "fork": "jixuan1989/tsfile-apache",
+  "login": "jixuan1989",
+  "pr_number": 1026,
+  "pr_url": "https://github.com/apache/tsfile/pull/1026",
+  "branch": "issue-evidence/table-field-filter",
+  "prefix": "issue-evidence/table-field-filter/validation/local-0928-expanded-postmerge-20261027",
+  "public_head": "cf4c9aacbaf009915327838569db97129eb4f584",
+  "candidate": "0928f7a82f7ca21d5d5dc90b2195538167917097",
+  "baseline": "50a25ab8ab6589c483a639d5a37d3b8e8bbe6a0a",
+  "eee": "eee39799948699c58e292ee6361f1da8154378c2",
+  "evidence_manifest_sha256": "b97e8c775901ed10f41a30ccedcc610b0f03c5f2525befae14d39a684d383f26",
+  "before_body_sha256": "a73cbb7c9a020c2440f9a480c1e34d5bcbe9a7d657818c56c20a21f8f9471d3b",
+  "body_template_sha256": "164c7c05bba04bbd25bba1f73d42d0274d9011e1de37d0cd62ea81e86313d700",
+  "publisher_sha256": "0aa0cb41ee166ffcfb89699193fab5ddb1b944ff1c719ef87577890e932d2b48",
+  "assets": {
+    "diagnostics.zip.part01": {
+      "bytes": 1048576,
+      "sha256": "a67c6ef97dab034c395f24916d304845733bfd42b7189832f410d3d403ea49df"
+    },
+    "diagnostics.zip.part02": {
+      "bytes": 1048576,
+      "sha256": "45ca88e876bab556b4b092dd50173b4c9a1ff57d23c9b8b61d932ea6ed1320ee"
+    },
+    "diagnostics.zip.part03": {
+      "bytes": 1048576,
+      "sha256": "00e5c24b377152b7645d89342d8f5f7fa43f9953c0f0fd758e853a68ee2c318c"
+    },
+    "diagnostics.zip.part04": {
+      "bytes": 1048576,
+      "sha256": "f63449ff27462ec8d8774f99b30e73dffae51113df4dc913a62328acbf523088"
+    },
+    "diagnostics.zip.part05": {
+      "bytes": 336753,
+      "sha256": "1335e0d41e2fc8d12dd1ef3bd9377c3d8fe8fe66db3fb6d27898da6e7b5819bb"
+    },
+    "final-evidence-manifest-v2.json": {
+      "bytes": 692743,
+      "sha256": "b97e8c775901ed10f41a30ccedcc610b0f03c5f2525befae14d39a684d383f26"
+    },
+    "final-review-different-model.json": {
+      "bytes": 9477,
+      "sha256": "5ad137b0cf840eae75e1994eebe5687c73a6425e3bebfe00c476e061e1fad9f8"
+    },
+    "final-review-integration.json": {
+      "bytes": 7612,
+      "sha256": "56806c368e97ef6ce7cbcbfadccb05977e6be6ecbff6d6c66cc822709d12a8d5"
+    },
+    "metrics.json": {
+      "bytes": 2388568,
+      "sha256": "2a4f32c008af7dcfecffaef06b7d0807abdf639215c550d6ad062672f337cd27"
+    },
+    "parts-manifest.json": {
+      "bytes": 950,
+      "sha256": "ec8a03fa516577f1eba157c211f1c481e11f11670509d8b33b60a36687efbce0"
+    },
+    "previous-public-pr-body.md": {
+      "bytes": 8642,
+      "sha256": "a73cbb7c9a020c2440f9a480c1e34d5bcbe9a7d657818c56c20a21f8f9471d3b"
+    },
+    "README.md": {
+      "bytes": 8044,
+      "sha256": "024f738343cfb77111b6a0d77961d8314dbc854e7d7e4f0258ae60e5ba15e5c9"
+    },
+    "results.json": {
+      "bytes": 772698,
+      "sha256": "142ff4baf141817f247b143076cc9b71f9af0b6d5377005e5bd350cbe4401044"
+    },
+    "summary.json": {
+      "bytes": 276458,
+      "sha256": "baa9a177bf952e9c13f6ea416f79f1ede09e6bcc4fd18e192f8dfb2a66fca76f"
+    },
+    "upstream-merge-status.json": {
+      "bytes": 13694,
+      "sha256": "08df658b377958456c1102ef86a090ea8c467298bd474026e37c3eb596819638"
+    },
+    "validation-report.md": {
+      "bytes": 11150,
+      "sha256": "ed0fb9ed90b644ea2557a278c57cff906c872d7c506a976f1aa79dc8b9a944dd"
+    }
+  },
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "scope": "Historical diagnostics on existing evidence branch and guarded merged PR body only. No source branch, issue, reply, merge action, review request/settings or old evidence edits.",
+  "merge_commit_sha": "0d42092cd51993dc82ab3f390d7866d6404d11a1",
+  "merged_at": "2026-10-27T06:28:01Z",
+  "merged_by": "ColinLeeo"
+}

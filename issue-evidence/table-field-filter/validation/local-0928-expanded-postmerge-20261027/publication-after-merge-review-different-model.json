@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-27T06:48:19.781326+00:00",
+  "actual_model_identity": "gpt-6-astra",
+  "agent_identity": "/root/review_c01_lifetime_model",
+  "runtime_provenance": [
+    {
+      "role": "reviewer",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\26\\rollout-2026-10-26T10-46-20-01a1761a-0b9a-7fc0-ad15-f94cf7695321.jsonl",
+      "model": "gpt-6-astra",
+      "timestamp": "2026-10-27T06:46:39.993Z",
+      "raw_line_sha256": "9d978d0ab1807fb9f25d475eb3bc70f239d747fb387074166f764d2a2d892aa7"
+    },
+    {
+      "role": "root",
+      "path": "C:\\Users\\hxd\\.codex\\sessions\\2026\\10\\17\\rollout-2026-10-17T06-31-39-01a146d7-a196-7d20-bcb2-28bd83157e4d.jsonl",
+      "model": "gpt-6.1-sol",
+      "timestamp": "2026-10-27T06:33:27.919Z",
+      "raw_line_sha256": "9478a50e650c221f0646d0de5f0531230286ee2bf5fd7302958d04f361e4368e"
+    }
+  ],
+  "identity_limit": "Local runtime assignment metadata only, not backend cryptographic/offline inference proof.",
+  "baseline_commit": "50a25ab8ab6589c483a639d5a37d3b8e8bbe6a0a",
+  "final_commit": "0928f7a82f7ca21d5d5dc90b2195538167917097",
+  "public_head": "cf4c9aacbaf009915327838569db97129eb4f584",
+  "merge_commit_sha": "0d42092cd51993dc82ab3f390d7866d6404d11a1",
+  "publication_plan_sha256": "65dfb8d6e004b452c8d32afeac4cb3ad45e5b875ded93282179ae30abb166a67",
+  "publisher_sha256": "0aa0cb41ee166ffcfb89699193fab5ddb1b944ff1c719ef87577890e932d2b48",
+  "diagnostic_publication_allowed": true,
+  "source_submission_gate_passed": false,
+  "query_gate_cleared": false,
+  "writer_gate_passed": false,
+  "ci_gate_cleared": false,
+  "status": "DIAGNOSTIC_PUBLICATION_ONLY_NOT_READY_TO_PUSH_SOURCE",
+  "prior_publication_review": {
+    "path": "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\pre-submission-review\\live-type-expanded-query-20261027\\publication-review-different-model.json",
+    "sha256": "95a96ee14bfcc5608f4755261af15975281afb2a56a61cdfa42b4873a4b21da6",
+    "retained_unchanged": true
+  },
+  "artifact_hashes": {
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\publication-after-merge\\proposed-pr-body.md": "66c29c912e7ec83f77fff841829f49c48d44aa0db408d50980b509dca4c17050",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\publication-after-merge\\assets\\README.md": "024f738343cfb77111b6a0d77961d8314dbc854e7d7e4f0258ae60e5ba15e5c9",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\publication-after-merge\\assets\\upstream-merge-status.json": "08df658b377958456c1102ef86a090ea8c467298bd474026e37c3eb596819638",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\publication-after-merge\\prior-publication-stop.json": "6388495c1f50e60156ba8b643086f67380e2460ad0e31b5f0402c04136c7df7e",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\remote-body-update\\after-upstream-merge.json": "feb107a149c75d42dbc44d9bdda4ab9a1d386d5472fa2a6b22a1cd9bfeff2030",
+    "C:\\Users\\hxd\\Documents\\Codex\\2026-10-17\\new-chat-2\\work\\issue-03\\validation\\live-type-expanded-query-20261027\\publication\\publication.json": "5f4fa872a3904496ef691ffb00ec155e5748cedcede87818f6cf2f78ca962169"
+  },
+  "raw_findings": [
+    {
+      "id": "changed-upstream-state",
+      "observation": "Retained raw PR response confirms closed+merged, ColinLeeo,2026-10-27T06:28:01Z, exactmerge0d42092cd51993dc82ab3f390d7866d6404d11a1 and cf4head. Narrow check list independently totals47success/1neutral/1skipped, including Analyze(java)success. No remote call by reviewer.",
+      "disposition": "New EN/ZH notices correctly supersede historical CI snapshot without transferring CI/source/query acceptance to unpublished0928."
+    },
+    {
+      "id": "script-increment",
+      "observation": "Full old/new text diff changes only publication directory, review filename and guard requiring closed+merged+exactmergeSHA instead of open+unmerged. All exact asset/review/branch/head/body bindings and unknown-result/readback behavior from previous review retained. Newprefix prevents oldevidence edits.",
+      "disposition": "Accepted only for merged PR diagnostic body and evidence branch."
+    },
+    {
+      "id": "content-and-archive-preservation",
+      "observation": "All16assets hashes/lengths match;14commonassets including five ZIP parts, manifests, reports/results/metrics/raw-review package and exact priorbody are byte-identical. OnlyREADME updated plus new narrowstatusJSON. Body new notice preserves entire oldpublic text and AIfooter; candidate appendix numerical/limitation claims unchanged. Body template hash uses UTF8 decoded newline-normalized text exactly as publisher does; rawfilehash separately recorded.",
+      "disposition": "Pass; original ZIP/member audit remains valid by byte identity."
+    },
+    {
+      "id": "old-launch-stop",
+      "observation": "Original record preserves PR GET EOF, no blobs/tree/commit fields. Old code performs GET guard before any mutation; second open-state guard fails on mergedPR. Newplan separate; no mutation replay or relaxation to arbitrary mergedhead.",
+      "disposition": "Previous stopped attempt does not publish source or invalidate diagnostic samples."
+    }
+  ],
+  "residual_limits": [
+    "Inherited optimistic read/check/write guards are not atomic server-side CAS; check-to-write concurrency window remains.",
+    "Unknown commit creation outcome stops automatic recovery; single publisher process expected. No zero-race, exhaustive outage or powerloss guarantee.",
+    "Latest public CI success and maintainer merge do not retroactively clear local0928 source/query/writer/CI gates or any historical performance signal."
+  ],
+  "actions": "Read-only local diff/hash/archiveidentity/rawstatus/runtime review; only this new review file written. No query/test/build/state/source/remote action.",
+  "conclusion": "No unresolved blocker for exact new diagnostic publication plan/publisher. Permission does not include source push, merge action, new issue, comment or CI waiver."
+}

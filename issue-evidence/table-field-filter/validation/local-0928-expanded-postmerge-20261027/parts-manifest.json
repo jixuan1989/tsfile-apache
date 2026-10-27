@@ -1,0 +1,31 @@
+{
+  "bytes": 4531057,
+  "sha256": "1bf07106a45d4a597416ef2171dbecb7b695ed047d49380ae8f7dbb201c7c31e",
+  "parts": [
+    {
+      "name": "diagnostics.zip.part01",
+      "bytes": 1048576,
+      "sha256": "a67c6ef97dab034c395f24916d304845733bfd42b7189832f410d3d403ea49df"
+    },
+    {
+      "name": "diagnostics.zip.part02",
+      "bytes": 1048576,
+      "sha256": "45ca88e876bab556b4b092dd50173b4c9a1ff57d23c9b8b61d932ea6ed1320ee"
+    },
+    {
+      "name": "diagnostics.zip.part03",
+      "bytes": 1048576,
+      "sha256": "00e5c24b377152b7645d89342d8f5f7fa43f9953c0f0fd758e853a68ee2c318c"
+    },
+    {
+      "name": "diagnostics.zip.part04",
+      "bytes": 1048576,
+      "sha256": "f63449ff27462ec8d8774f99b30e73dffae51113df4dc913a62328acbf523088"
+    },
+    {
+      "name": "diagnostics.zip.part05",
+      "bytes": 336753,
+      "sha256": "1335e0d41e2fc8d12dd1ef3bd9377c3d8fe8fe66db3fb6d27898da6e7b5819bb"
+    }
+  ]
+}

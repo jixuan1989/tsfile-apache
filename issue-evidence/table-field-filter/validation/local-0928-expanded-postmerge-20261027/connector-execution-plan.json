@@ -1,0 +1,15 @@
+{
+  "publication_plan_sha256": "65dfb8d6e004b452c8d32afeac4cb3ad45e5b875ded93282179ae30abb166a67",
+  "bridge_sha256": "1860826105ad4a22cc0aa4f1d2f1597d3f048abd0ffbb356b3a74d028e311a60",
+  "orchestrator_sha256": "d86d6434997222911a9e0d14d412f43c3a1d12eda9f8990e652937c2ec63ba47",
+  "scope": "Same reviewed16assets/body, original2publicationreviews plus new2transportreviews and exact actual orchestration/bridge/plan. Only existing evidence ref and merged PR body. No production source branch, merge, issue, review/comment/settings actions.",
+  "transport_reason": "CLI read authentication succeeds and fork push permission is true, but first Git blob POST returned HTTP401 Bad credentials with no cached blob/tree/commit/ref/body writes; connector profile independently identifies the same account. No credential extraction or authentication/settings change.",
+  "recovery": "Single orchestrator only; content addressed blob identity checked, commit outcome held before POST; expected parent lease/force false and exact merged/head/body guards, readback every asset and body. On any error stop, inspect original receipts; never blindly rerun writes or an uncertain commit. Local verified-payload chunks are700000base64 characters, below observed stdout limit.",
+  "limitations": "Optimistic head/body checks are not an atomic compare-and-swap; whole multi-step publication is not crash-atomic. Do not claim source gate or model offline deployment. Original failed CLI scripts/records/reviews unchanged.",
+  "Chinese": "同一已审16项资产及正文，仅增实际执行脚本/桥接/计划和四份审阅记录。CLI读取及push权限有效但首次blob写入HTTP401，零已确认blob/commit/ref/body；连接器同一账号认证，未提取凭据或更改设置。单实例，blob内容地址核对，commit先标未知，证据分支父提交租约且force=false，合并/head/body守卫，全部asset和正文读回。失败即停止核查，不盲重试未知commit。非原子多步骤，源码/查询/写入/本地CI仍false。",
+  "prior_execution_plan_sha256": "d8662ac1c5f98579e831655329d27c65d45ab411db039db3f702c8bb545235db",
+  "v2_corrections": "Use normalized UTF8 text hash for template, checked before any connector write; unique before body comes from already hash-verified public asset and matches original plan hash. Never trust mutable before.json. Ref/body receipts pass compact status metadata to avoid Windows argv limit; actual raw tool response remains in tool history/store and final API readback is exact. Prior scripts/held opinions preserved and never executed. Bound template string reused for final substitution; no second unbound template read.",
+  "full_metrics_sha256": "2a4f32c008af7dcfecffaef06b7d0807abdf639215c550d6ad062672f337cd27",
+  "publication_selection": "Omit only duplicate flat metrics.json (2388568B) after its connector POST500 and GET404; complete byte-exact diagnostics/metrics.json remains inside unchanged ZIP, all distributions retained. All other original assets unchanged. Skip only eight prior actual content-addressed blobs whose receipt hashes match; final GET/tree verifies every published asset. New connector-publication-v3.json keeps all earlier errors/receipts as history; no commit/ref/body yet.",
+  "Chinese_v3": "仅省略重复的未压缩metrics.json平面Git对象；完整原字节metrics仍在同一ZIP的diagnostics/metrics.json中，所有分布保留。其余原资产不变；八个已有blob根据真实收据哈希跳过上传，最终全部Git GET核对。另新记录，保留原401/500和收据；无commit/ref/body写入。"
+}
