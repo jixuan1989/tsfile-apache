@@ -19,7 +19,7 @@
 name: reviewer-recommend
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize]
 
 permissions:
   contents: read
@@ -29,6 +29,9 @@ jobs:
   recommend:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: ./.github/actions/reviewer-recommender
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
