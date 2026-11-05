@@ -22,7 +22,7 @@ from __future__ import annotations
 import datetime as dt
 from dataclasses import dataclass, field
 
-from .config import Config
+from .config import UNASSIGNED, Config
 from .history import AuthorHistory
 
 
@@ -82,8 +82,9 @@ def recommend(
             if n_commits == 0 and n_rev == 0:
                 continue
             c.module_detail[m] = (n_commits, c_w, n_rev, r_w)
-            c.commit_score += cfg.commit_weight * c_w
-            c.review_score += cfg.review_weight * r_w
+            rw = cfg.root_weight if m == UNASSIGNED else 1.0
+            c.commit_score += cfg.commit_weight * c_w * rw
+            c.review_score += cfg.review_weight * r_w * rw
         if not c.module_detail:
             continue
         if len(modules_s) > 1 and touched_all:

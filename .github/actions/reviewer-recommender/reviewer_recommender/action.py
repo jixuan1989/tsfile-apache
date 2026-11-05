@@ -29,6 +29,7 @@ The repo workspace is expected to be checked out with full history.
 from __future__ import annotations
 
 import datetime as dt
+import json
 import os
 import sys
 import tempfile
@@ -63,16 +64,13 @@ def main() -> int:
     dry_run = os.environ.get("DRY_RUN", "false").lower() == "true"
 
     workspace = Path(os.environ.get("GITHUB_WORKSPACE", ".")).resolve()
-    pr = _pr_json(pr_number)
+    pr = _pr_json(owner, name, pr_number)
     files = [f["path"] for f in pr["files"]]
     pr_author = (pr["author"] or {}).get("login")
     ref = dt.datetime.fromisoformat(pr["createdAt"].replace("Z", "+00:00"))
 
     mmap = build_module_map(workspace)
-    modules = sorted({mmap.of(f) for f in files})
-    if modules == [UNASSIGNED]:
-        print(f"no module mapping for files: {files}; skipping")
-        return 0
+    modules = cfg.touched_modules(mmap.of(f) for f in files)
 
     print(f"PR #{pr_number} [{pr['title'][:50]}] modules: {modules}")
     raw_hist = collect_history(workspace, mmap, cfg, ref, before=pr["createdAt"])
@@ -95,7 +93,13 @@ def main() -> int:
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as f:
         f.write(body)
         path = f.name
-    gh_api(["pr", "comment", pr_number, "--body-file", path], cwd=str(workspace))
+    prior = _existing_comment_id(owner, name, pr_number, str(workspace))
+    if prior:
+        gh_api(["api", "-X", "PATCH", f"repos/{owner}/{name}/issues/comments/{prior}",
+                "-F", f"body=@{path}"], cwd=str(workspace))
+        print(f"updated existing recommendation comment {prior}")
+    else:
+        gh_api(["pr", "comment", pr_number, "--body-file", path], cwd=str(workspace))
 
     reviewers = [c for c in (c.key for c in cands[: cfg.top_n])]
     if reviewers:
@@ -112,14 +116,22 @@ def main() -> int:
     return 0
 
 
-def _pr_json(pr_number: str) -> dict:
-    import json
-
+def _pr_json(owner: str, name: str, pr_number: str) -> dict:
     raw = gh_api([
-        "pr", "view", pr_number,
+        "pr", "view", pr_number, "--repo", f"{owner}/{name}",
         "--json", "files,author,createdAt,title,number",
-    ], cwd=os.environ.get("GITHUB_WORKSPACE", "."))
+    ])
     return json.loads(raw)
+
+
+def _existing_comment_id(owner: str, name: str, pr_number: str, cwd: str) -> int | None:
+    """Id of our own recommendation comment, if the PR already has one (edit-in-place)."""
+    raw = gh_api(["api", f"repos/{owner}/{name}/issues/{pr_number}/comments"], cwd=cwd)
+    for c in json.loads(raw):
+        author = str((c.get("user") or {}).get("login", ""))
+        if author.startswith("github-actions") and c.get("body", "").startswith("## 🤖 Reviewer 推荐"):
+            return c["id"]
+    return None
 
 
 def _canonical(history, ident):

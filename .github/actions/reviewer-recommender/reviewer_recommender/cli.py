@@ -72,7 +72,7 @@ def main(argv: list[str] | None = None) -> int:
         ref = dt.datetime.now(tz=dt.timezone.utc)
     mmap = build_module_map(repo)
     mod_of = {f: mmap.of(f) for f in files}
-    modules = sorted(set(mod_of.values()))
+    modules = cfg.touched_modules(mod_of.values())
 
     history = collect_history(repo, mmap, cfg, ref, before=args.before)
     cands = recommend(modules, history, None, cfg, ref, pr_author=args.exclude_author)

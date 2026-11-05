@@ -83,17 +83,15 @@ def fetch_merged_prs(owner: str, name: str, max_prs: int = 100) -> list[dict]:
     return out[:max_prs]
 
 
-def review_signals(
+def review_events(
     prs: list[dict], mmap: ModuleMap, cfg: Config, ref: dt.datetime
-) -> dict[tuple[str, str], tuple[int, float]]:
-    """(reviewer_login, module) -> (count, decayed weight), only APPROVED/CHANGES_REQUESTED/COMMENTED count."""
-    sig: dict[tuple[str, str], tuple[int, float]] = {}
-    acc: dict[tuple[str, str], list[float]] = defaultdict(list)
+) -> list[tuple[str, str, dt.datetime]]:
+    """Raw (login, module, when) review events — parameter-independent, for tuning reuse."""
+    evs: list[tuple[str, str, dt.datetime]] = []
     for pr in prs:
         if pr["createdAt"] >= ref.isoformat():
             continue  # only history before the reference point (no leakage)
-        created = dt.datetime.fromisoformat(pr["createdAt"].replace("Z", "+00:00"))
-        modules = {mmap.of(f["path"]) for f in pr["files"]["nodes"]}
+        modules = cfg.touched_modules(mmap.of(f["path"]) for f in pr["files"]["nodes"])
         for rv in pr["reviews"]["nodes"]:
             login = (rv["author"] or {}).get("login")
             if not login or cfg.is_bot(login):
@@ -103,12 +101,19 @@ def review_signals(
             when = dt.datetime.fromisoformat(rv["submittedAt"].replace("Z", "+00:00"))
             if when > ref:
                 continue
-            w = cfg.decay(when, ref)
             for m in modules:
-                acc[(login.lower(), m)].append(w)
-    for k, ws in acc.items():
-        sig[k] = (len(ws), sum(ws))
-    return sig
+                evs.append((login.lower(), m, when))
+    return evs
+
+
+def review_signals(
+    prs: list[dict], mmap: ModuleMap, cfg: Config, ref: dt.datetime
+) -> dict[tuple[str, str], tuple[int, float]]:
+    """(reviewer_login, module) -> (count, decayed weight)."""
+    acc: dict[tuple[str, str], list[float]] = defaultdict(list)
+    for login, m, when in review_events(prs, mmap, cfg, ref):
+        acc[(login, m)].append(cfg.decay(when, ref))
+    return {k: (len(ws), sum(ws)) for k, ws in acc.items()}
 
 
 def build_identity_map(owner: str, name: str, commits_to_scan: int = 500) -> dict[str, str]:

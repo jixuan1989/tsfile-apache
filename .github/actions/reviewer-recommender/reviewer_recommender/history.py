@@ -84,6 +84,30 @@ def git_log(repo: Path, since: str, before: str | None = None) -> list[tuple[str
     return out
 
 
+def collect_events(
+    repo: Path, mmap: ModuleMap, since: str, before: str | None = None
+) -> list[tuple[str, dt.datetime, set[str]]]:
+    """Raw (author, when, modules) events — parameter-independent, for tuning reuse."""
+    return [
+        (author, when, {mmap.of(f) for f in files})
+        for author, when, files in git_log(repo, since, before)
+    ]
+
+
+def materialize(
+    events: list[tuple[str, dt.datetime, set[str]]], cfg: Config, ref: dt.datetime
+) -> dict[str, AuthorHistory]:
+    history: dict[str, AuthorHistory] = {}
+    for author, when, mods in events:
+        h = history.setdefault(author, AuthorHistory())
+        h.total_commits += 1
+        if h.last_active is None or when > h.last_active:
+            h.last_active = when
+        for m in mods:
+            h.modules.setdefault(m, ModuleSignal()).add(when, cfg, ref)
+    return history
+
+
 def collect_history(
     repo: Path,
     mmap: ModuleMap,
@@ -95,12 +119,4 @@ def collect_history(
     """git log -> per-author per-module decayed commit signals."""
     days = since_days or cfg.window_days
     since = (ref - dt.timedelta(days=days)).isoformat()
-    history: dict[str, AuthorHistory] = {}
-    for author, when, files in git_log(repo, since, before):
-        h = history.setdefault(author, AuthorHistory())
-        h.total_commits += 1
-        if h.last_active is None or when > h.last_active:
-            h.last_active = when
-        for m in {mmap.of(f) for f in files}:
-            h.modules.setdefault(m, ModuleSignal()).add(when, cfg, ref)
-    return history
+    return materialize(collect_events(repo, mmap, since, before), cfg, ref)

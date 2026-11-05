@@ -32,10 +32,16 @@ class Config:
     commit_weight: float = 1.0        # λc
     review_weight: float = 1.5        # λr
     coupling_weight: float = 0.5      # λx
+    root_weight: float = 0.2          # (root)/infra 路径信号降权
     window_days: int = 365            # 信号采集窗口
     inactive_days: int = 365          # 超过该天数无动作则排除
     top_n: int = 3
     bot_patterns: tuple[str, ...] = field(default_factory=lambda: BOT_PATTERNS)
+
+    def touched_modules(self, modules) -> list[str]:
+        """Scoring view of a module set: infra/(root) excluded unless it is all there is."""
+        real = [m for m in set(modules) if m != UNASSIGNED]
+        return sorted(real) if real else [UNASSIGNED]
 
     def decay(self, when: dt.datetime, ref: dt.datetime) -> float:
         """Exponential time-decay weight, halflife `halflife_days`."""
