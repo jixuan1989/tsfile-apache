@@ -262,3 +262,4 @@ public class BitInputStream extends BitStream {
     in.close();
   }
 }
+// reviewer-bot test: cross-module sample change

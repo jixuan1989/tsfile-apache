@@ -1,0 +1,57 @@
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+name: 'Module Reviewer Recommender'
+description: >-
+  Recommend and request PR reviewers based on the modules a PR touches,
+  module-coupled history, and review records (git history + GitHub API).
+inputs:
+  github-token:
+    description: 'Token with pull-requests:write (pass secrets.GITHUB_TOKEN)'
+    required: true
+  top-n:
+    description: 'How many reviewers to request'
+    required: false
+    default: '3'
+  window-days:
+    description: 'History window in days'
+    required: false
+    default: '365'
+  dry-run:
+    description: 'Comment only, do not request reviewers (still posts comment)'
+    required: false
+    default: 'false'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout full history
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Recommend reviewers
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+        TOP_N: ${{ inputs.top-n }}
+        WINDOW_DAYS: ${{ inputs.window-days }}
+        DRY_RUN: ${{ inputs.dry-run }}
+      run: |
+        python3 "${{ github.action_path }}/reviewer_recommender/action_main.py"

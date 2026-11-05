@@ -32,3 +32,4 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD, ElementType.CONSTRUCTOR})
 @Retention(RetentionPolicy.CLASS)
 public @interface MustOverride {}
+// reviewer-bot test: cross-module sample change
