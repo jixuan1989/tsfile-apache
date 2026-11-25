@@ -1,0 +1,112 @@
+# SPDX-License-Identifier: Apache-2.0
+# Test copy of the README example (vendored action). Everything marked "test only"
+# is here to exercise the deployment on a real repository; it is not part of the
+# example. The example proper is the `recommend` job without its `dry-run` line.
+name: reviewer-recommend
+
+on:
+  pull_request_target:
+    types: [opened, ready_for_review]
+  pull_request: # test only: the alternative deployment for same-repo PRs
+    types: [opened, ready_for_review]
+  push: # test only: real run on the closed demo PR #1, without reopening it
+    branches: [test/reviewer-bot]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  # ---------- the README example, with dry-run: true added ----------
+  recommend:
+    if: github.event_name == 'pull_request_target' && github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: test only - where the job runs and who the token is
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "event=${{ github.event_name }} action=${{ github.action }} ref=${{ github.ref }}"
+          echo "HEAD       $(git rev-parse HEAD)"
+          echo "base.sha   ${{ github.event.pull_request.base.sha }}"
+          echo "github.sha ${{ github.sha }}"
+          echo "git config credential helper: $(git config --get credential.helper || echo none)"
+          gh api user --jq '"gh api user -> " + .login' || echo "gh api user failed with exit $?"
+      - uses: ./.github/actions/reviewer-recommender
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          dry-run: true # test only
+      - name: test only - write probe with the action's own comment code (no @-mentions)
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYTHONUTF8: '1'
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          export PYTHONPATH="$GITHUB_WORKSPACE/.github/actions/reviewer-recommender"
+          python3 - <<'EOF'
+          import os
+
+          from reviewer_recommender import action
+
+          owner, name = os.environ["GITHUB_REPOSITORY"].split("/")
+          pr = int(os.environ["PR_NUMBER"])
+          body = (action.MARKER + "\n\n探针评论（reviewer-recommender 部署测试）：验证 pull_request_target "
+                  "下的写入权限，不 @ 任何人，由本步骤删除。")
+          print("token login:", action._token_login())
+          action._post_comment(owner, name, pr, body)  # nothing of ours yet: create
+          action._post_comment(owner, name, pr, body)  # ours from the line above: edit in place
+          EOF
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            --jq '[.[] | select(.user.login == "github-actions[bot]")] | last | .id')
+          echo "probe comment id: $id"
+          gh api -X DELETE "repos/$GITHUB_REPOSITORY/issues/comments/$id"
+          echo "probe comment deleted"
+
+  # ---------- test only: the alternative deployment, in dry-run ----------
+  on-pull-request:
+    if: github.event_name == 'pull_request' && github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: test only - where the job runs and who the token is
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "event=${{ github.event_name }} action=${{ github.action }} ref=${{ github.ref }}"
+          echo "HEAD       $(git rev-parse HEAD)"
+          echo "base.sha   ${{ github.event.pull_request.base.sha }}"
+          echo "github.sha ${{ github.sha }}"
+          gh api user --jq '"gh api user -> " + .login' || echo "gh api user failed with exit $?"
+      - uses: ./.github/actions/reviewer-recommender
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          dry-run: true
+
+  # ---------- test only: the real write path on the closed demo PR #1 ----------
+  demo:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Real run on PR #1 (same environment as the composite action sets up)
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: '1'
+          PYTHONUTF8: '1'
+        run: python3 .github/actions/reviewer-recommender/reviewer_recommender/action_main.py

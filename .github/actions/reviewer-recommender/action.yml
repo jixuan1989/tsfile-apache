@@ -1,0 +1,59 @@
+# SPDX-License-Identifier: Apache-2.0
+name: 'Module Reviewer Recommender'
+description: >-
+  Recommend and request PR reviewers based on the modules a PR touches,
+  module-coupled history, and review records (git history + GitHub API).
+  Works for PRs from forks when the workflow runs on pull_request_target.
+inputs:
+  github-token:
+    description: >-
+      Token with pull-requests: write. On pull_request_target pass
+      secrets.GITHUB_TOKEN. On pull_request, PRs from forks need a PAT or a
+      GitHub App token instead: GITHUB_TOKEN is read-only for those.
+    required: true
+  top-n:
+    description: 'How many reviewers to recommend and request (minimum 2)'
+    required: false
+    default: '3'
+  window-days:
+    description: 'History window in days'
+    required: false
+    default: '365'
+  request-reviewers:
+    description: >-
+      Request the recommended reviewers too. Set to false to post the
+      comment only.
+    required: false
+    default: 'true'
+  dry-run:
+    description: >-
+      Print the recommendation to the log. Posts no comment and requests no
+      reviewer.
+    required: false
+    default: 'false'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout full history of the base branch
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        # The base branch tip, never the PR head: the history must be the one
+        # the PR is proposed against, and on pull_request_target code from the
+        # PR must not be checked out at all.
+        ref: ${{ github.event.pull_request.base.sha }}
+        # History is read with local git only; the API goes through gh.
+        persist-credentials: false
+
+    - name: Recommend reviewers
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+        TOP_N: ${{ inputs.top-n }}
+        WINDOW_DAYS: ${{ inputs.window-days }}
+        REQUEST_REVIEWERS: ${{ inputs.request-reviewers }}
+        DRY_RUN: ${{ inputs.dry-run }}
+        PYTHONUTF8: '1'
+      run: python3 "${{ github.action_path }}/reviewer_recommender/action_main.py"
