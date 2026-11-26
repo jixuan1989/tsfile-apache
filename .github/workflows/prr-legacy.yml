@@ -1,0 +1,30 @@
+name: prr-legacy
+
+on:
+  pull_request_target:
+    types: [opened, ready_for_review]
+    # To run again when the PR gets new commits, add synchronize: the comment is edited in
+    # place, and reviewers who were already requested stay requested.
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  recommend:
+    # Drafts wait until they are marked ready for review (the ready_for_review event).
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    # Runs of one pull request take turns, so that two of them cannot both find
+    # no comment yet and each post one.
+    concurrency:
+      group: reviewer-recommend-${{ github.event.pull_request.number }}
+      cancel-in-progress: false
+    steps:
+      # Test only.
+      - env:
+          NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          echo "start $(date -u +%FT%T.%N) pull request $NUMBER"
+          sleep 40
+          echo "end $(date -u +%FT%T.%N) pull request $NUMBER"
