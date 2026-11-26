@@ -1,0 +1,55 @@
+name: probe
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      N: ${{ github.event.pull_request.number }}
+      SHA: ${{ github.event.pull_request.head.sha }}
+    steps:
+      - name: The token, and what GitHub says it wrote
+        run: |
+          set -euo pipefail
+          echo "PROBE runner $(lsb_release -ds 2>/dev/null), bash $BASH_VERSION, $(gh --version | head -1), $(jq --version)"
+          repo=$GITHUB_REPOSITORY; o=${repo%/*}; r=${repo#*/}
+          printf 'probe comment by the workflow token; it names nobody.\nsecond line\n\n<!-- probe marker -->\n' > body1.txt
+          printf 'probe: no newline at the end\n<!-- probe marker -->' > body2.txt
+          one=$(gh api -X POST "repos/$repo/issues/$N/comments" -F body=@body1.txt --jq .id)
+          two=$(gh api -X POST "repos/$repo/issues/$N/comments" -F body=@body2.txt --jq .id)
+          echo "PROBE posted $one and $two"
+          for pair in "$one body1.txt" "$two body2.txt"; do
+            set -- $pair
+            python3 -c 'import json,subprocess,sys; sent=open(sys.argv[2],encoding="utf-8").read(); got=json.loads(subprocess.run(["gh","api",f"repos/{sys.argv[3]}/issues/comments/{sys.argv[1]}"],capture_output=True,text=True,check=True).stdout)["body"]; print("PROBE body round trip of", sys.argv[1], "identical" if sent == got else "DIFFERS %r %r" % (sent[-6:], got[-6:]))' "$1" "$2" "$repo"
+          done
+          q='query($owner:String!,$name:String!,$number:Int!,$after:String){ viewer{ login } repository(owner:$owner,name:$name){ pullRequest(number:$number){ comments(first:100,after:$after){ pageInfo{hasNextPage endCursor} nodes{ databaseId body viewerDidAuthor author{ login } } } } } }'
+          gh api graphql -f query="$q" -f owner="$o" -f name="$r" -F number="$N" > comments.json
+          echo "PROBE graphql shape $(jq -c '[paths(scalars) | map(tostring) | join(".")] | unique | .[0:14]' comments.json)"
+          jq -r '.data.repository.pullRequest.comments | (.pageInfo | "PROBE pageInfo \(.hasNextPage) \(.endCursor)"), (.nodes[] | "PROBE comment \(.databaseId) viewerDidAuthor=\(.viewerDidAuthor) author=\(.author.login) head=\(.body[0:40] | @json)")' comments.json
+          echo "PROBE viewer $(jq -r .data.viewer.login comments.json)"
+          for other in $(jq -r '.data.repository.pullRequest.comments.nodes[] | select(.viewerDidAuthor | not) | select(.body | startswith("probe: a comment by another account")) | .databaseId' comments.json); do
+            if gh api -X PATCH "repos/$repo/issues/comments/$other" -f body="probe: edited by the workflow token, which did not write this comment" >/dev/null 2>err.txt; then
+              echo "PROBE edit of a comment of another account ($other): ALLOWED"; else
+              echo "PROBE edit of a comment of another account ($other): refused: $(head -c 200 err.txt | tr '\n' ' ')"; fi
+            if gh api -X DELETE "repos/$repo/issues/comments/$other" >/dev/null 2>err.txt; then
+              echo "PROBE delete of a comment of another account ($other): ALLOWED"; else
+              echo "PROBE delete of a comment of another account ($other): refused: $(head -c 200 err.txt | tr '\n' ' ')"; fi
+          done
+          gh api -X PATCH "repos/$repo/issues/comments/$one" -F body=@body1.txt --jq '"PROBE edit of own comment \(.id): ok, id \(.id), author \(.user.login)"'
+          gh api -X DELETE "repos/$repo/issues/comments/$one" && echo "PROBE delete of own comment $one: ok"
+          gh api -X DELETE "repos/$repo/issues/comments/$two" && echo "PROBE delete of own comment $two: ok"
+      - name: What the lookup is to read
+        run: |
+          set -euo pipefail
+          gh pr list --repo "$GITHUB_REPOSITORY" --state all --search "$SHA" --limit 20 \
+            --json number,state,headRefOid,headRefName,headRepositoryOwner,headRepository,closedAt \
+            --jq '.[] | [.number, .state, .headRefOid, .headRefName, (.headRepositoryOwner.login // ""), (.headRepository.name // ""), (.closedAt // "")] | map(tostring) | "PROBE pr " + join(" ")'
+          echo "PROBE run $(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --jq '[.head_sha, .head_branch, (.head_repository.full_name // ""), .created_at, .event, (.pull_requests | map(.number) | tostring)] | join(" ")')"
+          echo "PROBE reviews $(gh api "repos/$GITHUB_REPOSITORY/pulls/$N/reviews" --paginate --jq 'map([.id, .state, .user.login])')"
+          echo "PROBE requested $(gh api "repos/$GITHUB_REPOSITORY/pulls/$N" --jq '{requested: [.requested_reviewers[].login], head: .head.sha, headRef: .head.ref, headRepo: .head.repo.full_name, state: .state, draft: .draft, changed: .changed_files}')"
+          echo "PROBE whoami $(gh api user --jq .login 2>&1 | head -c 120)""
