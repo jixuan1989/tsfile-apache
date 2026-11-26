@@ -1,0 +1,20 @@
+name: reviewer-signal
+
+on:
+  pull_request:
+    types: [opened, ready_for_review, synchronize]
+    # synchronize belongs here: the pull request is found again by its head
+    # commit, so a new head needs a new run. Without it, a push that lands
+    # before the first run looks the pull request up leaves it without a
+    # recommendation.
+
+# The definition that runs is taken from the pull request, so the PR that
+# triggers it may have changed this file. It therefore gets nothing: no token,
+# no checkout, and one echo. Its only purpose is to complete.
+permissions: {}
+
+jobs:
+  signal:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "reviewer-recommend runs when this workflow completes"
