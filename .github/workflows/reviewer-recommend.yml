@@ -1,0 +1,20 @@
+# Temporary verification workflow. Lives on a temporary branch that is the
+# fork's default branch only for the few minutes of the verification.
+name: reviewer-recommend (verification)
+on:
+  pull_request_target:
+    types: [opened, ready_for_review, edited]
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  recommend:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jixuan1989/pr-reviewer-recommender@896a82b20adfab1355a3315dda3aad52f1c0067e
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # The test pull request runs as a dry run, so that nobody is pinged.
+          # The closed demo pull request (#1) is updated in place.
+          dry-run: ${{ github.event.pull_request.number == 1 && 'false' || 'true' }}
