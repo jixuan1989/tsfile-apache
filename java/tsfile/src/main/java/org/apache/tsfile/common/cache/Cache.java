@@ -29,3 +29,5 @@ public interface Cache<K, T> {
 
   void clear();
 }
+
+// test only
