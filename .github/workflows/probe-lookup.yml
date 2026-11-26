@@ -1,0 +1,130 @@
+name: probe-lookup
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  actions: read
+  pull-requests: read
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    outputs:
+      number: ${{ steps.pr.outputs.number }}
+    steps:
+      - name: Find the pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          [[ "$HEAD_SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "::error::head sha is not a commit SHA"; exit 1; }
+          [[ "$RUN_ID" =~ ^[1-9][0-9]*$ ]] || { echo "::error::the run id is not a number"; exit 1; }
+          # What the run was: the branch it ran on, the repository its head is
+          # in, and when it was created. Checked against the event's head commit.
+          run=$(gh api "repos/$REPO/actions/runs/$RUN_ID" \
+            --jq '[.head_sha, .head_branch, (.head_repository.full_name // ""), .created_at] | map(tostring) | @tsv') \
+            || { echo "::error::could not read what run $RUN_ID was"; exit 1; }
+          IFS=$'\t' read -r run_sha branch head_repo created <<< "$run" || true
+          if [[ "$run_sha" != "$HEAD_SHA" || -z "$branch" || -z "$head_repo" ]] \
+            || [[ ! "$created" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$ ]]; then
+            echo "::error::run $RUN_ID does not say what it ran on; the API answered: $run"
+            exit 1
+          fi
+          stamp() { local d=${1//[^0-9]/}; echo "${d:0:14}"; }
+          lower() { printf '%s' "$1" | tr '[:upper:]' '[:lower:]'; }
+          # Says which pull request started the run, from what the search listed.
+          # A candidate has the head commit of the run on the branch the run was
+          # on, in the repository the run's head is in — the same commit on
+          # another branch, or in another repository, is another pull request's.
+          # Of the candidates, the open ones and the ones closed since the run
+          # was created may have started it; one closed before it was created
+          # was not open to. One open and none closed since: that is the one.
+          # More than one: nothing tells which. None open but one closed since:
+          # that one, closed or merged in the meantime.
+          classify() {
+            local number state oid ref owner name closed listed=0
+            local open=() since=() all=()
+            while IFS=$'\t' read -r number state oid ref owner name closed; do
+              [ -n "$number" ] || continue
+              if [[ ! "$number" =~ ^[1-9][0-9]*$ || ! "$state" =~ ^(OPEN|CLOSED|MERGED)$ ]] \
+                || [[ ! "$oid" =~ ^[0-9a-f]{40}$ ]] \
+                || [[ "$state" != OPEN && ! "$closed" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$ ]]; then
+                echo "::error::a line of the search's answer is not as expected: $number $state $oid $closed"
+                return 1
+              fi
+              listed=$((listed + 1))
+              [ "$oid" = "$HEAD_SHA" ] && [ "$ref" = "$branch" ] \
+                && [ "$(lower "$owner")/$(lower "$name")" = "$(lower "$head_repo")" ] || continue
+              if [ "$state" = OPEN ]; then
+                open+=("$number")
+              elif [[ "$(stamp "$closed")" > "$(stamp "$created")" || "$(stamp "$closed")" == "$(stamp "$created")" ]]; then
+                since+=("$number")
+              fi
+            done <<< "$rows"
+            if [ "${#open[@]}" = 1 ] && [ "${#since[@]}" = 0 ]; then
+              found="number:${open[0]}"
+            elif [ "$((${#open[@]} + ${#since[@]}))" -gt 1 ]; then
+              all=("${open[@]}" "${since[@]}")
+              found="several:$(printf '%s\n' "${all[@]}" | sort -n | paste -sd, -)"
+            elif [ "${#since[@]}" = 1 ]; then
+              found="closed:${since[0]}"
+            else
+              found="none:$listed"
+            fi
+          }
+          # Also finds a pull request from a fork. The search ranks by how well
+          # a pull request matches and lists 30 by default; 1000 leaves room for
+          # the one with this head commit not to be among the first. A failed
+          # query fails this step: it must not read as "no pull request".
+          found=none:0
+          for attempt in 1 2 3; do
+            [ "$attempt" = 1 ] || sleep 10
+            rows=$(gh pr list -R "$REPO" --state all --search "$HEAD_SHA" --limit 1000 \
+              --json number,state,headRefOid,headRefName,headRepositoryOwner,headRepository,closedAt \
+              --jq '.[] | [.number, .state, .headRefOid, .headRefName, (.headRepositoryOwner.login // ""), (.headRepository.name // ""), (.closedAt // "")] | map(tostring) | @tsv') \
+              || { echo "::error::the search for the pull request failed"; exit 1; }
+            classify
+            case "$found" in none:*) ;; *) break ;; esac
+          done
+          PR=
+          case "$found" in
+            number:*) PR=${found#number:} ;;
+            several:*) list=${found#several:}; echo "several pull requests have the head commit of the run on the branch the run was on: #${list//,/, #}. Open, or closed since the run was created: nothing tells which one started it, nothing to recommend" ;;
+            closed:*) echo "the pull request with the head commit of the run on the branch the run was on (#${found#closed:}) was closed after the run was created: nothing to recommend" ;;
+            # Normal when the author pushed again: the head of the pull request
+            # has moved on, and the push starts a run of its own. The search
+            # index can also take a moment to list a pull request that was just
+            # opened, which is why it was asked three times.
+            none:*) echo "no open pull request has the head commit of the run on the branch the run was on, among the ${found#none:} the search listed: nothing to recommend" ;;
+            *) echo "::error::unexpected answer: $found"; exit 1 ;;
+          esac
+          echo "number=$PR" >> "$GITHUB_OUTPUT"
+      - name: What was found
+        env:
+          NUMBER: ${{ steps.pr.outputs.number }}
+        run: |
+          echo "PROBE found [$NUMBER]"
+  uses-the-number:
+    needs: find
+    if: needs.find.outputs.number != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: What the API says about the pull request found
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          N: ${{ needs.find.outputs.number }}
+        run: |
+          set -euo pipefail
+          echo "PROBE second job got [$N]"
+          gh api "repos/$REPO/pulls/$N" --jq '{state, draft, head: .head.sha, ref: .head.ref, repo: .head.repo.full_name, created: .created_at, requested: [.requested_reviewers[].login]} | "PROBE pull \(.) | tostring)"'
+          : > body.txt
+          printf 'probe comment written through gh api by the workflow token; it names nobody.\n' > body.txt
+          id=$(gh api -X POST "repos/$REPO/issues/$N/comments" -F body=@body.txt --jq .id)
+          gh api -X PATCH "repos/$REPO/issues/comments/$id" -F body=@body.txt --jq '{id, author: .user.login, body} | "PROBE patch answer \(.) | tostring"'
+          gh api -X DELETE "repos/$REPO/issues/comments/$id" && echo "PROBE deleted the probe comment"
