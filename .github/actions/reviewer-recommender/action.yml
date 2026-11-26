@@ -1,0 +1,88 @@
+# SPDX-License-Identifier: Apache-2.0
+name: 'Module Reviewer Recommender'
+description: >-
+  Recommend and request PR reviewers based on the modules a PR touches,
+  module-coupled history, and review records (git history + GitHub API).
+  Works for PRs from forks when the workflow runs on pull_request_target or
+  workflow_run, which are triggered only for workflow files on the default
+  branch.
+inputs:
+  github-token:
+    description: >-
+      Token with pull-requests: write. Pass secrets.GITHUB_TOKEN on
+      pull_request_target and workflow_run. On pull_request, GITHUB_TOKEN is
+      read-only for PRs from forks: use one of the other two triggers for those.
+    required: true
+  pull-request-number:
+    description: >-
+      Number of the pull request. Left out, it is taken from the event
+      (pull_request_target, pull_request). A workflow_run event has no
+      pull_request field, so a workflow_run workflow has to pass the number.
+    required: false
+    default: ''
+  top-n:
+    description: 'How many reviewers to recommend and request (minimum 2)'
+    required: false
+    default: '3'
+  window-days:
+    description: 'History window in days'
+    required: false
+    default: '365'
+  request-reviewers:
+    description: >-
+      Request the recommended reviewers too. Set to false to post the
+      comment only.
+    required: false
+    default: 'true'
+  dry-run:
+    description: >-
+      Print the recommendation to the log. Posts no comment and requests no
+      reviewer.
+    required: false
+    default: 'false'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout full history
+      # Pinned to the commit the `v4` tag pointed to when this action was last
+      # run on GitHub (2026-11-26). The job holds a write token, so nothing
+      # that runs here may change underneath it.
+      uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+      with:
+        fetch-depth: 0
+        # pull_request_target: the PR's base commit, never the PR head. The
+        # history must be that of the branch the PR targets, and code from the
+        # PR must not be checked out at all. It can sit a few commits behind
+        # the base branch's current tip.
+        # Anything else (workflow_run, workflow_dispatch): left out. The
+        # checkout then takes the ref and the commit of the event, which on
+        # workflow_run are the default branch and the commit the run started
+        # from — a commit, not a branch name: a branch is checked out at
+        # whatever its tip is when the job starts, and the job may have waited
+        # a long time. That is the same commit `github.sha` would name, but
+        # named here it can be refused: actions/checkout guards against
+        # checking out the head commit of a fork PR in these events, and that
+        # commit is the default branch's tip for a PR opened from a fork's
+        # copy of the default branch, up to date with it, to a branch behind
+        # it. Left out, the checkout is the event's own, which the guard does
+        # not doubt.
+        ref: ${{ github.event.pull_request.base.sha }}
+        # History is read with local git only; the API goes through gh.
+        persist-credentials: false
+
+    - name: Recommend reviewers
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+        PR_NUMBER: ${{ inputs.pull-request-number || github.event.pull_request.number }}
+        # The branch whose commit is on disk: the PR's base branch on
+        # pull_request_target, the default branch on workflow_run. The action
+        # names it in the comment when it is not the branch the PR targets.
+        BASE_REF: ${{ github.event.pull_request.base.ref || github.ref_name }}
+        TOP_N: ${{ inputs.top-n }}
+        WINDOW_DAYS: ${{ inputs.window-days }}
+        REQUEST_REVIEWERS: ${{ inputs.request-reviewers }}
+        DRY_RUN: ${{ inputs.dry-run }}
+        PYTHONUTF8: '1'
+      run: python3 "${{ github.action_path }}/reviewer_recommender/action_main.py"
